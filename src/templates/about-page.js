@@ -26,11 +26,14 @@ export default ({ data }) => {
 
 
 export const aboutPageQuery = graphql`
-    query AboutPage($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }) {
+    query AboutPage($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
             html
+            fields {
+                slug
+            }
             frontmatter {
-                path
+                date(formatString: "MMMM DD, YYYY")
                 title
             }
         }

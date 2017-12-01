@@ -16,11 +16,13 @@ export default function FavoriteItemTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-    query FavoriteItemByPath($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }) {
+    query FavoriteItemByPath($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
             html
+            fields {
+                slug
+            }
             frontmatter {
-                path
                 date(formatString: "MMMM DD, YYYY")
                 title
             }

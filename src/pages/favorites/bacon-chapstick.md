@@ -1,6 +1,5 @@
 ---
 templateKey: favorite-item
-path: /favorites/404-not-found
 title: Bacon Chapstick
 thumbnails:
   - thumbnail: /img/the-creative-exchange-336792.jpg

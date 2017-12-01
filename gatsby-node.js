@@ -3,12 +3,12 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const { createNodeField } = boundActionCreators
-    if (node.internal.type === `MarkdownRemark` && node.frontmatter.templateKey === 'favorites') {
+    if (node.internal.type === `MarkdownRemark`) {
         const slug = createFilePath({ node, getNode, basePath: `pages` })
-        console.log('created slug for path', slug);
+        console.log('creating slug', slug);
         createNodeField({
             node,
-            name: `path`,
+            name: `slug`,
             value: slug,
         })
     }
@@ -25,6 +25,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             excerpt(pruneLength: 400)
             html
             id
+            fields {
+              slug
+            }
             frontmatter {
               templateKey
               path
@@ -43,9 +46,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
             console.log(node);
             createPage({
-                path: node.frontmatter.path,
+                path: node.fields.slug,
                 component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`),
                 context: {
+                    slug: node.fields.slug,
                     templateKey: node.frontmatter.templateKey
                 } // additional data can be passed via context
             });

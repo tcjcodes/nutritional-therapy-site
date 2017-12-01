@@ -24,7 +24,7 @@ export default function FavoritesTemplate({ data }) {
 
 export const pageQuery = graphql`
     query FavoritePageQuery {
-        allMarkdownRemark {
+        allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "favorite-item"}}}) {
             totalCount
             edges {
                 node {
@@ -32,7 +32,6 @@ export const pageQuery = graphql`
                     frontmatter {
                         title
                         templateKey
-                        date(formatString: "DD MMMM, YYYY")
                     }
                     excerpt
                 }
