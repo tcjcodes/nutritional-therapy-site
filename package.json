@@ -4,9 +4,12 @@
   "version": "1.0.0",
   "author": "Austin Green",
   "dependencies": {
+    "bloomer": "^0.6.3",
     "bulma": "^0.6.0",
     "gatsby": "^1.9.63",
     "gatsby-link": "^1.6.21",
+    "gatsby-plugin-glamor": "^1.6.8",
+    "gatsby-plugin-google-fonts": "^0.0.3",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-remark-images": "^1.5.18",
