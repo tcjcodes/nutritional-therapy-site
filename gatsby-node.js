@@ -5,6 +5,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const { createNodeField } = boundActionCreators
     if (node.internal.type === `MarkdownRemark` && node.frontmatter.templateKey === 'favorites') {
         const slug = createFilePath({ node, getNode, basePath: `pages` })
+        console.log('created slug for path', slug);
         createNodeField({
             node,
             name: `path`,

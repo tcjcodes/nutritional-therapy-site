@@ -37,7 +37,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "favorite-item"}
-      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/favorites/404-not-found"}
       - {label: "Title", name: "title", widget: "string"}
       - name: thumbnails
         label: Featured Images
