@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: favorites
 
 media_folder: "/src/img/uploads"
 public_folder: "img"
@@ -34,7 +34,7 @@ collections:
     label: "Favorites"
     folder: "src/pages/favorites"
     create: true
-    slug: "{{slug}}"
+    slug: "favorites/{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "favorite-item"}
       - {label: "Path", name: "path", widget: "hidden", default: "/favorites/404-not-found"}
