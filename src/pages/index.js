@@ -1,47 +1,55 @@
 import React from 'react';
 import Script from 'react-load-script';
 import Hero from '../components/hero'
-import { Container, Section } from 'bloomer'
+import { Column, Columns, Container, Content, Section } from 'bloomer'
+import bgImg from '../img/ricepaper_@2X.png'
 
 export default class IndexPage extends React.Component {
-  handleScriptLoad() {
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on('init', user => {
-        if (!user) {
-          window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/';
-          });
+    handleScriptLoad() {
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on('init', user => {
+                if (!user) {
+                    window.netlifyIdentity.on('login', () => {
+                        document.location.href = '/admin/';
+                    });
+                }
+            });
         }
-      });
+        window.netlifyIdentity.init();
     }
-    window.netlifyIdentity.init();
-  }
 
-  render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
-    return (
-      <div>
-        <Hero/>
-        <Script
-          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-          onLoad={this.handleScriptLoad.bind(this)}
-        />
-        <Section>
-          <Container>
-            <h2 className="title">Hello World</h2>
-            <p>Make muffins ignore the squirrels, you'll never catch them anyway but crash against wall but walk away like
-              nothing happened for munch on tasty moths so run in circles plays league of legends. Flop over all of a
-              sudden cat goes crazy. </p>
-            <p>Chase imaginary bugs spend all night ensuring people don't sleep sleep all day howl uncontrollably for no
-              reason, why must they do that, or i like big cats and i can not lie. Present belly, scratch hand when
-              stroked. Eats owners hair then claws head lick the other cats purr while eating.</p>
-          </Container>
-        </Section>
-        {/*<BlogTemplate posts={posts} />*/}
-      </div>
-    );
-  }
+    render() {
+        const { data } = this.props;
+        const { edges: posts } = data.allMarkdownRemark;
+        return (
+            <div>
+                <Hero/>
+                <Script
+                    url='https://identity.netlify.com/v1/netlify-identity-widget.js'
+                    onLoad={this.handleScriptLoad.bind(this)}
+                />
+                <Section style={{ background: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(${bgImg}) repeat fixed`}}>
+                    <Container>
+                        <Columns>
+                            <Column isSize='1/2' isOffset='1/4'>
+                                <Content>
+                                    <p css={{ margin: '1em 0'}}>Welcome message. Brisket tenderloin porchetta shankle pork belly strip steak, frankfurter chuck
+                                        jowl corned beef spare ribs sausage capicola ball tip. Fatback turkey cow
+                                        burgdoggen capicola, pork belly sausage tenderloin pastrami shankle pork chop
+                                        short loin buffalo. Swine spare ribs short loin shank, pancetta pork chop
+                                        biltong meatball sirloin filet mignon pork loin alcatra kielbasa. Flank capicola
+                                        chuck, alcatra pork chop bacon hamburger andouille rump ham sirloin pork belly.
+                                        Short loin beef kevin doner pork loin, chicken venison pork belly flank salami
+                                        bacon ham.</p>
+                                </Content>
+                            </Column>
+                        </Columns>
+                    </Container>
+                </Section>
+                {/*<BlogTemplate posts={posts} />*/}
+            </div>
+        );
+    }
 }
 
 export const pageQuery = graphql`

@@ -1,1 +1,13 @@
-@import '~bulma/bulma';
+// Import Bulma's initial variables
+
+@import "~bulma/sass/utilities/initial-variables";
+
+$family-sans-serif: 'Montserrat', 'Helvetica', sans-serif;
+
+$green: #778B40;
+$blue: #AEC2C9;
+
+$primary: $green;
+$link: $green;
+
+@import "~bulma/bulma";
