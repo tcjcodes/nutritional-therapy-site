@@ -1,12 +1,12 @@
 import React from 'react'
 import { secondaryFont } from '../utils/fonts'
 import { Button, Container, Hero, HeroBody, Subtitle, Title } from 'bloomer'
-import bgImg from './images/hero0.jpeg'
-const rgba = '255,255,255'//`119, 139, 64`
-const bgLinearGradient = `linear-gradient(rgba(${rgba}, 0.8), rgba(${rgba}, 0.8))`;
+import bgImg from '../img/igor-ovsyannykov-248222.jpg'
+const rgba = '0,0,0'//`119, 139, 64`
+const bgLinearGradient = `linear-gradient(rgba(${rgba}, 0.2), rgba(${rgba}, 0.4))`;
 
 const HeroBanner = ({}) =>
-    <Hero isSize='medium' isColor='light' style={{
+    <Hero isSize='medium' isColor='dark' style={{
     }}>
         <HeroBody style={{
             background:`${bgLinearGradient}, url(${bgImg}) center no-repeat fixed`,
@@ -19,12 +19,12 @@ const HeroBanner = ({}) =>
                     marginBottom: '1em',
                     letterSpacing: '4px',
                 }}>
-                    CDLR Nutritional Therapy
+                    Eating Well
                 </Title>
                 <Subtitle>
                     Health and wellness, lorem ipsum dolores.
                 </Subtitle>
-                <Button href='#about' style={{ marginTop: '1.5em' }} isColor='primary'>Learn More</Button>
+                <Button href='/about/' style={{ marginTop: '1.5em' }} isColor='dark'>Learn More</Button>
             </Container>
         </HeroBody>
     </Hero>

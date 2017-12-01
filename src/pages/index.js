@@ -28,12 +28,13 @@ export default class IndexPage extends React.Component {
                     url='https://identity.netlify.com/v1/netlify-identity-widget.js'
                     onLoad={this.handleScriptLoad.bind(this)}
                 />
-                <Section style={{ background: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(${bgImg}) repeat fixed`}}>
+                <Section>
                     <Container>
                         <Columns>
                             <Column isSize='1/2' isOffset='1/4'>
                                 <Content>
-                                    <p css={{ margin: '1em 0'}}>Welcome message. Brisket tenderloin porchetta shankle pork belly strip steak, frankfurter chuck
+                                    <p css={{ margin: '1em 0' }}>Welcome message. Brisket tenderloin porchetta shankle
+                                        pork belly strip steak, frankfurter chuck
                                         jowl corned beef spare ribs sausage capicola ball tip. Fatback turkey cow
                                         burgdoggen capicola, pork belly sausage tenderloin pastrami shankle pork chop
                                         short loin buffalo. Swine spare ribs short loin shank, pancetta pork chop

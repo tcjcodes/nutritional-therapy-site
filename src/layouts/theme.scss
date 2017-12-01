@@ -4,10 +4,20 @@
 
 $family-sans-serif: 'Montserrat', 'Helvetica', sans-serif;
 
-$green: #778B40;
-$blue: #AEC2C9;
+$size-1: 4em;
+$size-2: 3.25em;
+$brown: #7B4C37;
 
+$green: #5D8C2C; //#778B40;
+$green-darker: #4f6d1a;
+$dark: $green; //$brown;
+
+$cyan: #3e6393;
+$blue: #376aad;
+
+//$info: $blue;
 $primary: $green;
 $link: $green;
+$link-hover: $green-darker;
 
 @import "~bulma/bulma";
