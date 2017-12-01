@@ -18,8 +18,9 @@ const Line = () => (
 const Navigation = () => (
     <div>
         <div css={{ width: '100%', textAlign: 'center', paddingTop: '1.5em', }}>
-            <Link to='/' css={{
-                ...secondaryFont, fontSize: '3em', letterSpacing: '1px', color: colorDark,
+            <Link to='/'
+                  css={{
+                ...secondaryFont, fontSize: '4em', letterSpacing: '1px', color: colorDark,
                 '&:hover': { color: colorDark },
             }}>
                 CDL Nutritional Therapy
