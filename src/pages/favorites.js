@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Container, Section } from 'bloomer'
+import Link from 'gatsby-link'
+import { Container, Content, Section } from 'bloomer'
 
 export default function FavoritesTemplate({ data }) {
     const edges = data.allMarkdownRemark.edges;
@@ -9,13 +10,13 @@ export default function FavoritesTemplate({ data }) {
             <Helmet title='Favorites'/>
 
             <Container>
-                {edges.map(({ node  }) => (
-                    <pre key={node.id}>
-                        {/*{JSON.stringify(node)}*/}
-                        {node.frontmatter.title},
-                        {node.frontmatter.templateKey},
-                        {node.frontmatter.date}
-                    </pre>
+                {edges.map(({ node }) => (
+                    <Content key={node.id}>
+                        <h1><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h1>
+                        <img src={node.frontmatter.thumbnails[0]} alt=''/>
+                        {JSON.stringify(node.frontmatter)}
+                        {JSON.stringify(node.fields)}
+                    </Content>
                 ))}
             </Container>
         </Section>
@@ -25,15 +26,18 @@ export default function FavoritesTemplate({ data }) {
 export const pageQuery = graphql`
     query FavoritePageQuery {
         allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "favorite-item"}}}) {
-            totalCount
             edges {
                 node {
-                    id
                     frontmatter {
                         title
-                        templateKey
+                        link
+                        thumbnails {
+                            thumbnail
+                        }
                     }
-                    excerpt
+                    fields {
+                        slug
+                    }
                 }
             }
         }
