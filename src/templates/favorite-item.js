@@ -11,8 +11,8 @@ export default function FavoriteItemTemplate({ data }) {
             <Container>
                 <Title isSize={2}>{post.frontmatter.title}</Title>
                 <Content dangerouslySetInnerHTML={{ __html: post.html }} />
-                {post.frontmatter.thumbnails.map(t => (<div key={t.thumbnail}>
-                    <Image src={__PATH_PREFIX__ + t.thumbnail}/>
+                {post.frontmatter.images.map((t, index) => (<div key={t.image}>
+                    <Image src={__PATH_PREFIX__ + t.image} alt={post.frontmatter.title + ' ' + (index + 1)} />
                 </div>))}
             </Container>
         </Section>
@@ -29,8 +29,8 @@ export const pageQuery = graphql`
             frontmatter {
                 date(formatString: "MMMM DD, YYYY")
                 title
-                thumbnails {
-                    thumbnail
+                images {
+                    image
                 }
             }
         }

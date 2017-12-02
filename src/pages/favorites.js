@@ -13,7 +13,7 @@ export default function FavoritesTemplate({ data }) {
                 {edges.map(({ node }) => (
                     <Content key={node.id}>
                         <h1><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h1>
-                        <img src={node.frontmatter.thumbnails[0]} alt=''/>
+                        {/*<img src={node.frontmatter.images[0]} alt=''/>*/}
                         {JSON.stringify(node.frontmatter)}
                         {JSON.stringify(node.fields)}
                     </Content>
@@ -28,11 +28,12 @@ export const pageQuery = graphql`
         allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "favorite-item"}}}) {
             edges {
                 node {
+                    id
                     frontmatter {
                         title
                         link
-                        thumbnails {
-                            thumbnail
+                        images {
+                            image
                         }
                     }
                     fields {

@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: favorites
 
-media_folder: "/src/img/uploads"
-public_folder: "img"
+media_folder: "static/img"
+public_folder: "/img"
 
 collections:
   - name: "blog"
@@ -38,10 +38,10 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "favorite-item"}
       - {label: "Title", name: "title", widget: "string"}
-      - name: thumbnails
-        label: Featured Images
-        widget: list
+      - name: "images"
+        label: "Featured Images"
+        widget: "list"
         fields:
-          - {label: Featured Image, name: thumbnail, widget: image}
+          - {label: "Image", name: "image", widget: "image"}
       - {label: "Link", name: "link", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}

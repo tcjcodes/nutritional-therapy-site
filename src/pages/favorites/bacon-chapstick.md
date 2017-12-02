@@ -1,9 +1,9 @@
 ---
 templateKey: favorite-item
 title: Bacon Chapstick
-thumbnails:
-  - thumbnail: /img/the-creative-exchange-336792.jpg
-  - thumbnail: /img/the-creative-exchange-336792bnw.jpg
+images:
+  - image: /img/the-creative-exchange-336792.jpg
+  - image: /img/the-creative-exchange-336792bnw.jpg
 link: www.google.com
 ---
 **Landjaeger** ball tip ground round burgdoggen. Pork turducken chuck venison spare ribs pig. Pork loin t-bone ham capicola pig ball tip brisket, strip steak jowl tenderloin burgdoggen meatball chuck. Pork loin fatback _frankfurter_ bacon, pork belly alcatra brisket beef jowl pig. Spare ribs boudin short loin prosciutto.
