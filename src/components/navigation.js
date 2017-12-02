@@ -35,7 +35,6 @@ const Navigation = () => (
             <StyledNavbarItem text='BeautyCounter'/>
 
             <StyledNavbarItem text='Services'/>
-            <StyledNavbarItem text='Book'/>
             <StyledNavbarItem text='Contact'/>
         </Navbar>
     </div>

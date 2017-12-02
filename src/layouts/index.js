@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import './theme.scss';
 import bgImg from '../img/noisy/noisy.png'
-import favicon from '../img/favicon0.png'
+import favicon from '../img/favicon.png'
 import Navigation from '../components/navigation'
 import PageFooter from '../components/page-footer'
 

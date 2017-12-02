@@ -1,7 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link'
-import { Container, Content, Section } from 'bloomer'
+import {
+    Card, CardContent, CardImage, Column, Columns, Container, Content, Image, Section, Subtitle,
+    Title
+} from 'bloomer'
+import { secondaryFont, serifFontBold } from '../utils/fonts'
+import { colorGreenDark } from '../utils/theme-variables'
 
 export default function FavoritesTemplate({ data }) {
     const edges = data.allMarkdownRemark.edges;
@@ -10,14 +15,38 @@ export default function FavoritesTemplate({ data }) {
             <Helmet title='Favorites'/>
 
             <Container>
-                {edges.map(({ node }) => (
-                    <Content key={node.id}>
-                        <h1><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h1>
-                        {/*<img src={node.frontmatter.images[0]} alt=''/>*/}
-                        {JSON.stringify(node.frontmatter)}
-                        {JSON.stringify(node.fields)}
-                    </Content>
+                {/*<Title isSize={2}
+                       hasTextAlign="centered"
+                       style={{
+                           ...secondaryFont,
+                           color: colorGreenDark
+                       }}>My Favorites</Title>*/}
+                <Columns isMultiline={true} isCentered={true} isGrid={true}>{edges.map(({ node }) => (
+                    <Column isSize={{ mobile: 1, tablet: '1/3', desktop: '1/3' }} key={node.id}>
+                        <Card>
+                            <CardImage style={{}}>
+                                <Image src={node.frontmatter.images[0].image}/>
+                            </CardImage>
+                            <CardContent>
+                                <Content>
+                                    <Subtitle
+                                        isSize={3}
+                                        style={{
+                                            ...secondaryFont,
+                                            marginBottom: '0.25em',
+                                            color: colorGreenDark
+                                        }}>{node.frontmatter.title}</Subtitle>
+                                    <p>{node.excerpt}</p>
+                                    <Link style={{
+                                        ...serifFontBold,
+                                    }} to={node.fields.slug}>Read More &#10230;</Link>
+                                </Content>
+                            </CardContent>
+                        </Card>
+                    </Column>
                 ))}
+                </Columns>
+
             </Container>
         </Section>
     );
@@ -29,6 +58,7 @@ export const pageQuery = graphql`
             edges {
                 node {
                     id
+                    excerpt(pruneLength:75)
                     frontmatter {
                         title
                         link
