@@ -32,6 +32,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               path
               date
               title
+              images {
+                image
+              }
             }
           }
         }

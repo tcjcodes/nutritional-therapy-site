@@ -34,7 +34,7 @@ collections:
     label: "Favorites"
     folder: "src/pages/favorites"
     create: true
-    slug: "favorites/{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "favorite-item"}
       - {label: "Title", name: "title", widget: "string"}
