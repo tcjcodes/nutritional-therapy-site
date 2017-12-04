@@ -3,14 +3,13 @@ import PropTypes from 'prop-types'
 import { Button, Column, Columns, Container, Content, Image, Section, Title } from 'bloomer'
 import img from '../img/beauty/alex-mihis-33693.jpg'
 import { secondaryFont, serifFont } from '../utils/fonts'
+import PageHeader from '../components/page-header'
 
 const BeautyCounterPage = ({}) => <Section>
     <Container className='container'>
         <Columns isMultiline={true} className='columns' isVCentered={false}>
             <Column isSize={5} isOffset={1}>
-                <Title style={{ ...secondaryFont, letterSpacing: '2px', }}
-                       isSize={2}
-                       hasTextColor='dark'>BeautyCounter</Title>
+                <PageHeader title='What is BeautyCounter?'/>
                 <div>
                     <p css={{ marginBottom: '2em', marginRight: '1.5em' }}>BeautyCounter is lorem ipsum. The last time
                         you had a cheeseburger

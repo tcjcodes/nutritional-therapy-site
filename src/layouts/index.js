@@ -9,7 +9,10 @@ import PageFooter from '../components/page-footer'
 
 const TemplateWrapper = ({ children }) => (
     <div
-        style={{ background: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url(${bgImg}) top repeat fixed`}}>
+        style={{
+            minHeight: '100vh',
+            background: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url(${bgImg}) top repeat fixed`
+        }}>
         <Helmet>
             <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
             <title>Nutritional Therapy</title>
