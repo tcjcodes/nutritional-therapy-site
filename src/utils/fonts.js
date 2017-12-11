@@ -1,14 +1,12 @@
-import './fonts/journal_regular_macroman/stylesheet.css'
-
-// https://www.fontsquirrel.com/fonts/Journal
+import './fonts/fonts.scss'
 
 export const secondaryFont = {
-  fontFamily: 'journalregular', //'Over the Rainbow'
+  fontFamily: 'manksa', //'Over the Rainbow'
   fontWeight: 'normal',
 }
 
 export const serifFont = {
-  fontFamily: 'lora',
+  fontFamily: 'vollkorn',
   textTransform: 'lowercase',
   fontWeight: 400,
 }

@@ -1,16 +1,7 @@
 import React from 'react'
-import {
-  Column,
-  Columns,
-  Container,
-  Content,
-  Image,
-  Section,
-  Title,
-} from 'bloomer'
-import avatar from '../img/cdlr0.jpg'
-import { secondaryFont, serifFont } from '../utils/fonts'
+import { Column, Columns, Container, Content, Section } from 'bloomer'
 import PageHeader from '../components/page-header'
+import Img from 'gatsby-image'
 
 export default ({ data }) => {
   const { markdownRemark: post } = data
@@ -18,12 +9,16 @@ export default ({ data }) => {
     <Section>
       <Container>
         <Columns isVCentered={true}>
-          <Column isSize={6} isOffset={1} style={{ paddingRight: '1em' }}>
+          <Column isSize={4} isOffset={1} style={{ marginRight: '2.5em', }}>
+            <Img
+              sizes={data.file.childImageSharp.sizes}
+              alt="Caroline"
+              title="About Caroline"
+            />
+          </Column>
+          <Column isSize={6} style={{ paddingRight: '1em' }}>
             <PageHeader title={post.frontmatter.title} />
             <Content dangerouslySetInnerHTML={{ __html: post.html }} />
-          </Column>
-          <Column isSize={4}>
-            <Image isRatio="square" src={avatar} />
           </Column>
         </Columns>
       </Container>
@@ -31,7 +26,7 @@ export default ({ data }) => {
   )
 }
 
-export const aboutPageQuery = graphql`
+export const query = graphql`
   query AboutPage($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
@@ -41,6 +36,13 @@ export const aboutPageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+      }
+    }
+    file(relativePath: { eq: "cdlr0.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 450) {
+          ...GatsbyImageSharpSizes
+        }
       }
     }
   }

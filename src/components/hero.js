@@ -1,28 +1,18 @@
 import React from 'react'
-import { secondaryFont } from '../utils/fonts'
-import {
-  Button,
-  Container,
-  Hero,
-  HeroBody,
-  Image,
-  Section,
-  Subtitle,
-  Title,
-} from 'bloomer'
-
-import bgImg from '../img/image0.jpg'
 import { Background, Parallax } from 'react-parallax'
+import Img from 'gatsby-image'
+import { secondaryFont } from '../utils/fonts'
+import { Button, Container, Hero, HeroBody, Subtitle, Title } from 'bloomer'
 
 const rgba = '0,0,0' //`119, 139, 64`
-const bgLinearGradient = `linear-gradient(rgba(${rgba}, 0.3), rgba(${rgba}, 0.4))`
+const bgLinearGradient = `linear-gradient(rgba(${rgba}, 0.3), rgba(${rgba}, 0.5))`
 
-const HeroBanner = ({}) => (
+const HeroBanner = ({ children }) => (
   <Hero isSize="medium" isColor="dark" style={{ marginTop: '1.25em' }}>
     <Parallax strength={400}>
       <Background>
         <div css={{ width: '100vw', maxWidth: '2400px', height: 'auto' }}>
-          <Image src={bgImg} />
+          {children}
         </div>
       </Background>
       <HeroBody
@@ -37,7 +27,6 @@ const HeroBanner = ({}) => (
               ...secondaryFont,
               fontSize: '4em', // increase
               marginBottom: '1em',
-              letterSpacing: '4px',
             }}
           >
             Eating Well
@@ -54,6 +43,6 @@ const HeroBanner = ({}) => (
   </Hero>
 )
 
-HeroBanner.propTypes = {}
+// HeroBanner.propTypes = {}
 
 export default HeroBanner

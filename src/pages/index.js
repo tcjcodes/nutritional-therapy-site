@@ -2,7 +2,7 @@ import React from 'react'
 import Script from 'react-load-script'
 import Hero from '../components/hero'
 import { Column, Columns, Container, Content, Section } from 'bloomer'
-import bgImg from '../img/ricepaper_@2X.png'
+import Img from 'gatsby-image'
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -21,9 +21,12 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    const heroSizes = data.file.childImageSharp.sizes
     return (
       <div>
-        <Hero />
+        <Hero>
+          <Img sizes={heroSizes} />
+        </Hero>
         <Script
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={this.handleScriptLoad.bind(this)}
@@ -50,13 +53,12 @@ export default class IndexPage extends React.Component {
             </Columns>
           </Container>
         </Section>
-        {/*<BlogTemplate posts={posts} />*/}
       </div>
     )
   }
 }
 
-export const pageQuery = graphql`
+export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
@@ -69,6 +71,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
           }
+        }
+      }
+    }
+    file(relativePath: {eq: "image0.jpg"}) {
+      childImageSharp {
+        sizes(maxWidth: 2400) {
+          ...GatsbyImageSharpSizes
         }
       }
     }

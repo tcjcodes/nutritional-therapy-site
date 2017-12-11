@@ -1,12 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Navbar, NavbarItem } from 'bloomer'
+import { Navbar, NavbarItem, Title } from 'bloomer'
 import { secondaryFont, serifFont } from '../utils/fonts'
-import { colorDark } from '../utils/theme-variables'
+import {
+    colorBrown,
+    colorBrownDark,
+    colorDark, colorGreenDark,
+    primary,
+} from '../utils/theme-variables'
 
 const StyledNavbarItem = ({ to, text }) => (
-  <NavbarItem style={{}}>
-    <Link to={`/${to || text.toLowerCase()}/`}>{text}</Link>
+  <NavbarItem style={{ }}>
+    <Link activeStyle={{ color: colorGreenDark, borderBottom: `1px solid ${colorGreenDark}` }} to={`/${to || text.toLowerCase()}/`}>{text}</Link>
   </NavbarItem>
 )
 
@@ -21,26 +26,23 @@ const Line = () => (
 )
 
 const Navigation = () => (
-  <div>
+  <div css={{ borderBottom: `0px solid ${colorBrown}`}}>
     <div css={{ width: '100%', textAlign: 'center', paddingTop: '1.5em' }}>
-      <Link
-        to="/"
-        css={{
-          ...secondaryFont,
-          fontSize: '4em',
-          letterSpacing: '1px',
-          color: colorDark,
-          '&:hover': { color: colorDark },
-        }}
-      >
-        CDL Nutritional Therapy
-      </Link>
+      <Title>
+        <Link
+          to="/"
+          css={{
+            ...secondaryFont,
+          }}
+        >
+          CDL Nutritional Therapy
+        </Link>
+      </Title>
     </div>
     <Navbar
       style={{
         ...serifFont,
         textTransform: 'lowercase',
-        fontSize: '1.25em',
         background: 'transparent',
         justifyContent: 'center',
       }}

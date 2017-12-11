@@ -12,7 +12,7 @@ module.exports = {
                 fonts: [
                     // `meddon`,
                     `montserrat:300`,
-                    'lora:400,700',
+                    'vollkorn:400,700',
                 ]
             }
         },
@@ -23,13 +23,13 @@ module.exports = {
                 name: 'pages'
             }
         },
-        // {
-        //     resolve: `gatsby-source-filesystem`,
-        //     options: {
-        //         path: `${__dirname}/src/img`,
-        //         name: 'images'
-        //     }
-        // },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/src/img`,
+                name: 'images'
+            }
+        },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         {
@@ -38,19 +38,19 @@ module.exports = {
                 plugins: []
             }
         },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                plugins: [
-                    {
-                        resolve: `gatsby-remark-images`,
-                        options: {
-                            maxWidth: 800,
-                            linkImagesToOriginal: false
-                        }
-                    }
-                ]
-            }
-        }
+        // {
+        //     resolve: `gatsby-transformer-remark`,
+        //     options: {
+        //         plugins: [
+        //             {
+        //                 resolve: `gatsby-remark-images`,
+        //                 options: {
+        //                     maxWidth: 800,
+        //                     linkImagesToOriginal: false
+        //                 }
+        //             }
+        //         ]
+        //     }
+        // }
     ]
 };

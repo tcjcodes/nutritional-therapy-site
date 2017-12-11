@@ -8,6 +8,7 @@
     "bulma": "^0.6.0",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.63",
+    "gatsby-image": "^1.0.28",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-glamor": "^1.6.8",
     "gatsby-plugin-google-fonts": "^0.0.3",

@@ -25,7 +25,12 @@ const Service = ({ name, children }) => (
   <Columns>
     <Column isSize={3} isOffset={1 / 2} style={{ paddingRight: '2em' }}>
       <Subtitle
-        style={{ ...serifFontBold, textAlign: 'right' }}
+        isSize={3}
+        style={{
+          ...secondaryFont,
+          textAlign: 'right',
+          textTransform: 'lowercase',
+        }}
         hasTextColor="dark"
       >
         {name}

@@ -46,6 +46,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             return Promise.reject(result.errors);
         }
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+            console.log(
+                'templateKey', node.frontmatter.templateKey,
+                'slug', node.fields.slug,
+            )
+
             createPage({
                 path: node.fields.slug,
                 component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`),

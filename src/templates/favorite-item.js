@@ -13,7 +13,7 @@ import {
   Title,
 } from 'bloomer'
 import Link, { withPrefix } from 'gatsby-link'
-import { secondaryFont } from '../utils/fonts'
+import { secondaryFont, serifFont } from '../utils/fonts'
 
 export default function FavoriteItemTemplate({ data }) {
   const { markdownRemark: post } = data
@@ -33,7 +33,7 @@ export default function FavoriteItemTemplate({ data }) {
             ))}
           </Column>
           <Column isSize={6} style={{ padding: '0 3em' }}>
-            <Breadcrumb>
+            {/*<Breadcrumb>
               <ul>
                 <BreadcrumbItem>
                   <Link to="/favorites/">Favorites</Link>
@@ -42,7 +42,21 @@ export default function FavoriteItemTemplate({ data }) {
                   <Link>{post.frontmatter.title}</Link>
                 </BreadcrumbItem>
               </ul>
-            </Breadcrumb>
+            </Breadcrumb>*/}
+            <Link
+              style={{
+                ...serifFont,
+                fontSize: '1.25rem',
+              }}
+              to="/favorites/"
+            >
+              <span
+              style={{ fontSize: '0.75rem', }}
+                  className="fa fa-chevron-left" />
+                {` `}
+              Back to Favorites
+            </Link>
+
             <Title
               style={{ ...secondaryFont, letterSpacing: '2px' }}
               isSize={2}

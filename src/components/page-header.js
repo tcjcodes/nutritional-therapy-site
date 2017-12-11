@@ -1,34 +1,26 @@
 import React from 'react'
-import { serifFontBold } from '../utils/fonts'
+import { secondaryFont, serifFont, serifFontBold } from '../utils/fonts'
 import { Title } from 'bloomer'
-import { colorGreenDark } from '../utils/theme-variables'
+import {
+  colorBrown,
+  colorBrownDark,
+  colorGreenDark,
+} from '../utils/theme-variables'
 
 const PageHeader = ({ title }) => (
-  <div
-    css={{
-      marginBottom: '1.75em',
-    }}
-  >
+  <div css={{ textAlign: 'center', }}>
     <Title
-      isSize={3}
-      hasTextColor="dark"
+      isSize={1}
+      hasTextColor='dark'
       style={{
-        ...serifFontBold,
+        ...secondaryFont,
+        textTransform: 'lowercase',
+        marginBottom: '0.5rem',
       }}
     >
       {title}
     </Title>
-    <div
-      css={{
-        width: '2em',
-        marginTop: '1.25em',
-        borderBottom: `2px solid ${colorGreenDark}`,
-      }}
-    />
   </div>
 )
-
-// PageHeader.propTypes = {
-// }
 
 export default PageHeader
