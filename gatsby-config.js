@@ -38,19 +38,19 @@ module.exports = {
                 plugins: []
             }
         },
-        // {
-        //     resolve: `gatsby-transformer-remark`,
-        //     options: {
-        //         plugins: [
-        //             {
-        //                 resolve: `gatsby-remark-images`,
-        //                 options: {
-        //                     maxWidth: 800,
-        //                     linkImagesToOriginal: false
-        //                 }
-        //             }
-        //         ]
-        //     }
-        // }
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 800,
+                            linkImagesToOriginal: false
+                        }
+                    }
+                ]
+            }
+        }
     ]
 };

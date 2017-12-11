@@ -2,8 +2,7 @@ import React from 'react'
 import { Button, Column, Columns, Container, Content, Heading, Section, } from 'bloomer'
 import { serifFont } from '../utils/fonts'
 import PageHeader from '../components/page-header'
-
-const rgba = '0,0,0'
+import { colorBrown } from '../utils/theme-variables'
 
 const Service = ({ name, children }) => (
   <Columns style={{ marginBottom: `2rem` }}>
@@ -12,6 +11,7 @@ const Service = ({ name, children }) => (
         isSize={3}
         style={{
           ...serifFont,
+          color: colorBrown,
           textAlign: 'right',
           textTransform: 'lowercase',
         }}

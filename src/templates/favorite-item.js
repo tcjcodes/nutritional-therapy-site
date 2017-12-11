@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { Button, Column, Columns, Container, Content, Image, Section, Title, } from 'bloomer'
 import Link, { withPrefix } from 'gatsby-link'
 import { secondaryFont } from '../utils/fonts'
+import { colorGreenDark } from '../utils/theme-variables'
 
 export default function FavoriteItemTemplate({ data }) {
   const { markdownRemark: post } = data
@@ -22,23 +23,21 @@ export default function FavoriteItemTemplate({ data }) {
             ))}
           </Column>
           <Column isSize={6} style={{ padding: '0 3em' }}>
-{/*
+
             <Link
                 style={{
-                    ...serifFont,
-                    fontSize: '1.25rem',
                     color: colorGreenDark,
                 }}
                 to="/favorites/"
             >
               <span
                   style={{ fontSize: '0.75rem', marginBottom: `1.5rem` }}
-                  className="fa fa-chevron-left"
+                  className="fa fa-angle-left"
               />
                 {` `}
               Back to Favorites
             </Link>
-*/}
+
 
             <Title
               style={{ ...secondaryFont, marginBottom: '0.75rem', }}

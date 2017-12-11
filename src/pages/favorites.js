@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import { Column, Columns, Container, Heading, Section } from 'bloomer'
 import { serifFont } from '../utils/fonts'
-import { colorGreen } from '../utils/theme-variables'
+import { colorBrown } from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
 
 export default function FavoritesTemplate({ data }) {
@@ -33,7 +33,7 @@ export default function FavoritesTemplate({ data }) {
                     position: 'relative',
                     width: '100%',
                     maxWidth: '300px',
-                    color: colorGreen,
+                    color: colorBrown,
                   }}
                 >
                   <div
@@ -77,8 +77,8 @@ export default function FavoritesTemplate({ data }) {
                     <div
                       css={{
                         width: '1em',
-                        margin: '0.75rem 0',
-                        borderBottom: `2px solid ${colorGreen}`,
+                        margin: '1rem 0',
+                        borderBottom: `2px solid ${colorBrown}`,
                       }}
                     />
                     <p css={{ fontWeight: 'bold' }}>{node.excerpt}</p>

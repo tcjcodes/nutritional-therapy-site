@@ -24,14 +24,13 @@ $brown-lighter: #8c6b4f;
 $brown-darker: #493829;
 $white: #f8f8f8;
 
-$green: #5D8C2C; //#778B40;
-$green-darker: #4f6d1a;
-$dark: $green-darker; //$brown;
+$green: #5D8C2C;
+$green-darker: darken($green, 10%);
+$dark: $green-darker;
 
 $cyan: #3e6393;
 $blue: #376aad;
 
-//$info: $blue;
 $primary: $green;
 $text: $brown-darker;
 
