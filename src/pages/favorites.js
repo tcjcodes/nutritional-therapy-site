@@ -1,21 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import {
-  Card,
-  CardContent,
-  CardImage,
-  Column,
-  Columns,
-  Container,
-  Content,
-  Image,
-  Section,
-  Subtitle,
-  Title,
-} from 'bloomer'
-import { secondaryFont, serifFont, serifFontBold } from '../utils/fonts'
-import { colorBrown, colorGreenDark } from '../utils/theme-variables'
+import { Column, Columns, Container, Section, Subtitle, } from 'bloomer'
+import { serifFont } from '../utils/fonts'
+import { colorGreen } from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
 
 export default function FavoritesTemplate({ data }) {
@@ -26,7 +14,7 @@ export default function FavoritesTemplate({ data }) {
       <Helmet title={`${title} | Favorites`} />
 
       <Container style={{ padding: '0 1em' }}>
-        <PageHeader title="Personal Favorites" />
+        <PageHeader center title="Personal Favorites" />
 
         <Columns
           style={{ marginTop: '0.5rem' }}
@@ -45,7 +33,7 @@ export default function FavoritesTemplate({ data }) {
                     position: 'relative',
                     width: '100%',
                     maxWidth: '300px',
-                    color: colorBrown,
+                    color: colorGreen,
                   }}
                 >
                   <div
@@ -79,6 +67,7 @@ export default function FavoritesTemplate({ data }) {
                   >
                     <Subtitle
                       isSize={4}
+                          hasTextColor='primary'
                       style={{
                         ...serifFont,
                         marginBottom: 0,
@@ -90,7 +79,7 @@ export default function FavoritesTemplate({ data }) {
                       css={{
                         width: '1em',
                         margin: '0.5rem 0',
-                        borderBottom: `2px solid ${colorBrown}`,
+                        borderBottom: `2px solid ${colorGreen}`,
                       }}
                     />
                     <p css={{ fontWeight: 'bold' }}>{node.excerpt}</p>

@@ -3,6 +3,7 @@ import './fonts/fonts.scss'
 export const secondaryFont = {
   fontFamily: 'manksa', //'Over the Rainbow'
   fontWeight: 'normal',
+  lineHeight: '90%',
 }
 
 export const serifFont = {

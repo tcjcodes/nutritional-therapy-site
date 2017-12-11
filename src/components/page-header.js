@@ -1,14 +1,9 @@
 import React from 'react'
-import { secondaryFont, serifFont, serifFontBold } from '../utils/fonts'
+import { secondaryFont } from '../utils/fonts'
 import { Title } from 'bloomer'
-import {
-  colorBrown,
-  colorBrownDark,
-  colorGreenDark,
-} from '../utils/theme-variables'
 
-const PageHeader = ({ title }) => (
-  <div css={{ textAlign: 'center', }}>
+const PageHeader = ({ title, center }) => (
+  <div css={{ textAlign: center ? 'center' : 'inherit', }}>
     <Title
       isSize={1}
       hasTextColor='dark'

@@ -1,29 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import {
-  Button,
-  Column,
-  Columns,
-  Container,
-  Content,
-  Hero,
-  HeroBody,
-  Image,
-  Section,
-  Subtitle,
-  Title,
-} from 'bloomer'
-import bgImg from '../img/caroline-attwood-225496.jpg'
-import { secondaryFont, serifFont, serifFontBold } from '../utils/fonts'
-import img from '../img/caroline-attwood-225496.jpg'
+import { Button, Column, Columns, Container, Content, Section, Subtitle, } from 'bloomer'
+import { secondaryFont } from '../utils/fonts'
 import PageHeader from '../components/page-header'
 
-const rgba = '0,0,0' //`119, 139, 64`
-const bgLinearGradient = `linear-gradient(rgba(${rgba}, 0.2), rgba(${rgba}, 0.4))`
+const rgba = '0,0,0'
 
 const Service = ({ name, children }) => (
-  <Columns>
-    <Column isSize={3} isOffset={1 / 2} style={{ paddingRight: '2em' }}>
+  <Columns style={{ marginBottom: `2rem`}}>
+    <Column isSize={3} isOffset={1 / 2} >
       <Subtitle
         isSize={3}
         style={{
@@ -36,7 +20,7 @@ const Service = ({ name, children }) => (
         {name}
       </Subtitle>
     </Column>
-    <Column isSize={8}>
+    <Column isSize={8} style={{ paddingLeft: `2rem`}}>
       <Content>{children}</Content>
     </Column>
   </Columns>
@@ -49,7 +33,7 @@ const ContactPage = ({}) => (
         <Column
           isSize={3}
           isOffset={3}
-          style={{ paddingRight: '2em', textAlign: 'left' }}
+          style={{ paddingLeft: '2rem', textAlign: 'left' }}
         >
           <PageHeader title="services" />
         </Column>

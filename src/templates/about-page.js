@@ -17,7 +17,7 @@ export default ({ data }) => {
             />
           </Column>
           <Column isSize={6} style={{ paddingRight: '1em' }}>
-            <PageHeader title={post.frontmatter.title} />
+            <PageHeader center title={post.frontmatter.title} />
             <Content dangerouslySetInnerHTML={{ __html: post.html }} />
           </Column>
         </Columns>

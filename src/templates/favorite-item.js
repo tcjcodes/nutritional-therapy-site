@@ -1,17 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  Button,
-  Column,
-  Columns,
-  Container,
-  Content,
-  Image,
-  Section,
-  Title,
-} from 'bloomer'
+import { Button, Column, Columns, Container, Content, Image, Section, Title, } from 'bloomer'
 import Link, { withPrefix } from 'gatsby-link'
 import { secondaryFont, serifFont } from '../utils/fonts'
 
@@ -33,16 +22,6 @@ export default function FavoriteItemTemplate({ data }) {
             ))}
           </Column>
           <Column isSize={6} style={{ padding: '0 3em' }}>
-            {/*<Breadcrumb>
-              <ul>
-                <BreadcrumbItem>
-                  <Link to="/favorites/">Favorites</Link>
-                </BreadcrumbItem>
-                <BreadcrumbItem isActive>
-                  <Link>{post.frontmatter.title}</Link>
-                </BreadcrumbItem>
-              </ul>
-            </Breadcrumb>*/}
             <Link
               style={{
                 ...serifFont,
@@ -51,9 +30,10 @@ export default function FavoriteItemTemplate({ data }) {
               to="/favorites/"
             >
               <span
-              style={{ fontSize: '0.75rem', }}
-                  className="fa fa-chevron-left" />
-                {` `}
+                style={{ fontSize: '0.75rem' }}
+                className="fa fa-chevron-left"
+              />
+              {` `}
               Back to Favorites
             </Link>
 
