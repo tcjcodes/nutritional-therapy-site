@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Button, Column, Columns, Container, Content, Image, Section, Title, } from 'bloomer'
 import Link, { withPrefix } from 'gatsby-link'
-import { secondaryFont, serifFont } from '../utils/fonts'
+import { secondaryFont } from '../utils/fonts'
 
 export default function FavoriteItemTemplate({ data }) {
   const { markdownRemark: post } = data
@@ -22,23 +22,26 @@ export default function FavoriteItemTemplate({ data }) {
             ))}
           </Column>
           <Column isSize={6} style={{ padding: '0 3em' }}>
+{/*
             <Link
-              style={{
-                ...serifFont,
-                fontSize: '1.25rem',
-              }}
-              to="/favorites/"
+                style={{
+                    ...serifFont,
+                    fontSize: '1.25rem',
+                    color: colorGreenDark,
+                }}
+                to="/favorites/"
             >
               <span
-                style={{ fontSize: '0.75rem' }}
-                className="fa fa-chevron-left"
+                  style={{ fontSize: '0.75rem', marginBottom: `1.5rem` }}
+                  className="fa fa-chevron-left"
               />
-              {` `}
+                {` `}
               Back to Favorites
             </Link>
+*/}
 
             <Title
-              style={{ ...secondaryFont, letterSpacing: '2px' }}
+              style={{ ...secondaryFont, marginBottom: '0.75rem', }}
               isSize={2}
               hasTextColor="dark"
             >
@@ -47,15 +50,18 @@ export default function FavoriteItemTemplate({ data }) {
             <Content dangerouslySetInnerHTML={{ __html: post.html }} />
             <Button
               style={{ marginBottom: '1.5em' }}
-              isColor="primary"
+              isColor="dark"
               href={post.link}
             >
               <span
                 css={{ marginRight: '0.25em' }}
-                className="fa fa-angle-right"
+                className="fa fa-external-link"
               />Buy Item
             </Button>
             <div>
+              <p>
+                <small>Share On:</small>
+              </p>
               <Link style={{ paddingRight: '0.5em' }} to="">
                 <span
                   className="fa fa-facebook-official"

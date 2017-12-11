@@ -1,26 +1,25 @@
 import React from 'react'
-import { Button, Column, Columns, Container, Content, Section, Subtitle, } from 'bloomer'
-import { secondaryFont } from '../utils/fonts'
+import { Button, Column, Columns, Container, Content, Heading, Section, } from 'bloomer'
+import { serifFont } from '../utils/fonts'
 import PageHeader from '../components/page-header'
 
 const rgba = '0,0,0'
 
 const Service = ({ name, children }) => (
-  <Columns style={{ marginBottom: `2rem`}}>
-    <Column isSize={3} isOffset={1 / 2} >
-      <Subtitle
+  <Columns style={{ marginBottom: `2rem` }}>
+    <Column isSize={3} isOffset={1 / 2}>
+      <Heading
         isSize={3}
         style={{
-          ...secondaryFont,
+          ...serifFont,
           textAlign: 'right',
           textTransform: 'lowercase',
         }}
-        hasTextColor="dark"
       >
         {name}
-      </Subtitle>
+      </Heading>
     </Column>
-    <Column isSize={8} style={{ paddingLeft: `2rem`}}>
+    <Column isSize={8} style={{ paddingLeft: `1rem` }}>
       <Content>{children}</Content>
     </Column>
   </Columns>
@@ -33,7 +32,7 @@ const ContactPage = ({}) => (
         <Column
           isSize={3}
           isOffset={3}
-          style={{ paddingLeft: '2rem', textAlign: 'left' }}
+          style={{ textAlign: 'left', padding: `0 0 0 1em` }}
         >
           <PageHeader title="services" />
         </Column>

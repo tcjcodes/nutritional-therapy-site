@@ -10,7 +10,7 @@ const PageHeader = ({ title, center }) => (
       style={{
         ...secondaryFont,
         textTransform: 'lowercase',
-        marginBottom: '0.5rem',
+        marginBottom: '0.75rem',
       }}
     >
       {title}

@@ -2,12 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Navbar, NavbarItem, Title } from 'bloomer'
 import { secondaryFont, serifFont } from '../utils/fonts'
-import {
-    colorBrown,
-    colorBrownDark,
-    colorDark, colorGreenDark,
-    primary,
-} from '../utils/theme-variables'
+import { colorGreenDark, } from '../utils/theme-variables'
 
 const StyledNavbarItem = ({ to, text }) => (
   <NavbarItem style={{ }}>
@@ -15,19 +10,9 @@ const StyledNavbarItem = ({ to, text }) => (
   </NavbarItem>
 )
 
-const Line = () => (
-  <div
-    css={{
-      margin: '1em auto 2em auto',
-      width: '3em',
-      borderBottom: '1px solid gainsboro',
-    }}
-  />
-)
-
 const Navigation = () => (
-  <div css={{ borderBottom: `0px solid ${colorBrown}`}}>
-    <div css={{ width: '100%', textAlign: 'center', paddingTop: '1.5em' }}>
+  <div>
+    <div css={{ width: '100%', marginBottom: `0.5rem`, textAlign: 'center', paddingTop: '1.5em' }}>
       <Title>
         <Link
           to="/"

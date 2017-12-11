@@ -17,6 +17,7 @@ $size-2: 3.25rem;
 $size-3: 2.75rem;
 $size-4: 1.75rem;
 $size-5: 1.5rem;
+$size-6: 1.25rem;
 
 $brown: #664b39;
 $brown-lighter: #8c6b4f;
@@ -42,14 +43,17 @@ $link-hover: $green-darker;
 .navbar-item {
   font-size: $size-5;
 }
-.title {
+.title, .subtitle {
   color: $brown;
 }
 .section {
-  padding:2rem;
+  //padding:2rem;
 }
-.breadcrumb {
-  //font-family: $family-serif;
-  //text-transform: lowercase;
+.heading {
+  font-size: $size-6;
+}
+.button {
+  font-family: $family-serif;
+  text-transform: lowercase;
 }
 @import "~font-awesome/css/font-awesome.min.css";

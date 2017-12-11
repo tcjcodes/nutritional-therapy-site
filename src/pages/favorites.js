@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import { Column, Columns, Container, Section, Subtitle, } from 'bloomer'
+import { Column, Columns, Container, Heading, Section } from 'bloomer'
 import { serifFont } from '../utils/fonts'
 import { colorGreen } from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
@@ -24,7 +24,7 @@ export default function FavoritesTemplate({ data }) {
         >
           {edges.map(({ node }) => (
             <Column
-              isSize={{ mobile: 1, tablet: '1/3', desktop: '1/3' }}
+              isSize={{ mobile: 1, tablet: '1/3', desktop: '1/4' }}
               key={node.id}
             >
               <Link to={node.fields.slug}>
@@ -65,20 +65,19 @@ export default function FavoritesTemplate({ data }) {
                       },
                     }}
                   >
-                    <Subtitle
-                      isSize={4}
-                          hasTextColor='primary'
+                    <Heading
                       style={{
                         ...serifFont,
                         marginBottom: 0,
+                        fontSize: '1.75rem',
                       }}
                     >
                       {node.frontmatter.title}
-                    </Subtitle>
+                    </Heading>
                     <div
                       css={{
                         width: '1em',
-                        margin: '0.5rem 0',
+                        margin: '0.75rem 0',
                         borderBottom: `2px solid ${colorGreen}`,
                       }}
                     />
