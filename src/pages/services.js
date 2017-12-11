@@ -79,6 +79,7 @@ const ContactPage = ({}) => (
 
       <div css={{ textAlign: 'center' }}>
         <Button isColor="primary" href="/contact/">
+          <span className="fa fa-calendar" style={{ marginRight: `0.5rem` }} />
           Book Appointment
         </Button>
       </div>

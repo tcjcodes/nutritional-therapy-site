@@ -23,24 +23,22 @@ export default function FavoriteItemTemplate({ data }) {
             ))}
           </Column>
           <Column isSize={6} style={{ padding: '0 3em' }}>
-
             <Link
-                style={{
-                    color: colorGreenDark,
-                }}
-                to="/favorites/"
+              style={{
+                color: colorGreenDark,
+              }}
+              to="/favorites/"
             >
               <span
-                  style={{ fontSize: '0.75rem', marginBottom: `1.5rem` }}
-                  className="fa fa-angle-left"
+                style={{ fontSize: '0.75rem', marginBottom: `1.5rem` }}
+                className="fa fa-angle-left"
               />
-                {` `}
+              {` `}
               Back to Favorites
             </Link>
 
-
             <Title
-              style={{ ...secondaryFont, marginBottom: '0.75rem', }}
+              style={{ ...secondaryFont, marginBottom: '0.75rem' }}
               isSize={2}
               hasTextColor="dark"
             >
@@ -49,11 +47,12 @@ export default function FavoriteItemTemplate({ data }) {
             <Content dangerouslySetInnerHTML={{ __html: post.html }} />
             <Button
               style={{ marginBottom: '1.5em' }}
-              isColor="dark"
+              isColor="primary"
+              isOutlined={true}
               href={post.link}
             >
               <span
-                css={{ marginRight: '0.25em' }}
+                css={{ marginRight: '0.5em' }}
                 className="fa fa-external-link"
               />Buy Item
             </Button>

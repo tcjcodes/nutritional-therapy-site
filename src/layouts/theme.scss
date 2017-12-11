@@ -19,6 +19,8 @@ $size-4: 1.75rem;
 $size-5: 1.5rem;
 $size-6: 1.25rem;
 
+$size-small: 1rem;
+
 $brown: #664b39;
 $brown-lighter: #8c6b4f;
 $brown-darker: #493829;
@@ -26,7 +28,7 @@ $white: #f8f8f8;
 
 $green: #5D8C2C;
 $green-darker: darken($green, 10%);
-$dark: $green-darker;
+$dark: $brown;
 
 $cyan: #3e6393;
 $blue: #376aad;
@@ -49,10 +51,16 @@ $link-hover: $green-darker;
   //padding:2rem;
 }
 .heading {
+  font-family: $family-serif;
   font-size: $size-6;
+  color: $brown;
+  text-transform: lowercase;
 }
 .button {
   font-family: $family-serif;
   text-transform: lowercase;
+}
+address {
+  font-style: normal;
 }
 @import "~font-awesome/css/font-awesome.min.css";
