@@ -9,7 +9,7 @@ export default ({ data }) => {
     <Section>
       <Container>
         <Columns isVCentered={true}>
-          <Column isSize={4} isOffset={1} style={{ marginRight: '2.5em', }}>
+          <Column isSize={4} isOffset={1} style={{ marginRight: '2.5em' }}>
             <Img
               sizes={data.file.childImageSharp.sizes}
               alt="Caroline"

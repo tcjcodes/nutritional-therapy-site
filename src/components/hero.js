@@ -10,9 +10,7 @@ const HeroBanner = ({ children }) => (
   <Hero isSize="medium" isColor="dark" style={{ marginTop: '1.25em' }}>
     <Parallax strength={400}>
       <Background>
-        <div css={{ width: '100vw', }}>
-          {children}
-        </div>
+        <div css={{ width: '100vw' }}>{children}</div>
       </Background>
       <HeroBody
         style={{
@@ -33,9 +31,12 @@ const HeroBanner = ({ children }) => (
           <Subtitle style={{ fontWeight: 'bold' }}>
             Health and wellness, lorem ipsum dolores.
           </Subtitle>
-          <Button href="/about/"
-                  isOutlined={true}
-                  style={{ marginTop: '1.5em' }} isColor="light">
+          <Button
+            href="/about/"
+            isOutlined={true}
+            style={{ marginTop: '1.5em' }}
+            isColor="light"
+          >
             Learn More
           </Button>
         </Container>

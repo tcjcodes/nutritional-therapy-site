@@ -23,7 +23,10 @@ const BeautyCounterPage = ({ data }) => {
                 isColor="primary"
                 href="https://www.beautycounter.com/carolinedelos-reyes"
               >
-                <span className="fa fa-external-link" style={{ marginRight: '0.25rem' }}/>Visit BeautyCounter
+                <span
+                  className="fa fa-external-link"
+                  style={{ marginRight: '0.25rem' }}
+                />Visit BeautyCounter
               </Button>
             </div>
           </Column>

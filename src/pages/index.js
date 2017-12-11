@@ -74,7 +74,7 @@ export const query = graphql`
         }
       }
     }
-    file(relativePath: {eq: "image0.jpg"}) {
+    file(relativePath: { eq: "image0.jpg" }) {
       childImageSharp {
         sizes(maxWidth: 2400) {
           ...GatsbyImageSharpSizes

@@ -40,9 +40,8 @@ export default function FavoritesTemplate({ data }) {
                     css={{
                       height: '300px',
                       overflowY: 'hidden',
-                      background: `url(${
-                        node.frontmatter.images[0].image
-                      }) center no-repeat`,
+                      background: `url(${node.frontmatter.images[0]
+                        .image}) center no-repeat`,
                       backgroundSize: 'cover',
                     }}
                   />

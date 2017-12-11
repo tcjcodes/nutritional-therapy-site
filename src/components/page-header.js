@@ -3,10 +3,10 @@ import { secondaryFont } from '../utils/fonts'
 import { Title } from 'bloomer'
 
 const PageHeader = ({ title, center }) => (
-  <div css={{ textAlign: center ? 'center' : 'inherit', }}>
+  <div css={{ textAlign: center ? 'center' : 'inherit' }}>
     <Title
       isSize={1}
-      hasTextColor='dark'
+      hasTextColor="dark"
       style={{
         ...secondaryFont,
         textTransform: 'lowercase',

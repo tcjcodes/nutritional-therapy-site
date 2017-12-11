@@ -2,17 +2,32 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Navbar, NavbarItem, Title } from 'bloomer'
 import { secondaryFont, serifFont } from '../utils/fonts'
-import { colorGreenDark, } from '../utils/theme-variables'
+import { colorGreenDark } from '../utils/theme-variables'
 
 const StyledNavbarItem = ({ to, text }) => (
-  <NavbarItem style={{ }}>
-    <Link activeStyle={{ color: colorGreenDark, borderBottom: `1px solid ${colorGreenDark}` }} to={`/${to || text.toLowerCase()}/`}>{text}</Link>
+  <NavbarItem style={{}}>
+    <Link
+      activeStyle={{
+        color: colorGreenDark,
+        borderBottom: `1px solid ${colorGreenDark}`,
+      }}
+      to={`/${to || text.toLowerCase()}/`}
+    >
+      {text}
+    </Link>
   </NavbarItem>
 )
 
 const Navigation = () => (
   <div>
-    <div css={{ width: '100%', marginBottom: `0.5rem`, textAlign: 'center', paddingTop: '1.5em' }}>
+    <div
+      css={{
+        width: '100%',
+        marginBottom: `0.5rem`,
+        textAlign: 'center',
+        paddingTop: '1.5em',
+      }}
+    >
       <Title>
         <Link
           to="/"

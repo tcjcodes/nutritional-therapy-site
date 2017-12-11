@@ -112,14 +112,14 @@ const ContactPage = ({ data }) => {
                 <ModalBackground />
                 <ModalContent>
                   <Box>
-                      <Columns>
-                          <Column isSize={6}>
-                              <Img resolutions={res1} />
-                          </Column>
-                          <Column isSize={6}>
-                              <Img resolutions={res2} />
-                          </Column>
-                      </Columns>
+                    <Columns>
+                      <Column isSize={6}>
+                        <Img resolutions={res1} />
+                      </Column>
+                      <Column isSize={6}>
+                        <Img resolutions={res2} />
+                      </Column>
+                    </Columns>
                   </Box>
                 </ModalContent>
                 <ModalClose />
