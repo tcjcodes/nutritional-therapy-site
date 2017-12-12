@@ -1,5 +1,5 @@
 import React from 'react'
-import { Column, Columns, Container, Content, Section } from 'bloomer'
+import { Box, Column, Columns, Container, Content, Section } from 'bloomer'
 import PageHeader from '../components/page-header'
 import Img from 'gatsby-image'
 
@@ -9,12 +9,14 @@ export default ({ data }) => {
     <Section>
       <Container>
         <Columns isVCentered={true}>
-          <Column isSize={4} isOffset={1} style={{ marginRight: '2.5em' }}>
-            <Img
-              sizes={data.file.childImageSharp.sizes}
-              alt="Caroline"
-              title="About Caroline"
-            />
+          <Column isSize={4} isOffset={1} style={{ marginRight: '2em' }}>
+            <Box>
+              <Img
+                sizes={data.file.childImageSharp.sizes}
+                alt="Caroline"
+                title="About Caroline"
+              />
+            </Box>
           </Column>
           <Column isSize={6} style={{ paddingRight: '1em' }}>
             <PageHeader center title={post.frontmatter.title} />

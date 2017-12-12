@@ -24,9 +24,9 @@ const BeautyCounterPage = ({ data }) => {
                 href="https://www.beautycounter.com/carolinedelos-reyes"
               >
                 <span
-                  className="fa fa-external-link"
-                  style={{ marginRight: '0.25rem' }}
-                />Visit BeautyCounter
+                  className="fa fa-shopping-bag"
+                  style={{ marginRight: '0.5rem' }}
+                />shop BeautyCounter
               </Button>
             </div>
           </Column>

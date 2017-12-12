@@ -2,14 +2,17 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Navbar, NavbarItem, Title } from 'bloomer'
 import { secondaryFont, serifFont } from '../utils/fonts'
-import { colorGreenDark } from '../utils/theme-variables'
+import { colorBrown, colorGreen, colorGreenDark, } from '../utils/theme-variables'
 
 const StyledNavbarItem = ({ to, text }) => (
   <NavbarItem style={{}}>
     <Link
+      style={{
+        borderBottom: `2px solid transparent`,
+      }}
       activeStyle={{
-        color: colorGreenDark,
-        borderBottom: `1px solid ${colorGreenDark}`,
+        color: colorBrown,
+        borderBottom: `2px solid ${colorGreen}`,
       }}
       to={`/${to || text.toLowerCase()}/`}
     >
@@ -33,6 +36,11 @@ const Navigation = () => (
           to="/"
           css={{
             ...secondaryFont,
+            color: colorGreen,
+            textTransform: 'inherit',
+            '&:hover': {
+              color: colorGreenDark,
+            },
           }}
         >
           CDL Nutritional Therapy

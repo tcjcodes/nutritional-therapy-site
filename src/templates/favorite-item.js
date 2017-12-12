@@ -1,8 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Button, Column, Columns, Container, Content, Image, Section, Title, } from 'bloomer'
+import { Box, Button, Column, Columns, Container, Content, Image, Section, Title, } from 'bloomer'
 import Link, { withPrefix } from 'gatsby-link'
-import { secondaryFont } from '../utils/fonts'
+import { secondaryFont, serifFont } from '../utils/fonts'
 import { colorGreenDark } from '../utils/theme-variables'
 
 export default function FavoriteItemTemplate({ data }) {
@@ -11,26 +11,31 @@ export default function FavoriteItemTemplate({ data }) {
     <Section className="section">
       <Helmet title={`Favorites | ${post.frontmatter.title}`} />
       <Container>
-        <Columns isCentered={true}>
-          <Column isSize={5} style={{ padding: '0 3em' }}>
+        <Columns isVCentered={true} isCentered={true}>
+          <Column isSize={5} style={{ padding: '0' }}>
             {post.frontmatter.images.map((t, index) => (
               <div style={{ maxHeight: '80vh', width: 'auto' }} key={t.image}>
-                <Image
-                  src={__PATH_PREFIX__ + t.image}
-                  alt={post.frontmatter.title + ' ' + (index + 1)}
-                />
+                <Box style={{ maxWidth: '400px', float: 'right' }}>
+                  <Image
+                    style={{ width: '100%', height: 'auto' }}
+                    src={__PATH_PREFIX__ + t.image}
+                    alt={post.frontmatter.title + ' ' + (index + 1)}
+                  />
+                </Box>
               </div>
             ))}
           </Column>
           <Column isSize={6} style={{ padding: '0 3em' }}>
             <Link
               style={{
+                ...serifFont,
+                fontSize: '1.2rem',
                 color: colorGreenDark,
               }}
               to="/favorites/"
             >
               <span
-                style={{ fontSize: '0.75rem', marginBottom: `1.5rem` }}
+                style={{ marginBottom: `1.5rem` }}
                 className="fa fa-angle-left"
               />
               {` `}
@@ -48,12 +53,11 @@ export default function FavoriteItemTemplate({ data }) {
             <Button
               style={{ marginBottom: '1.5em' }}
               isColor="primary"
-              isOutlined={true}
               href={post.link}
             >
               <span
                 css={{ marginRight: '0.5em' }}
-                className="fa fa-external-link"
+                className="fa fa-shopping-cart"
               />Buy Item
             </Button>
             <div>

@@ -21,13 +21,14 @@ $size-6: 1.25rem;
 
 $size-small: 1rem;
 
-$brown: #664b39;
+$brown: #8D6036;
 $brown-lighter: #8c6b4f;
-$brown-darker: #493829;
+$brown-darker: #65482e;
 $white: #f8f8f8;
 
-$green: #5D8C2C;
-$green-darker: darken($green, 10%);
+$green: #5d8c2c;
+$green-lighter: #B9D094;
+$green-darker: #4f6d1a; //darken($green, 10%);
 $dark: $brown;
 
 $cyan: #3e6393;
@@ -36,8 +37,8 @@ $blue: #376aad;
 $primary: $green;
 $text: $brown-darker;
 
-$link: $green;
-$link-hover: $green-darker;
+$link: $brown;
+$link-hover: $brown-darker;
 
 @import "~bulma/bulma";
 
@@ -45,7 +46,7 @@ $link-hover: $green-darker;
   font-size: $size-5;
 }
 .title, .subtitle {
-  color: $brown;
+  color: $brown-darker;
 }
 .section {
   //padding:2rem;
@@ -62,5 +63,8 @@ $link-hover: $green-darker;
 }
 address {
   font-style: normal;
+}
+a {
+  text-transform: lowercase;
 }
 @import "~font-awesome/css/font-awesome.min.css";

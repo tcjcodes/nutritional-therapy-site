@@ -31,12 +31,7 @@ const HeroBanner = ({ children }) => (
           <Subtitle style={{ fontWeight: 'bold' }}>
             Health and wellness, lorem ipsum dolores.
           </Subtitle>
-          <Button
-            href="/about/"
-            isOutlined={true}
-            style={{ marginTop: '1.5em' }}
-            isColor="light"
-          >
+          <Button href="/about/" style={{ marginTop: '1.5em' }} isColor="dark">
             Learn More
           </Button>
         </Container>
@@ -44,7 +39,5 @@ const HeroBanner = ({ children }) => (
     </Parallax>
   </Hero>
 )
-
-// HeroBanner.propTypes = {}
 
 export default HeroBanner
