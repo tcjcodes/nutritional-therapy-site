@@ -1,7 +1,9 @@
 @font-face {
   font-family: 'manksa';
-  src: url('manksa_typeface/manksa.ttf') format('truetype'),
-    url('manksa_typeface/manksa.otf') format('opentype');
+  src: url('manksa_typeface/Manksa.ttf') format('truetype'),
+    url('manksa_typeface/Manksa.otf') format('opentype'),
+    url('manksa_typeface/manksa-webfont.woff2') format('woff2'),
+    url('manksa_typeface/manksa-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
