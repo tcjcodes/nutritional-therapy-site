@@ -1,6 +1,9 @@
 ---
 templateKey: favorite-item
-title: Oreo Blizzard Shakes
+title: >-
+  Mediterranean Paleo Cooking: Over 150 Fresh Coastal Recipes for a Relaxed,
+  Gluten-Free Lifestyle - by Caitlin Weeks NC,‎ Chef Nabil Boumrar,‎ & Diane
+  Sanfilippo BS NC
 images:
   - image: /img/MediterraneanPaleoCooking.jpg
 link: www.google.com
