@@ -41,6 +41,9 @@ $link: $brown;
 $link-hover: $brown-darker;
 
 @import "~bulma/bulma";
+@import "~font-awesome/css/font-awesome.min.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 .navbar-item {
   font-size: $size-5;
@@ -67,4 +70,3 @@ address {
 a {
   text-transform: lowercase;
 }
-@import "~font-awesome/css/font-awesome.min.css";

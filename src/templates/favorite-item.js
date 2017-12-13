@@ -1,31 +1,26 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Box, Button, Column, Columns, Container, Content, Image, Section, Title, } from 'bloomer'
+import Slider from 'react-slick'
 import Link, { withPrefix } from 'gatsby-link'
 import { secondaryFont, serifFont } from '../utils/fonts'
 import { colorGreenDark } from '../utils/theme-variables'
 
+const settings = {
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+    lazyLoad: false,
+}
 export default function FavoriteItemTemplate({ data }) {
   const { markdownRemark: post } = data
+  const { images } = post.frontmatter
   return (
     <Section className="section">
       <Helmet title={`Favorites | ${post.frontmatter.title}`} />
       <Container>
-        <Columns isVCentered={true} isCentered={true}>
-          <Column isSize={5} style={{ padding: '0' }}>
-            {post.frontmatter.images.map((t, index) => (
-              <div style={{ maxHeight: '80vh', width: 'auto' }} key={t.image}>
-                <Box style={{ maxWidth: '400px', float: 'right' }}>
-                  <Image
-                    style={{ width: '100%', height: 'auto' }}
-                    src={__PATH_PREFIX__ + t.image}
-                    alt={post.frontmatter.title + ' ' + (index + 1)}
-                  />
-                </Box>
-              </div>
-            ))}
-          </Column>
-          <Column isSize={6} style={{ padding: '0 3em' }}>
+        <Columns >
+          <Column isSize={5} isOffset={1} style={{}}>
             <Link
               style={{
                 ...serifFont,
@@ -77,6 +72,26 @@ export default function FavoriteItemTemplate({ data }) {
                 />
               </Link>
             </div>
+          </Column>
+          <Column isSize={5} style={{ padding: '0' }}>
+            <Slider
+              dots={images.length > 1}
+              arrows={images.length > 1}
+              infinite={false}
+              {...settings}
+            >
+              {images.map((t, index) => (
+                <div style={{ width: 'auto', }} key={t.image}>
+                  <Box style={{ maxWidth: '450px', maxHeight: '700px', }}>
+                    <Image
+                      style={{ width: '100%', height: '100%', border: '1px solid gainsboro', }}
+                      src={__PATH_PREFIX__ + t.image}
+                      alt={post.frontmatter.title + ' ' + (index + 1)}
+                    />
+                  </Box>
+                </div>
+              ))}
+            </Slider>
           </Column>
         </Columns>
       </Container>
