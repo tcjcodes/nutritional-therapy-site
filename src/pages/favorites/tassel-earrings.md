@@ -1,10 +1,10 @@
 ---
 templateKey: favorite-item
-title: Tassel Earrings
+title: 'Keto Restaurant Favorites Cookbook by: Maria Emmerich'
 images:
-  - image: /img/mock1.jpg
+  - image: /img/KetoRestaurantFavorite.jpg
 link: www.google.com
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros eros. Aliquam sit amet nunc vehicula dui rutrum euismod non id lacus. Nunc nec velit viverra, congue elit in, laoreet velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac ipsum non est fermentum interdum. Praesent commodo augue mi, id sagittis quam pharetra non. Nunc sodales vestibulum lorem nec mollis. Phasellus congue tempus dolor, ut interdum massa. Proin vel neque rhoncus, pretium justo vitae, feugiat turpis. Aliquam quis porta risus. Sed a tincidunt nisi. Nunc accumsan iaculis dictum.
-
+The ketogenic diet has taken the world by storm, and deservedly so: its results in helping people lose weight, manage chronic health conditions, and simply feel great are unmatched. Bestselling cookbook author Maria Emmerich sits at the forefront of the keto movement and has become the go-to source for high-fat, low-carb recipes that both please the palate and nourish the body. With_Keto Restaurant Favorites,_Maria delivers once again by putting a new and unprecedented twist on ketogenic cooking. Eating keto doesn’t mean that you have to give up the dishes you love! Instead, Maria shows you how to re-create those recipes, keto-style.\
+\
+_Keto Restaurant Favorites_answers the demand for a one-stop cookbook that allows you to easily replicate your favorite restaurant cuisine in your own kitchen. Maria’s recipes masterfully mimic the dishes you love using healthy, readily accessible ingredients. In addition to classic American fare, this book offers recipes for a variety of cuisines, including Italian, Chinese, Mexican, and Thai. Maria even includes favorites from the kids’ menu!
