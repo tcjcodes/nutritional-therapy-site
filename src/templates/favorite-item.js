@@ -10,7 +10,7 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-    lazyLoad: false,
+  lazyLoad: false,
 }
 export default function FavoriteItemTemplate({ data }) {
   const { markdownRemark: post } = data
@@ -19,7 +19,7 @@ export default function FavoriteItemTemplate({ data }) {
     <Section className="section">
       <Helmet title={`Favorites | ${post.frontmatter.title}`} />
       <Container>
-        <Columns >
+        <Columns>
           <Column isSize={5} isOffset={1} style={{}}>
             <Link
               style={{
@@ -48,7 +48,8 @@ export default function FavoriteItemTemplate({ data }) {
             <Button
               style={{ marginBottom: '1.5em' }}
               isColor="primary"
-              href={post.link}
+              href={post.frontmatter.link}
+              target="_blank"
             >
               <span
                 css={{ marginRight: '0.5em' }}
@@ -81,10 +82,14 @@ export default function FavoriteItemTemplate({ data }) {
               {...settings}
             >
               {images.map((t, index) => (
-                <div style={{ width: 'auto', }} key={t.image}>
-                  <Box style={{ maxWidth: '450px', maxHeight: '700px', }}>
+                <div style={{ width: 'auto' }} key={t.image}>
+                  <Box style={{ maxWidth: '450px', maxHeight: '700px' }}>
                     <Image
-                      style={{ width: '100%', height: '100%', border: '1px solid gainsboro', }}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        border: '1px solid gainsboro',
+                      }}
                       src={__PATH_PREFIX__ + t.image}
                       alt={post.frontmatter.title + ' ' + (index + 1)}
                     />
@@ -109,6 +114,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        link
         images {
           image
         }
