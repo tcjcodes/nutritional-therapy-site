@@ -1,10 +1,9 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: About Caroline
+avatar: /img/Profile Photo.jpg
 ---
-The Dothraki do things in their own time, for their own reasons. Fire and blood. When you play the game of thrones, you win or you die. The Dothraki do things in their own time, for their own reasons. What is dead may never die.
+I value wholefoods, nutrient-dense, organic, non-gmo, free-range, locally raised meats, etc...    I enjoy eating good quality fats, such as coconut oil, butter, ghee, duck fat, tallow, lard, flax oil, avocado oil..  I value and appreciate supporting local and  farm to table fresh foods/meat. 
 
-Bastards are born of passion, aren't they? We don't despise them in Dorne. When you play the game of thrones,   you win or you die. More pigeon pie, please. More pigeon pie, please. A forked purple lightning bolt, on black field speckled with four-pointed stars. The Knight of Lemonwood.
-
-I pledge my life and honor to the Night's Watch, for this night and all the nights to come. The War of the 5 kings. I would like a trial by combat.
+As a certified Nutritional Therapy Practitioner, I seek to make connections between the physical body and emotional state, by supporting both.  I am passionate to assist you in your journey to a path to your optimal health.
