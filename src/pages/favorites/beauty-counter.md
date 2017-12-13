@@ -4,7 +4,7 @@ title: >-
   The 30-Day Ketogenic Cleanse: Reset Your Metabolism with 160 Tasty Whole-Food
   Recipes & Meal Plans by Maria Emmerich
 images:
-  - {}
+  - image: /img/30DayKetogenicCleanseCookbook.jpg
 link: >-
   https://www.amazon.com/30-Day-Ketogenic-Cleanse-Metabolism-Whole-Food/dp/1628601167/ref=sr_1_12?ie=UTF8&qid=1513133080&sr=8-12&keywords=ketogenic+diet
 ---
