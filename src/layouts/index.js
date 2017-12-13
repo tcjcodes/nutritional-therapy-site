@@ -11,7 +11,7 @@ const TemplateWrapper = ({ children }) => (
   <div
     style={{
       minHeight: '100vh',
-      background: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url(${bgImg}) top repeat fixed`,
+      background: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${bgImg}) top repeat`,
     }}
   >
     <Helmet>

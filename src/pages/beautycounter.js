@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { Button, Column, Columns, Container, Section } from 'bloomer'
+import { Box, Button, Column, Columns, Container, Section } from 'bloomer'
 import PageHeader from '../components/page-header'
 
 const BeautyCounterPage = ({ data }) => {
@@ -31,7 +31,9 @@ const BeautyCounterPage = ({ data }) => {
             </div>
           </Column>
           <Column isSize={5}>
-            <Img sizes={sizes} />
+            <Box>
+              <Img sizes={sizes} />
+            </Box>
           </Column>
         </Columns>
       </Container>
