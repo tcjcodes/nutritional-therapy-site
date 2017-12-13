@@ -2,7 +2,7 @@
 templateKey: favorite-item
 title: Berkey Fitler
 images:
-  - image: /img/Berkey Photo.jpg
+  - image: /img/BerkeyWaterFilter.jpg
 link: 'https://www.berkeyfilters.com/'
 ---
 <!--StartFragment-->
