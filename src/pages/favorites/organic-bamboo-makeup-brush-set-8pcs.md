@@ -1,6 +1,6 @@
 ---
 templateKey: favorite-item
-title: Organic Bamboo Makeup Brush Set (8pcs)
+title: Cuisinart Food Spiralizer
 images:
   - image: /img/CuisinartSpiralizer(manual).jpg
 link: >-
