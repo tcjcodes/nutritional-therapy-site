@@ -2,9 +2,13 @@
 templateKey: favorite-item
 title: Organic Bamboo Makeup Brush Set (8pcs)
 images:
-  - image: /img/oli-dale-139177.jpg
-link: www.google.com
+  - image: /img/CuisinartSpiralizer(manual).jpg
+link: >-
+  https://www.amazon.com/Cuisinart-Food-Spiralizer/dp/B074279XPG/ref=sr_1_fkmr0_4?ie=UTF8&qid=1513133836&sr=8-4-fkmr0&keywords=cuisinart+vegetable+spiralizer
 ---
-Café au lait, to go rich, latte, galão, and grinder extraction id, in doppio, instant robusta frappuccino rich doppio americano. Kopi-luwak aftertaste café au lait fair trade, et sweet eu aroma, latte, frappuccino whipped froth cortado steamed. Affogato cup grounds blue mountain mocha cappuccino wings steamed, single origin irish carajillo filter coffee, spoon, sugar aroma mazagran crema grinder.
+Plastic with stainless steel blades
 
-Photo by[Oli Dale](https://unsplash.com/photos/JPHyoXTy-kE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)on[Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+* Dishwasher safe
+* Features Cuisinart's exclusive food processor blade technology
+* 3 cutting options: Thin or thick julienne, ribbon slice
+* Safe blade-lock design: blades are hidden when not in use
