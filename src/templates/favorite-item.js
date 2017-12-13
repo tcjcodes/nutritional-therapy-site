@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Box, Button, Column, Columns, Container, Content, Image, Section, Title, } from 'bloomer'
-import Slider from 'react-slick'
 import Link, { withPrefix } from 'gatsby-link'
 import { secondaryFont, serifFont } from '../utils/fonts'
 import { colorGreenDark } from '../utils/theme-variables'
@@ -75,28 +74,28 @@ export default function FavoriteItemTemplate({ data }) {
             </div>
           </Column>
           <Column isSize={5} style={{ padding: '0' }}>
-            <Slider
+            {/*<Slider
               dots={images.length > 1}
               arrows={images.length > 1}
               infinite={false}
               {...settings}
             >
-              {images.map((t, index) => (
-                <div style={{ width: 'auto' }} key={t.image}>
-                  <Box style={{ maxWidth: '450px', maxHeight: '700px' }}>
-                    <Image
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        border: '1px solid gainsboro',
-                      }}
-                      src={__PATH_PREFIX__ + t.image}
-                      alt={post.frontmatter.title + ' ' + (index + 1)}
-                    />
-                  </Box>
-                </div>
-              ))}
-            </Slider>
+            </Slider>*/}
+            {images.map((t, index) => (
+              <div style={{ width: 'auto' }} key={t.image}>
+                <Box style={{ maxWidth: '450px', maxHeight: '700px' }}>
+                  <Image
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      border: '1px solid gainsboro',
+                    }}
+                    src={__PATH_PREFIX__ + t.image}
+                    alt={post.frontmatter.title + ' ' + (index + 1)}
+                  />
+                </Box>
+              </div>
+            ))}
           </Column>
         </Columns>
       </Container>
