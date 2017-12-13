@@ -3,11 +3,68 @@
 @import "~bulma/sass/utilities/initial-variables";
 
 $family-sans-serif: 'Montserrat', 'Helvetica', sans-serif;
+$family-serif: 'vollkorn';
+//$size-1: 3rem !default
+//$size-2: 2.5rem !default
+//$size-3: 2rem !default
+//$size-4: 1.5rem !default
+//$size-5: 1.25rem !default
+//$size-6: 1rem !default
+//$size-7: 0.75rem !default
 
-$green: #778B40;
-$blue: #AEC2C9;
+$size-1: 4rem;
+$size-2: 3.25rem;
+$size-3: 2.75rem;
+$size-4: 1.75rem;
+$size-5: 1.5rem;
+$size-6: 1.25rem;
+
+$size-small: 1rem;
+
+$brown: #8D6036;
+$brown-lighter: #8c6b4f;
+$brown-darker: #65482e;
+$white: #f8f8f8;
+
+$green: #5d8c2c;
+$green-lighter: #B9D094;
+$green-darker: #4f6d1a; //darken($green, 10%);
+$dark: $brown;
+
+$cyan: #3e6393;
+$blue: #376aad;
 
 $primary: $green;
-$link: $green;
+$text: $brown-darker;
+
+$link: $brown;
+$link-hover: $brown-darker;
 
 @import "~bulma/bulma";
+
+.navbar-item {
+  font-size: $size-5;
+}
+.title, .subtitle {
+  color: $brown-darker;
+}
+.section {
+  //padding:2rem;
+}
+.heading {
+  font-family: $family-serif;
+  font-size: $size-6;
+  color: $brown;
+  text-transform: lowercase;
+}
+.button {
+  font-family: $family-serif;
+  text-transform: lowercase;
+}
+address {
+  font-style: normal;
+}
+a {
+  text-transform: lowercase;
+}
+@import "~font-awesome/css/font-awesome.min.css";

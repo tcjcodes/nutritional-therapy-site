@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: favorites
 
-media_folder: "/src/pages/blog/img"
-public_folder: "img"
+media_folder: "static/img"
+public_folder: "/img"
 
 collections:
   - name: "blog"
@@ -27,4 +27,21 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
       - {label: "Path", name: "path", widget: "hidden", default: "/about"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Image", name: "avatar", widget: "image"}
+
+  - name: "favorites"
+    label: "Favorites"
+    folder: "src/pages/favorites"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "favorite-item"}
+      - {label: "Title", name: "title", widget: "string"}
+      - name: "images"
+        label: "Featured Images"
+        widget: "list"
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
+      - {label: "Link", name: "link", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}

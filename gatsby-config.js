@@ -12,21 +12,30 @@ module.exports = {
                 fonts: [
                     // `meddon`,
                     `montserrat:300`,
-                    'lora:400,700',
+                    'vollkorn:400,700',
                 ]
             }
         },
-        // {
-        //   resolve: `gatsby-plugin-typography`,
-        //   options: {
-        //     pathToConfigModule: `src/utils/typography.js`,
-        //   },
-        // },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/src/pages`,
                 name: 'pages'
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/src/img`,
+                name: 'images'
+            }
+        },
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: []
             }
         },
         {
