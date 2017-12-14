@@ -3,6 +3,7 @@ import { Button, Column, Columns, Container, Content, Heading, Section, } from '
 import { serifFont } from '../utils/fonts'
 import PageHeader from '../components/page-header'
 import { colorBrown } from '../utils/theme-variables'
+import StyledIcon from '../components/styled-icon'
 
 const Service = ({ name, children }) => (
   <Columns style={{ marginBottom: `2rem` }}>
@@ -79,7 +80,7 @@ const ContactPage = ({}) => (
 
       <div css={{ textAlign: 'center' }}>
         <Button isColor="primary" href="/contact/">
-          <span className="fa fa-calendar" style={{ marginRight: `0.5rem` }} />
+          <StyledIcon name="calendar" />
           Book Appointment
         </Button>
       </div>

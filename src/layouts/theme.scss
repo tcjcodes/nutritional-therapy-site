@@ -64,6 +64,11 @@ $link-hover: $brown-darker;
   font-family: $family-serif;
   text-transform: lowercase;
 }
+.notification {
+  &.is-light {
+    border: 1px solid $brown-lighter;
+  }
+}
 address {
   font-style: normal;
 }

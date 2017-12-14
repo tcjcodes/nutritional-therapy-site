@@ -11,6 +11,7 @@ import {
     ModalCardHeader,
     ModalCardTitle
 } from 'bloomer'
+import StyledIcon from './styled-icon'
 
 class FormsButton extends React.Component {
     constructor(props) {
@@ -32,7 +33,7 @@ class FormsButton extends React.Component {
                     isOutlined={true}
                     onClick={this.handleClick}
                 >
-                    <span className="fa fa-book" style={{ marginRight: '0.5rem' }} />
+                    <StyledIcon name="book" />
                     Review Forms
                 </Button>
 

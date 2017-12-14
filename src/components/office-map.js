@@ -1,45 +1,20 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { GoogleMap, InfoWindow, Marker, withGoogleMap, withScriptjs, } from 'react-google-maps'
 import theme from '../utils/google-map-theme.json'
 
-const mapCenter = { lat: 43.616931, lng: -116.201875 }
-const directionsLink =
-  'https://www.google.com/maps/dir/280+N+8th+St,+Boise,+ID+83702/@43.6169187,-116.2039708,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54aef8e38170803d:0xa94fa462f5031011!2m2!1d-116.2018726!2d43.6169343'
-const MyMapComponent = withScriptjs(
+const StyledMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={15}
-      defaultCenter={mapCenter}
+      defaultZoom={props.zoom}
+      defaultCenter={props.mapCenter}
       defaultOptions={{ styles: theme }}
     >
-      <Marker
-        position={mapCenter}
-        onClick={props.onToggleOpen}
-        labelAnchor={new google.maps.Point(65, 125)}
-        labelStyle={{
-          textAlign: 'center',
-          padding: '0.75em',
-          backgroundColor: 'white',
-          fontSize: '0.75rem',
-          borderRadius: '3px',
-          border: '1px solid gainsboro',
-        }}
-      >
+      <Marker position={props.mapCenter} onClick={props.onToggleOpen}>
         <div>
           {props.isOpen && (
             <InfoWindow onCloseClick={props.onToggleOpen}>
-              <div>
-                <a
-                  href={directionsLink}
-                  target="_blank"
-                  css={{ textTransform: 'none' }}
-                >
-                  <strong>Idaho Building</strong>
-                  <address>280 North 8th Street</address>
-                  <address>Suite #118</address>
-                  <address>Boise, ID 83702</address>
-                </a>
-              </div>
+              <div>{props.children}</div>
             </InfoWindow>
           )}
         </div>
@@ -47,6 +22,14 @@ const MyMapComponent = withScriptjs(
     </GoogleMap>
   ))
 )
+
+StyledMap.PropTypes = {
+  children: PropTypes.object.isRequired,
+  zoom: PropTypes.object.isRequired,
+  mapCenter: PropTypes.object.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onToggleOpen: PropTypes.func,
+}
 
 class OfficeMap extends React.Component {
   constructor(props) {
@@ -63,17 +46,28 @@ class OfficeMap extends React.Component {
 
   render() {
     return (
-      <MyMapComponent
+      <StyledMap
         isMarkerShown
-        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"
+        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"
         loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `400px` }} />}
+        containerElement={<div style={{ ...this.props.containerStyles }} />}
         mapElement={<div style={{ height: `100%` }} />}
         onToggleOpen={this.toggleOpen}
         isOpen={this.state.isOpen}
-      />
+        mapCenter={this.props.mapCenter}
+        zoom={this.props.zoom}
+      >
+        {this.props.children}
+      </StyledMap>
     )
   }
+}
+
+OfficeMap.PropTypes = {
+  children: PropTypes.object,
+  mapCenter: PropTypes.object.isRequired,
+  zoom: PropTypes.object.isRequired,
+  containerStyles: PropTypes.object,
 }
 
 export default OfficeMap

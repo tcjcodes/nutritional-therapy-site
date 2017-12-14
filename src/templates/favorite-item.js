@@ -4,6 +4,7 @@ import { Box, Button, Column, Columns, Container, Content, Image, Section, Title
 import Link, { withPrefix } from 'gatsby-link'
 import { secondaryFont, serifFont } from '../utils/fonts'
 import { colorGreenDark } from '../utils/theme-variables'
+import StyledIcon from '../components/styled-icon'
 
 const settings = {
   speed: 500,
@@ -28,9 +29,9 @@ export default function FavoriteItemTemplate({ data }) {
               }}
               to="/favorites/"
             >
-              <span
-                style={{ marginBottom: `1.5rem` }}
-                className="fa fa-angle-left"
+              <StyledIcon
+                styles={{ marginBottom: `1.5rem` }}
+                name="angle-left"
               />
               {` `}
               Back to Favorites
@@ -50,9 +51,8 @@ export default function FavoriteItemTemplate({ data }) {
               href={post.frontmatter.link}
               target="_blank"
             >
-              <span
-                css={{ marginRight: '0.5em' }}
-                className="fa fa-shopping-cart"
+              <StyledIcon
+                name="shopping-cart"
               />Buy Item
             </Button>
             <div>
@@ -60,14 +60,14 @@ export default function FavoriteItemTemplate({ data }) {
                 <small>Share On:</small>
               </p>
               <Link style={{ paddingRight: '0.5em' }} to="">
-                <span
-                  className="fa fa-facebook-official"
+                <StyledIcon
+                  name="facebook-official"
                   style={{ fontSize: '1.25em' }}
                 />
               </Link>
               <Link style={{ padding: '0.5em' }} to="">
                 <span
-                  className="fa fa-pinterest"
+                  name="pinterest"
                   style={{ fontSize: '1.25em' }}
                 />
               </Link>

@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { Box, Button, Column, Columns, Container, Section } from 'bloomer'
 import PageHeader from '../components/page-header'
+import StyledIcon from '../components/styled-icon'
 
 const BeautyCounterPage = ({ data }) => {
   const sizes = data.file.childImageSharp.sizes
@@ -23,9 +24,8 @@ const BeautyCounterPage = ({ data }) => {
                 isColor="primary"
                 href="https://www.beautycounter.com/carolinedelos-reyes"
               >
-                <span
-                  className="fa fa-shopping-bag"
-                  style={{ marginRight: '0.5rem' }}
+                <StyledIcon
+                  name="shopping-bag"
                 />shop BeautyCounter
               </Button>
             </div>
