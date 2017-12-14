@@ -23,15 +23,19 @@ const ContactPage = ({}) => {
                 mapCenter={mapCenter}
                 containerStyles={{ height: '400px' }}
               >
+                <strong>Idaho Building</strong>
+                <br />
+                <br />
+                <address css={{ color: '#000' }}>
+                  280 North 8th Street, Suite #118
+                </address>
+                <address css={{ color: '#000' }}>Boise, ID 83702</address>
                 <a
                   href={directionsLink}
                   target="_blank"
-                  css={{ textTransform: 'none' }}
+                  css={{ color: '#427fed' }} // Google Map link
                 >
-                  <strong>Idaho Building</strong>
-                  <address>280 North 8th Street</address>
-                  <address>Suite #118</address>
-                  <address>Boise, ID 83702</address>
+                  Get Directions
                 </a>
               </OfficeMap>
             </Box>
@@ -52,9 +56,8 @@ const ContactPage = ({}) => {
             <div css={{ marginBottom: '1rem' }}>
               <Heading>address</Heading>
 
-              <strong>Idaho Building</strong>
-              <address>280 North 8th Street</address>
-              <address>Suite #118</address>
+              <address>Idaho Building</address>
+              <address>280 N 8th St, Suite #118</address>
               <address>Boise, ID 83702</address>
             </div>
           </Column>
