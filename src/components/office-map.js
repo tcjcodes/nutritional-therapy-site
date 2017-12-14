@@ -1,20 +1,20 @@
 import React from 'react'
-import { GoogleMap, withGoogleMap, withScriptjs } from 'react-google-maps'
-import { MarkerWithLabel } from 'react-google-maps/lib/components/addons/MarkerWithLabel'
-import snazzyMapTheme from '../utils/map-themes'
+import { GoogleMap, InfoWindow, Marker, withGoogleMap, withScriptjs, } from 'react-google-maps'
+import theme from '../utils/google-map-theme.json'
 
-const centerLatLong = { lat: 43.6169343, lng: -116.2040613 }
-
+const mapCenter = { lat: 43.616931, lng: -116.201875 }
+const directionsLink =
+  'https://www.google.com/maps/dir/280+N+8th+St,+Boise,+ID+83702/@43.6169187,-116.2039708,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54aef8e38170803d:0xa94fa462f5031011!2m2!1d-116.2018726!2d43.6169343'
 const MyMapComponent = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
       defaultZoom={15}
-      defaultCenter={centerLatLong}
-      defaultOptions={{ styles: snazzyMapTheme }}
+      defaultCenter={mapCenter}
+      defaultOptions={{ styles: theme }}
     >
-      <MarkerWithLabel
-        position={centerLatLong}
-        place={{ placeId: 'ChIJPYBwgeP4rlQRERAD9WKkT6k' }}
+      <Marker
+        position={mapCenter}
+        onClick={props.onToggleOpen}
         labelAnchor={new google.maps.Point(65, 125)}
         labelStyle={{
           textAlign: 'center',
@@ -26,26 +26,54 @@ const MyMapComponent = withScriptjs(
         }}
       >
         <div>
-          <address>
-            <strong>Idaho Building</strong>
-          </address>
-          <address>280 North 8th Street</address>
-          <address>Suite #118</address>
-          <address>Boise, ID 83702</address>
+          {props.isOpen && (
+            <InfoWindow onCloseClick={props.onToggleOpen}>
+              <div>
+                <a
+                  href={directionsLink}
+                  target="_blank"
+                  css={{ textTransform: 'none' }}
+                >
+                  <strong>Idaho Building</strong>
+                  <address>280 North 8th Street</address>
+                  <address>Suite #118</address>
+                  <address>Boise, ID 83702</address>
+                </a>
+              </div>
+            </InfoWindow>
+          )}
         </div>
-      </MarkerWithLabel>
+      </Marker>
     </GoogleMap>
   ))
 )
 
-const OfficeMap = ({ height }) => (
-  <MyMapComponent
-    isMarkerShown={true}
-    googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"
-    loadingElement={<div style={{ height: `100%` }} />}
-    containerElement={<div style={{ height: `300px` }} />}
-    mapElement={<div style={{ height: `100%` }} />}
-  />
-)
+class OfficeMap extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { isOpen: true }
+  }
+
+  toggleOpen = () => {
+    this.setState(prevState => {
+      console.log(prevState)
+      return { isOpen: !prevState.isOpen }
+    })
+  }
+
+  render() {
+    return (
+      <MyMapComponent
+        isMarkerShown
+        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"
+        loadingElement={<div style={{ height: `100%` }} />}
+        containerElement={<div style={{ height: `400px` }} />}
+        mapElement={<div style={{ height: `100%` }} />}
+        onToggleOpen={this.toggleOpen}
+        isOpen={this.state.isOpen}
+      />
+    )
+  }
+}
 
 export default OfficeMap
