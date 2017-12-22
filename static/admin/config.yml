@@ -65,7 +65,7 @@ collections:
 
   - name: "productCategories"
     label: "Product Categories"
-    file: "src/content/product-categories"
+    folder: "src/content/product-categories"
     create: true
     delete: true
     slug: "{{slug}}"
