@@ -49,6 +49,10 @@ class ContactForm extends React.Component {
       })
   }
 
+  handleDeleteNotification = () => {
+    this.setState({ status: null })
+  }
+
   render() {
     return (
       <div>
@@ -143,6 +147,7 @@ class ContactForm extends React.Component {
         <div css={{ marginTop: '1.5rem' }}>
           <NotificationContainer
             isShown={this.state.status === SUCCESS}
+            onDelete={this.handleDeleteNotification}
             isColor="light"
           >
             <StyledIcon name="paper-plane" />
@@ -151,6 +156,7 @@ class ContactForm extends React.Component {
           </NotificationContainer>
           <NotificationContainer
             isShown={this.state.status === ERROR}
+            onDelete={this.handleDeleteNotification}
             isColor="light"
           >
             <StyledIcon name="exclamation-triangle" />
