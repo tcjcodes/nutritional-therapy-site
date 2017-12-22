@@ -19,7 +19,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: DESC, fields: [frontmatter___title] }
         limit: 1000
       ) {
         edges {
@@ -33,11 +33,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             frontmatter {
               templateKey
               path
-              date
               title
-              images {
-                image
-              }
+              name
+              description
+              category
             }
           }
         }
@@ -55,6 +54,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       //   'slug',
       //   node.fields.slug
       // )
+      console.log('node', node.frontmatter.templateKey, node.frontmatter.path)
 
       createPage({
         path: node.fields.slug,
@@ -67,7 +67,5 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }, // additional data can be passed via context
       })
     })
-
   })
-
 }

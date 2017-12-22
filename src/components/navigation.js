@@ -57,7 +57,7 @@ const Navigation = () => (
       }}
     >
       <StyledNavbarItem text="About" />
-      <StyledNavbarItem text="Favorites" />
+      <StyledNavbarItem text="Products" />
       <StyledNavbarItem text="BeautyCounter" />
 
       <StyledNavbarItem text="Services" />

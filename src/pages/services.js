@@ -9,7 +9,6 @@ const Service = ({ name, children }) => (
   <Columns style={{ marginBottom: `2rem` }}>
     <Column isSize={3} isOffset={1 / 2} style={{ marginTop: 0 }}>
       <Heading
-        isSize={3}
         style={{
           ...serifFont,
           color: colorBrown,

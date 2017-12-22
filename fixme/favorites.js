@@ -4,7 +4,11 @@ import Link from 'gatsby-link'
 import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
 import Dotdotdot from 'react-dotdotdot'
 import { serifFont } from '../utils/fonts'
-import { colorBrown, colorBrownDark, colorGreenDark, } from '../utils/theme-variables'
+import {
+  colorBrown,
+  colorBrownDark,
+  colorGreenDark,
+} from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
 
 const cardWrapperStyles = {
@@ -128,9 +132,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             link
-            images {
-              image
-            }
+            image
           }
           fields {
             slug

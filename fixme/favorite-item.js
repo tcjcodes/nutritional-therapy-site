@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Box, Button, Container, Content, Image, Section, Title, } from 'bloomer'
+import { Box, Button, Container, Content, Image, Section, Title } from 'bloomer'
 import Link, { withPrefix } from 'gatsby-link'
 import { secondaryFont, serifFont } from '../utils/fonts'
 import { colorGreenDark } from '../utils/theme-variables'
@@ -84,21 +84,18 @@ export default function FavoriteItemTemplate({ data }) {
   )
 }
 
-export const pageQuery = graphql`
-  query FavoriteItemByPath($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      fields {
-        slug
-      }
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        link
-        images {
-          image
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query FavoriteItemByPath($slug: String!) {
+//     markdownRemark(fields: { slug: { eq: $slug } }) {
+//       html
+//       fields {
+//         slug
+//       }
+//       frontmatter {
+//         date(formatString: "MMMM DD, YYYY")
+//         title
+//         image
+//       }
+//     }
+//   }
+// `

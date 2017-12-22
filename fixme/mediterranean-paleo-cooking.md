@@ -1,5 +1,5 @@
 ---
-templateKey: favorite-item
+templateKey: product
 title: >-
   Mediterranean Paleo Cooking: Over 150 Fresh Coastal Recipes for a Relaxed,
   Gluten-Free Lifestyle - by Caitlin Weeks NC,‎ Chef Nabil Boumrar,‎ & Diane

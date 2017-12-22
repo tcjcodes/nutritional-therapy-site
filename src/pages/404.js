@@ -1,10 +1,14 @@
 import React from 'react'
+import Link from 'gatsby-link'
+import { Section } from 'bloomer'
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+  <Section hasTextAlign="centered">
+    <h1 className="subtitle">NOT FOUND</h1>
+    <p>
+        Page not found
+    </p>
+  </Section>
 )
 
 export default NotFoundPage
