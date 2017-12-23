@@ -23,19 +23,20 @@ const cardImageStyles = thumbnail => ({
   backgroundSize: 'cover',
 })
 const cardOverlayStyles = {
-  padding: '1.5em',
+  padding: '1em',
   overflowY: 'hidden',
   position: 'absolute',
   top: '70%',
   height: '30%',
   left: '0',
   width: '100%',
-  background: 'rgba(255,255,255,0.9)',
+  background: 'rgba(245,245,245,0.85)',
   hasTextAlign: 'center',
-  transition: 'top 0.3s, height 0.3s',
+  transition: 'all 0.3s',
   '&:hover': {
     height: '100%',
     top: '0',
+    background: 'rgba(245,245,245,0.95)',
   },
 }
 const headingStyles = {
@@ -43,7 +44,7 @@ const headingStyles = {
   lineHeight: '120%',
   color: colorGreenDark,
   marginBottom: 0,
-  fontSize: '1.75rem',
+  fontSize: '1.25rem',
 }
 const titleBorderStyles = {
   margin: `1rem 0`,
@@ -52,7 +53,7 @@ const titleBorderStyles = {
   padding: 0,
 }
 const excerptStyles = {
-  fontSize: `1.2rem`,
+  fontSize: `1rem`,
   textTransform: 'none',
   color: colorBrownDark,
 }
@@ -60,7 +61,7 @@ const excerptStyles = {
 const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
   <Link to={slug}>
     <div css={cardWrapperStyles}>
-      <Box>
+      <Box style={{ padding: '0.5em' }}>
         <div css={cardImageStyles(thumbnail)} />
         <div css={cardOverlayStyles}>
           <Heading style={headingStyles}>
@@ -108,29 +109,36 @@ const ProductsTemplate = ({ data }) => {
       <Container isFluid={true} style={{ padding: '0 1em' }}>
         <PageHeader center title="Recommended Products" />
 
-        <Columns
-          style={{ marginTop: '0.5rem' }}
-          isMultiline={true}
-          isCentered={true}
-          isGrid={true}
-        >
+        <div css={{ }}>
           {Object.keys(categories).map(key => (
-            <div>
-              <h2 className="subtitle">{key}</h2>
-              {categories[key].map(c => (
-                <p css={{ marginBottom: '1rem', }} key={c.id}>
-                  {JSON.stringify(c)}
-                  {/*<ProductCard
-                slug={node.fields.slug}
-                thumbnail={node.frontmatter.image}
-                title={node.frontmatter.title}
-                excerpt={node.excerpt}
-              />*/}
-                </p>
-              ))}
+            <div style={{ marginBottom: '2rem', }}>
+              <Heading
+                isSize={3}
+                style={{
+                  ...serifFont,
+                  lineHeight: '120%',
+                  color: colorBrown,
+                  marginBottom: 0,
+                  fontSize: '1.75rem',
+                }}
+              >
+                <Link to={`/product-categories/${key.toLowerCase()}/`}>{key}</Link>
+              </Heading>
+              <Columns style={{ marginTop: '0.5rem' }}>
+                {categories[key].map(c => (
+                  <Column key={c.id} isSize={{ desktop: '1/4' }}>
+                    <ProductCard
+                      slug={c.slug}
+                      thumbnail={c.image}
+                      title={c.title}
+                      excerpt={c.excerpt}
+                    />
+                  </Column>
+                ))}
+              </Columns>
             </div>
           ))}
-        </Columns>
+        </div>
       </Container>
     </Section>
   )
