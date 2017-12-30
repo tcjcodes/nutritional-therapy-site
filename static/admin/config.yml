@@ -38,6 +38,7 @@ collections:
     delete: false
     slug: "{{slug}}"
     fields:
+      - {label: "Title", name: "title", widget: "string", default: "Services"}
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
       - {label: "Path", name: "path", widget: "hidden", default: "/services"}
       - name: "servicesList"

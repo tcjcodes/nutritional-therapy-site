@@ -34,7 +34,7 @@ const ProductsTemplate = ({ data }) => {
   const { title } = data.site.siteMetadata
   return (
     <Section className="section">
-      <Helmet title={`${title} | Products`} />
+      <Helmet title={`Products | ${title}`} />
 
       <Container isFluid={true} style={{ padding: '0 1em' }}>
         <PageHeader center title="Recommended Products" />

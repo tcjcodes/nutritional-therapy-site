@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import {
   Button,
   Column,
@@ -34,9 +35,12 @@ const Service = ({ name, children }) => (
 )
 
 const ServicesPage = ({ data }) => {
-  const { servicesList } = data.markdownRemark.frontmatter
+  const siteTitle = data.site.siteMetadata.title
+  const { servicesList, title } = data.markdownRemark.frontmatter
   return (
     <Section>
+      <Helmet title={`Services | ${siteTitle}`} />
+
       <Container>
         <Columns>
           <Column
@@ -44,7 +48,7 @@ const ServicesPage = ({ data }) => {
             isOffset={3}
             style={{ textAlign: 'left', padding: `0 0 0 1em` }}
           >
-            <PageHeader title="services" />
+            <PageHeader title={title} />
           </Column>
         </Columns>
         {servicesList.map((service, index) => (
@@ -66,8 +70,14 @@ ServicesPage.propTypes = {}
 
 export const query = graphql`
   query ServicesPage($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
+        title
         servicesList {
           name
           description

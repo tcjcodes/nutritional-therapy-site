@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
 import PageHeader from '../components/page-header'
 import ContactForm from '../components/contact-form'
@@ -9,12 +10,14 @@ const mapCenter = { lat: 43.616931, lng: -116.201875 }
 const directionsLink =
   'https://www.google.com/maps/dir/280+N+8th+St,+Boise,+ID+83702/@43.6169187,-116.2039708,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54aef8e38170803d:0xa94fa462f5031011!2m2!1d-116.2018726!2d43.6169343'
 
-const ContactPage = ({}) => {
+const ContactPage = ({ data }) => {
+  const siteTitle = data.site.siteMetadata.title
+
   return (
     <Section>
+      <Helmet title={`Contact | ${siteTitle}`} />
       <Container>
         <PageHeader center title="Contact Us" />
-
         <Columns isMultiline={true}>
           <Column isSize={10} isOffset={1}>
             <Box style={{ marginBottom: '2em', minHeight: '350px' }}>
@@ -66,5 +69,15 @@ const ContactPage = ({}) => {
     </Section>
   )
 }
+
+export const query = graphql`
+  query ContactPage {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
 
 export default ContactPage

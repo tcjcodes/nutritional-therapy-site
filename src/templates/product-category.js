@@ -21,7 +21,7 @@ const CategoriesTemplate = ({ data }) => {
   const { title } = data.site.siteMetadata
   return (
     <Section className="section">
-      <Helmet title={`${title} | ${name} Products`} />
+      <Helmet title={`${name} Products | ${title}`} />
 
       <Container isFluid={true} style={{ padding: '0 1em' }}>
         <PageHeader center title={`${name} Products`} />
