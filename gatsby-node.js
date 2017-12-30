@@ -22,7 +22,6 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
         name: 'categoryKey',
         value: categoryKey,
       })
-      console.log('new cat key', categoryKey)
     }
   }
 }
@@ -52,6 +51,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               name
               description
               category
+              servicesList {
+                name
+                description
+              }
             }
           }
         }
@@ -63,13 +66,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors)
     }
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      // console.log(
-      //   'templateKey',
-      //   node.frontmatter.templateKey,
-      //   'slug',
-      //   node.fields.slug
-      // )
-      console.log('category key', node.fields.categoryKey)
+      // console.log('new cat key', node.frontmatter)
       createPage({
         path: node.fields.slug,
         component: path.resolve(

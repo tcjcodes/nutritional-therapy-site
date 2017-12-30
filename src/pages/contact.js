@@ -17,7 +17,7 @@ const ContactPage = ({}) => {
 
         <Columns isMultiline={true}>
           <Column isSize={10} isOffset={1}>
-            <Box style={{ marginBottom: '2em' }}>
+            <Box style={{ marginBottom: '2em', minHeight: '350px' }}>
               <OfficeMap
                 zoom={15}
                 mapCenter={mapCenter}

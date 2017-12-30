@@ -8,6 +8,7 @@ import Navigation from '../components/navigation'
 import PageFooter from '../components/page-footer'
 
 const TemplateWrapper = ({ children, data }) => {
+    const { title } = data.site.siteMetadata
     const edges = data.allMarkdownRemark.edges.map((edge) => edge.node);
     return (
         <div
@@ -18,7 +19,7 @@ const TemplateWrapper = ({ children, data }) => {
         >
             <Helmet>
                 <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-                <title>Nutritional Therapy</title>
+                <title>{title}</title>
             </Helmet>
             <Navigation categoryNodes={edges} />
             <div>{children()}</div>

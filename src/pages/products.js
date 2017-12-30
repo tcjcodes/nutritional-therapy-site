@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import { Column, Columns, Container, Heading, Section } from 'bloomer'
 import { serifFont } from '../utils/fonts'
-import { colorBrown, } from '../utils/theme-variables'
+import { colorBrown } from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
 import ProductCard from '../components/product-card'
 
@@ -43,6 +43,7 @@ const ProductsTemplate = ({ data }) => {
           {Object.keys(categories).map(key => (
             <div key={key} style={{ marginBottom: '2rem' }}>
               <Heading
+                hasTextAlign="centered"
                 style={{
                   ...serifFont,
                   lineHeight: '120%',
@@ -51,11 +52,13 @@ const ProductsTemplate = ({ data }) => {
                   fontSize: '1.75rem',
                 }}
               >
-                <Link to={`/product-categories/${key}/`}>
-                  {key}
-                </Link>
+                <Link to={`/product-categories/${key}/`}>{key}</Link>
               </Heading>
-              <Columns style={{ marginTop: '0.5rem' }}>
+              <Columns
+                isMultiline={true}
+                isCentered={true}
+                style={{ marginTop: '0.5rem' }}
+              >
                 {categories[key].map(c => (
                   <Column key={c.id} isSize={{ desktop: '1/4' }}>
                     <ProductCard

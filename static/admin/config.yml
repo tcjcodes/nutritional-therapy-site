@@ -31,21 +31,21 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Image", name: "avatar", widget: "image"}
 
-#  - name: "services"
-#    label: "Services"
-#    folder: "src/pages/services"
-#    create: false
-#    delete: false
-#    slug: "{{slug}}"
-#    fields:
-#      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
-##      - {label: "Path", name: "path", widget: "hidden", default: "/services"}
-#      - name: "serviceItems"
-#        label: "Services"
-#        widget: "list"
-#        fields:
-#          - {label: "Name", name: "name", widget: "string"}
-#          - {label: "Description", name: "description", widget: "markdown"}
+  - name: "services"
+    label: "Services"
+    folder: "src/pages/services"
+    create: false
+    delete: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/services"}
+      - name: "servicesList"
+        label: "Services"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
 
 #  - name: "favorites"
 #    label: "Favorites"

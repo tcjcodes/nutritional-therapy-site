@@ -24,7 +24,7 @@ const CategoriesTemplate = ({ data }) => {
       <Helmet title={`${title} | ${name} Products`} />
 
       <Container isFluid={true} style={{ padding: '0 1em' }}>
-        <PageHeader center title={name} />
+        <PageHeader center title={`${name} Products`} />
         <p css={{ textAlign: 'center', }}>{description}</p>
         <Columns
           style={{ marginTop: '0.5rem' }}
