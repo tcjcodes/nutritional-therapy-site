@@ -2,8 +2,13 @@
 templateKey: services-page
 title: Services
 path: /services
-servicesList: [
-   {name: First Consultation, description: Lorem ipsum dolores},
-   {name: Dolores Ipsum, description: Lorem ipsum dolores},
-]
+servicesList:
+  - description: |-
+      Lorem ipsum dolores
+
+      hello world.
+    name: First Consultation
+  - description: Lorem ipsum dolorestest
+    name: Dolores Ipsum
 ---
+
