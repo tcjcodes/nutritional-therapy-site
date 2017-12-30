@@ -16,6 +16,7 @@ const cardWrapperStyles = {
   color: colorBrown,
 }
 const cardImageStyles = thumbnail => ({
+  display: 'block',
   height: '300px',
   overflowY: 'hidden',
   background: `url(${thumbnail}) center no-repeat`,
@@ -58,13 +59,13 @@ const excerptStyles = {
 }
 
 const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
-  <Link to={slug}>
+  <div>
     <div css={cardWrapperStyles}>
       <Box style={{ padding: '0.5em' }}>
-        <div css={cardImageStyles(thumbnail)} />
+        <Link to={slug} css={cardImageStyles(thumbnail)} />
         <div css={cardOverlayStyles}>
-          <Heading style={headingStyles}>
-            <Dotdotdot clamp={4}>{title}</Dotdotdot>
+          <Heading>
+            <Dotdotdot clamp={4}><Link css={headingStyles} to={slug}>{title}</Link></Dotdotdot>
           </Heading>
           <div css={titleBorderStyles} />
           <div css={excerptStyles}>
@@ -75,7 +76,7 @@ const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
         </div>
       </Box>
     </div>
-  </Link>
+  </div>
 )
 
 ProductCard.propTypes = {
