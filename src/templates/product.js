@@ -1,52 +1,47 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Box, Button, Container, Content, Image, Section, Title, } from 'bloomer'
+import { Box, Button, Container, Content, Image, Section, Title } from 'bloomer'
 import Link, { withPrefix } from 'gatsby-link'
 import { secondaryFont, serifFont } from '../utils/fonts'
 import { colorGreenDark } from '../utils/theme-variables'
 import StyledIcon from '../components/styled-icon'
 
-export default function FavoriteItemTemplate({ data }) {
-  // const { markdownRemark: post } = data
-  // const { images, link } = post.frontmatter
-  // let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`
+export default function ProductTemplate({ data }) {
+  const siteTitle = data.site.siteMetadata.title
+
+  const { markdownRemark: post } = data
+  const { image, link, title } = post.frontmatter
+  let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`
 
   return (
     <Section className="section">
-      <h1>product</h1>
-      {/*<Helmet title={`Favorites | ${post.frontmatter.title}`} />
+      <Helmet title={`Product | ${siteTitle}`} />
       <Container isClearfix={true}>
         <div>
-          {images.map((t, index) => (
-            <div
-              style={{ float: 'right', margin: '0 0 1rem 1.5rem' }}
-              key={t.image}
-            >
-              <Box style={{ maxWidth: '450px', maxHeight: '700px' }}>
-                <Image
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    border: '1px solid gainsboro',
-                  }}
-                  src={__PATH_PREFIX__ + t.image}
-                  alt={post.frontmatter.title + ' ' + (index + 1)}
-                />
-              </Box>
-            </div>
-          ))}
-
+          <div style={{ float: 'left', margin: '0 1.5rem 1rem 0' }}>
+            <Box style={{ maxWidth: '450px', maxHeight: '700px' }}>
+              <Image
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  border: '1px solid gainsboro',
+                }}
+                src={__PATH_PREFIX__ + image}
+                alt={post.frontmatter.title}
+              />
+            </Box>
+          </div>
           <Link
             style={{
               ...serifFont,
               fontSize: '1.2rem',
               color: colorGreenDark,
             }}
-            to="/favorites/"
+            to={`/product-categories/${post.fields.categoryKey}`}
           >
             <StyledIcon styles={{ marginBottom: `1.5rem` }} name="angle-left" />
             {` `}
-            Back to Favorites
+            Go Back
           </Link>
 
           <Title
@@ -56,19 +51,8 @@ export default function FavoriteItemTemplate({ data }) {
           >
             {post.frontmatter.title}
           </Title>
-          <Button
-            style={{ margin: '1em 0' }}
-            isColor="primary"
-            href={hyperlink}
-            target="_blank"
-          >
-            <StyledIcon name="shopping-cart" />Buy Item
-          </Button>
-          <Content dangerouslySetInnerHTML={{ __html: post.html }} />
           <div>
-            <p>
-              <small>Share On:</small>
-            </p>
+            <span css={{ marginRight: '1em' }}>Share On:</span>
             <Link style={{ paddingRight: '0.5em' }} to="">
               <StyledIcon
                 name="facebook-official"
@@ -79,29 +63,39 @@ export default function FavoriteItemTemplate({ data }) {
               <span name="pinterest" style={{ fontSize: '1.25em' }} />
             </Link>
           </div>
+          <Button
+            style={{ margin: '1em 0' }}
+            isColor="primary"
+            href={hyperlink}
+            target="_blank"
+          >
+            <StyledIcon name="shopping-cart" />Buy Item
+          </Button>
+          <Content dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
-      </Container>*/}
+      </Container>
     </Section>
   )
 }
 
-/*
 export const pageQuery = graphql`
-  query FavoriteItemByPath($slug: String!) {
+  query ProductByPath($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       fields {
         slug
+        categoryKey
       }
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         title
         link
-        images {
-          image
-        }
+        image
       }
     }
   }
 `
-*/
