@@ -1,27 +1,28 @@
 backend:
   name: git-gateway
-  branch: favorites
+  branch: products
 
 media_folder: "static/img"
 public_folder: "/img"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Path", name: "path", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+#  - name: "blog"
+#    label: "Blog"
+#    folder: "src/pages/blog"
+#    create: true
+#    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+#    fields:
+#      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+#      - {label: "Path", name: "path", widget: "string"}
+#      - {label: "Title", name: "title", widget: "string"}
+#      - {label: "Publish Date", name: "date", widget: "datetime"}
+#      - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "about"
     label: "About"
     folder: "src/pages/about"
     create: false
+    delete: false
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
@@ -30,18 +31,65 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Image", name: "avatar", widget: "image"}
 
-  - name: "favorites"
-    label: "Favorites"
-    folder: "src/pages/favorites"
+  - name: "services"
+    label: "Services"
+    folder: "src/pages/services"
+    create: false
+    delete: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Services"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/services"}
+      - name: "servicesList"
+        label: "Services"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+
+#  - name: "favorites"
+#    label: "Favorites"
+#    folder: "src/pages/favorites"
+#    create: true
+#    slug: "{{slug}}"
+#    fields:
+#      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "favorite-item"}
+#      - {label: "Title", name: "title", widget: "string"}
+#      - name: "images"
+#        label: "Featured Images"
+#        widget: "list"
+#        fields:
+#          - {label: "Image", name: "image", widget: "image"}
+#      - {label: "Link", name: "link", widget: "string"}
+#      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "productCategories"
+    label: "Product Categories"
+    folder: "src/content/product-categories"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-category"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Description", name: "description", widget: "string", required: false}
+
+
+  - name: "products"
+    label: "Products"
+    folder: "src/content/products"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "favorite-item"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product"}
       - {label: "Title", name: "title", widget: "string"}
-      - name: "images"
-        label: "Featured Images"
-        widget: "list"
-        fields:
-          - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image", name: "image", widget: "image"}
       - {label: "Link", name: "link", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Category"
+        name: category
+        widget: relation
+        collection: productCategories
+        searchFields: [name]
+        valueField: name

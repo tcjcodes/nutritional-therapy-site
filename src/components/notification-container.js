@@ -5,21 +5,16 @@ import { Delete, Notification } from 'bloomer'
 class NotificationContainer extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isShown: !!props.isShown }
-  }
-
-  handleDelete = () => {
-    this.setState({ isShown: false })
   }
 
   render() {
     return (
-      <div css={{ marginBottom: '1rem', }}>
+      <div css={{ marginBottom: '1rem' }}>
         <Notification
-          isHidden={!this.state.isShown}
+          isHidden={!this.props.isShown}
           isColor={this.props.isColor}
         >
-          <Delete onClick={this.handleDelete} />
+          <Delete onClick={this.props.onDelete} />
           {this.props.children}
         </Notification>
       </div>
@@ -28,8 +23,8 @@ class NotificationContainer extends React.Component {
 }
 
 NotificationContainer.propTypes = {
-  isColor: PropTypes.string,
   isShown: PropTypes.bool,
+  onDelete: PropTypes.func,
 }
 
 export default NotificationContainer

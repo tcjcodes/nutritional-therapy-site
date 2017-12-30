@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Default Starter`
+        title: `CDLR`
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -21,6 +21,13 @@ module.exports = {
             options: {
                 path: `${__dirname}/src/pages`,
                 name: 'pages'
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/src/content`,
+                name: 'content'
             }
         },
         {

@@ -1,13 +1,17 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import { Box, Button, Column, Columns, Container, Section } from 'bloomer'
 import PageHeader from '../components/page-header'
 import StyledIcon from '../components/styled-icon'
 
 const BeautyCounterPage = ({ data }) => {
+  const siteTitle = data.site.siteMetadata.title
   const sizes = data.file.childImageSharp.sizes
   return (
     <Section>
+      {' '}
+      <Helmet title={`Beautycounter | ${siteTitle}`} />
       <Container>
         <Columns isVCentered={true}>
           <Column isSize={5} isOffset={1}>
@@ -24,9 +28,7 @@ const BeautyCounterPage = ({ data }) => {
                 isColor="primary"
                 href="https://www.beautycounter.com/carolinedelos-reyes"
               >
-                <StyledIcon
-                  name="shopping-bag"
-                />shop BeautyCounter
+                <StyledIcon name="shopping-bag" />shop BeautyCounter
               </Button>
             </div>
           </Column>
@@ -45,6 +47,11 @@ BeautyCounterPage.propTypes = {}
 
 export const query = graphql`
   query BeautycounterPageQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     file(relativePath: { eq: "beauty/alex-mihis-33693.jpg" }) {
       childImageSharp {
         sizes(maxWidth: 600) {

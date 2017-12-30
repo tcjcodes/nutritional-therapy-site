@@ -1,9 +1,9 @@
 ---
-templateKey: favorite-item
-title: Berkey Fitler
-images:
-  - image: /img/BerkeyWaterFilter.jpg
+templateKey: product
+title: Berkey Filter
+image: /img/BerkeyWaterFilter.jpg
 link: 'https://www.berkeyfilters.com/'
+category: Food
 ---
 <!--StartFragment-->
 
