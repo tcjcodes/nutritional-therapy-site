@@ -1,8 +1,8 @@
 ---
-templateKey: favorite-item
+templateKey: product
 title: PrimeMyBody Hemp Oil
-images:
-  - image: /img/hemp-oil-photo-sample.png
+image: /img/hemp-oil-photo-sample.png
+category: Beauty
 link: 'http://carolinedelosreyes.primemybody.com/home/#'
 ---
 Nano-enhanced Hemp Oil

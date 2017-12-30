@@ -18,7 +18,7 @@ export default function ProductTemplate({ data }) {
       <Helmet title={`Product | ${siteTitle}`} />
       <Container isClearfix={true}>
         <div>
-          <div style={{ float: 'left', margin: '0 1.5rem 1rem 0' }}>
+          <div style={{ float: 'left', margin: '0 1.5rem 0.5rem 0' }}>
             <Box style={{ maxWidth: '450px', maxHeight: '700px' }}>
               <Image
                 style={{

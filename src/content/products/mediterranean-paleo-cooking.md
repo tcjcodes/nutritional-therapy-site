@@ -4,8 +4,8 @@ title: >-
   Mediterranean Paleo Cooking: Over 150 Fresh Coastal Recipes for a Relaxed,
   Gluten-Free Lifestyle - by Caitlin Weeks NC,‎ Chef Nabil Boumrar,‎ & Diane
   Sanfilippo BS NC
-images:
-  - image: /img/MediterraneanPaleoCooking.jpg
+image: /img/MediterraneanPaleoCooking.jpg
+category: Food
 link: www.google.com
 ---
 Many people assume that eating better—whether to lose weight, alleviate health problems, or simply improve how they feel—means eating low-fat, boring, and tasteless food. Professional chef Nabil Boumrar and Certified Nutrition Consultant Caitlin Weeks blow that myth out of the water with their vibrant and healthy coastal cuisine.\

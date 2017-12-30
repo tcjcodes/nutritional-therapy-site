@@ -1,8 +1,8 @@
 ---
-templateKey: favorite-item
+templateKey: product
 title: 'Keto Restaurant Favorites Cookbook by: Maria Emmerich'
-images:
-  - image: /img/KetoRestaurantFavorite.jpg
+image: /img/KetoRestaurantFavorite.jpg
+category: Food
 link: www.google.com
 ---
 The ketogenic diet has taken the world by storm, and deservedly so: its results in helping people lose weight, manage chronic health conditions, and simply feel great are unmatched. Bestselling cookbook author Maria Emmerich sits at the forefront of the keto movement and has become the go-to source for high-fat, low-carb recipes that both please the palate and nourish the body. With_Keto Restaurant Favorites,_Maria delivers once again by putting a new and unprecedented twist on ketogenic cooking. Eating keto doesn’t mean that you have to give up the dishes you love! Instead, Maria shows you how to re-create those recipes, keto-style.\

@@ -3,7 +3,7 @@ templateKey: product
 title: Berkey Filter
 image: /img/BerkeyWaterFilter.jpg
 link: 'https://www.berkeyfilters.com/'
-category: Top
+category: Food
 ---
 <!--StartFragment-->
 
