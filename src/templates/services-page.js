@@ -15,8 +15,8 @@ import { colorBrown } from '../utils/theme-variables'
 import StyledIcon from '../components/styled-icon'
 
 const Service = ({ name, children }) => (
-  <Columns style={{ marginBottom: `2rem` }}>
-    <Column isSize={3} isOffset={1 / 2} style={{ marginTop: 0 }}>
+  <Columns style={{ marginBottom: `2rem`, }}>
+    <Column isSize={3} isOffset={1} style={{ marginTop: 0 }}>
       <Heading
         style={{
           ...serifFont,
@@ -28,7 +28,7 @@ const Service = ({ name, children }) => (
         {name}
       </Heading>
     </Column>
-    <Column isSize={8} style={{ paddingLeft: `1rem` }}>
+    <Column isSize={7} style={{ paddingLeft: `1rem` }}>
       <Content>{children}</Content>
     </Column>
   </Columns>
@@ -42,11 +42,11 @@ const ServicesPage = ({ data }) => {
       <Helmet title={`Services | ${siteTitle}`} />
 
       <Container>
-        <Columns>
+        <Columns hasTextAlign='left'>
           <Column
             isSize={3}
-            isOffset={3}
-            style={{ textAlign: 'left', padding: `0 0 0 1em` }}
+            isOffset={4}
+            style={{ paddingLeft: `1rem` }}
           >
             <PageHeader title={title} />
           </Column>
@@ -56,12 +56,17 @@ const ServicesPage = ({ data }) => {
             <p>{service.description}</p>
           </Service>
         ))}
-        <div css={{ textAlign: 'center' }}>
-          <Button isColor="primary" href="/contact/">
-            <StyledIcon name="calendar" />
-            Book Appointment
-          </Button>
-        </div>
+        <Columns>
+            <Column
+                isSize={3}
+                isOffset={4}
+                style={{ paddingLeft: `1rem` }}>
+                <Button isColor="primary" href="/contact/">
+                    <StyledIcon name="calendar" />
+                    Book Appointment
+                </Button>
+            </Column>
+        </Columns>
       </Container>
     </Section>
   )
