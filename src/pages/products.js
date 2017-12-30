@@ -1,93 +1,23 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
-import Dotdotdot from 'react-dotdotdot'
+import { Column, Columns, Container, Heading, Section } from 'bloomer'
 import { serifFont } from '../utils/fonts'
-import {
-  colorBrown,
-  colorBrownDark,
-  colorGreenDark,
-} from '../utils/theme-variables'
+import { colorBrown, } from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
-
-const cardWrapperStyles = {
-  position: 'relative',
-  width: '100%',
-  color: colorBrown,
-}
-const cardImageStyles = thumbnail => ({
-  height: '300px',
-  overflowY: 'hidden',
-  background: `url(${thumbnail}) center no-repeat`,
-  backgroundSize: 'cover',
-})
-const cardOverlayStyles = {
-  padding: '1em',
-  overflowY: 'hidden',
-  position: 'absolute',
-  top: '70%',
-  height: '30%',
-  left: '0',
-  width: '100%',
-  background: 'rgba(245,245,245,0.85)',
-  hasTextAlign: 'center',
-  transition: 'all 0.3s',
-  '&:hover': {
-    height: '100%',
-    top: '0',
-    background: 'rgba(245,245,245,0.95)',
-  },
-}
-const headingStyles = {
-  ...serifFont,
-  lineHeight: '120%',
-  color: colorGreenDark,
-  marginBottom: 0,
-  fontSize: '1.25rem',
-}
-const titleBorderStyles = {
-  margin: `1rem 0`,
-  borderBottom: `1px solid rgb(79, 109, 26)`,
-  width: `1.75rem`,
-  padding: 0,
-}
-const excerptStyles = {
-  fontSize: `1rem`,
-  textTransform: 'none',
-  color: colorBrownDark,
-}
-
-const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
-  <Link to={slug}>
-    <div css={cardWrapperStyles}>
-      <Box style={{ padding: '0.5em' }}>
-        <div css={cardImageStyles(thumbnail)} />
-        <div css={cardOverlayStyles}>
-          <Heading style={headingStyles}>
-            <Dotdotdot clamp={4}>{title}</Dotdotdot>
-          </Heading>
-          <div css={titleBorderStyles} />
-          <p css={excerptStyles}>
-            <Dotdotdot clamp={5}>{excerpt}</Dotdotdot>
-          </p>
-        </div>
-      </Box>
-    </div>
-  </Link>
-)
+import ProductCard from '../components/product-card'
 
 const sortProducts = edges => {
   let categorized = {}
   edges.map(edge => edge.node).forEach(node => {
     const { id, frontmatter, fields, excerpt } = node
-    if (!categorized[frontmatter.category]) {
-      categorized[frontmatter.category] = []
+    const { categoryKey, slug } = fields
+    if (!categorized[categoryKey]) {
+      categorized[categoryKey] = []
     }
 
     const { title, image } = frontmatter
-    const { slug } = fields
-    categorized[frontmatter.category].push({
+    categorized[categoryKey].push({
       id,
       slug,
       excerpt,
@@ -109,11 +39,10 @@ const ProductsTemplate = ({ data }) => {
       <Container isFluid={true} style={{ padding: '0 1em' }}>
         <PageHeader center title="Recommended Products" />
 
-        <div css={{ }}>
+        <div css={{}}>
           {Object.keys(categories).map(key => (
-            <div style={{ marginBottom: '2rem', }}>
+            <div key={key} style={{ marginBottom: '2rem' }}>
               <Heading
-                isSize={3}
                 style={{
                   ...serifFont,
                   lineHeight: '120%',
@@ -122,7 +51,9 @@ const ProductsTemplate = ({ data }) => {
                   fontSize: '1.75rem',
                 }}
               >
-                <Link to={`/product-categories/${key.toLowerCase()}/`}>{key}</Link>
+                <Link to={`/product-categories/${key}/`}>
+                  {key}
+                </Link>
               </Heading>
               <Columns style={{ marginTop: '0.5rem' }}>
                 {categories[key].map(c => (
@@ -170,6 +101,7 @@ export const pageQuery = graphql`
           }
           fields {
             slug
+            categoryKey
           }
         }
       }

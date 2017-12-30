@@ -10,6 +10,20 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       name: `slug`,
       value: slug,
     })
+
+    const { category, templateKey, name } = node.frontmatter
+    if (category || templateKey === 'product-category') {
+      const categoryKey = (category || name)
+        .trim()
+        .replace(/\s/g, '-')
+        .toLowerCase()
+      createNodeField({
+        node,
+        name: 'categoryKey',
+        value: categoryKey,
+      })
+      console.log('new cat key', categoryKey)
+    }
   }
 }
 
@@ -29,6 +43,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             id
             fields {
               slug
+              categoryKey
             }
             frontmatter {
               templateKey
@@ -54,8 +69,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       //   'slug',
       //   node.fields.slug
       // )
-      console.log('node', node.frontmatter.templateKey, node.frontmatter.path)
-
+      console.log('category key', node.fields.categoryKey)
       createPage({
         path: node.fields.slug,
         component: path.resolve(
@@ -63,6 +77,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         ),
         context: {
           slug: node.fields.slug,
+          categoryKey: node.fields.categoryKey,
           templateKey: node.frontmatter.templateKey,
         }, // additional data can be passed via context
       })
