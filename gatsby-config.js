@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Default Starter`
+        title: `CDLR`
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -26,6 +26,13 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                path: `${__dirname}/src/content`,
+                name: 'content'
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 path: `${__dirname}/src/img`,
                 name: 'images'
             }
@@ -45,7 +52,7 @@ module.exports = {
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
-                            maxWidth: 800,
+                            maxWidth: 600,
                             linkImagesToOriginal: false
                         }
                     }

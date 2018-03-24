@@ -10,6 +10,19 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       name: `slug`,
       value: slug,
     })
+
+    const { category, templateKey, name } = node.frontmatter
+    if (category || templateKey === 'product-category') {
+      const categoryKey = (category || name)
+        .trim()
+        .replace(/\s/g, '-')
+        .toLowerCase()
+      createNodeField({
+        node,
+        name: 'categoryKey',
+        value: categoryKey,
+      })
+    }
   }
 }
 
@@ -19,7 +32,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: DESC, fields: [frontmatter___title] }
         limit: 1000
       ) {
         edges {
@@ -29,14 +42,18 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             id
             fields {
               slug
+              categoryKey
             }
             frontmatter {
               templateKey
               path
-              date
               title
-              images {
-                image
+              name
+              description
+              category
+              servicesList {
+                name
+                description
               }
             }
           }
@@ -49,13 +66,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors)
     }
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      // console.log(
-      //   'templateKey',
-      //   node.frontmatter.templateKey,
-      //   'slug',
-      //   node.fields.slug
-      // )
-
+      // console.log('new cat key', node.frontmatter)
       createPage({
         path: node.fields.slug,
         component: path.resolve(
@@ -63,10 +74,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         ),
         context: {
           slug: node.fields.slug,
+          categoryKey: node.fields.categoryKey,
           templateKey: node.frontmatter.templateKey,
         }, // additional data can be passed via context
       })
     })
+  })
+}
 
   })
 

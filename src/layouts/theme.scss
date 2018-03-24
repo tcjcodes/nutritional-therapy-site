@@ -41,6 +41,7 @@ $link: $brown;
 $link-hover: $brown-darker;
 
 @import "~bulma/bulma";
+@import "~font-awesome/css/font-awesome.min.css";
 
 .navbar-item {
   font-size: $size-5;
@@ -61,10 +62,14 @@ $link-hover: $brown-darker;
   font-family: $family-serif;
   text-transform: lowercase;
 }
+.notification {
+  &.is-light {
+    border: 1px solid $brown-lighter;
+  }
+}
 address {
   font-style: normal;
 }
-a {
+.link {
   text-transform: lowercase;
 }
-@import "~font-awesome/css/font-awesome.min.css";

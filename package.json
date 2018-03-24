@@ -19,6 +19,8 @@
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
     "gatsby-transformer-sharp": "^1.6.15",
+    "react-dotdotdot": "^1.1.0",
+    "react-google-maps": "^9.4.2",
     "react-load-script": "0.0.6",
     "react-parallax": "^1.5.1"
   },
