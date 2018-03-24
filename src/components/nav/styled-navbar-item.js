@@ -1,16 +1,16 @@
-import { NavbarItem } from 'bloomer';
-import React from 'react';
-import { colorBrownDark, colorGreen } from '../../utils/theme-variables';
-import Link from 'gatsby-link';
+import { NavbarItem } from 'bloomer'
+import React from 'react'
+import { colorBrownDark, colorGreen } from '../../utils/theme-variables'
+import Link from 'gatsby-link'
 
 const linkStyles = {
   color: colorBrownDark,
   borderBottom: `2px solid transparent`,
-};
+}
 const activeLinkStyles = {
   color: colorBrownDark,
   borderBottom: `2px solid ${colorGreen}`,
-};
+}
 
 const StyledNavbarItem = ({ to, text }) => (
   <NavbarItem>
@@ -22,10 +22,8 @@ const StyledNavbarItem = ({ to, text }) => (
       {text}
     </Link>
   </NavbarItem>
-);
+)
 
-StyledNavbarItem.propTypes = {
-}
+StyledNavbarItem.propTypes = {}
 
 export default StyledNavbarItem
-
