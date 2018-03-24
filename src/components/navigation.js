@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 import {
   Navbar,
   NavbarBrand,
@@ -10,22 +10,22 @@ import {
   NavbarMenu,
   Title,
   withHelpersModifiers,
-} from 'bloomer';
-import { secondaryFont, serifFont } from '../utils/fonts';
+} from 'bloomer'
+import { secondaryFont, serifFont } from '../utils/fonts'
 import {
   colorBrownDark,
   colorGreen,
   colorGreenDark,
-} from '../utils/theme-variables';
+} from '../utils/theme-variables'
 
 const linkStyles = {
   color: colorBrownDark,
   borderBottom: `2px solid transparent`,
-};
+}
 const activeLinkStyles = {
   color: colorBrownDark,
   borderBottom: `2px solid ${colorGreen}`,
-};
+}
 
 const StyledNavbarItem = ({ to, text }) => (
   <NavbarItem>
@@ -37,7 +37,7 @@ const StyledNavbarItem = ({ to, text }) => (
       {text}
     </Link>
   </NavbarItem>
-);
+)
 
 const BrandItem = ({ title }) => (
   <Title>
@@ -55,13 +55,13 @@ const BrandItem = ({ title }) => (
       {title}
     </Link>
   </Title>
-);
+)
 
 const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
   return (
     <div>
       <div
-        className='is-hidden-touch'
+        className="is-hidden-touch"
         css={{
           width: '100%',
           marginBottom: `0.5rem`,
@@ -90,14 +90,18 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
           </NavbarItem>
         </NavbarBrand>
 
-        <NavbarMenu style={{ justifyContent: 'center', }} isActive={isOpen} onClick={onMenuClick}>
+        <NavbarMenu
+          style={{ justifyContent: 'center' }}
+          isActive={isOpen}
+          onClick={onMenuClick}
+        >
           <StyledNavbarItem text="About" />
           <NavbarItem hasDropdown isHoverable>
             <NavbarLink href="/products" style={{ paddingRight: '2em' }}>
               Products
             </NavbarLink>
             <NavbarDropdown style={{}}>
-              {categoryNodes.map((node) => (
+              {categoryNodes.map(node => (
                 <NavbarItem
                   key={node.id}
                   href={`/product-categories/${node.fields.categoryKey}`}
@@ -114,20 +118,20 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
         </NavbarMenu>
       </Navbar>
     </div>
-  );
-};
+  )
+}
 
 class NavigationContainer extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = { isOpen: false };
+    super(props)
+    this.state = { isOpen: false }
   }
 
   onMenuClick = () => {
     this.setState(({ isOpen: prevIsOpen }) => ({
       isOpen: !prevIsOpen,
-    }));
-  };
+    }))
+  }
 
   render() {
     return (
@@ -136,8 +140,8 @@ class NavigationContainer extends React.Component {
         onMenuClick={this.onMenuClick}
         {...this.props}
       />
-    );
+    )
   }
 }
 
-export default NavigationContainer;
+export default NavigationContainer
