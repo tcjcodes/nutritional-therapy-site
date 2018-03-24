@@ -65,7 +65,11 @@ const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
         <Link to={slug} css={cardImageStyles(thumbnail)} />
         <div css={cardOverlayStyles}>
           <Heading>
-            <Dotdotdot clamp={4}><Link css={headingStyles} to={slug}>{title}</Link></Dotdotdot>
+            <Dotdotdot clamp={4}>
+              <Link css={headingStyles} to={slug}>
+                {title}
+              </Link>
+            </Dotdotdot>
           </Heading>
           <div css={titleBorderStyles} />
           <div css={excerptStyles}>

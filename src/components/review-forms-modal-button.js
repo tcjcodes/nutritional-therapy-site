@@ -1,15 +1,15 @@
 import React from 'react'
 import {
-    Button,
-    Content,
-    Heading,
-    Modal,
-    ModalBackground,
-    ModalCard,
-    ModalCardBody,
-    ModalCardFooter,
-    ModalCardHeader,
-    ModalCardTitle,
+  Button,
+  Content,
+  Heading,
+  Modal,
+  ModalBackground,
+  ModalCard,
+  ModalCardBody,
+  ModalCardFooter,
+  ModalCardHeader,
+  ModalCardTitle,
 } from 'bloomer'
 import StyledIcon from './styled-icon'
 

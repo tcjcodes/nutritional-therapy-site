@@ -3,7 +3,11 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
 import { serifFont } from '../utils/fonts'
-import { colorBrown, colorBrownDark, colorGreenDark, } from '../utils/theme-variables'
+import {
+  colorBrown,
+  colorBrownDark,
+  colorGreenDark,
+} from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
 
 const FavoriteCard = ({ slug, thumbnail, title, excerpt }) => (

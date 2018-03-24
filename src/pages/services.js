@@ -1,5 +1,13 @@
 import React from 'react'
-import { Button, Column, Columns, Container, Content, Heading, Section, } from 'bloomer'
+import {
+  Button,
+  Column,
+  Columns,
+  Container,
+  Content,
+  Heading,
+  Section,
+} from 'bloomer'
 import { serifFont } from '../utils/fonts'
 import PageHeader from '../components/page-header'
 import { colorBrown } from '../utils/theme-variables'

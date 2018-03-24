@@ -5,9 +5,7 @@ import { Section } from 'bloomer'
 const NotFoundPage = () => (
   <Section hasTextAlign="centered">
     <h1 className="subtitle">NOT FOUND</h1>
-    <p>
-        Page not found
-    </p>
+    <p>Page not found</p>
   </Section>
 )
 

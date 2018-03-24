@@ -1,5 +1,14 @@
 import React from 'react'
-import { Button, Control, Field, FieldBody, FieldLabel, Input, Select, TextArea, } from 'bloomer'
+import {
+  Button,
+  Control,
+  Field,
+  FieldBody,
+  FieldLabel,
+  Input,
+  Select,
+  TextArea,
+} from 'bloomer'
 import StyledIcon from './styled-icon'
 import NotificationContainer from './notification-container'
 

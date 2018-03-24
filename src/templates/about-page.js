@@ -5,8 +5,8 @@ import PageHeader from '../components/page-header'
 import Img from 'gatsby-image'
 
 export default ({ data }) => {
-    const siteTitle = data.site.siteMetadata.title
-    const { markdownRemark: post } = data
+  const siteTitle = data.site.siteMetadata.title
+  const { markdownRemark: post } = data
   return (
     <Section>
       <Helmet title={`About | ${siteTitle}`} />

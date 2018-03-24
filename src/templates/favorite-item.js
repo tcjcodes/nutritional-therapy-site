@@ -1,6 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Box, Button, Column, Columns, Container, Content, Image, Section, Title, } from 'bloomer'
+import {
+  Box,
+  Button,
+  Column,
+  Columns,
+  Container,
+  Content,
+  Image,
+  Section,
+  Title,
+} from 'bloomer'
 import Link, { withPrefix } from 'gatsby-link'
 import { secondaryFont, serifFont } from '../utils/fonts'
 import { colorGreenDark } from '../utils/theme-variables'

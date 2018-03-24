@@ -15,7 +15,7 @@ import { colorBrown } from '../utils/theme-variables'
 import StyledIcon from '../components/styled-icon'
 
 const Service = ({ name, children }) => (
-  <Columns style={{ marginBottom: `2rem`, }}>
+  <Columns style={{ marginBottom: `2rem` }}>
     <Column isSize={3} isOffset={1} style={{ marginTop: 0 }}>
       <Heading
         style={{
@@ -42,12 +42,8 @@ const ServicesPage = ({ data }) => {
       <Helmet title={`Services | ${siteTitle}`} />
 
       <Container>
-        <Columns hasTextAlign='left'>
-          <Column
-            isSize={3}
-            isOffset={4}
-            style={{ paddingLeft: `1rem` }}
-          >
+        <Columns hasTextAlign="left">
+          <Column isSize={3} isOffset={4} style={{ paddingLeft: `1rem` }}>
             <PageHeader title={title} />
           </Column>
         </Columns>
@@ -57,15 +53,12 @@ const ServicesPage = ({ data }) => {
           </Service>
         ))}
         <Columns>
-            <Column
-                isSize={3}
-                isOffset={4}
-                style={{ paddingLeft: `1rem` }}>
-                <Button isColor="primary" href="/contact/">
-                    <StyledIcon name="calendar" />
-                    Book Appointment
-                </Button>
-            </Column>
+          <Column isSize={3} isOffset={4} style={{ paddingLeft: `1rem` }}>
+            <Button isColor="primary" href="/contact/">
+              <StyledIcon name="calendar" />
+              Book Appointment
+            </Button>
+          </Column>
         </Columns>
       </Container>
     </Section>

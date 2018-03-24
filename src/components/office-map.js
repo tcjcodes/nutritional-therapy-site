@@ -1,6 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { GoogleMap, InfoWindow, Marker, withGoogleMap, withScriptjs, } from 'react-google-maps'
+import {
+  GoogleMap,
+  InfoWindow,
+  Marker,
+  withGoogleMap,
+  withScriptjs,
+} from 'react-google-maps'
 import theme from '../utils/google-map-theme.json'
 
 const StyledMap = withScriptjs(

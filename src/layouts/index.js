@@ -8,25 +8,24 @@ import Navigation from '../components/navigation'
 import PageFooter from '../components/page-footer'
 
 const TemplateWrapper = ({ children, data }) => {
-    const { title } = data.site.siteMetadata
-    const edges = data.allMarkdownRemark.edges.map((edge) => edge.node);
-    return (
-        <div
-            style={{
-                minHeight: '100vh',
-                background: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${bgImg}) top repeat`,
-            }}
-        >
-            <Helmet>
-                <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-                <title>{title}</title>
-            </Helmet>
-            <Navigation categoryNodes={edges} />
-            <div>{children()}</div>
-            <PageFooter />
-        </div>
-    )
-
+  const { title } = data.site.siteMetadata
+  const edges = data.allMarkdownRemark.edges.map(edge => edge.node)
+  return (
+    <div
+      style={{
+        minHeight: '100vh',
+        background: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${bgImg}) top repeat`,
+      }}
+    >
+      <Helmet>
+        <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+        <title>{title}</title>
+      </Helmet>
+      <Navigation categoryNodes={edges} />
+      <div>{children()}</div>
+      <PageFooter />
+    </div>
+  )
 }
 TemplateWrapper.propTypes = {
   children: PropTypes.func,

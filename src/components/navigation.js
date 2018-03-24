@@ -66,7 +66,9 @@ const Navigation = ({ categoryNodes }) => {
       >
         <StyledNavbarItem text="About" />
         <NavbarItem hasDropdown isHoverable>
-          <NavbarLink href='/products' style={{ paddingRight: '2em' }}>Products</NavbarLink>
+          <NavbarLink href="/products" style={{ paddingRight: '2em' }}>
+            Products
+          </NavbarLink>
           <NavbarDropdown style={{}}>
             {categoryNodes.map(node => (
               <NavbarItem
