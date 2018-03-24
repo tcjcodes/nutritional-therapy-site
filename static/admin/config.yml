@@ -9,7 +9,7 @@ collections:
 
   - name: "about"
     label: "About"
-    folder: "src/content/about"
+    folder: "src/pages/about"
     create: false
     delete: false
     slug: "{{slug}}"
@@ -22,7 +22,7 @@ collections:
 
   - name: "services"
     label: "Services"
-    folder: "src/content/services"
+    folder: "src/pages/services"
     create: false
     delete: false
     slug: "{{slug}}"
