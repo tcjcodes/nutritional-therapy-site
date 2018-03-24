@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `CDLR`
+        title: `Healing Essence & Wellness`,
     },
     plugins: [
         'gatsby-plugin-react-helmet',

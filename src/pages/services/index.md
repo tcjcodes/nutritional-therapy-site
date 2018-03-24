@@ -5,8 +5,6 @@ path: /services
 servicesList:
   - description: |-
       Lorem ipsum dolores
-
-      hello world.
     name: First Consultation
   - description: >-
       Lorem ipsum dolorestest Sweet beast. Meow. Peer out window, chatter at

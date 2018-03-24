@@ -21,9 +21,9 @@ const TemplateWrapper = ({ children, data }) => {
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
         <title>{title}</title>
       </Helmet>
-      <Navigation categoryNodes={edges} />
+      <Navigation categoryNodes={edges} title={title} />
       <div>{children()}</div>
-      <PageFooter />
+      <PageFooter title={title} />
     </div>
   )
 }
