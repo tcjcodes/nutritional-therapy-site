@@ -1,16 +1,18 @@
-import { NavbarDropdown, NavbarItem, NavbarLink } from 'bloomer';
-import Link, { navigateTo } from 'gatsby-link';
-import React from 'react';
+import { NavbarDropdown, NavbarItem, NavbarLink } from 'bloomer'
+import Link, { navigateTo } from 'gatsby-link'
+import React from 'react'
 
 const ProductsDropdownItem = ({ categoryNodes }) => (
   <NavbarItem hasDropdown isHoverable>
     <NavbarLink
       onClick={() => navigateTo('/products')}
       style={{ paddingRight: '2em' }}
-    >Products</NavbarLink>
+    >
+      Products
+    </NavbarLink>
 
     <NavbarDropdown style={{}}>
-      {categoryNodes.map((node) => (
+      {categoryNodes.map(node => (
         <NavbarItem key={node.id}>
           <Link to={`/product-categories/${node.fields.categoryKey}`}>
             {node.frontmatter.name}
@@ -19,6 +21,6 @@ const ProductsDropdownItem = ({ categoryNodes }) => (
       ))}
     </NavbarDropdown>
   </NavbarItem>
-);
+)
 
-export default ProductsDropdownItem;
+export default ProductsDropdownItem

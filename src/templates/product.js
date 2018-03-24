@@ -1,5 +1,5 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React from 'react'
+import Helmet from 'react-helmet'
 import {
   Box,
   Button,
@@ -10,18 +10,18 @@ import {
   Image,
   Section,
   Title,
-} from 'bloomer';
-import Link, { withPrefix } from 'gatsby-link';
-import { secondaryFont, serifFont } from '../utils/fonts';
-import { colorGreenDark } from '../utils/theme-variables';
-import StyledIcon from '../components/styled-icon';
+} from 'bloomer'
+import Link, { withPrefix } from 'gatsby-link'
+import { secondaryFont, serifFont } from '../utils/fonts'
+import { colorGreenDark } from '../utils/theme-variables'
+import StyledIcon from '../components/styled-icon'
 
 export default function ProductTemplate({ data }) {
-  const siteTitle = data.site.siteMetadata.title;
+  const siteTitle = data.site.siteMetadata.title
 
-  const { markdownRemark: post } = data;
-  const { image, link, title } = post.frontmatter;
-  let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`;
+  const { markdownRemark: post } = data
+  const { image, link, title } = post.frontmatter
+  let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`
 
   return (
     <Section className="section">
@@ -101,7 +101,7 @@ export default function ProductTemplate({ data }) {
         </div>
       </Container>
     </Section>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -124,4 +124,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

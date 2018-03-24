@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { NavbarBrand, NavbarBurger, NavbarItem } from 'bloomer';
-import BrandItem from './brand-item';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { NavbarBrand, NavbarBurger, NavbarItem } from 'bloomer'
+import BrandItem from './brand-item'
 
 const TabletNavbarBrand = ({ title, isOpen, onMenuClick }) => (
   <NavbarBrand isHidden="desktop">
@@ -15,8 +15,8 @@ const TabletNavbarBrand = ({ title, isOpen, onMenuClick }) => (
       <BrandItem title={title} />
     </NavbarItem>
   </NavbarBrand>
-);
+)
 
-TabletNavbarBrand.propTypes = {};
+TabletNavbarBrand.propTypes = {}
 
-export default TabletNavbarBrand;
+export default TabletNavbarBrand
