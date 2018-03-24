@@ -32,7 +32,7 @@ const StyledNavbarItem = ({ to, text }) => (
     <Link
       style={linkStyles}
       activeStyle={activeLinkStyles}
-      to={`/${to || text.toLowerCase()}/`}
+      to={`/${to || text.toLowerCase()}`}
     >
       {text}
     </Link>
