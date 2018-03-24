@@ -10,7 +10,6 @@ module.exports = {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
                 fonts: [
-                    // `meddon`,
                     `montserrat:300`,
                     'vollkorn:400,700',
                 ]
