@@ -1,26 +1,15 @@
 backend:
   name: git-gateway
-  branch: products
+  branch: master
 
 media_folder: "static/img"
 public_folder: "/img"
 
 collections:
-#  - name: "blog"
-#    label: "Blog"
-#    folder: "src/pages/blog"
-#    create: true
-#    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-#    fields:
-#      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-#      - {label: "Path", name: "path", widget: "string"}
-#      - {label: "Title", name: "title", widget: "string"}
-#      - {label: "Publish Date", name: "date", widget: "datetime"}
-#      - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "about"
     label: "About"
-    folder: "src/pages/about"
+    folder: "src/content/about"
     create: false
     delete: false
     slug: "{{slug}}"
@@ -33,7 +22,7 @@ collections:
 
   - name: "services"
     label: "Services"
-    folder: "src/pages/services"
+    folder: "src/content/services"
     create: false
     delete: false
     slug: "{{slug}}"
@@ -47,22 +36,6 @@ collections:
         fields:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
-
-#  - name: "favorites"
-#    label: "Favorites"
-#    folder: "src/pages/favorites"
-#    create: true
-#    slug: "{{slug}}"
-#    fields:
-#      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "favorite-item"}
-#      - {label: "Title", name: "title", widget: "string"}
-#      - name: "images"
-#        label: "Featured Images"
-#        widget: "list"
-#        fields:
-#          - {label: "Image", name: "image", widget: "image"}
-#      - {label: "Link", name: "link", widget: "string"}
-#      - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "productCategories"
     label: "Product Categories"
