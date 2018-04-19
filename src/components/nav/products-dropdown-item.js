@@ -11,7 +11,7 @@ const ProductsDropdownItem = ({ categoryNodes }) => (
       Products
     </NavbarLink>
 
-    <NavbarDropdown style={{}}>
+    <NavbarDropdown>
       {categoryNodes.map(node => (
         <NavbarItem key={node.id}>
           <Link to={`/product-categories/${node.fields.categoryKey}`}>

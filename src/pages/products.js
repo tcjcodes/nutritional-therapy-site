@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import { Column, Columns, Container, Heading, Section } from 'bloomer'
+import ProductCardColumn from '../components/product-card-column';
+import ProductCardRow from '../components/product-card-row';
 import { serifFont } from '../utils/fonts'
 import { colorBrown, colorBrownDark } from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
@@ -54,22 +56,10 @@ const ProductsTemplate = ({ data }) => {
               >
                 <Link to={`/product-categories/${key}/`}>{key}</Link>
               </Heading>
-              <div
-                css={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  marginTop: '0.5rem',
-                  flexWrap: 'wrap',
-                }}
+              <ProductCardRow
               >
                 {categories[key].map(c => (
-                  <div
-                    css={{
-                      margin: '1rem',
-                      width: '250px',
-                    }}
+                  <ProductCardColumn
                     key={c.id}
                   >
                     <ProductCard
@@ -78,9 +68,9 @@ const ProductsTemplate = ({ data }) => {
                       title={c.title}
                       excerpt={c.excerpt}
                     />
-                  </div>
+                  </ProductCardColumn>
                 ))}
-              </div>
+              </ProductCardRow>
               {/*{categories[key].length === CUTOFF_LENGTH && (
                 <div css={{ textAlign: 'center' }}>
                   <Link

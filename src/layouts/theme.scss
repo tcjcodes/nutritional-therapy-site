@@ -48,6 +48,9 @@ $link-hover: $brown-darker;
 em {
   font-style: italic;
 }
+strong {
+  color: inherit;
+}
 .navbar-item {
   font-size: $size-5;
 }
