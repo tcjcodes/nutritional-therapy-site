@@ -26,7 +26,7 @@ servicesList:
       revisit your goals and priorities, and use various functional evaluation
       assessments to refine your protocol. Your body is constantly trying to
       create balance from within. 
-    name: Follow up Appointments (Approximately 60 minutes)
+    name: Follow Up Appointments (Approximately 60 minutes)
   - description: >-
       We ask that new clients commit to a minimum of a three-month package in
       order to set you up for success on your healing journey.
@@ -43,6 +43,14 @@ servicesList:
       that cannot be adequately resolved via electronic communication, you will
       be asked to schedule a session.
     name: Packages
+  - description: >-
+      After the initial package is complete, clients may pay for individual
+      sessions at $125 or continue with an additional package.
+
+
+      * Please note that Nutritional Therapy services are not covered by
+      insurance. Payment is expected at time of service.*
+    name: Individual Sessions
   - description: >-
       A Nutritional Therapy Practitioner (NTP) is a paraprofessional certified
       by the Nutritional Therapy Association, Inc. trained to evaluate a
