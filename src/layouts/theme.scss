@@ -21,6 +21,8 @@ $size-6: 1.25rem;
 
 $size-small: 1rem;
 
+$body-weight: $weight-medium;
+
 $brown: #8D6036;
 $brown-lighter: #8c6b4f;
 $brown-darker: #65482e;
@@ -43,6 +45,9 @@ $link-hover: $brown-darker;
 @import "~bulma/bulma";
 @import "~font-awesome/css/font-awesome.min.css";
 
+em {
+  font-style: italic;
+}
 .navbar-item {
   font-size: $size-5;
 }
@@ -50,7 +55,7 @@ $link-hover: $brown-darker;
   color: $brown-darker;
 }
 .section {
-  //padding:2rem;
+  padding: 2rem 1.5rem
 }
 .heading {
   font-family: $family-serif;
