@@ -7,7 +7,6 @@ import { colorBrown, colorBrownDark } from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
 import ProductCard from '../components/product-card'
 
-const CUTOFF_LENGTH = 4
 const sortProducts = edges => {
   let categorized = {}
   edges.map(edge => edge.node).forEach(node => {
@@ -18,15 +17,13 @@ const sortProducts = edges => {
     }
 
     const { title, image } = frontmatter
-    if (categorized[categoryKey].length < CUTOFF_LENGTH) {
-      categorized[categoryKey].push({
-        id,
-        slug,
-        excerpt,
-        title,
-        image,
-      })
-    }
+    categorized[categoryKey].push({
+      id,
+      slug,
+      excerpt,
+      title,
+      image,
+    })
   })
   return categorized
 }
@@ -44,7 +41,7 @@ const ProductsTemplate = ({ data }) => {
 
         <div css={{}}>
           {Object.keys(categories).map(key => (
-            <div key={key} style={{ marginBottom: '3rem' }}>
+            <div key={key} css={{ marginBottom: '3rem' }}>
               <Heading
                 hasTextAlign="centered"
                 style={{
@@ -57,15 +54,23 @@ const ProductsTemplate = ({ data }) => {
               >
                 <Link to={`/product-categories/${key}/`}>{key}</Link>
               </Heading>
-              <Columns
-                isMultiline={true}
-                isCentered={true}
-                style={{ marginTop: '0.5rem' }}
+              <div
+                css={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  marginTop: '0.5rem',
+                  flexWrap: 'wrap',
+                }}
               >
                 {categories[key].map(c => (
-                  <Column
+                  <div
+                    css={{
+                      margin: '1rem',
+                      width: '250px',
+                    }}
                     key={c.id}
-                    isSize={{ desktop: 3, tablet: 4, mobile: 1 }}
                   >
                     <ProductCard
                       slug={c.slug}
@@ -73,10 +78,10 @@ const ProductsTemplate = ({ data }) => {
                       title={c.title}
                       excerpt={c.excerpt}
                     />
-                  </Column>
+                  </div>
                 ))}
-              </Columns>
-              {categories[key].length === CUTOFF_LENGTH && (
+              </div>
+              {/*{categories[key].length === CUTOFF_LENGTH && (
                 <div css={{ textAlign: 'center' }}>
                   <Link
                     css={{ ...serifFont, colorBrownDark }}
@@ -85,7 +90,7 @@ const ProductsTemplate = ({ data }) => {
                     See More...
                   </Link>
                 </div>
-              )}
+              )}*/}
             </div>
           ))}
         </div>
