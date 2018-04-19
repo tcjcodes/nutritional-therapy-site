@@ -21,7 +21,28 @@ servicesList:
     name: >-
       Initial Consultation (Approximately 90 minutes, either virtually or
       in-person) 
-  - name: Follow up Appointments (Approximately 60 minutes)
+  - description: >-
+      These sessions are tailored for you. We will discuss your progress,
+      revisit your goals and priorities, and use various functional evaluation
+      assessments to refine your protocol. Your body is constantly trying to
+      create balance from within. 
+    name: Follow up Appointments (Approximately 60 minutes)
+  - description: >-
+      We ask that new clients commit to a minimum of a three-month package in
+      order to set you up for success on your healing journey.
+
+
+      3 months/5 visits - $500 ($100/session)
+
+      6 months/9 visits - $??? ($??/session)
+
+      12 months/15 visits $1479 ($99/session)
+
+
+      Packages include unlimited text and email support. If there is an issue
+      that cannot be adequately resolved via electronic communication, you will
+      be asked to schedule a session.
+    name: Packages
   - description: >-
       A Nutritional Therapy Practitioner (NTP) is a paraprofessional certified
       by the Nutritional Therapy Association, Inc. trained to evaluate a
