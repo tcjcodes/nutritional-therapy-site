@@ -18,7 +18,10 @@ servicesList:
       where your body may be out of balance. We use all of these puzzle pieces
       to determine which nutrients will best support your body moving to a more
       balanced state.
-    name: Initial Consultaion
+    name: >-
+      Initial Consultation (Approximately 90 minutes, either virtually or
+      in-person) 
+  - name: Follow up Appointments (Approximately 60 minutes)
   - description: >-
       A Nutritional Therapy Practitioner (NTP) is a paraprofessional certified
       by the Nutritional Therapy Association, Inc. trained to evaluate a
