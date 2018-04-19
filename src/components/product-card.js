@@ -23,31 +23,30 @@ const cardImageStyles = thumbnail => ({
   backgroundSize: 'cover',
 })
 const cardOverlayStyles = {
-  padding: '1em',
+  padding: '0.75em',
   overflowY: 'hidden',
   position: 'absolute',
   top: '70%',
   height: '30%',
   left: '0',
   width: '100%',
-  background: 'rgba(245,245,245,0.85)',
+  background: 'rgba(245,245,245,0.9)',
   hasTextAlign: 'center',
   transition: 'all 0.3s',
   '&:hover': {
     height: '100%',
     top: '0',
-    background: 'rgba(245,245,245,0.95)',
+    background: 'rgba(245,245,245,0.98)',
   },
 }
 const headingStyles = {
   ...serifFont,
-  lineHeight: '120%',
   color: colorGreenDark,
   marginBottom: 0,
   fontSize: '1.25rem',
 }
 const titleBorderStyles = {
-  margin: `1rem 0`,
+  margin: `0.75rem 0`,
   borderBottom: `1px solid rgb(79, 109, 26)`,
   width: `1.75rem`,
   padding: 0,
@@ -56,6 +55,7 @@ const excerptStyles = {
   fontSize: `1rem`,
   textTransform: 'none',
   color: colorBrownDark,
+  paddingBottom: '0.5rem',
 }
 
 const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
@@ -65,7 +65,7 @@ const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
         <Link to={slug} css={cardImageStyles(thumbnail)} />
         <div css={cardOverlayStyles}>
           <Heading>
-            <Dotdotdot clamp={4}>
+            <Dotdotdot clamp={3}>
               <Link css={headingStyles} to={slug}>
                 {title}
               </Link>
@@ -77,6 +77,9 @@ const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
               <p>{excerpt}</p>
             </Dotdotdot>
           </div>
+          <Link to={slug}>
+            Read More
+          </Link>
         </div>
       </Box>
     </div>
