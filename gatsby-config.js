@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Healing Essence & Wellness`,
+        title: `Strong Roots Wellness`,
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -10,7 +10,7 @@ module.exports = {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
                 fonts: [
-                    `montserrat:300`,
+                    `montserrat:400,400i`,
                     'vollkorn:400,700',
                 ]
             }

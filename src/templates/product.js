@@ -1,5 +1,3 @@
-import React from 'react'
-import Helmet from 'react-helmet'
 import {
   Box,
   Button,
@@ -10,18 +8,20 @@ import {
   Image,
   Section,
   Title,
-} from 'bloomer'
-import Link, { withPrefix } from 'gatsby-link'
-import { secondaryFont, serifFont } from '../utils/fonts'
-import { colorGreenDark } from '../utils/theme-variables'
-import StyledIcon from '../components/styled-icon'
+} from 'bloomer';
+import Link from 'gatsby-link';
+import React from 'react';
+import Helmet from 'react-helmet';
+import BreadcrumbLink from '../components/breadcrumb-link';
+import StyledIcon from '../components/styled-icon';
+import { secondaryFont } from '../utils/fonts';
 
 export default function ProductTemplate({ data }) {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
 
-  const { markdownRemark: post } = data
-  const { image, link, title } = post.frontmatter
-  let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`
+  const { markdownRemark: post } = data;
+  const { image, link, title, category } = post.frontmatter;
+  let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`;
 
   return (
     <Section className="section">
@@ -30,7 +30,7 @@ export default function ProductTemplate({ data }) {
         <Columns isVCentered isCentered>
           <Column
             isSize={{ desktop: 6, mobile: 12 }}
-            style={{ margin: '1em 0' }}
+            style={{ marginBottom: '1em' }}
           >
             <Box
               style={{
@@ -44,36 +44,30 @@ export default function ProductTemplate({ data }) {
                   border: '1px solid gainsboro',
                 }}
                 src={__PATH_PREFIX__ + image}
-                alt={post.frontmatter.title}
+                alt={title}
               />
             </Box>
           </Column>
 
-          <Column isSize={{ desktop: 6, mobile: 12 }}>
-            <Link
-              style={{
-                ...serifFont,
-                fontSize: '1.2rem',
-                color: colorGreenDark,
-              }}
-              to={`/product-categories/${post.fields.categoryKey}`}
-            >
-              <StyledIcon
-                styles={{ marginBottom: `1.5rem` }}
-                name="angle-left"
-              />
-              {` `}
-              Go Back
-            </Link>
-
-            <Title
-              style={{ ...secondaryFont, marginBottom: '0.75rem' }}
-              isSize={2}
-              hasTextColor="dark"
-            >
-              {post.frontmatter.title}
-            </Title>
+          <Column
+            isSize={{ desktop: 6, mobile: 12 }}
+          >
             <div>
+              <BreadcrumbLink
+                to={`/product-categories/${post.fields.categoryKey}`}
+                text={`${category} products`}
+              />
+            </div>
+
+            <div>
+              <Title
+                style={{ ...secondaryFont, marginBottom: '0.75rem' }}
+                isSize={2}
+                hasTextColor="dark"
+              >
+                {title}
+              </Title>
+
               <span css={{ marginRight: '1em' }}>Share On:</span>
               <Link style={{ paddingRight: '0.5em' }} to="">
                 <StyledIcon
@@ -101,7 +95,7 @@ export default function ProductTemplate({ data }) {
         </div>
       </Container>
     </Section>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -119,9 +113,10 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        category
         link
         image
       }
     }
   }
-`
+`;

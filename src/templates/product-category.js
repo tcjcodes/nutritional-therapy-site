@@ -1,52 +1,46 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
-import Dotdotdot from 'react-dotdotdot'
-import { serifFont } from '../utils/fonts'
-import {
-  colorBrown,
-  colorBrownDark,
-  colorGreenDark,
-} from '../utils/theme-variables'
-import PageHeader from '../components/page-header'
-import ProductCard from '../components/product-card'
+import { Container, Section } from 'bloomer';
+import React from 'react';
+import Helmet from 'react-helmet';
+import BreadcrumbLink from '../components/breadcrumb-link';
+import PageHeader from '../components/page-header';
+import ProductCard from '../components/product-card';
+import ProductCardColumn from '../components/product-card-column';
+import ProductCardRow from '../components/product-card-row';
 
 const CategoriesTemplate = ({ data }) => {
-  const { categoryKey } = data.markdownRemark.fields
-  const { name, description } = data.markdownRemark.frontmatter
+  const { categoryKey } = data.markdownRemark.fields;
+  const { name, description } = data.markdownRemark.frontmatter;
   const matchingProducts = data.products.edges
     .map(edge => edge.node)
-    .filter(node => node.fields.categoryKey === categoryKey)
-  const { title } = data.site.siteMetadata
+    .filter(node => node.fields.categoryKey === categoryKey);
+  const { title } = data.site.siteMetadata;
   return (
-    <Section className="section">
-      <Helmet title={`${name} Products | ${title}`} />
+    <Section className='section'>
+      <Helmet title={`${name} Products | ${title}`}/>
 
       <Container isFluid={true} style={{ padding: '0 1em' }}>
-        <PageHeader center title={`${name} Products`} />
+        <p css={{ textAlign: 'center' }}>
+          <BreadcrumbLink to='/products/' text='All Recommended Products'/>
+        </p>
+        <PageHeader center title={`${name} Products`}/>
         <p css={{ textAlign: 'center' }}>{description}</p>
-        <Columns
-          style={{ marginTop: '0.5rem' }}
-          isMultiline={true}
-          isCentered={true}
-          isGrid={true}
-        >
+
+        <ProductCardRow>
           {matchingProducts.map(node => (
-            <Column isSize={{ desktop: 3, tablet: 4, mobile: 1 }} key={node.id}>
+            <ProductCardColumn isSize={{ desktop: 3, tablet: 4, mobile: 1 }} key={node.id}>
               <ProductCard
                 slug={node.fields.slug}
                 thumbnail={node.frontmatter.image}
                 title={node.frontmatter.title}
                 excerpt={node.excerpt}
               />
-            </Column>
+            </ProductCardColumn>
           ))}
-        </Columns>
+        </ProductCardRow>
       </Container>
     </Section>
-  )
-}
+  );
+};
 
 export const pageQuery = graphql`
   query ProductCategoriesPageQuery($slug: String!) {
@@ -89,6 +83,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default CategoriesTemplate
+export default CategoriesTemplate;

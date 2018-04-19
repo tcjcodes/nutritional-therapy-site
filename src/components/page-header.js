@@ -5,7 +5,7 @@ import { Title } from 'bloomer'
 const PageHeader = ({ title, center }) => (
   <div css={{ textAlign: center ? 'center' : 'inherit' }}>
     <Title
-      isSize={1}
+      isSize={2}
       style={{
         ...secondaryFont,
         textTransform: 'lowercase',

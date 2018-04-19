@@ -2,12 +2,13 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import { Column, Columns, Container, Heading, Section } from 'bloomer'
+import ProductCardColumn from '../components/product-card-column';
+import ProductCardRow from '../components/product-card-row';
 import { serifFont } from '../utils/fonts'
 import { colorBrown, colorBrownDark } from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
 import ProductCard from '../components/product-card'
 
-const CUTOFF_LENGTH = 4
 const sortProducts = edges => {
   let categorized = {}
   edges.map(edge => edge.node).forEach(node => {
@@ -18,15 +19,13 @@ const sortProducts = edges => {
     }
 
     const { title, image } = frontmatter
-    if (categorized[categoryKey].length < CUTOFF_LENGTH) {
-      categorized[categoryKey].push({
-        id,
-        slug,
-        excerpt,
-        title,
-        image,
-      })
-    }
+    categorized[categoryKey].push({
+      id,
+      slug,
+      excerpt,
+      title,
+      image,
+    })
   })
   return categorized
 }
@@ -44,7 +43,7 @@ const ProductsTemplate = ({ data }) => {
 
         <div css={{}}>
           {Object.keys(categories).map(key => (
-            <div key={key} style={{ marginBottom: '3rem' }}>
+            <div key={key} css={{ marginBottom: '3rem' }}>
               <Heading
                 hasTextAlign="centered"
                 style={{
@@ -57,15 +56,11 @@ const ProductsTemplate = ({ data }) => {
               >
                 <Link to={`/product-categories/${key}/`}>{key}</Link>
               </Heading>
-              <Columns
-                isMultiline={true}
-                isCentered={true}
-                style={{ marginTop: '0.5rem' }}
+              <ProductCardRow
               >
                 {categories[key].map(c => (
-                  <Column
+                  <ProductCardColumn
                     key={c.id}
-                    isSize={{ desktop: 3, tablet: 4, mobile: 1 }}
                   >
                     <ProductCard
                       slug={c.slug}
@@ -73,10 +68,10 @@ const ProductsTemplate = ({ data }) => {
                       title={c.title}
                       excerpt={c.excerpt}
                     />
-                  </Column>
+                  </ProductCardColumn>
                 ))}
-              </Columns>
-              {categories[key].length === CUTOFF_LENGTH && (
+              </ProductCardRow>
+              {/*{categories[key].length === CUTOFF_LENGTH && (
                 <div css={{ textAlign: 'center' }}>
                   <Link
                     css={{ ...serifFont, colorBrownDark }}
@@ -85,7 +80,7 @@ const ProductsTemplate = ({ data }) => {
                     See More...
                   </Link>
                 </div>
-              )}
+              )}*/}
             </div>
           ))}
         </div>

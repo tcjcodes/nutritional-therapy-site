@@ -1,26 +1,10 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarBurger,
-  NavbarDropdown,
-  NavbarItem,
-  NavbarLink,
-  NavbarMenu,
-  Title,
-} from 'bloomer'
-import { secondaryFont, serifFont } from '../utils/fonts'
-import {
-  colorBrownDark,
-  colorGreen,
-  colorGreenDark,
-} from '../utils/theme-variables'
-import DesktopBrand from './nav/desktop-brand'
-import BrandItem from './nav/brand-item'
-import StyledNavbarItem from './nav/styled-navbar-item'
-import ProductsDropdownItem from './nav/products-dropdown-item'
-import TabletNavbarBrand from './nav/tablet-navbar-brand'
+import { Navbar, NavbarMenu, } from 'bloomer';
+import React from 'react';
+import { serifFont } from '../utils/fonts';
+import DesktopBrand from './nav/desktop-brand';
+import ProductsDropdownItem from './nav/products-dropdown-item';
+import StyledNavbarItem from './nav/styled-navbar-item';
+import TabletNavbarBrand from './nav/tablet-navbar-brand';
 
 const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
   return (
