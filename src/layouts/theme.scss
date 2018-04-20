@@ -1,6 +1,6 @@
 // Import Bulma's initial variables
 
-@import "~bulma/sass/utilities/initial-variables";
+@import '~bulma/sass/utilities/initial-variables';
 
 $family-sans-serif: 'Montserrat', 'Helvetica', sans-serif;
 $family-serif: 'vollkorn';
@@ -23,13 +23,13 @@ $size-small: 1rem;
 
 $body-weight: $weight-medium;
 
-$brown: #8D6036;
+$brown: #8d6036;
 $brown-lighter: #8c6b4f;
 $brown-darker: #65482e;
 $white: #f8f8f8;
 
 $green: #5d8c2c;
-$green-lighter: #B9D094;
+$green-lighter: #b9d094;
 $green-darker: #4f6d1a; //darken($green, 10%);
 $dark: $brown;
 
@@ -42,8 +42,8 @@ $text: $brown-darker;
 $link: $brown;
 $link-hover: $brown-darker;
 
-@import "~bulma/bulma";
-@import "~font-awesome/css/font-awesome.min.css";
+@import '~bulma/bulma';
+@import '~font-awesome/css/font-awesome.min.css';
 
 em {
   font-style: italic;
@@ -51,14 +51,21 @@ em {
 strong {
   color: inherit;
 }
+.navbar-link {
+  padding-right: 1.75em;
+  &::after {
+    right: 0.75em;
+  }
+}
 .navbar-item {
   font-size: $size-5;
 }
-.title, .subtitle {
+.title,
+.subtitle {
   color: $brown-darker;
 }
 .section {
-  padding: 2rem 1.5rem
+  padding: 2rem 1.5rem;
 }
 .heading {
   font-family: $family-serif;
