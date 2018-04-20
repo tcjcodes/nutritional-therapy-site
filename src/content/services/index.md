@@ -11,7 +11,6 @@ servicesList:
       consultation includes a comprehensive health assessment, dietary review,
       and online nutritional assessment questionnaire. 
 
-
       You will be introduced to the functional evaluation, and we use the
       information from the initial consultation and a variety of techniques
       (reflex points, palpations, muscle and lingual-neuro tests) to discover
@@ -31,13 +30,11 @@ servicesList:
       We ask that new clients commit to a minimum of a three-month package in
       order to set you up for success on your healing journey.
 
-
       3 months/5 visits - $500 ($100/session)
 
       6 months/9 visits - $??? ($??/session)
 
       12 months/15 visits $1479 ($99/session)
-
 
       Packages include unlimited text and email support. If there is an issue
       that cannot be adequately resolved via electronic communication, you will
@@ -46,7 +43,6 @@ servicesList:
   - description: >-
       After the initial package is complete, clients may pay for individual
       sessions at $125 or continue with an additional package.
-
 
       * Please note that Nutritional Therapy services are not covered by
       insurance. Payment is expected at time of service.*
@@ -58,7 +54,6 @@ servicesList:
       nutritional deficiencies. An NTP makes recommendations of dietary changes,
       lifestyle considerations, and nutritional supplementation based on client
       information, assessments, muscle testing, and lingual-neuro testing.
-
 
       A Nutritional Therapy Practitioner is not trained to provide medical
       diagnosis or treatment of any medical or pathological condition, illness,
