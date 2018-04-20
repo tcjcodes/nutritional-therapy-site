@@ -27,6 +27,13 @@ export default function ProductTemplate({ data }) {
     <Section className="section">
       <Helmet title={`Product | ${siteTitle}`} />
       <Container style={{ maxWidth: 800 }}>
+        <div css={{ textAlign: 'center', }}>
+          <BreadcrumbLink
+            to={`/product-categories/${post.fields.categoryKey}`}
+            text={`${category} products`}
+          />
+        </div>
+
         <Columns isVCentered isCentered>
           <Column
             isSize={{ desktop: 6, mobile: 12 }}
@@ -52,13 +59,6 @@ export default function ProductTemplate({ data }) {
           <Column
             isSize={{ desktop: 6, mobile: 12 }}
           >
-            <div>
-              <BreadcrumbLink
-                to={`/product-categories/${post.fields.categoryKey}`}
-                text={`${category} products`}
-              />
-            </div>
-
             <div>
               <Title
                 style={{ ...secondaryFont, marginBottom: '0.75rem' }}

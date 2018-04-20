@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: prod
 
 media_folder: "static/img"
 public_folder: "/img"
@@ -9,7 +9,7 @@ collections:
 
   - name: "about"
     label: "About"
-    folder: "src/pages/about"
+    folder: "src/content/about"
     create: false
     delete: false
     slug: "{{slug}}"
@@ -22,7 +22,7 @@ collections:
 
   - name: "services"
     label: "Services"
-    folder: "src/pages/services"
+    folder: "src/content/services"
     create: false
     delete: false
     slug: "{{slug}}"
@@ -35,7 +35,7 @@ collections:
         widget: "list"
         fields:
           - {label: "Name", name: "name", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Description", name: "description", widget: "markdown"}
 
   - name: "productCategories"
     label: "Product Categories"

@@ -1,81 +1,45 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import {
-  Button,
-  Column,
-  Columns,
-  Container,
-  Content,
-  Heading,
-  Section,
-} from 'bloomer'
-import { serifFont } from '../utils/fonts'
-import PageHeader from '../components/page-header'
-import { colorBrown } from '../utils/theme-variables'
-import StyledIcon from '../components/styled-icon'
-
-const Service = ({ name, children }) => (
-  <Columns style={{ marginBottom: `2rem` }}>
-    <Column isSize={3} isOffset={1} style={{ marginTop: 0 }}>
-      <Heading
-        style={{
-          ...serifFont,
-          color: colorBrown,
-          textAlign: 'right',
-          textTransform: 'lowercase',
-        }}
-      >
-        {name}
-      </Heading>
-    </Column>
-    <Column isSize={7} style={{ paddingLeft: `1rem` }}>
-      <Content>{children}</Content>
-    </Column>
-  </Columns>
-)
+import { Button, Column, Columns, Container, Content, Section } from 'bloomer';
+import React from 'react';
+import PageHeader from '../components/page-header';
+import Service from '../components/service';
+import Helmet from 'react-helmet';
 
 const ServicesPage = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const { servicesList, title } = data.markdownRemark.frontmatter
+  const { title } = data.site.siteMetadata;
+  const { servicesList } = data.markdownRemark.frontmatter;
   return (
     <Section>
-      <Helmet title={`Services | ${siteTitle}`} />
+      <Helmet title={`Services | ${title}`} />
 
-      <Container>
-        <Columns hasTextAlign="left">
-          <Column isSize={3} isOffset={4} style={{ paddingLeft: `1rem` }}>
-            <PageHeader title={title} />
-          </Column>
-        </Columns>
+      <Container style={{ maxWidth: 800 }}>
+        <PageHeader title="services" center />
+
         {servicesList.map((service, index) => (
           <Service key={index} name={service.name}>
-            <p>{service.description}</p>
+            <Content>{service.description}</Content>
           </Service>
         ))}
-        <Columns>
-          <Column isSize={3} isOffset={4} style={{ paddingLeft: `1rem` }}>
-            <Button isColor="primary" href="/contact/">
-              <StyledIcon name="calendar" />
-              Book Appointment
-            </Button>
-          </Column>
-        </Columns>
+        <div css={{ textAlign: 'center' }}>
+          <Button isColor="primary" href="/contact/">
+            <span className="fa fa-calendar" css={{ marginRight: `0.5rem` }} />
+            Book Appointment
+          </Button>
+        </div>
       </Container>
     </Section>
-  )
-}
-ServicesPage.propTypes = {}
+  );
+};
 
 export const query = graphql`
-  query ServicesPage($slug: String!) {
+  query ServicesPage {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "services-page" } }) {
       frontmatter {
-        title
+        templateKey
         servicesList {
           name
           description
@@ -83,6 +47,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default ServicesPage
+export default ServicesPage;
