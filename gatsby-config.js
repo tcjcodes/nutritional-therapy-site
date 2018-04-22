@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Strong Roots Nutrition & Wellness`,
+        title: `Strong Roots Nutrition and Wellness`,
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -38,12 +38,6 @@ module.exports = {
         },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                plugins: []
-            }
-        },
         {
             resolve: `gatsby-transformer-remark`,
             options: {

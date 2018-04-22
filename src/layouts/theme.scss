@@ -51,6 +51,17 @@ em {
 strong {
   color: inherit;
 }
+.content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    font-family: $family-serif;
+    color: $brown;
+  }
+}
 .navbar-link {
   padding-right: 1.75em;
   &::after {
