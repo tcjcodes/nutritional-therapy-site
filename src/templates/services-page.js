@@ -1,12 +1,12 @@
-import { Button, Column, Columns, Container, Content, Section } from 'bloomer';
+import { Button, Container, Content, Section } from 'bloomer';
 import React from 'react';
-import PageHeader from '../components/page-header';
-import Service from '../components/service';
 import Helmet from 'react-helmet';
+import PageHeader from '../components/page-header';
 
 const ServicesPage = ({ data }) => {
   const { title } = data.site.siteMetadata;
-  const { servicesList } = data.markdownRemark.frontmatter;
+  const { markdownRemark: post } = data;
+
   return (
     <Section>
       <Helmet title={`Services | ${title}`} />
@@ -14,11 +14,10 @@ const ServicesPage = ({ data }) => {
       <Container style={{ maxWidth: 800 }}>
         <PageHeader title="services" center />
 
-        {servicesList.map((service, index) => (
-          <Service key={index} name={service.name}>
-            <Content>{service.description}</Content>
-          </Service>
-        ))}
+        <div css={{ marginBottom: `2rem` }}>
+          <Content dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
+
         <div css={{ textAlign: 'center' }}>
           <Button isColor="primary" href="/contact/">
             <span className="fa fa-calendar" css={{ marginRight: `0.5rem` }} />
@@ -31,19 +30,19 @@ const ServicesPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query ServicesPage {
+  query ServicesPage($slug: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(frontmatter: { templateKey: { eq: "services-page" } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      fields {
+        slug
+      }
       frontmatter {
-        templateKey
-        servicesList {
-          name
-          description
-        }
+        title
       }
     }
   }
