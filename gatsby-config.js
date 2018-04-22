@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Strong Roots Wellness`,
+        title: `Strong Roots Nutrition & Wellness`,
     },
     plugins: [
         'gatsby-plugin-react-helmet',

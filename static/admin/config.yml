@@ -27,15 +27,10 @@ collections:
     delete: false
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string", default: "Services"}
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
       - {label: "Path", name: "path", widget: "hidden", default: "/services"}
-      - name: "servicesList"
-        label: "Services"
-        widget: "list"
-        fields:
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Title", name: "title", widget: "string", default: "Services"}
+      - {label: "Services Section", name: "body", widget: "markdown"}
 
   - name: "productCategories"
     label: "Product Categories"

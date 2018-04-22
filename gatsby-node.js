@@ -4,12 +4,12 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const slug = createFilePath({ node, getNode, basePath: `pages` });
     createNodeField({
       node,
       name: `slug`,
       value: slug,
-    })
+    });
 
     const { category, templateKey, name } = node.frontmatter
     if (category || templateKey === 'product-category') {
@@ -51,10 +51,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               name
               description
               category
-              servicesList {
-                name
-                description
-              }
             }
           }
         }
@@ -66,7 +62,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors)
     }
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      // console.log('new cat key', node.frontmatter)
       createPage({
         path: node.fields.slug,
         component: path.resolve(
