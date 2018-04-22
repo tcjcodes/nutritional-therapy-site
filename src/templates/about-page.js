@@ -1,8 +1,8 @@
+import { Box, Container, Content, Section } from 'bloomer';
+import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Box, Column, Columns, Container, Content, Section } from 'bloomer';
 import PageHeader from '../components/page-header';
-import Img from 'gatsby-image';
 
 export default ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
