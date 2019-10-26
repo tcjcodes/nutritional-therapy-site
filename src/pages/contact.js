@@ -30,9 +30,9 @@ const ContactPage = ({ data }) => {
                 <br />
                 <br />
                 <address css={{ color: '#000' }}>
-                  280 North 8th Street, Suite #118
+                  410 S Orchard, 2nd Floor Suite 124
                 </address>
-                <address css={{ color: '#000' }}>Boise, ID 83702</address>
+                <address css={{ color: '#000' }}>Boise, ID 83705</address>
                 <a
                   href={directionsLink}
                   target="_blank"

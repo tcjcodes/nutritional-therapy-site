@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Strong Roots Nutrition and Wellness`,
+        title: `Caroline Delos Reyes, NTP`,
     },
     plugins: [
         'gatsby-plugin-react-helmet',

@@ -1,9 +1,9 @@
 // Import Bulma's initial variables
 
-@import '~bulma/sass/utilities/initial-variables';
+@import "~bulma/sass/utilities/initial-variables";
 
-$family-sans-serif: 'Montserrat', 'Helvetica', sans-serif;
-$family-serif: 'vollkorn';
+$family-sans-serif: "Montserrat", "Helvetica", sans-serif;
+$family-serif: "vollkorn";
 //$size-1: 3rem !default
 //$size-2: 2.5rem !default
 //$size-3: 2rem !default
@@ -42,8 +42,8 @@ $text: $brown-darker;
 $link: $brown;
 $link-hover: $brown-darker;
 
-@import '~bulma/bulma';
-@import '~font-awesome/css/font-awesome.min.css';
+@import "~bulma/bulma";
+@import "~font-awesome/css/font-awesome.min.css";
 
 em {
   font-style: italic;
@@ -57,7 +57,7 @@ strong {
   h3,
   h4,
   h5,
-  h6{
+  h6 {
     font-family: $family-serif;
     color: $brown;
   }
