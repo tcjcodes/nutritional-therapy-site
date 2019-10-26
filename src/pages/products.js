@@ -1,15 +1,13 @@
 import { Container, Heading, Section, Columns, Column } from 'bloomer'
-import Link from "gatsby-link";
-import React from "react";
-import Helmet from "react-helmet";
-import PageHeader from "../components/page-header";
-import ProductCard from "../components/product-card";
-import ProductCardColumn from "../components/product-card-column";
-import ProductCardRow from "../components/product-card-row";
-import { serifFont } from "../utils/fonts";
-import { colorBrown } from "../utils/theme-variables";
+import Link from 'gatsby-link'
+import React from 'react'
+import Helmet from 'react-helmet'
+import PageHeader from '../components/page-header'
+import ProductCard from '../components/product-card'
+import { serifFont } from '../utils/fonts'
+import { colorBrown } from '../utils/theme-variables'
 
-const pageTitle = "Labs";
+const pageTitle = "All Labs";
 const sortProducts = edges => {
   let categorized = {}
   edges.map(edge => edge.node).forEach(node => {
@@ -46,20 +44,20 @@ const ProductsTemplate = ({ data }) => {
           {Object.keys(categories).map(key => (
             <div key={key} css={{ marginBottom: "3rem" }}>
               <Heading
-                // hasTextAlign="centered"
+                hasTextAlign="centered"
                 style={{
                   ...serifFont,
                   lineHeight: "120%",
                   color: colorBrown,
-                  margin: "1rem 0 0 0",
+                  margin: "1rem 0",
                   fontSize: "1.75rem"
                 }}
               >
                 <Link to={`/product-categories/${key}/`}>{key}</Link>
               </Heading>
-              <Columns isMultiline={true} isGrid={true}>
+              <Columns isMultiline={true} isCentered={true}>
                 {categories[key].map(c => (
-                    <Column key={c.id} isSize={{ desktop: 3, mobile: 4 }}>
+                    <Column key={c.id} isSize={{ desktop: 2, mobile: 12 }}>
                       <ProductCard
                           slug={c.slug}
                           thumbnail={c.image}
