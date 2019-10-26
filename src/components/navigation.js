@@ -32,8 +32,8 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
 
           <ProductsDropdownItem categoryNodes={categoryNodes} />
 
-          <StyledNavbarItem text="BeautyCounter" />
           <StyledNavbarItem text="Services" />
+          <StyledNavbarItem text="Forms" to="patient-forms" />
           <StyledNavbarItem text="Contact" />
         </NavbarMenu>
       </Navbar>

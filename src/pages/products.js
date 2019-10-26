@@ -1,13 +1,13 @@
+import { Container, Heading, Section } from 'bloomer'
+import Link from 'gatsby-link'
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import { Column, Columns, Container, Heading, Section } from 'bloomer'
-import ProductCardColumn from '../components/product-card-column';
-import ProductCardRow from '../components/product-card-row';
-import { serifFont } from '../utils/fonts'
-import { colorBrown, colorBrownDark } from '../utils/theme-variables'
 import PageHeader from '../components/page-header'
 import ProductCard from '../components/product-card'
+import ProductCardColumn from '../components/product-card-column'
+import ProductCardRow from '../components/product-card-row'
+import { serifFont } from '../utils/fonts'
+import { colorBrown } from '../utils/theme-variables'
 
 const sortProducts = edges => {
   let categorized = {}
