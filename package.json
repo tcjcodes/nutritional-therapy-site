@@ -1,8 +1,8 @@
 {
-  "name": "strong-wellness-website",
-  "description": "Official website for Healing Essence and Wellness",
+  "name": "caroline-ntp-website",
+  "description": "Official website for Caroline NTP",
   "version": "1.0.0",
-  "author": "Trina",
+  "author": "Trina Castillo",
   "dependencies": {
     "bloomer": "^0.6.3",
     "bulma": "^0.6.0",
