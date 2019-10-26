@@ -10,7 +10,7 @@ import ProductCardRow from "../components/product-card-row";
 import ProductCategoryHeading from "../components/product-category-heading";
 import { serifFont } from "../utils/fonts";
 import { colorBrown } from "../utils/theme-variables";
-const pageTitle = "Labs";
+const pageTitle = "Products";
 const CategoriesTemplate = ({ data }) => {
   const { categoryKey } = data.markdownRemark.fields;
   const { name, description } = data.markdownRemark.frontmatter;

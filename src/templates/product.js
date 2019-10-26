@@ -25,7 +25,7 @@ export default function ProductTemplate({ data }) {
 
   return (
     <Section className="section">
-      <Helmet title={`${category} Labs | ${siteTitle}`} />
+      <Helmet title={`${category} Products | ${siteTitle}`} />
       <Container style={{ maxWidth: 800 }}>
         <Columns isVCentered isCentered>
           <Column
@@ -53,12 +53,12 @@ export default function ProductTemplate({ data }) {
             <div>
               <BreadcrumbLink
                 to={`/products`}
-                text={`all labs`}
+                text={`all products`}
                 arrowDirection="right"
               />
               <BreadcrumbLink
                 to={`/product-categories/${post.fields.categoryKey}`}
-                text={`${category} labs`}
+                text={`${category} products`}
                 arrowDirection="right"
               />
 

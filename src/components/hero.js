@@ -1,10 +1,10 @@
-import { Button, Container, Hero, HeroBody, Title } from 'bloomer'
+import { Button, Container, Hero, HeroBody, Title, Subtitle } from 'bloomer'
 import React from 'react'
 import { Background, Parallax } from 'react-parallax'
 import { secondaryFont } from '../utils/fonts'
 
 const rgba = "0,0,0"; //`119, 139, 64`
-const bgLinearGradient = `linear-gradient(rgba(${rgba}, 0.3), rgba(${rgba}, 0.5))`;
+const bgLinearGradient = `linear-gradient(rgba(${rgba}, 0.4), rgba(${rgba}, 0.7))`;
 
 const HeroBanner = ({ children }) => (
   <Hero isSize="large" isColor="dark" style={{ marginTop: "1.25em" }}>
@@ -24,10 +24,14 @@ const HeroBanner = ({ children }) => (
             style={{
               ...secondaryFont,
               fontSize: '5em', // increase
+              marginBottom: '0.5em',
             }}
           >
             Holistic Nutrition &amp; Wellness
           </Title>
+          <Subtitle style={{ fontWeight: 'bold' }}>
+            Practicing nutritional therapy in Boise, ID
+          </Subtitle>
           <Button href="/services/" style={{ marginTop: "1.5em" }} isColor="dark">
             Learn More
           </Button>

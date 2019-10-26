@@ -8,7 +8,7 @@ import ProductCardColumn from "../components/product-card-column";
 import ProductCardRow from "../components/product-card-row";
 import ProductCategoryHeading from "../components/product-category-heading";
 
-const pageTitle = "All Labs";
+const pageTitle = "All Products";
 const sortProducts = edges => {
   let categorized = {};
   edges
