@@ -6,7 +6,7 @@ import PageHeader from '../components/page-header';
 import ProductCard from '../components/product-card';
 import ProductCardColumn from '../components/product-card-column';
 import ProductCardRow from '../components/product-card-row';
-
+const pageTitle = "Labs";
 const CategoriesTemplate = ({ data }) => {
   const { categoryKey } = data.markdownRemark.fields;
   const { name, description } = data.markdownRemark.frontmatter;
@@ -16,13 +16,13 @@ const CategoriesTemplate = ({ data }) => {
   const { title } = data.site.siteMetadata;
   return (
     <Section className='section'>
-      <Helmet title={`${name} Products | ${title}`}/>
+      <Helmet title={`${name} ${pageTitle} | ${title}`}/>
 
       <Container isFluid={true} style={{ padding: '0 1em' }}>
         <p css={{ textAlign: 'center' }}>
-          <BreadcrumbLink to='/products/' text='All Recommended Products'/>
+          <BreadcrumbLink to='/products/' text={`All ${pageTitle}`}/>
         </p>
-        <PageHeader center title={`${name} Products`}/>
+        <PageHeader center title={`${name} ${pageTitle}`}/>
         <p css={{ textAlign: 'center' }}>{description}</p>
 
         <ProductCardRow>

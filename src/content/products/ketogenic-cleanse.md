@@ -6,7 +6,7 @@ title: >-
 image: /img/30DayKetogenicCleanseCookbook.jpg
 category: Food
 link: >-
-  https://www.amazon.com/30-Day-Ketogenic-Cleanse-Metabolism-Whole-Food/dp/1628601167/ref=sr_1_12?ie=UTF8&qid=1513133080&sr=8-12&keywords=ketogenic+diet
+  https://smile.amazon.com/30-Day-Ketogenic-Cleanse-Metabolism-Whole-Food/dp/1628601167/ref=sr_1_1?keywords=The+30-Day+Ketogenic+Cleanse%3A+Reset+Your+Metabolism+with+160+Tasty+Whole-Food+Recipes+%26+Meal+Plans+by+Maria+Emmerich&qid=1572124391&sr=8-1
 ---
 For those who are brand-new to keto and those who are getting back on track after falling off the wagon, the first 30 days on a ketogenic diet can be challenging. As the body adapts to burning fat (ketones) rather than sugar for fuel, cravings can arise, and some people find that they just don’t feel so great. Many fall victim to the temptation to give up before they can truly experience the benefits of being keto-adapted._The 30-Day Ketogenic Cleanse_isn’t like most juice or other cleanses where you starve throughout the entire process. Keto expert Maria Emmerich offers tasty whole-food recipes—all dairy-free and nut-free—that are filling and satisfying and keep cravings at bay. Plus, she offers helpful tips and tricks for making it through the adjustment period.\
 \

@@ -6,7 +6,7 @@ title: >-
   Sanfilippo BS NC
 image: /img/MediterraneanPaleoCooking.jpg
 category: Food
-link: www.google.com
+link: 'https://smile.amazon.com/Mediterranean-Paleo-Cooking-Gluten-Free-Lifestyle/dp/1628600403/ref=sr_1_1?keywords=Mediterranean+Paleo+Cooking%3A+Over+150+Fresh+Coastal+Recipes+for+a+Relaxed%2C+Gluten-Free+Lifestyle&qid=1572124238&sr=8-1'
 ---
 Many people assume that eating better—whether to lose weight, alleviate health problems, or simply improve how they feel—means eating low-fat, boring, and tasteless food. Professional chef Nabil Boumrar and Certified Nutrition Consultant Caitlin Weeks blow that myth out of the water with their vibrant and healthy coastal cuisine.\
 \
@@ -25,7 +25,7 @@ _**Mediterranean Paleo Cooking**_showcases a wide variety of creative recipes th
 
 Many people assume that eating better—whether to lose weight, alleviate health problems, or simply improve how they feel—means eating low-fat, boring, and tasteless food. Professional chef Nabil Boumrar and Certified Nutrition Consultant Caitlin Weeks blow that myth out of the water with their vibrant and healthy coastal cuisine.\
 \
-_**Mediterranean Paleo Cooking **_showcases a wide variety of creative recipes that are Paleo-friendly—no gluten, grains, inflammatory oils, dairy, or refined sweeteners. These flavorful dishes combine traditional food from southern Europe, North Africa, and the Middle East with the healthful principles of a Paleo diet. With over 150 recipes, two 30-day meal plans (one for general health and one for those following an autoimmune protocol), shopping lists, cooking tips, and more,**_Mediterranean Paleo Cooking _**helps readers become better cooks and more informed eaters. But more importantly, it turns healthy eating into delicious eating with enticing Mediterranean meals that every foodie will enjoy.
+_**Mediterranean Paleo Cooking**_ showcases a wide variety of creative recipes that are Paleo-friendly—no gluten, grains, inflammatory oils, dairy, or refined sweeteners. These flavorful dishes combine traditional food from southern Europe, North Africa, and the Middle East with the healthful principles of a Paleo diet. With over 150 recipes, two 30-day meal plans (one for general health and one for those following an autoimmune protocol), shopping lists, cooking tips, and more, **_Mediterranean Paleo Cooking_** helps readers become better cooks and more informed eaters. But more importantly, it turns healthy eating into delicious eating with enticing Mediterranean meals that every foodie will enjoy.
 
 * Over 150 Paleo-friendly recipes inspired by the relaxed coastal attitude and ingredients of the Mediterranean - all gluten-free, grain-free, refined sugar-free, and dairy-free.
 * Chef’s tips from Nabil help you learn as you go, with advice on cooking and techniques for Mediterranean ingredients

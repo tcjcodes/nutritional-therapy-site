@@ -25,12 +25,12 @@ export default function ProductTemplate({ data }) {
 
   return (
     <Section className="section">
-      <Helmet title={`Product | ${siteTitle}`} />
+      <Helmet title={`${category} Labs | ${siteTitle}`} />
       <Container style={{ maxWidth: 800 }}>
         <div css={{ textAlign: 'center', }}>
           <BreadcrumbLink
             to={`/product-categories/${post.fields.categoryKey}`}
-            text={`${category} products`}
+            text={`${category} labs`}
           />
         </div>
 
@@ -67,17 +67,6 @@ export default function ProductTemplate({ data }) {
               >
                 {title}
               </Title>
-
-              <span css={{ marginRight: '1em' }}>Share On:</span>
-              <Link style={{ paddingRight: '0.5em' }} to="">
-                <StyledIcon
-                  name="facebook-official"
-                  style={{ fontSize: '1.25em' }}
-                />
-              </Link>
-              <Link style={{ padding: '0.5em' }} to="">
-                <span name="pinterest" style={{ fontSize: '1.25em' }} />
-              </Link>
             </div>
             <Button
               style={{ margin: '1em 0' }}
@@ -85,7 +74,7 @@ export default function ProductTemplate({ data }) {
               href={hyperlink}
               target="_blank"
             >
-              <StyledIcon name="shopping-cart" />Buy Item
+              <StyledIcon name="shopping-bag" />Buy Item
             </Button>
           </Column>
         </Columns>

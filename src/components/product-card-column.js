@@ -3,8 +3,8 @@ import React from 'react';
 const ProductCardColumn = ({ children }) => (
   <div
     css={{
-      margin: '1rem',
-      width: '250px',
+      // margin: '0.5rem',
+      width: '20%',
     }}
   >
     {children}

@@ -4,7 +4,7 @@ const ProductCardRow = ({ children }) => (
   <div
     css={{
       display: 'flex',
-      justifyContent: 'center',
+      justifyContent: 'flex-start',
       alignItems: 'center',
       textAlign: 'center',
       marginTop: '0.5rem',

@@ -1,14 +1,14 @@
-import { NavbarDropdown, NavbarItem, NavbarLink } from 'bloomer'
-import Link, { navigateTo } from 'gatsby-link'
-import React from 'react'
+import { NavbarDropdown, NavbarItem, NavbarLink } from "bloomer";
+import Link, { navigateTo } from "gatsby-link";
+import React from "react";
 
-const ProductsDropdownItem = ({ categoryNodes }) => (
+const ProductsDropdownItem = ({ text = "Products", categoryNodes }) => (
   <NavbarItem hasDropdown isHoverable>
     <NavbarLink
-      onClick={() => navigateTo('/products')}
-      style={{ paddingRight: '2em' }}
+      onClick={() => navigateTo("/products")}
+      style={{ paddingRight: "2em" }}
     >
-      Products
+      {text}
     </NavbarLink>
 
     <NavbarDropdown>
@@ -21,6 +21,6 @@ const ProductsDropdownItem = ({ categoryNodes }) => (
       ))}
     </NavbarDropdown>
   </NavbarItem>
-)
+);
 
-export default ProductsDropdownItem
+export default ProductsDropdownItem;

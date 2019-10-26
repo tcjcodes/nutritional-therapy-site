@@ -14,7 +14,7 @@ const cardWrapperStyles = {
 };
 const cardImageStyles = thumbnail => ({
   display: 'block',
-  height: '300px',
+  height: '390px',
   overflowY: 'hidden',
   background: `url(${thumbnail}) center no-repeat`,
   backgroundSize: 'cover',
@@ -63,7 +63,7 @@ const excerptStyles = {
 const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
   <div>
     <Link to={slug} css={cardWrapperStyles}>
-      <Box style={{ padding: '0.5em' }}>
+      <Box style={{ padding: '0.25em' }}>
         <div css={cardImageStyles(thumbnail)}/>
         <div css={cardOverlayStyles}>
           <Title style={{ margin: 0 }} isSize={5}>

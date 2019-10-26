@@ -28,7 +28,7 @@ const HeroBanner = ({ children }) => (
           >
             Holistic Nutrition &amp; Wellness
           </Title>
-          <Button href="/about/" style={{ marginTop: "1.5em" }} isColor="dark">
+          <Button href="/services/" style={{ marginTop: "1.5em" }} isColor="dark">
             Learn More
           </Button>
         </Container>

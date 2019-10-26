@@ -200,8 +200,8 @@ class ContactForm extends React.Component {
             isColor="light"
           >
             <StyledIcon name="exclamation-triangle" />
-            <strong>Oh no!</strong> Something went wreong. Please try again{" "}
-            later or send us a direct e-mail us at{" "}
+            <strong>Oh no!</strong> Something went wrong. Please try again{" "}
+            later or send us a direct e-mail instead at{" "}
             <a href={`mailto:${email}`}>{email}</a>.
           </NotificationContainer>
         </div>

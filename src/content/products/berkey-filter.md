@@ -2,7 +2,7 @@
 templateKey: product
 title: Berkey Filter
 image: /img/BerkeyWaterFilter.jpg
-link: 'https://www.berkeyfilters.com/'
+link: 'https://smile.amazon.com/Berkey-Gravity-Fed-Filter-Purification-Elements/dp/B00BWIWZJI/ref=sr_1_2_sspa?keywords=Berkey+Filter&qid=1572124321&sr=8-2-spons&psc=1&smid=A13U1G3UNW7AGB&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFWNTg0ODBFM081R0gmZW5jcnlwdGVkSWQ9QTAzMzg1MzkzT0FQQldXQkRMQTJSJmVuY3J5cHRlZEFkSWQ9QTA4ODI4NjYzMlcwTFFCM0s4MFROJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=='
 category: Food
 ---
 <!--StartFragment-->
