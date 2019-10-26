@@ -54,7 +54,7 @@ class OfficeMap extends React.Component {
     return (
       <StyledMap
         isMarkerShown
-        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2AK-anwVWpJAOyl3ceC3sYy9HiGT87m0"
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ ...this.props.containerStyles }} />}
         mapElement={<div style={{ height: `100%` }} />}

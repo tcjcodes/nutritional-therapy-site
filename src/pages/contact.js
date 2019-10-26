@@ -1,74 +1,82 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
-import PageHeader from '../components/page-header'
-import ContactForm from '../components/contact-form'
-import OfficeMap from '../components/office-map'
-import FormsButton from '../components/review-forms-modal-button'
+import React from "react";
+import Helmet from "react-helmet";
+import { Box, Column, Columns, Container, Heading, Section } from "bloomer";
+import PageHeader from "../components/page-header";
+import ContactForm from "../components/contact-form";
+import OfficeMap from "../components/office-map";
+import FormsButton from "../components/review-forms-modal-button";
 
-const mapCenter = { lat: 43.616931, lng: -116.201875 }
+const mapCenter = { lat: 43.6169187, lng: -116.2039708 };
 const directionsLink =
-  'https://www.google.com/maps/dir/280+N+8th+St,+Boise,+ID+83702/@43.6169187,-116.2039708,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54aef8e38170803d:0xa94fa462f5031011!2m2!1d-116.2018726!2d43.6169343'
+  "https://www.google.com/maps/dir//410+S+Orchard+St+2nd+Fl+Suite+124,+Boise,+ID+83705/@43.6007953,-116.2450868,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x54ae5629baddbd73:0xf292d0168122b790!2m2!1d-116.2428981!2d43.6007953!3e0";
+
+const address = {
+  streetLine: "410 S Orchard, 2nd Fl Suite 124",
+  cityStateZip: "Boise, ID 83705"
+};
 
 const ContactPage = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
 
   return (
     <Section>
       <Helmet title={`Contact | ${siteTitle}`} />
       <Container>
-        <PageHeader center title="Contact Us" />
+        <PageHeader center title="Contact" />
         <Columns isMultiline={true}>
           <Column isSize={10} isOffset={1}>
-            <Box style={{ marginBottom: '2em', minHeight: '350px' }}>
+            <Box style={{ marginBottom: "2em", minHeight: "350px" }}>
               <OfficeMap
                 zoom={15}
                 mapCenter={mapCenter}
-                containerStyles={{ height: '400px' }}
+                containerStyles={{ height: "400px" }}
               >
-                <strong>Idaho Building</strong>
+                <strong>Office</strong>
                 <br />
                 <br />
-                <address css={{ color: '#000' }}>
-                  410 S Orchard, 2nd Floor Suite 124
+                <address css={{ color: "#000" }}>{address.streetLine}</address>
+                <address css={{ color: "#000" }}>
+                  {address.cityStateZip}
                 </address>
-                <address css={{ color: '#000' }}>Boise, ID 83705</address>
                 <a
                   href={directionsLink}
                   target="_blank"
-                  css={{ color: '#427fed' }} // Google Map link
+                  css={{ color: "#427fed" }} // Google Map link
                 >
                   Get Directions
                 </a>
               </OfficeMap>
             </Box>
           </Column>
-          <Column isSize={7} isOffset={1} style={{ paddingRight: '2rem' }}>
+          <Column isSize={7} isOffset={1} style={{ paddingRight: "2rem" }}>
             <Heading>send a message</Heading>
             <ContactForm />
           </Column>
           <Column isSize={3}>
             <div>
-              <Heading>appointments</Heading>
+              <Heading>new patients</Heading>
               <p>
-                If you're interested in booking a consultation, please review
-                these forms before proceeding.
+                I provide a free 30 minute consultation for new patients. Send a
+                message with the form on the left to request an appointment.
               </p>
-              <FormsButton />
             </div>
-            <div css={{ marginBottom: '1rem' }}>
+            <div css={{ margin: "1rem 0" }}>
               <Heading>address</Heading>
 
-              <address>Idaho Building</address>
-              <address>280 N 8th St, Suite #118</address>
-              <address>Boise, ID 83702</address>
+              <address>{address.streetLine}</address>
+              <address>{address.cityStateZip}</address>
+              <address>
+                <strong>
+                  <a href={directionsLink}>Directions</a>
+                </strong>
+              </address>
             </div>
           </Column>
         </Columns>
       </Container>
     </Section>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query ContactPage {
@@ -78,6 +86,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default ContactPage
+export default ContactPage;
