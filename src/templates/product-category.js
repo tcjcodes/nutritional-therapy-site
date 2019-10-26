@@ -1,11 +1,15 @@
-import { Container, Section } from 'bloomer';
-import React from 'react';
-import Helmet from 'react-helmet';
-import BreadcrumbLink from '../components/breadcrumb-link';
-import PageHeader from '../components/page-header';
-import ProductCard from '../components/product-card';
-import ProductCardColumn from '../components/product-card-column';
-import ProductCardRow from '../components/product-card-row';
+import { Container, Section, Heading, Columns, Column } from "bloomer";
+import Link from "gatsby-link";
+import React from "react";
+import Helmet from "react-helmet";
+import BreadcrumbLink from "../components/breadcrumb-link";
+import PageHeader from "../components/page-header";
+import ProductCard from "../components/product-card";
+import ProductCardColumn from "../components/product-card-column";
+import ProductCardRow from "../components/product-card-row";
+import ProductCategoryHeading from "../components/product-category-heading";
+import { serifFont } from "../utils/fonts";
+import { colorBrown } from "../utils/theme-variables";
 const pageTitle = "Labs";
 const CategoriesTemplate = ({ data }) => {
   const { categoryKey } = data.markdownRemark.fields;
@@ -13,30 +17,32 @@ const CategoriesTemplate = ({ data }) => {
   const matchingProducts = data.products.edges
     .map(edge => edge.node)
     .filter(node => node.fields.categoryKey === categoryKey);
+
   const { title } = data.site.siteMetadata;
   return (
-    <Section className='section'>
-      <Helmet title={`${name} ${pageTitle} | ${title}`}/>
+    <Section className="section">
+      <Helmet title={`${name} ${pageTitle} | ${title}`} />
 
-      <Container isFluid={true} style={{ padding: '0 1em' }}>
-        <p css={{ textAlign: 'center' }}>
-          <BreadcrumbLink to='/products/' text={`All ${pageTitle}`}/>
-        </p>
-        <PageHeader center title={`${name} ${pageTitle}`}/>
-        <p css={{ textAlign: 'center' }}>{description}</p>
+      <Container isFluid={true} style={{ padding: "0 1em" }}>
+        <PageHeader center title={`${name} ${pageTitle}`} />
+        <p>{description}</p>
 
-        <ProductCardRow>
-          {matchingProducts.map(node => (
-            <ProductCardColumn isSize={{ desktop: 3, tablet: 4, mobile: 1 }} key={node.id}>
-              <ProductCard
+        <div css={{ marginBottom: "3rem" }}>
+          <ProductCategoryHeading>
+            <BreadcrumbLink to="/products/" text={`Back to all ${pageTitle}`} />
+          </ProductCategoryHeading>
+          <ProductCardRow>
+            {matchingProducts.map(node => (
+              <ProductCardColumn
+                key={node.id}
                 slug={node.fields.slug}
                 thumbnail={node.frontmatter.image}
                 title={node.frontmatter.title}
                 excerpt={node.excerpt}
               />
-            </ProductCardColumn>
-          ))}
-        </ProductCardRow>
+            ))}
+          </ProductCardRow>
+        </div>
       </Container>
     </Section>
   );

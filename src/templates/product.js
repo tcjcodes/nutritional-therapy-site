@@ -7,48 +7,41 @@ import {
   Content,
   Image,
   Section,
-  Title,
-} from 'bloomer';
-import Link from 'gatsby-link';
-import React from 'react';
-import Helmet from 'react-helmet';
-import BreadcrumbLink from '../components/breadcrumb-link';
-import StyledIcon from '../components/styled-icon';
-import { secondaryFont } from '../utils/fonts';
+  Title
+} from "bloomer";
+import Link from "gatsby-link";
+import React from "react";
+import Helmet from "react-helmet";
+import BreadcrumbLink from "../components/breadcrumb-link";
+import StyledIcon from "../components/styled-icon";
+import { secondaryFont } from "../utils/fonts";
 
 export default function ProductTemplate({ data }) {
   const siteTitle = data.site.siteMetadata.title;
 
   const { markdownRemark: post } = data;
   const { image, link, title, category } = post.frontmatter;
-  let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`;
+  let hyperlink = link.indexOf("http") >= 0 ? link : `http://${link}`;
 
   return (
     <Section className="section">
       <Helmet title={`${category} Labs | ${siteTitle}`} />
       <Container style={{ maxWidth: 800 }}>
-        <div css={{ textAlign: 'center', }}>
-          <BreadcrumbLink
-            to={`/product-categories/${post.fields.categoryKey}`}
-            text={`${category} labs`}
-          />
-        </div>
-
         <Columns isVCentered isCentered>
           <Column
             isSize={{ desktop: 6, mobile: 12 }}
-            style={{ marginBottom: '1em' }}
+            style={{ marginBottom: "1em" }}
           >
             <Box
               style={{
-                margin: '0 0.5rem 0.5rem 0',
+                margin: "0 0.5rem 0.5rem 0"
               }}
             >
               <Image
                 style={{
-                  width: '100%',
-                  height: '100%',
-                  border: '1px solid gainsboro',
+                  width: "100%",
+                  height: "100%",
+                  border: "1px solid gainsboro"
                 }}
                 src={__PATH_PREFIX__ + image}
                 alt={title}
@@ -56,12 +49,21 @@ export default function ProductTemplate({ data }) {
             </Box>
           </Column>
 
-          <Column
-            isSize={{ desktop: 6, mobile: 12 }}
-          >
+          <Column isSize={{ desktop: 6, mobile: 12 }}>
             <div>
+              <BreadcrumbLink
+                to={`/products`}
+                text={`all labs`}
+                arrowDirection="right"
+              />
+              <BreadcrumbLink
+                to={`/product-categories/${post.fields.categoryKey}`}
+                text={`${category} labs`}
+                arrowDirection="right"
+              />
+
               <Title
-                style={{ ...secondaryFont, marginBottom: '0.75rem' }}
+                style={{ ...secondaryFont, marginBottom: "0.75rem" }}
                 isSize={2}
                 hasTextColor="dark"
               >
@@ -69,12 +71,13 @@ export default function ProductTemplate({ data }) {
               </Title>
             </div>
             <Button
-              style={{ margin: '1em 0' }}
+              style={{ margin: "1em 0" }}
               isColor="primary"
               href={hyperlink}
               target="_blank"
             >
-              <StyledIcon name="shopping-bag" />Buy Item
+              <StyledIcon name="shopping-bag" />
+              Buy Item
             </Button>
           </Column>
         </Columns>

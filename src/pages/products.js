@@ -1,33 +1,36 @@
-import { Container, Heading, Section, Columns, Column } from 'bloomer'
-import Link from 'gatsby-link'
-import React from 'react'
-import Helmet from 'react-helmet'
-import PageHeader from '../components/page-header'
-import ProductCard from '../components/product-card'
-import { serifFont } from '../utils/fonts'
-import { colorBrown } from '../utils/theme-variables'
+import { Container, Section } from "bloomer";
+import Link from "gatsby-link";
+import React from "react";
+import Helmet from "react-helmet";
+import PageHeader from "../components/page-header";
+import ProductCard from "../components/product-card";
+import ProductCardColumn from "../components/product-card-column";
+import ProductCardRow from "../components/product-card-row";
+import ProductCategoryHeading from "../components/product-category-heading";
 
 const pageTitle = "All Labs";
 const sortProducts = edges => {
-  let categorized = {}
-  edges.map(edge => edge.node).forEach(node => {
-    const { id, frontmatter, fields, excerpt } = node
-    const { categoryKey, slug } = fields
-    if (!categorized[categoryKey]) {
-      categorized[categoryKey] = []
-    }
+  let categorized = {};
+  edges
+    .map(edge => edge.node)
+    .forEach(node => {
+      const { id, frontmatter, fields, excerpt } = node;
+      const { categoryKey, slug } = fields;
+      if (!categorized[categoryKey]) {
+        categorized[categoryKey] = [];
+      }
 
-    const { title, image } = frontmatter
-    categorized[categoryKey].push({
-      id,
-      slug,
-      excerpt,
-      title,
-      image,
-    })
-  })
-  return categorized
-}
+      const { title, image } = frontmatter;
+      categorized[categoryKey].push({
+        id,
+        slug,
+        excerpt,
+        title,
+        image
+      });
+    });
+  return categorized;
+};
 
 const ProductsTemplate = ({ data }) => {
   const edges = data.allMarkdownRemark.edges;
@@ -40,33 +43,23 @@ const ProductsTemplate = ({ data }) => {
       <Container style={{ padding: "0 1em" }}>
         <PageHeader center title={pageTitle} />
 
-        <div css={{}}>
+        <div>
           {Object.keys(categories).map(key => (
             <div key={key} css={{ marginBottom: "3rem" }}>
-              <Heading
-                hasTextAlign="centered"
-                style={{
-                  ...serifFont,
-                  lineHeight: "120%",
-                  color: colorBrown,
-                  margin: "1rem 0",
-                  fontSize: "1.75rem"
-                }}
-              >
+              <ProductCategoryHeading>
                 <Link to={`/product-categories/${key}/`}>{key}</Link>
-              </Heading>
-              <Columns isMultiline={true} isCentered={true}>
+              </ProductCategoryHeading>
+              <ProductCardRow>
                 {categories[key].map(c => (
-                    <Column key={c.id} isSize={{ desktop: 2, mobile: 12 }}>
-                      <ProductCard
-                          slug={c.slug}
-                          thumbnail={c.image}
-                          title={c.title}
-                          excerpt={c.excerpt}
-                      />
-                    </Column>
+                  <ProductCardColumn
+                    key={c.id}
+                    slug={c.slug}
+                    thumbnail={c.image}
+                    title={c.title}
+                    excerpt={c.excerpt}
+                  />
                 ))}
-              </Columns>
+              </ProductCardRow>
               {/*<ProductCardRow>
                 {categories[key].map(c => (
                   <ProductCardColumn key={c.id}>
