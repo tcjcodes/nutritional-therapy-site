@@ -45,7 +45,6 @@ class OfficeMap extends React.Component {
 
   toggleOpen = () => {
     this.setState(prevState => {
-      console.log(prevState)
       return { isOpen: !prevState.isOpen }
     })
   }

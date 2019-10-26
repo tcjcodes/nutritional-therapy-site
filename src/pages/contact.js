@@ -1,10 +1,9 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { Box, Column, Columns, Container, Heading, Section } from "bloomer";
-import PageHeader from "../components/page-header";
-import ContactForm from "../components/contact-form";
-import OfficeMap from "../components/office-map";
-import FormsButton from "../components/review-forms-modal-button";
+import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
+import React from 'react'
+import Helmet from 'react-helmet'
+import ContactForm from '../components/contact-form'
+import OfficeMap from '../components/office-map'
+import PageHeader from '../components/page-header'
 
 const mapCenter = { lat: 43.6169187, lng: -116.2039708 };
 const directionsLink =
@@ -24,7 +23,7 @@ const ContactPage = ({ data }) => {
       <Container>
         <PageHeader center title="Contact" />
         <Columns isMultiline={true}>
-          <Column isSize={10} isOffset={1}>
+          <Column isHidden="mobile" isSize={10} isOffset={1}>
             <Box style={{ marginBottom: "2em", minHeight: "350px" }}>
               <OfficeMap
                 zoom={15}

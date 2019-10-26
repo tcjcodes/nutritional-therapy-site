@@ -60,18 +60,6 @@ const ProductsTemplate = ({ data }) => {
                   />
                 ))}
               </ProductCardRow>
-              {/*<ProductCardRow>
-                {categories[key].map(c => (
-                  <ProductCardColumn key={c.id}>
-                    <ProductCard
-                      slug={c.slug}
-                      thumbnail={c.image}
-                      title={c.title}
-                      excerpt={c.excerpt}
-                    />
-                  </ProductCardColumn>
-                ))}
-              </ProductCardRow>*/}
               {/*{categories[key].length === CUTOFF_LENGTH && (
                 <div css={{ textAlign: 'center' }}>
                   <Link
