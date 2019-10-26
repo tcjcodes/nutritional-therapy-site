@@ -1,12 +1,14 @@
-import React from 'react'
-import Link from 'gatsby-link'
 import { Section } from 'bloomer'
+import React from 'react'
+import Layout from '../components/layout'
 
 const NotFoundPage = () => (
-  <Section hasTextAlign="centered">
-    <h1 className="subtitle">NOT FOUND</h1>
-    <p>Page not found</p>
-  </Section>
-)
+  <Layout>
+    <Section hasTextAlign="centered">
+      <h1 className="subtitle">NOT FOUND</h1>
+      <p>Page not found</p>
+    </Section>
+  </Layout>
+);
 
-export default NotFoundPage
+export default NotFoundPage;

@@ -2,6 +2,7 @@ import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
 import React from 'react'
 import Helmet from 'react-helmet'
 import ContactForm from '../components/contact-form'
+import Layout from '../components/layout'
 import OfficeMap from '../components/office-map'
 import PageHeader from '../components/page-header'
 
@@ -18,63 +19,65 @@ const ContactPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
 
   return (
-    <Section>
-      <Helmet title={`Contact | ${siteTitle}`} />
-      <Container>
-        <PageHeader center title="Contact" />
-        <Columns isMultiline={true}>
-          <Column isHidden="mobile" isSize={10} isOffset={1}>
-            <Box style={{ marginBottom: "2em", minHeight: "350px" }}>
-              <OfficeMap
-                zoom={15}
-                mapCenter={mapCenter}
-                containerStyles={{ height: "400px" }}
-              >
-                <strong>Office</strong>
-                <br />
-                <br />
-                <address css={{ color: "#000" }}>{address.streetLine}</address>
-                <address css={{ color: "#000" }}>
-                  {address.cityStateZip}
-                </address>
-                <a
-                  href={directionsLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  css={{ color: "#427fed" }} // Google Map link
+    <Layout>
+      <Section>
+        <Helmet title={`Contact | ${siteTitle}`} />
+        <Container>
+          <PageHeader center title="Contact" />
+          <Columns isMultiline={true}>
+            <Column isHidden="mobile" isSize={10} isOffset={1}>
+              <Box style={{ marginBottom: "2em", minHeight: "350px" }}>
+                <OfficeMap
+                    zoom={15}
+                    mapCenter={mapCenter}
+                    containerStyles={{ height: "400px" }}
                 >
-                  Get Directions
-                </a>
-              </OfficeMap>
-            </Box>
-          </Column>
-          <Column isSize={7} isOffset={1} style={{ paddingRight: "2rem" }}>
-            <Heading>send a message</Heading>
-            <ContactForm />
-          </Column>
-          <Column isSize={3}>
-            <div>
-              <Heading>new patients</Heading>
-              <p>
-                I provide a free 30 minute consultation for new patients. Send a
-                message with the form on the left to request an appointment.
-              </p>
-            </div>
-            <div css={{ margin: "1rem 0" }}>
-              <Heading>address</Heading>
+                  <strong>Office</strong>
+                  <br />
+                  <br />
+                  <address css={{ color: "#000" }}>{address.streetLine}</address>
+                  <address css={{ color: "#000" }}>
+                    {address.cityStateZip}
+                  </address>
+                  <a
+                      href={directionsLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      css={{ color: "#427fed" }} // Google Map link
+                  >
+                    Get Directions
+                  </a>
+                </OfficeMap>
+              </Box>
+            </Column>
+            <Column isSize={7} isOffset={1} style={{ paddingRight: "2rem" }}>
+              <Heading>send a message</Heading>
+              <ContactForm />
+            </Column>
+            <Column isSize={3}>
+              <div>
+                <Heading>new patients</Heading>
+                <p>
+                  I provide a free 30 minute consultation for new patients. Send a
+                  message with the form on the left to request an appointment.
+                </p>
+              </div>
+              <div css={{ margin: "1rem 0" }}>
+                <Heading>address</Heading>
 
-              <address>{address.streetLine}</address>
-              <address>{address.cityStateZip}</address>
-              <address>
-                <strong>
-                  <a href={directionsLink}>Directions</a>
-                </strong>
-              </address>
-            </div>
-          </Column>
-        </Columns>
-      </Container>
-    </Section>
+                <address>{address.streetLine}</address>
+                <address>{address.cityStateZip}</address>
+                <address>
+                  <strong>
+                    <a href={directionsLink}>Directions</a>
+                  </strong>
+                </address>
+              </div>
+            </Column>
+          </Columns>
+        </Container>
+      </Section>
+    </Layout>
   );
 };
 

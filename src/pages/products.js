@@ -1,12 +1,12 @@
-import { Container, Section } from "bloomer";
-import Link from "gatsby-link";
-import React from "react";
-import Helmet from "react-helmet";
-import PageHeader from "../components/page-header";
-import ProductCard from "../components/product-card";
-import ProductCardColumn from "../components/product-card-column";
-import ProductCardRow from "../components/product-card-row";
-import ProductCategoryHeading from "../components/product-category-heading";
+import { Container, Section } from 'bloomer'
+import Link from 'gatsby-link'
+import React from 'react'
+import Helmet from 'react-helmet'
+import Layout from '../components/layout'
+import PageHeader from '../components/page-header'
+import ProductCardColumn from '../components/product-card-column'
+import ProductCardRow from '../components/product-card-row'
+import ProductCategoryHeading from '../components/product-category-heading'
 
 const pageTitle = "All Products";
 const sortProducts = edges => {
@@ -37,30 +37,31 @@ const ProductsTemplate = ({ data }) => {
   const categories = sortProducts(edges);
   const { title } = data.site.siteMetadata;
   return (
-    <Section className="section">
-      <Helmet title={`${pageTitle} | ${title}`} />
+    <Layout>
+      <Section className="section">
+        <Helmet title={`${pageTitle} | ${title}`} />
 
-      <Container style={{ padding: "0 1em" }}>
-        <PageHeader center title={pageTitle} />
+        <Container style={{ padding: "0 1em" }}>
+          <PageHeader center title={pageTitle} />
 
-        <div>
-          {Object.keys(categories).map(key => (
-            <div key={key} css={{ marginBottom: "3rem" }}>
-              <ProductCategoryHeading>
-                <Link to={`/product-categories/${key}/`}>{key}</Link>
-              </ProductCategoryHeading>
-              <ProductCardRow>
-                {categories[key].map(c => (
-                  <ProductCardColumn
-                    key={c.id}
-                    slug={c.slug}
-                    thumbnail={c.image}
-                    title={c.title}
-                    excerpt={c.excerpt}
-                  />
-                ))}
-              </ProductCardRow>
-              {/*{categories[key].length === CUTOFF_LENGTH && (
+          <div>
+            {Object.keys(categories).map(key => (
+              <div key={key} css={{ marginBottom: "3rem" }}>
+                <ProductCategoryHeading>
+                  <Link to={`/product-categories/${key}/`}>{key}</Link>
+                </ProductCategoryHeading>
+                <ProductCardRow>
+                  {categories[key].map(c => (
+                    <ProductCardColumn
+                      key={c.id}
+                      slug={c.slug}
+                      thumbnail={c.image}
+                      title={c.title}
+                      excerpt={c.excerpt}
+                    />
+                  ))}
+                </ProductCardRow>
+                {/*{categories[key].length === CUTOFF_LENGTH && (
                 <div css={{ textAlign: 'center' }}>
                   <Link
                     css={{ ...serifFont, colorBrownDark }}
@@ -70,11 +71,12 @@ const ProductsTemplate = ({ data }) => {
                   </Link>
                 </div>
               )}*/}
-            </div>
-          ))}
-        </div>
-      </Container>
-    </Section>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </Section>
+    </Layout>
   );
 };
 

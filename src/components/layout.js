@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import './theme.scss'
+import '../layouts/theme.scss'
 import bgImg from '../img/noisy/noisy.png'
 import favicon from '../img/favicon.png'
 import Navigation from '../components/navigation'
 import PageFooter from '../components/page-footer'
 
-const TemplateWrapper = ({ children, data }) => {
+const Layout = ({ children, data }) => {
   const { title } = data.site.siteMetadata
   const edges = data.allMarkdownRemark.edges.map(edge => edge.node)
   return (
@@ -22,17 +22,17 @@ const TemplateWrapper = ({ children, data }) => {
         <title>{title}</title>
       </Helmet>
       <Navigation categoryNodes={edges} title={title} />
-      <div>{children()}</div>
+      <div>{children}</div>
       <PageFooter title={title} />
     </div>
   )
 }
-TemplateWrapper.propTypes = {
+Layout.propTypes = {
   children: PropTypes.func,
 }
 
 export const pageQuery = graphql`
-  query TemplateWrapperQuery {
+  query LayoutQuery {
     site {
       siteMetadata {
         title
@@ -60,4 +60,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default TemplateWrapper
+export default Layout
