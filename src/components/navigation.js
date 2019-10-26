@@ -1,12 +1,20 @@
-import { Navbar, NavbarMenu, } from 'bloomer';
-import React from 'react';
-import { serifFont } from '../utils/fonts';
-import DesktopBrand from './nav/desktop-brand';
-import ProductsDropdownItem from './nav/products-dropdown-item';
-import StyledNavbarItem from './nav/styled-navbar-item';
-import TabletNavbarBrand from './nav/tablet-navbar-brand';
+import { Navbar, NavbarMenu } from 'bloomer'
+import React from 'react'
+import { serifFont } from '../utils/fonts'
+import DesktopBrand from './nav/desktop-brand'
+import NavbarDropdownItem from './nav/navbar-dropdown-item'
+import StyledNavbarItem from './nav/styled-navbar-item'
+import TabletNavbarBrand from './nav/tablet-navbar-brand'
 
 const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
+
+  const productNavItems = categoryNodes.map(node => {
+    return {
+      id: node.id,
+      text: node.frontmatter.name,
+      to: `product-categories/${node.fields.categoryKey}`
+    }
+  })
   return (
     <div>
       <DesktopBrand title={title} />
@@ -30,8 +38,7 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
         >
           <StyledNavbarItem text="About" />
 
-          <ProductsDropdownItem text="Products" categoryNodes={categoryNodes} />
-
+          <NavbarDropdownItem text="Products" to="products" items={productNavItems}/>
           <StyledNavbarItem text="Services" />
           <StyledNavbarItem text="Forms" to="patient-forms" />
           <StyledNavbarItem text="Contact" />

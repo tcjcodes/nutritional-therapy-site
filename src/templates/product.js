@@ -75,6 +75,7 @@ export default function ProductTemplate({ data }) {
               isColor="primary"
               href={hyperlink}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <StyledIcon name="shopping-bag" />
               Buy Item

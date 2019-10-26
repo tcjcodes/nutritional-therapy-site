@@ -40,6 +40,7 @@ const ContactPage = ({ data }) => {
                 <a
                   href={directionsLink}
                   target="_blank"
+                  rel="noopener noreferrer"
                   css={{ color: "#427fed" }} // Google Map link
                 >
                   Get Directions
