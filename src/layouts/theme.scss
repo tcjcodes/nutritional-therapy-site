@@ -63,9 +63,11 @@ strong {
   }
 }
 .navbar-link {
-  padding-right: 1.75em;
-  &::after {
-    right: 0.75em;
+  &:not(.is-arrowless) {
+    padding-right: 1.75em;
+    &::after {
+      right: 0.75em;
+    }
   }
 }
 .navbar-item {

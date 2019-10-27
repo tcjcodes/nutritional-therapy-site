@@ -1,12 +1,13 @@
-import { Container, Section } from 'bloomer'
-import { graphql } from "gatsby"
-import React from 'react'
-import Helmet from 'react-helmet'
-import BreadcrumbLink from '../components/breadcrumb-link'
-import PageHeader from '../components/page-header'
-import ProductCardColumn from '../components/product-card-column'
-import ProductCardRow from '../components/product-card-row'
-import ProductCategoryHeading from '../components/product-category-heading'
+import { Container, Section } from "bloomer";
+import { graphql } from "gatsby";
+import React from "react";
+import Helmet from "react-helmet";
+import BreadcrumbLink from "../components/breadcrumb-link";
+import Layout from "../components/layout";
+import PageHeader from "../components/page-header";
+import ProductCardColumn from "../components/product-card-column";
+import ProductCardRow from "../components/product-card-row";
+import ProductCategoryHeading from "../components/product-category-heading";
 
 const pageTitle = "Products";
 const CategoriesTemplate = ({ data }) => {
@@ -18,31 +19,36 @@ const CategoriesTemplate = ({ data }) => {
 
   const { title } = data.site.siteMetadata;
   return (
-    <Section className="section">
-      <Helmet title={`${name} ${pageTitle} | ${title}`} />
+    <Layout>
+      <Section className="section">
+        <Helmet title={`${name} ${pageTitle} | ${title}`} />
 
-      <Container isFluid={true} style={{ padding: "0 1em" }}>
-        <PageHeader center title={`${name} ${pageTitle}`} />
-        <p css={{ textAlign: 'center' }}>{description}</p>
+        <Container isFluid={true} style={{ padding: "0 1em" }}>
+          <PageHeader center title={`${name} ${pageTitle}`} />
+          <p css={{ textAlign: "center" }}>{description}</p>
 
-        <div css={{ marginBottom: "3rem" }}>
-          <ProductCategoryHeading>
-            <BreadcrumbLink to="/products/" text={`Back to all ${pageTitle}`} />
-          </ProductCategoryHeading>
-          <ProductCardRow>
-            {matchingProducts.map(node => (
-              <ProductCardColumn
-                key={node.id}
-                slug={node.fields.slug}
-                thumbnail={node.frontmatter.image}
-                title={node.frontmatter.title}
-                excerpt={node.excerpt}
+          <div css={{ marginBottom: "3rem" }}>
+            <ProductCategoryHeading>
+              <BreadcrumbLink
+                to="/products/"
+                text={`Back to all ${pageTitle}`}
               />
-            ))}
-          </ProductCardRow>
-        </div>
-      </Container>
-    </Section>
+            </ProductCategoryHeading>
+            <ProductCardRow>
+              {matchingProducts.map(node => (
+                <ProductCardColumn
+                  key={node.id}
+                  slug={node.fields.slug}
+                  thumbnail={node.frontmatter.image}
+                  title={node.frontmatter.title}
+                  excerpt={node.excerpt}
+                />
+              ))}
+            </ProductCardRow>
+          </div>
+        </Container>
+      </Section>
+    </Layout>
   );
 };
 

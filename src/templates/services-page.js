@@ -2,6 +2,7 @@ import { Button, Container, Content, Section } from "bloomer";
 import { graphql } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
+import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 
 const ServicesPage = ({ data }) => {
@@ -9,24 +10,29 @@ const ServicesPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Section>
-      <Helmet title={`Services | ${title}`} />
+    <Layout>
+      <Section>
+        <Helmet title={`Services | ${title}`} />
 
-      <Container style={{ maxWidth: 800 }}>
-        <PageHeader title="services" center />
+        <Container style={{ maxWidth: 800 }}>
+          <PageHeader title="services" center />
 
-        <div css={{ marginBottom: `2rem` }}>
-          <Content dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
+          <div css={{ marginBottom: `2rem` }}>
+            <Content dangerouslySetInnerHTML={{ __html: post.html }} />
+          </div>
 
-        <div css={{ textAlign: "center" }}>
-          <Button isColor="primary" href="/contact/">
-            <span className="fa fa-calendar" css={{ marginRight: `0.5rem` }} />
-            Request an Appointment
-          </Button>
-        </div>
-      </Container>
-    </Section>
+          <div css={{ textAlign: "center" }}>
+            <Button isColor="primary" href="/contact/">
+              <span
+                className="fa fa-calendar"
+                css={{ marginRight: `0.5rem` }}
+              />
+              Request an Appointment
+            </Button>
+          </div>
+        </Container>
+      </Section>
+    </Layout>
   );
 };
 
