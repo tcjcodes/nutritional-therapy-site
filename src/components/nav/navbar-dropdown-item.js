@@ -5,10 +5,7 @@ import React from 'react'
 
 const NavbarDropdownItem = ({ text, to, items }) => (
   <NavbarItem hasDropdown isHoverable>
-    {/*<NavbarLink style={{ paddingRight: "2em" }}>
-
-    </NavbarLink>*/}
-    <Link className="navbar-link" to={`/${to}`}>
+    <Link className="navbar-link" to={`/${to || items[0].to}`}>
       {text}
     </Link>
 
@@ -24,7 +21,7 @@ const NavbarDropdownItem = ({ text, to, items }) => (
 
 NavbarDropdownItem.propTypes = {
   text: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired,
+  to: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,

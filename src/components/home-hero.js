@@ -26,7 +26,7 @@ const HomeHero = ({ background }) => (
           Holistic Nutrition &amp; Wellness
         </Title>
         <Subtitle style={{ fontWeight: "bold" }}>
-          Practicing nutritional therapy in Boise, ID
+          Practicing Nutritional Therapy &amp; Applied Psycho-Neurobiology
         </Subtitle>
         <Button href="/services/" style={{ marginTop: "1.5em" }} isColor="dark">
           Learn More

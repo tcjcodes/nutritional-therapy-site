@@ -6,6 +6,13 @@ import NavbarDropdownItem from './nav/navbar-dropdown-item'
 import StyledNavbarItem from './nav/styled-navbar-item'
 import TabletNavbarBrand from './nav/tablet-navbar-brand'
 
+const patientsNavItems = [
+  {
+    text: 'Forms',
+    to: 'patient-forms'
+  }
+]
+
 const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
 
   const productNavItems = categoryNodes.map(node => {
@@ -14,7 +21,7 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
       text: node.frontmatter.name,
       to: `product-categories/${node.fields.categoryKey}`
     }
-  })
+  });
   return (
     <div>
       <DesktopBrand title={title} />
@@ -37,10 +44,9 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
           onClick={onMenuClick}
         >
           <StyledNavbarItem text="About" />
-
           <NavbarDropdownItem text="Products" to="products" items={productNavItems}/>
           <StyledNavbarItem text="Services" />
-          <StyledNavbarItem text="Forms" to="patient-forms" />
+          <NavbarDropdownItem text="Patients" items={patientsNavItems}/>
           <StyledNavbarItem text="Contact" />
         </NavbarMenu>
       </Navbar>
