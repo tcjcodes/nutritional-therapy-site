@@ -9,11 +9,11 @@ import {
   Select,
   TextArea
 } from "bloomer";
-import ExternalLink from './external-link'
+import ExternalLink from "./external-link";
 import StyledIcon from "./styled-icon";
 import NotificationContainer from "./notification-container";
 
-const formName = "contact";
+const formId = "contact";
 const email = "info@carolinentp.com";
 
 const extractData = fd => {
@@ -30,13 +30,16 @@ const encode = data => {
     .join("&");
 };
 
-const SUCCESS = "success";
-const ERROR = "error";
+const STATUS_SUCCESS = "success";
+const STATUS_ERROR = "error";
+
+const SUBJECT_OTHER = "Other";
 
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { status: null, subject: null };
+    this.state = { status: null, showOtherSubject: false };
+    this.formRef = React.createRef();
 
     this.handleSubjectChange = this.handleSubjectChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -44,42 +47,66 @@ class ContactForm extends React.Component {
   }
 
   handleSubjectChange(e) {
-    this.setState({ subject: e.target.value });
+    this.setState({ showOtherSubject: e.target.value === SUBJECT_OTHER });
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    this.setState({ status: null });
     const fd = new FormData(event.target);
     const data = extractData(fd);
-
+    const { current } = this.formRef;
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": formName, ...data })
+      body: encode({ "form-name": formId, ...data })
     })
       .then(() => {
-        this.setState({ status: SUCCESS });
+        this.setState({ status: STATUS_SUCCESS });
+        current.reset();
       })
       .catch(error => {
-        this.setState({ status: ERROR });
+        this.setState({ status: STATUS_ERROR });
         console.error("form submit error", error);
       });
-  };
+  }
 
   handleDeleteNotification() {
     this.setState({ status: null });
-  };
+  }
 
   render() {
     return (
       <div>
+        <div css={{ margin: "1rem 0" }}>
+          <NotificationContainer
+              isShown={this.state.status === STATUS_SUCCESS}
+              onDelete={this.handleDeleteNotification}
+              isColor="light"
+          >
+            <StyledIcon name="paper-plane" />
+            <strong>Sent!</strong> Thank you for contacting me, I will get back{" "}
+                                   to you shortly.
+          </NotificationContainer>
+          <NotificationContainer
+              isShown={this.state.status === STATUS_ERROR}
+              onDelete={this.handleDeleteNotification}
+              isColor="light"
+          >
+            <StyledIcon name="exclamation-triangle" />
+            <strong>Oh no!</strong> Something went wrong. Please try again later
+                                    or send us a direct e-mail instead at{" "}
+            <ExternalLink href={`mailto:${email}`} text={email} />.
+          </NotificationContainer>
+        </div>
+
         <form
-          name={formName}
+          id={formId}
+          name={formId}
           onSubmit={this.handleSubmit}
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          ref={this.formRef}
         >
           <input type="hidden" name="form-name" value="contact" />
 
@@ -88,7 +115,7 @@ class ContactForm extends React.Component {
               <Field isGrouped>
                 <Control isExpanded hasIcons="right">
                   <Input
-                    name="firstName"
+                    name="fname"
                     isSize="small"
                     required
                     placeholder="First Name*"
@@ -98,7 +125,7 @@ class ContactForm extends React.Component {
               <Field>
                 <Control hasIcons={["right"]}>
                   <Input
-                    name="lastName"
+                    name="lname"
                     isSize="small"
                     required
                     placeholder="Last Name*"
@@ -130,28 +157,30 @@ class ContactForm extends React.Component {
                     required
                     isSize="small"
                     onChange={this.handleSubjectChange}
-                    value={this.state.subject}
                   >
                     <option value="" disabled>
                       Subject*
                     </option>
-                    <option>Questions</option>
-                    <option>Request Free Consultation</option>
-                    <option>Other</option>
+                    <option value="Questions">Questions</option>
+                    <option value="Request Free Consultation">
+                      Request Free Consultation
+                    </option>
+                    <option value={SUBJECT_OTHER}>Other</option>
                   </Select>
                 </Control>
               </Field>
-              {this.state.subject === 'Other' && <Field>
-                <Control isExpanded>
-                  <Input
-                    name="otherSubject"
-                    isSize="small"
-                    type="text"
-                    required
-                    placeholder="Subject"
-                  />
-                </Control>
-              </Field>}
+              {this.state.showOtherSubject && (
+                <Field>
+                  <Control isExpanded>
+                    <Input
+                      name="otherSubject"
+                      isSize="small"
+                      type="text"
+                      placeholder="Subject"
+                    />
+                  </Control>
+                </Field>
+              )}
             </FieldBody>
           </Field>
 
@@ -185,28 +214,6 @@ class ContactForm extends React.Component {
             </FieldBody>
           </Field>
         </form>
-
-        <div css={{ marginTop: "1.5rem" }}>
-          <NotificationContainer
-            isShown={this.state.status === SUCCESS}
-            onDelete={this.handleDeleteNotification}
-            isColor="light"
-          >
-            <StyledIcon name="paper-plane" />
-            <strong>Sent!</strong> Thank you for contacting us, we will get back{" "}
-            to you shortly.
-          </NotificationContainer>
-          <NotificationContainer
-            isShown={this.state.status === ERROR}
-            onDelete={this.handleDeleteNotification}
-            isColor="light"
-          >
-            <StyledIcon name="exclamation-triangle" />
-            <strong>Oh no!</strong> Something went wrong. Please try again{" "}
-            later or send us a direct e-mail instead at{" "}
-            <ExternalLink href={`mailto:${email}`} text={email} />.
-          </NotificationContainer>
-        </div>
       </div>
     );
   }

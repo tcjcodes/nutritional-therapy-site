@@ -20,6 +20,31 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Image", name: "avatar", widget: "image"}
 
+# WIP
+#  - name: "labGuides"
+#    label: "Lab How-To Guides"
+#    folder: "src/content/lab-guides"
+#    create: false
+#    delete: false
+#    slug: "{{slug}}"
+#    fields:
+#      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lab-guides-page"}
+#      - {label: "Path", name: "path", widget: "hidden", default: "/lab-guides"}
+#      - {label: "Title", name: "title", widget: "string", default: "How to do labs at home"}
+#      - {label: "Lab How-To Guides Section", name: "body", widget: "markdown"}
+#
+#  - name: "labResources"
+#    label: "About Labs"
+#    folder: "src/content/lab-resources"
+#    create: false
+#    delete: false
+#    slug: "{{slug}}"
+#    fields:
+#      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lab-resources-page"}
+#      - {label: "Path", name: "path", widget: "hidden", default: "/lab-resources"}
+#      - {label: "Title", name: "title", widget: "string", default: "How to do labs at home"}
+#      - {label: "Lab How-To's Section", name: "body", widget: "markdown"}
+
   - name: "services"
     label: "Services"
     folder: "src/content/services"
