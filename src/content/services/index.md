@@ -1,18 +1,20 @@
 ---
-title: Services
 templateKey: services-page
 path: /services
+title: Services
 ---
-### First Consultation
-Lorem ipsum dolores
+### Free 20 minute Consultation
 
 In our initial session, we assess your current health baseline and discuss
 your health and wellness concerns, goals, and priorities. This
 consultation includes a comprehensive health assessment, dietary review,
 and online nutritional assessment questionnaire. 
 
-### Initial Consultation 
-#### (Approximately 90 minutes, either virtually or in-person) 
+### Initial Consultation
+
+#### (Approximately 90 minutes, either virtually or in-person)
+
+In our initial session, we assess your current health baseline and discuss your health and wellness concerns, goals, and priorities. This consultation includes a comprehensive health assessment, dietary review, and online nutritional assessment questionnaire.
 
 You will be introduced to the functional evaluation, and we use the
 information from the initial consultation and a variety of techniques
@@ -22,7 +24,9 @@ to determine which nutrients will best support your body moving to a more
 balanced state.
 
 ### Follow Up Appointments
-#### (Approximately 60 minutes)
+
+#### (Approximately 45 minutes)
+
 These sessions are tailored for you. We will discuss your progress,
 revisit your goals and priorities, and use various functional evaluation
 assessments to refine your protocol. Your body is constantly trying to
@@ -31,9 +35,9 @@ create balance from within.
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
 
-- 3 months/5 visits - $500 ($100/session)
-- 6 months/9 visits - $??? ($??/session)
-- 12 months/15 visits $1479 ($99/session)
+* 3 months/5 visits - $475 ($95/session)
+* 6 months/9 visits - $765 ($85/session)
+* 12 months/15 visits $1,125 ($75/session)
 
 ### Packages
 
@@ -44,12 +48,11 @@ be asked to schedule a session.
 ### Individual Sessions
 
 After the initial package is complete, clients may pay for individual
-sessions at $125 or continue with an additional package.
+sessions at $100-125 or continue with an additional package.
 
-*Please note that Nutritional Therapy services are not covered by
-insurance. Payment is expected at time of service.*
+_Please note that Functional Nutrition or Applied Psycho-Neurobiology services are not covered by insurance. Payment is expected at time of service._
 
----
+- - -
 
 #### DISCLAIMER AND GUIDELINES
 
@@ -62,4 +65,3 @@ information, assessments, muscle testing, and lingual-neuro testing.A Nutritiona
 injury, or disease. No recommendation or comment made by a Nutritional
 Therapy Practitioner should be construed as being medical advice or
 diagnosis.
-
