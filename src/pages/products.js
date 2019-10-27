@@ -2,6 +2,7 @@ import { Container, Section } from 'bloomer'
 import Link from 'gatsby-link'
 import React from 'react'
 import Helmet from 'react-helmet'
+import { graphql } from "gatsby"
 import Layout from '../components/layout'
 import PageHeader from '../components/page-header'
 import ProductCardColumn from '../components/product-card-column'

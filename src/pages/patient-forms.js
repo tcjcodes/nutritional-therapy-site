@@ -2,6 +2,7 @@ import { Column, Columns, Container, Section, Content, Box } from "bloomer";
 import React from "react";
 import Helmet from "react-helmet";
 import Img from "gatsby-image";
+import { graphql } from "gatsby"
 import Layout from '../components/layout'
 import PageHeader from "../components/page-header";
 

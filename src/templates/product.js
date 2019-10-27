@@ -1,20 +1,10 @@
-import {
-  Box,
-  Button,
-  Column,
-  Columns,
-  Container,
-  Content,
-  Image,
-  Section,
-  Title
-} from "bloomer";
-import Link from "gatsby-link";
-import React from "react";
-import Helmet from "react-helmet";
-import BreadcrumbLink from "../components/breadcrumb-link";
-import StyledIcon from "../components/styled-icon";
-import { secondaryFont } from "../utils/fonts";
+import { Box, Button, Column, Columns, Container, Content, Image, Section, Title } from 'bloomer'
+import { graphql } from "gatsby"
+import React from 'react'
+import Helmet from 'react-helmet'
+import BreadcrumbLink from '../components/breadcrumb-link'
+import StyledIcon from '../components/styled-icon'
+import { secondaryFont } from '../utils/fonts'
 
 export default function ProductTemplate({ data }) {
   const siteTitle = data.site.siteMetadata.title;

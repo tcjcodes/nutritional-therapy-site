@@ -1,6 +1,7 @@
 import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
 import React from 'react'
 import Helmet from 'react-helmet'
+import { graphql } from "gatsby"
 import ContactForm from '../components/contact-form'
 import Layout from '../components/layout'
 import OfficeMap from '../components/office-map'

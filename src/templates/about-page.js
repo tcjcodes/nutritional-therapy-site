@@ -1,4 +1,5 @@
 import { Box, Container, Content, Section } from 'bloomer';
+import { graphql } from "gatsby"
 import Img from 'gatsby-image';
 import React from 'react';
 import Helmet from 'react-helmet';

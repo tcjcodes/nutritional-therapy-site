@@ -1,7 +1,8 @@
-import { Button, Container, Content, Section } from 'bloomer';
-import React from 'react';
-import Helmet from 'react-helmet';
-import PageHeader from '../components/page-header';
+import { Button, Container, Content, Section } from "bloomer";
+import { graphql } from "gatsby";
+import React from "react";
+import Helmet from "react-helmet";
+import PageHeader from "../components/page-header";
 
 const ServicesPage = ({ data }) => {
   const { title } = data.site.siteMetadata;
@@ -18,7 +19,7 @@ const ServicesPage = ({ data }) => {
           <Content dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
 
-        <div css={{ textAlign: 'center' }}>
+        <div css={{ textAlign: "center" }}>
           <Button isColor="primary" href="/contact/">
             <span className="fa fa-calendar" css={{ marginRight: `0.5rem` }} />
             Request an Appointment

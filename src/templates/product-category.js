@@ -1,15 +1,13 @@
-import { Container, Section, Heading, Columns, Column } from "bloomer";
-import Link from "gatsby-link";
-import React from "react";
-import Helmet from "react-helmet";
-import BreadcrumbLink from "../components/breadcrumb-link";
-import PageHeader from "../components/page-header";
-import ProductCard from "../components/product-card";
-import ProductCardColumn from "../components/product-card-column";
-import ProductCardRow from "../components/product-card-row";
-import ProductCategoryHeading from "../components/product-category-heading";
-import { serifFont } from "../utils/fonts";
-import { colorBrown } from "../utils/theme-variables";
+import { Container, Section } from 'bloomer'
+import { graphql } from "gatsby"
+import React from 'react'
+import Helmet from 'react-helmet'
+import BreadcrumbLink from '../components/breadcrumb-link'
+import PageHeader from '../components/page-header'
+import ProductCardColumn from '../components/product-card-column'
+import ProductCardRow from '../components/product-card-row'
+import ProductCategoryHeading from '../components/product-category-heading'
+
 const pageTitle = "Products";
 const CategoriesTemplate = ({ data }) => {
   const { categoryKey } = data.markdownRemark.fields;
