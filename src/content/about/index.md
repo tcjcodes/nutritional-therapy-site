@@ -13,6 +13,32 @@ Applied Psycho-Neurobiology - APN
 
 As a functional nutritionist, I look for deeper underlying imbalances and deficiencies to restore health and function. I use a complete, holistic evaluation that may include testing, detailed nutritional assessment, dietary and health history overview to gather in-depth understanding of your biochemistry and current health status. Based on the gathered information, I create a customized nutritional program and recommend a supplemental protocol when needed. I help clients who are struggling with digestive problems, autoimmune disorders, chronic pain, fatigue, hormonal imbalances, skin problems, high blood pressure and other conditions.
 
+So if you are experiencing:
+
+* Allergies
+* Anxiety
+* Autoimmune disease
+* Brain fog or concerned about brain health
+* Chemical Sensitivities
+* Constipation/Diarrhea
+* Depression
+* Detoxification issues
+* Fatigue
+* Gas and bloating 
+* Gallbladder removed
+* Imbalanced Hormones
+* Metabolic/ Pre-Diabetes
+* Hypo/Hyperglycemia
+* Recurring Infections
+
+
+
+​Let's set up a free 15 minute phone consult so we can discuss your health concerns and goals, I would love to help!
+
+
+
+
+
 I am passionate to helping you strengthen and find the healthier version of yourself.  Bringing back the vitality and support your body's needs, for a healthier, 
 
 I value wholefoods, nutrient-dense, organic, non-gmo, free-range, locally raised meats, etc...    I enjoy eating good quality fats, such as coconut oil, butter, ghee, duck fat, tallow, lard, cold-pressed olive oil, flax oil, avocado oil..  I value and appreciate supporting local and  farm to table fresh foods/meat. 
