@@ -9,6 +9,7 @@ import {
   Select,
   TextArea
 } from "bloomer";
+import ExternalLink from './external-link'
 import StyledIcon from "./styled-icon";
 import NotificationContainer from "./notification-container";
 
@@ -99,7 +100,8 @@ class ContactForm extends React.Component {
                   <Input
                     name="lastName"
                     isSize="small"
-                    placeholder="Last Name"
+                    required
+                    placeholder="Last Name*"
                   />
                 </Control>
               </Field>
@@ -131,7 +133,7 @@ class ContactForm extends React.Component {
                     value={this.state.subject}
                   >
                     <option value="" disabled>
-                      Subject
+                      Subject*
                     </option>
                     <option>Questions</option>
                     <option>Request Free Consultation</option>
@@ -202,7 +204,7 @@ class ContactForm extends React.Component {
             <StyledIcon name="exclamation-triangle" />
             <strong>Oh no!</strong> Something went wrong. Please try again{" "}
             later or send us a direct e-mail instead at{" "}
-            <a href={`mailto:${email}`}>{email}</a>.
+            <ExternalLink href={`mailto:${email}`} text={email} />.
           </NotificationContainer>
         </div>
       </div>

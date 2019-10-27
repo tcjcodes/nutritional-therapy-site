@@ -2,49 +2,50 @@ import { Column, Columns, Container, Section, Content, Box } from "bloomer";
 import React from "react";
 import Helmet from "react-helmet";
 import Img from "gatsby-image";
-import { graphql } from "gatsby"
-import Layout from '../components/layout'
+import { graphql } from "gatsby";
+import ExternalLink from "../components/external-link";
+import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 
-const PatientFormsPage = ({ data }) => {
+const ClientFormsPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
   const imgSizes = data.file.childImageSharp.sizes;
   return (
     <Layout>
       <Section>
-        <Helmet title={`Patient Forms | ${siteTitle}`} />
+        <Helmet title={`Client Forms | ${siteTitle}`} />
         <Container>
           <Columns isVCentered={true}>
             <Column isSize={3} isOffset={1}>
               <Box>
                 <Img
-                    sizes={imgSizes}
-                    alt="Sprouting plant. Photo by icon0.com from Pexels"
+                  sizes={imgSizes}
+                  alt="Sprouting plant. Photo by icon0.com from Pexels"
                 />
               </Box>
             </Column>
             <Column>
               <div css={{ paddingLeft: "2em" }}>
-                <PageHeader title="Patient Forms" />
+                <PageHeader title="Client Forms" />
                 <Content>
                   <p css={{ marginBottom: "2em", marginRight: "1.5em" }}>
-                    For current patients, please print and fill out the following forms and
-                    bring them to your next appointment:
+                    For current clients, please print and fill out the following
+                    forms and bring them to your next appointment:
                     <ol>
                       <li>
-                        <a href="google.com">Form</a>
+                        <ExternalLink href="google.com" />
                       </li>
                       <li>
-                        <a href="google.com">Form</a>
+                        <ExternalLink href="google.com" />
                       </li>
                       <li>
-                        <a href="google.com">Form</a>
+                        <ExternalLink href="google.com" />
                       </li>
                       <li>
-                        <a href="google.com">Form</a>
+                        <ExternalLink href="google.com" />
                       </li>
                       <li>
-                        <a href="google.com">Form</a>
+                        <ExternalLink href="google.com" />
                       </li>
                     </ol>
                   </p>
@@ -58,10 +59,10 @@ const PatientFormsPage = ({ data }) => {
   );
 };
 
-PatientFormsPage.propTypes = {};
+ClientFormsPage.propTypes = {};
 
 export const query = graphql`
-  query PatientFormsPageQuery {
+  query ClientFormsPageQuery {
     site {
       siteMetadata {
         title
@@ -77,4 +78,4 @@ export const query = graphql`
   }
 `;
 
-export default PatientFormsPage;
+export default ClientFormsPage;

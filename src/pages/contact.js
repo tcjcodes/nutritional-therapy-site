@@ -1,11 +1,12 @@
-import { Box, Column, Columns, Container, Heading, Section } from 'bloomer'
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from "gatsby"
-import ContactForm from '../components/contact-form'
-import Layout from '../components/layout'
-import OfficeMap from '../components/office-map'
-import PageHeader from '../components/page-header'
+import { Box, Column, Columns, Container, Heading, Section } from "bloomer";
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import ContactForm from "../components/contact-form";
+import ExternalLink from "../components/external-link";
+import Layout from "../components/layout";
+import OfficeMap from "../components/office-map";
+import PageHeader from "../components/page-header";
 
 const mapCenter = { lat: 43.6169187, lng: -116.2039708 };
 const directionsLink =
@@ -29,25 +30,24 @@ const ContactPage = ({ data }) => {
             <Column isHidden="mobile" isSize={10} isOffset={1}>
               <Box style={{ marginBottom: "2em", minHeight: "350px" }}>
                 <OfficeMap
-                    zoom={15}
-                    mapCenter={mapCenter}
-                    containerStyles={{ height: "400px" }}
+                  zoom={15}
+                  mapCenter={mapCenter}
+                  containerStyles={{ height: "400px" }}
                 >
                   <strong>Office</strong>
                   <br />
                   <br />
-                  <address css={{ color: "#000" }}>{address.streetLine}</address>
+                  <address css={{ color: "#000" }}>
+                    {address.streetLine}
+                  </address>
                   <address css={{ color: "#000" }}>
                     {address.cityStateZip}
                   </address>
-                  <a
-                      href={directionsLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      css={{ color: "#427fed" }} // Google Map link
-                  >
-                    Get Directions
-                  </a>
+                  <ExternalLink
+                    href={directionsLink}
+                    css={{ color: "#427fed" }} // Google Map link
+                    text="Get Directions"
+                  />
                 </OfficeMap>
               </Box>
             </Column>
@@ -57,10 +57,10 @@ const ContactPage = ({ data }) => {
             </Column>
             <Column isSize={3}>
               <div>
-                <Heading>new patients</Heading>
+                <Heading>new clients</Heading>
                 <p>
-                  I provide a free 30 minute consultation for new patients. Send a
-                  message with the form on the left to request an appointment.
+                  I provide a free 30 minute consultation for new clients. Send
+                  a message with the form on the left to request an appointment.
                 </p>
               </div>
               <div css={{ margin: "1rem 0" }}>
@@ -70,7 +70,7 @@ const ContactPage = ({ data }) => {
                 <address>{address.cityStateZip}</address>
                 <address>
                   <strong>
-                    <a href={directionsLink}>Directions</a>
+                    <ExternalLink href={directionsLink} text="Directions" />
                   </strong>
                 </address>
               </div>

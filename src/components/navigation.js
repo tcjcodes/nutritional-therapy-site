@@ -6,10 +6,10 @@ import NavbarDropdownItem from './nav/navbar-dropdown-item'
 import StyledNavbarItem from './nav/styled-navbar-item'
 import TabletNavbarBrand from './nav/tablet-navbar-brand'
 
-const patientsNavItems = [
+const clientsNavItems = [
   {
     text: 'Forms',
-    to: 'patient-forms'
+    to: 'client-forms'
   }
 ]
 
@@ -46,7 +46,7 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
           <StyledNavbarItem text="About" />
           <NavbarDropdownItem text="Products" to="products" items={productNavItems}/>
           <StyledNavbarItem text="Services" />
-          <NavbarDropdownItem text="Patients" items={patientsNavItems}/>
+          <NavbarDropdownItem text="Clients" items={clientsNavItems}/>
           <StyledNavbarItem text="Contact" />
         </NavbarMenu>
       </Navbar>
