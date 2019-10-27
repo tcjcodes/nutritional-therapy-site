@@ -94,7 +94,7 @@ class ContactForm extends React.Component {
           >
             <StyledIcon name="exclamation-triangle" />
             <strong>Oh no!</strong> Something went wrong. Please try again later
-                                    or send us a direct e-mail instead at{" "}
+                                    or send a direct e-mail instead at{" "}
             <ExternalLink href={`mailto:${email}`} text={email} />.
           </NotificationContainer>
         </div>
