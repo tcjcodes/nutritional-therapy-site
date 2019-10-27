@@ -1,22 +1,15 @@
 import { NavbarItem } from 'bloomer'
+import PropTypes from 'prop-types'
 import React from 'react'
 import { colorBrownDark, colorGreen } from '../../utils/theme-variables'
 import Link from 'gatsby-link'
 
-const linkStyles = {
-  color: colorBrownDark,
-  borderBottom: `2px solid transparent`,
-}
-const activeLinkStyles = {
-  color: colorBrownDark,
-  borderBottom: `2px solid ${colorGreen}`,
-}
 
-const StyledNavbarItem = ({ to, text }) => (
+const StyledNavbarItem = ({ to, text, style, activeStyle }) => (
   <NavbarItem>
     <Link
-      style={linkStyles}
-      activeStyle={activeLinkStyles}
+      style={style}
+      activeStyle={activeStyle}
       to={`/${to || text.toLowerCase()}`}
     >
       {text}
@@ -24,6 +17,11 @@ const StyledNavbarItem = ({ to, text }) => (
   </NavbarItem>
 )
 
-StyledNavbarItem.propTypes = {}
+StyledNavbarItem.propTypes = {
+  text: PropTypes.string.isRequired,
+  to: PropTypes.string,
+  style: PropTypes.object,
+  activeStyle: PropTypes.object,
+}
 
 export default StyledNavbarItem

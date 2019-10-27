@@ -1,26 +1,37 @@
-import { Navbar, NavbarMenu } from 'bloomer'
-import React from 'react'
-import { serifFont } from '../utils/fonts'
-import DesktopBrand from './nav/desktop-brand'
-import NavbarDropdownItem from './nav/navbar-dropdown-item'
-import StyledNavbarItem from './nav/styled-navbar-item'
-import TabletNavbarBrand from './nav/tablet-navbar-brand'
+import { Navbar, NavbarMenu } from "bloomer";
+import React from "react";
+import { serifFont } from "../utils/fonts";
+import { colorBrownDark, colorGreen } from "../utils/theme-variables";
+import DesktopBrand from "./nav/desktop-brand";
+import NavbarDropdownItem from "./nav/navbar-dropdown-item";
+import StyledNavbarItem from "./nav/styled-navbar-item";
+import TabletNavbarBrand from "./nav/tablet-navbar-brand";
+
+const linkProps = {
+  style: {
+    color: colorBrownDark,
+    borderBottom: `2px solid transparent`
+  },
+  activeStyle: {
+    color: colorBrownDark,
+    borderBottom: `2px solid ${colorGreen}`
+  }
+};
 
 const clientsNavItems = [
   {
-    text: 'Forms',
-    to: 'client-forms'
+    text: "Forms",
+    to: "client-forms"
   }
-]
+];
 
 const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
-
   const productNavItems = categoryNodes.map(node => {
     return {
       id: node.id,
       text: node.frontmatter.name,
       to: `product-categories/${node.fields.categoryKey}`
-    }
+    };
   });
   return (
     <div>
@@ -28,8 +39,8 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
       <Navbar
         style={{
           ...serifFont,
-          textTransform: 'lowercase',
-          background: 'transparent',
+          textTransform: "lowercase",
+          background: "transparent"
         }}
       >
         <TabletNavbarBrand
@@ -39,32 +50,41 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
         />
 
         <NavbarMenu
-          style={{ justifyContent: 'center' }}
+          style={{ justifyContent: "center" }}
           isActive={isOpen}
           onClick={onMenuClick}
         >
-          <StyledNavbarItem text="About" />
-          <NavbarDropdownItem text="Products" to="products" items={productNavItems}/>
-          <StyledNavbarItem text="Services" />
-          <NavbarDropdownItem text="Clients" items={clientsNavItems}/>
-          <StyledNavbarItem text="Contact" />
+          <StyledNavbarItem {...linkProps} text="About" />
+          <NavbarDropdownItem
+            {...linkProps}
+            text="Products"
+            to="products"
+            items={productNavItems}
+          />
+          <StyledNavbarItem {...linkProps} text="Services" />
+          <NavbarDropdownItem
+            {...linkProps}
+            text="Clients"
+            items={clientsNavItems}
+          />
+          <StyledNavbarItem {...linkProps} text="Contact" />
         </NavbarMenu>
       </Navbar>
     </div>
-  )
-}
+  );
+};
 
 class NavigationContainer extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = { isOpen: false }
+    super(props);
+    this.state = { isOpen: false };
   }
 
   onMenuClick = () => {
     this.setState(({ isOpen: prevIsOpen }) => ({
-      isOpen: !prevIsOpen,
-    }))
-  }
+      isOpen: !prevIsOpen
+    }));
+  };
 
   render() {
     return (
@@ -73,8 +93,8 @@ class NavigationContainer extends React.Component {
         onMenuClick={this.onMenuClick}
         {...this.props}
       />
-    )
+    );
   }
 }
 
-export default NavigationContainer
+export default NavigationContainer;

@@ -27,6 +27,7 @@ const ContactPage = ({ data }) => {
         <Container>
           <PageHeader center title="Contact" />
           <Columns isMultiline={true}>
+            {/*TODO: Re-add when API key hidden
             <Column isHidden="mobile" isSize={10} isOffset={1}>
               <Box style={{ marginBottom: "2em", minHeight: "350px" }}>
                 <OfficeMap
@@ -50,7 +51,7 @@ const ContactPage = ({ data }) => {
                   />
                 </OfficeMap>
               </Box>
-            </Column>
+            </Column>*/}
             <Column isSize={7} isOffset={1} style={{ paddingRight: "2rem" }}>
               <Heading>send a message</Heading>
               <ContactForm />

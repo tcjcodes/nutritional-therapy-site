@@ -9,6 +9,8 @@ import {
 } from 'react-google-maps'
 import theme from '../utils/google-map-theme.json'
 
+const apiKey = `TODO`;
+
 const StyledMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
@@ -53,7 +55,7 @@ class OfficeMap extends React.Component {
     return (
       <StyledMap
         isMarkerShown
-        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2AK-anwVWpJAOyl3ceC3sYy9HiGT87m0"
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${apiKey}`}
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ ...this.props.containerStyles }} />}
         mapElement={<div style={{ height: `100%` }} />}

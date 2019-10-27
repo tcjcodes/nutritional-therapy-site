@@ -3,16 +3,23 @@ import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const NavbarDropdownItem = ({ text, to, items }) => (
+const NavbarDropdownItem = ({ text, to, items, style, activeStyle }) => (
   <NavbarItem hasDropdown isHoverable>
-    <Link className="navbar-link" to={`/${to || items[0].to}`}>
+    <Link
+      className="navbar-link"
+      to={`/${to || items[0].to}`}
+      style={style}
+      activeStyle={activeStyle}
+    >
       {text}
     </Link>
 
     <NavbarDropdown>
       {items.map(item => (
         <NavbarItem key={item.id || item.to}>
-          <Link to={`/${item.to}`}>{item.text}</Link>
+          <Link to={`/${item.to}`} style={style} activeStyle={activeStyle}>
+            {item.text}
+          </Link>
         </NavbarItem>
       ))}
     </NavbarDropdown>
@@ -22,6 +29,8 @@ const NavbarDropdownItem = ({ text, to, items }) => (
 NavbarDropdownItem.propTypes = {
   text: PropTypes.string.isRequired,
   to: PropTypes.string,
+  style: PropTypes.object,
+  activeStyle: PropTypes.object,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,
