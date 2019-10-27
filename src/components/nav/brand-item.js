@@ -1,5 +1,5 @@
 import { Title } from "bloomer";
-import Link from "gatsby-link";
+import { Link } from "gatsby";
 import React from "react";
 import { secondaryFont } from "../../utils/fonts";
 import { colorGreen, colorGreenDark } from "../../utils/theme-variables";

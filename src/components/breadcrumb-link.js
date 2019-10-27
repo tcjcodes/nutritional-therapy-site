@@ -2,7 +2,7 @@ import React from "react";
 import { serifFont } from "../utils/fonts";
 import { colorGreenDark } from "../utils/theme-variables";
 import StyledIcon from "./styled-icon";
-import Link from "gatsby-link";
+import { Link } from "gatsby";
 
 import PropTypes from "prop-types";
 

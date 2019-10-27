@@ -6,4 +6,6 @@ Official website for a nutritional therapist, created with Gatsby and managed by
 
 This project is deployed on push.
 
+### Production
 `gatsby build`
+`gatsby serve`
