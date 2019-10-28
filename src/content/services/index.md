@@ -5,9 +5,7 @@ title: Services
 ---
 ### Free 20 minute Consultation for Functional Nutrition
 
-\*Not sure where to start?   
-
-~Book a free 20 minute consultation 
+\*Book a Free 20 minute Consultation 
 
 Together let's identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
 
@@ -19,7 +17,7 @@ In our initial session, we assess your current health baseline and discuss your 
 
 You will be introduced to the functional evaluation, and we use the
 information from the initial consultation and a variety of techniques
-(reflex points, palpations, muscle and lingual-neuro tests) to discover
+(reflex points, palpations, muscle testing, and lingual-neuro tests) to discover
 where your body may be out of balance. We use all of these puzzle pieces
 to determine which nutrients will best support your body moving to a more
 balanced state.
