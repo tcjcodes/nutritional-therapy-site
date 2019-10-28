@@ -23,7 +23,7 @@ export default ({ data }) => {
           >
             <PageHeader center title={post.frontmatter.title} />
 
-            <Box style={{ width: 400 }}>
+            <Box style={{ width: 400, marginBottom: "2rem" }}>
               <Img
                 sizes={data.file.childImageSharp.sizes}
                 alt="Caroline"

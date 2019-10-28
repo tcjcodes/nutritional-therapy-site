@@ -14,7 +14,6 @@ const linkProps = {
   },
   activeStyle: {
     color: colorBrownDark,
-    borderBottom: `2px solid ${colorGreen}`
   }
 };
 
@@ -22,6 +21,10 @@ const clientsNavItems = [
   {
     text: "Forms",
     to: "client-forms"
+  },
+  {
+    text: "Lab Testing",
+    to: "labs"
   }
 ];
 
