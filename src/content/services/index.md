@@ -5,12 +5,11 @@ title: Services
 ---
 ### Free 20 minute Consultation for Functional Nutrition
 
-In our initial session, we assess your current health baseline and discuss
-your health and wellness concerns, goals, and priorities. This
-consultation includes a comprehensive health assessment, dietary review,
-and online nutritional assessment questionnaire. 
+\*Not sure where to start?   
 
+~Book a free 20 minute consultation 
 
+Together let's identify and assess your current health baseline and discuss your health and wellness concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
 
 ### Initial Consultation
 
@@ -24,10 +23,6 @@ information from the initial consultation and a variety of techniques
 where your body may be out of balance. We use all of these puzzle pieces
 to determine which nutrients will best support your body moving to a more
 balanced state.
-
-
-
-
 
 ### Follow Up Appointments
 
@@ -51,8 +46,6 @@ Packages include unlimited text and email support. If there is an issue
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
 
-
-
 ### Individual Sessions
 
 After the initial package is complete, clients may pay for individual
@@ -65,8 +58,6 @@ Initial or individual session is $95 per 90 minute session
 ### Applied Psycho-Neurobiology (APN) Packages
 
 Packages of 5 sessions $375 ($75 per session)
-
-
 
 _Please note that Functional Nutrition or Applied Psycho-Neurobiology services are not covered by insurance. Payment is expected at time of service._
 
