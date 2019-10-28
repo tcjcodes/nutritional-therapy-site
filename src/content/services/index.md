@@ -32,15 +32,15 @@ create balance from within.
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
 
-* 3 months/5 visits - $475 ($95/session)
-* 6 months/9 visits - $765 ($85/session)
-* 12 months/15 visits $1,125 ($75/session)
+* 3 months per 5 visits,  $475 ($95/session)
+* 6 months per 9 visits,  $765 ($85/session)
+* 12 months per 15 visits,  $1,125 ($75/session)
 
-### Packages
-
-Packages include unlimited text and email support. If there is an issue
+**Packages** include unlimited text and email support. If there is an issue
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
+
+
 
 ### Individual Sessions
 
