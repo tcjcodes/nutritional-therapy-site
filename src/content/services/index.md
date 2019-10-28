@@ -9,7 +9,7 @@ title: Services
 
 ~Book a free 20 minute consultation 
 
-Together let's identify and assess your current health baseline and discuss your health and wellness concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
+Together let's identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
 
 ### Initial Consultation
 
