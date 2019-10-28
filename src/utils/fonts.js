@@ -6,14 +6,17 @@ export const secondaryFont = {
   lineHeight: '90%',
 }
 
+export const fontWeightNormal = 400;
+export const fontWeightBold = 700;
+
 export const serifFont = {
   fontFamily: 'vollkorn',
   textTransform: 'lowercase',
-  fontWeight: 400,
+  fontWeight: fontWeightNormal,
   lineHeight: '105%',
 }
 
 export const serifFontBold = {
   ...serifFont,
-  fontWeight: 700,
+  fontWeight: fontWeightBold,
 }

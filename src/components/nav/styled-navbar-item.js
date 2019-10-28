@@ -1,9 +1,7 @@
 import { NavbarItem } from 'bloomer'
+import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { colorBrownDark, colorGreen } from '../../utils/theme-variables'
-import Link from 'gatsby-link'
-
 
 const StyledNavbarItem = ({ to, text, style, activeStyle }) => (
   <NavbarItem>

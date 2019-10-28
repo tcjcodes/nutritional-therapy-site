@@ -23,9 +23,9 @@ $size-small: 1rem;
 
 $body-weight: $weight-medium;
 
-$brown: #8d6036;
 $brown-lighter: #8c6b4f;
 $brown-darker: #65482e;
+$brown: $brown-darker;//#8d6036;
 $white: #f8f8f8;
 
 $green: #5d8c2c;
@@ -60,6 +60,9 @@ strong {
   h6 {
     font-family: $family-serif;
     color: $brown;
+  }
+  a {
+    font-weight: 700;
   }
 }
 .navbar-link {

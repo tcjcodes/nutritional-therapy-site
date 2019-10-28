@@ -1,13 +1,13 @@
-import { Container, Section } from 'bloomer'
-import Link from 'gatsby-link'
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from "gatsby"
-import Layout from '../components/layout'
-import PageHeader from '../components/page-header'
-import ProductCardColumn from '../components/product-card-column'
-import ProductCardRow from '../components/product-card-row'
-import ProductCategoryHeading from '../components/product-category-heading'
+import { Container, Section } from "bloomer";
+import Link from "gatsby-link";
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import PageHeader from "../components/page-header";
+import ProductCardColumn from "../components/product-card-column";
+import ProductCardRow from "../components/product-card-row";
+import ProductCategoryHeading from "../components/product-category-heading";
 
 const pageTitle = "All Products";
 const sortProducts = edges => {
@@ -52,15 +52,17 @@ const ProductsTemplate = ({ data }) => {
                   <Link to={`/product-categories/${key}/`}>{key}</Link>
                 </ProductCategoryHeading>
                 <ProductCardRow>
-                  {categories[key].map(c => (
-                    <ProductCardColumn
-                      key={c.id}
-                      slug={c.slug}
-                      thumbnail={c.image}
-                      title={c.title}
-                      excerpt={c.excerpt}
-                    />
-                  ))}
+                  {categories[key].map(
+                    ({ id, slug, image, title, excerpt }) => (
+                      <ProductCardColumn
+                        key={id}
+                        slug={slug}
+                        thumbnail={image}
+                        title={title}
+                        excerpt={excerpt}
+                      />
+                    )
+                  )}
                 </ProductCardRow>
                 {/*{categories[key].length === CUTOFF_LENGTH && (
                 <div css={{ textAlign: 'center' }}>
