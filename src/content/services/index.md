@@ -5,7 +5,7 @@ title: Services
 ---
 ### Free 20 minute Consultation for Functional Nutrition
 
-\*Book a Free 20 minute Consultation 
+**Book a Free 20 Minute Consultation **
 
 Together let's identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
 
