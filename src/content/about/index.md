@@ -26,9 +26,9 @@ So if you are experiencing:
 * Fatigue
 * Gas and bloating
 * Gallbladder removed
+* Hypo/Hyperglycemia
 * Imbalanced Hormones
 * Metabolic/ Pre-Diabetes
-* Hypo/Hyperglycemia
 * Recurring Infections
 
 
