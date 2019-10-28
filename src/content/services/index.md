@@ -74,12 +74,4 @@ _Please note that Functional Nutrition or Applied Psycho-Neurobiology services a
 
 #### DISCLAIMER AND GUIDELINES
 
-A Nutritional Therapy Practitioner (NTP) is a paraprofessional certified
-by the Nutritional Therapy Association, Inc. trained to evaluate a
-client’s nutritional needs, support normal function, and identify
-nutritional deficiencies. An NTP makes recommendations of dietary changes,
-lifestyle considerations, and nutritional supplementation based on client
-information, assessments, muscle testing, and lingual-neuro testing.A Nutritional Therapy Practitioner is not trained to provide medical diagnosis or treatment of any medical or pathological condition, illness,
-injury, or disease. No recommendation or comment made by a Nutritional
-Therapy Practitioner should be construed as being medical advice or
-diagnosis.
+A Nutritional Therapy Practitioner (NTP) is a paraprofessional certified by the Nutritional Therapy Association, Inc. trained to evaluate a client’s nutritional needs, support normal function, and identify nutritional deficiencies.  A NTP makes recommendations of dietary changes, lifestyle considerations, and nutritional supplementation based on client information, assessments, muscle testing, and lingual-neuro testing.  A Nutritional Therapy Practitioner and Applied Psycho-Neurobiology Practitione is not trained to provide medical diagnosis or treatment of any medical or pathological condition, illness, injury, or disease.  No recommendation or comment made by a Nutritional Therapy Practitioner should be construed as being medical advice or diagnosis.
