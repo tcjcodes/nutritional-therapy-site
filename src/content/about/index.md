@@ -21,19 +21,19 @@ So if you are experiencing:
 * Brain fog or concerned about brain health
 * Chemical Sensitivities
 * Constipation/Diarrhea
-* Depression
-* Detoxification issues
-* Fatigue
-* Gas and bloating 
-* Gallbladder removed
-* Imbalanced Hormones
+* Depression
+* Detoxification issues
+* Fatigue
+* Gas and bloating
+* Gallbladder removed
+* Imbalanced Hormones
 * Metabolic/ Pre-Diabetes
-* Hypo/Hyperglycemia
-* Recurring Infections
+* Hypo/Hyperglycemia
+* Recurring Infections
 
 
 
-​Let's set up a free 15 minute phone consult so we can discuss your health concerns and goals, I would love to help!
+​Let's set up a free 20 minute phone consult so we can discuss your health concerns and goals, I would love to help!
 
 
 
