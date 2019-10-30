@@ -29,23 +29,20 @@ const ClientFormsPage = ({ data }) => {
                 <PageHeader title="Client Forms" />
                 <Content>
                   <p css={{ marginBottom: "2em", marginRight: "1.5em" }}>
-                    For current clients, please print and fill out the following
+                    For current clients, please fill out the following
                     forms and bring them to your next appointment:
                     <ol>
                       <li>
-                        <ExternalLink href="google.com" />
+                        <ExternalLink
+                          text="Initial Interview"
+                          href="https://drive.google.com/open?id=1UZxqTuA6ZT8I5zLKTyKS77s40_XxZZRw"
+                        />
                       </li>
                       <li>
-                        <ExternalLink href="google.com" />
-                      </li>
-                      <li>
-                        <ExternalLink href="google.com" />
-                      </li>
-                      <li>
-                        <ExternalLink href="google.com" />
-                      </li>
-                      <li>
-                        <ExternalLink href="google.com" />
+                        <ExternalLink
+                          text="Disclaimer"
+                          href="https://drive.google.com/open?id=1cFJ4e4ChrtWjMU_sUVQCrg0-6SY-QN3D"
+                        />
                       </li>
                     </ol>
                   </p>
