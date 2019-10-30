@@ -1,5 +1,5 @@
 ---
 templateKey: product-category
 name: Food
-description: My favorite lorem ipsum dolores.
+description: My favorite food products.
 ---

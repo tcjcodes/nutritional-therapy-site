@@ -1,11 +1,11 @@
-import { Navbar, NavbarMenu } from "bloomer";
-import React from "react";
-import { serifFont } from "../utils/fonts";
-import { colorBrownDark, colorGreen } from "../utils/theme-variables";
-import DesktopBrand from "./nav/desktop-brand";
-import NavbarDropdownItem from "./nav/navbar-dropdown-item";
-import StyledNavbarItem from "./nav/styled-navbar-item";
-import TabletNavbarBrand from "./nav/tablet-navbar-brand";
+import { Navbar, NavbarMenu } from 'bloomer'
+import React from 'react'
+import { serifFont } from '../../utils/fonts'
+import { colorBrownDark } from '../../utils/theme-variables'
+import DesktopBrand from './desktop-brand'
+import NavbarDropdownItem from './navbar-dropdown-item'
+import StyledNavbarItem from './styled-navbar-item'
+import TabletNavbarBrand from './tablet-navbar-brand'
 
 const linkProps = {
   style: {
@@ -58,17 +58,17 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
           onClick={onMenuClick}
         >
           <StyledNavbarItem {...linkProps} text="About" />
-          <NavbarDropdownItem
-            {...linkProps}
-            text="Products"
-            to="products"
-            items={productNavItems}
-          />
           <StyledNavbarItem {...linkProps} text="Services" />
           <NavbarDropdownItem
             {...linkProps}
             text="Clients"
             items={clientsNavItems}
+          />
+          <NavbarDropdownItem
+              {...linkProps}
+              text="Favorites"
+              to="products"
+              items={productNavItems}
           />
           <StyledNavbarItem {...linkProps} text="Contact" />
         </NavbarMenu>

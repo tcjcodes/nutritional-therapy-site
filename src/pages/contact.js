@@ -2,10 +2,10 @@ import { Box, Column, Columns, Container, Heading, Section } from "bloomer";
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import ContactForm from "../components/contact-form";
-import ExternalLink from "../components/external-link";
+import ContactForm from "../components/contact/contact-form";
+import ExternalLink from "../components/shared/external-link";
 import Layout from "../components/layout";
-import OfficeMap from "../components/office-map";
+import OfficeMap from "../components/contact/office-map";
 import PageHeader from "../components/page-header";
 
 const mapCenter = { lat: 43.6169187, lng: -116.2039708 };

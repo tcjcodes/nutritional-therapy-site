@@ -11,7 +11,7 @@ import {
   ModalCardHeader,
   ModalCardTitle,
 } from 'bloomer'
-import StyledIcon from './styled-icon'
+import StyledIcon from '../shared/styled-icon'
 
 class FormsButton extends React.Component {
   constructor(props) {

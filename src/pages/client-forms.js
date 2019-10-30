@@ -3,7 +3,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
-import ExternalLink from "../components/external-link";
+import ExternalLink from "../components/shared/external-link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 

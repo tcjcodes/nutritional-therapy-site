@@ -2,7 +2,7 @@ import Img from "gatsby-image";
 import React from "react";
 import Script from "react-load-script";
 import { graphql } from "gatsby";
-import HomeHero from "../components/home-hero";
+import HomeHero from "../components/home/home-hero";
 import Layout from "../components/layout";
 const rgba = "0,0,0"; //`119, 139, 64`
 

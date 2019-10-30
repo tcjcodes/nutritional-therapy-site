@@ -5,7 +5,7 @@ import Helmet from "react-helmet";
 import "../layouts/theme.scss";
 import bgImg from "../img/noisy/noisy.png";
 import favicon from "../img/favicon.png";
-import Navigation from "../components/navigation";
+import Navigation from "./nav/navigation";
 import PageFooter from "../components/page-footer";
 
 const pageQuery = graphql`

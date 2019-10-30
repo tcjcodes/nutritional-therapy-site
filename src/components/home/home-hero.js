@@ -1,6 +1,6 @@
 import { Button, Container, Hero, HeroBody, Title, Subtitle } from "bloomer";
 import React from "react";
-import { secondaryFont } from "../utils/fonts";
+import { secondaryFont } from "../../utils/fonts";
 
 const HomeHero = ({ background }) => (
   <Hero

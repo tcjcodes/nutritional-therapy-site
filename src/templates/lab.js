@@ -2,7 +2,7 @@ import { Box, Column, Columns, Container, Content, Image, Section, Title } from 
 import { graphql } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
-import BreadcrumbLink from '../components/breadcrumb-link'
+import BreadcrumbLink from '../components/shared/breadcrumb-link'
 import Layout from '../components/layout'
 import { secondaryFont } from '../utils/fonts'
 

@@ -2,9 +2,9 @@ import { Box, Title } from 'bloomer'
 import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Dotdotdot from 'react-dotdotdot'
-import { serifFont } from '../utils/fonts'
-import { colorBrown, colorBrownDark, colorGreenDark } from '../utils/theme-variables'
+import Dotdotdot from 'react-dotdotdot/src/index'
+import { serifFont } from '../../utils/fonts'
+import { colorBrown, colorBrownDark, colorGreenDark } from '../../utils/theme-variables'
 
 const cardWrapperStyles = {
   display: "block",

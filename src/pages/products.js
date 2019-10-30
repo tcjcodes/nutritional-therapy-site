@@ -5,11 +5,11 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
-import ProductCardColumn from "../components/product-card-column";
-import ProductCardRow from "../components/product-card-row";
-import ProductCategoryHeading from "../components/product-category-heading";
+import ProductCardColumn from "../components/products/product-card-column";
+import ProductCardRow from "../components/products/product-card-row";
+import ProductCategoryHeading from "../components/products/product-category-heading";
 
-const pageTitle = "All Products";
+const pageTitle = "All Favorites";
 const sortProducts = edges => {
   let categorized = {};
   edges

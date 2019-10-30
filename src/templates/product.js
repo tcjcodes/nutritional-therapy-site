@@ -2,11 +2,12 @@ import { Box, Button, Column, Columns, Container, Content, Image, Section, Title
 import { graphql } from "gatsby"
 import React from 'react'
 import Helmet from 'react-helmet'
-import BreadcrumbLink from '../components/breadcrumb-link'
+import BreadcrumbLink from '../components/shared/breadcrumb-link'
 import Layout from '../components/layout'
-import StyledIcon from '../components/styled-icon'
+import StyledIcon from '../components/shared/styled-icon'
 import { secondaryFont } from '../utils/fonts'
 
+const pageTitle = 'Favorites';
 export default function ProductTemplate({ data }) {
   const siteTitle = data.site.siteMetadata.title;
 
@@ -17,7 +18,7 @@ export default function ProductTemplate({ data }) {
   return (
     <Layout>
       <Section className="section">
-        <Helmet title={`${category} Products | ${siteTitle}`} />
+        <Helmet title={`${category} ${pageTitle} | ${siteTitle}`} />
         <Container style={{ maxWidth: 800 }}>
           <Columns isVCentered isCentered>
             <Column
@@ -45,12 +46,12 @@ export default function ProductTemplate({ data }) {
               <div>
                 <BreadcrumbLink
                     to={`/products`}
-                    text={`all products`}
+                    text={`all ${pageTitle.toLowerCase()}`}
                     arrowDirection="right"
                 />
                 <BreadcrumbLink
                     to={`/product-categories/${post.fields.categoryKey}`}
-                    text={`${category} products`}
+                    text={`${category} ${pageTitle.toLowerCase()}`}
                     arrowDirection="right"
                 />
 

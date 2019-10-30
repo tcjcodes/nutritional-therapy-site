@@ -9,8 +9,8 @@ import {
   Select,
   TextArea
 } from "bloomer";
-import ExternalLink from "./external-link";
-import StyledIcon from "./styled-icon";
+import ExternalLink from "../shared/external-link";
+import StyledIcon from "../shared/styled-icon";
 import NotificationContainer from "./notification-container";
 
 const formId = "contact";

@@ -7,7 +7,7 @@ import {
   withGoogleMap,
   withScriptjs,
 } from 'react-google-maps'
-import theme from '../utils/google-map-theme.json'
+import theme from '../../utils/google-map-theme.json'
 
 const apiKey = `TODO`;
 

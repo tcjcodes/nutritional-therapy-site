@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import LabCard from '../components/labs/lab-card'
 import Layout from '../components/layout'
 import PageHeader from '../components/page-header'
-import ProductCardRow from '../components/product-card-row'
+import ProductCardRow from '../components/products/product-card-row'
 
 const pageTitle = "Lab Testing";
 

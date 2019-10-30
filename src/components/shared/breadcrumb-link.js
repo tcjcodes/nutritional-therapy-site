@@ -1,6 +1,6 @@
 import React from "react";
-import { serifFont } from "../utils/fonts";
-import { colorGreenDark } from "../utils/theme-variables";
+import { serifFont } from "../../utils/fonts";
+import { colorGreenDark } from "../../utils/theme-variables";
 import StyledIcon from "./styled-icon";
 import { Link } from "gatsby";
 

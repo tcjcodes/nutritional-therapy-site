@@ -2,14 +2,14 @@ import { Container, Section } from "bloomer";
 import { graphql } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
-import BreadcrumbLink from "../components/breadcrumb-link";
+import BreadcrumbLink from "../components/shared/breadcrumb-link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
-import ProductCardColumn from "../components/product-card-column";
-import ProductCardRow from "../components/product-card-row";
-import ProductCategoryHeading from "../components/product-category-heading";
+import ProductCardColumn from "../components/products/product-card-column";
+import ProductCardRow from "../components/products/product-card-row";
+import ProductCategoryHeading from "../components/products/product-category-heading";
 
-const pageTitle = "Products";
+const pageTitle = "Favorites";
 const CategoriesTemplate = ({ data }) => {
   const { categoryKey } = data.markdownRemark.fields;
   const { name, description } = data.markdownRemark.frontmatter;
