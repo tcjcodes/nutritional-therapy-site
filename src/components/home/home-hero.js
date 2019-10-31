@@ -16,21 +16,25 @@ const HomeHero = ({ background }) => (
     {background}
     <HeroBody>
       <Container hasTextAlign="centered">
-        <Title
-          style={{
-            ...secondaryFont,
-            fontSize: "5em", // increase
-            marginBottom: "0.5em"
+        <div
+          css={{
+            marginBottom: "1.5rem"
           }}
         >
-          Holistic Nutrition &amp; Wellness
-        </Title>
-        <Subtitle style={{ fontWeight: "bold" }}>
+          <Title isSize={3}>Holistic Nutrition &amp; Wellness</Title>
+        </div>
+        <Subtitle isSize={5} css={{ fontWeight: "bold" }}>
           Practicing Nutritional Therapy &amp; Applied Psycho-Neurobiology
         </Subtitle>
-        <Button href="/services/" style={{ marginTop: "1.5em" }} isColor="dark">
-          Learn More
-        </Button>
+        <div
+          css={{
+            marginTop: "2.5rem"
+          }}
+        >
+          <Button href="/services/" isColor="dark">
+            Learn More
+          </Button>
+        </div>
       </Container>
     </HeroBody>
   </Hero>
