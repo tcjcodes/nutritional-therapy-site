@@ -27,7 +27,7 @@ const cardOverlayStyles = {
   overflowY: "hidden",
   position: "absolute",
   bottom: 0,
-  height: "3rem",
+  minHeight: "3rem",
   left: "0",
   width: "100%",
   hasTextAlign: "center",
@@ -37,7 +37,7 @@ const cardOverlayStyles = {
 const headingStyles = {
   ...serifFont,
   textTransform: "none",
-  marginBottom: 0
+  marginBottom: 0,
 };
 
 const LabCard = ({ slug, thumbnail, title }) => (
@@ -47,7 +47,7 @@ const LabCard = ({ slug, thumbnail, title }) => (
         <div css={cardImageStyles(thumbnail)} />
         <div css={cardOverlayStyles}>
           <div css={{ width: "100%" }}>
-            <Title hasTextAlign="centered" style={{ margin: 0 }} isSize={5}>
+            <Title hasTextAlign="centered" style={{ margin: 0, }} isSize={5}>
               <p css={headingStyles}>{title}</p>
             </Title>
           </div>
