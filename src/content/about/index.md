@@ -4,18 +4,16 @@ path: /about
 title: About Caroline
 avatar: /img/Profile Photo.jpg
 ---
-Functional Nutrition - NTP
-
-Restorative Wellness Practitioner - RWP
-
-Applied Psycho-Neurobiology - APN
-        
+* Functional Nutrition - NTP
+* Restorative Wellness Practitioner - RWP
+* Applied Psycho-Neurobiology - APN
+          
 
 As a functional nutritionist, I look for deeper underlying imbalances and deficiencies to restore health and function. I use a complete, holistic evaluation that may include testing, detailed nutritional assessment, dietary and health history overview to gather in-depth understanding of your biochemistry and current health status. Based on the gathered information, I create a customized nutritional program and recommend a supplemental protocol when needed. I help clients who are struggling with digestive problems, autoimmune disorders, chronic pain, fatigue, hormonal imbalances, skin problems, high blood pressure and other conditions.
 
 So if you are experiencing:
 
-* Allergies
+* Allergies
 * Anxiety
 * Autoimmune disease
 * Brain fog or concerned about brain health
@@ -26,18 +24,13 @@ So if you are experiencing:
 * Fatigue
 * Gas and bloating
 * Gallbladder removed
-* Hypo/Hyperglycemia
+* Hypo/Hyperglycemia
 * Imbalanced Hormones
 * Metabolic/ Pre-Diabetes
 * Recurring Infections
 
-
-
-​Let's set up a free 20 minute phone consult so we can discuss your health concerns and goals, I would love to help!
-
-
-
-
+​
+Let's set up a free 20 minute phone consult so we can discuss your health concerns and goals, I would love to help!
 
 I am passionate to helping you strengthen and find the healthier version of yourself.  Bringing back the vitality and support your body's needs, for a healthier, 
 
@@ -45,7 +38,7 @@ I value wholefoods, nutrient-dense, organic, non-gmo, free-range, locally raised
 
 As a certified Nutritional Therapy Practitioner, I seek to make connections between the physical body and emotional state, by supporting both.  I am passionate to assist you in your journey to a path to your optimal health..
 
-Where are you on the spectrum between Balance and Disease?
+**Where are you on the spectrum between Balance and Disease?**
 
 As a Function Nutritionist, I focus on addressing the underlying cause of the dysfunction through balancing the foundational systems of the body.  Many times conventional medicine only treats the symptom, not the underlying cause.  As a Nutritional Therapy Practitioner , I am able to use a variety of effective diagnostic tools to locate where the deficiency or imbalance is in the body and then provide nutritional support to help body’s innate ability to heal.  
 
@@ -55,4 +48,4 @@ Foods that are highly processed, which make up the Standard American Diet, do no
 
 There is no one perfect diet for everyone, so we work with you to find the ideal whole food diet that will enhance your bodies ability to heal.  We also use professional grade supplements to target the nutrients that your body is looking for to help it achieve balance. ​
 
-​"All Disease begins in the Gut"- Hippocrates
+*​"All Disease begins in the Gut."* -Hippocrates
