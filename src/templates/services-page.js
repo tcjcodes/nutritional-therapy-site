@@ -1,39 +1,53 @@
-import { Button, Container, Content, Section } from "bloomer";
-import { graphql } from "gatsby";
-import React from "react";
-import Helmet from "react-helmet";
-import Layout from "../components/layout";
-import PageHeader from "../components/page-header";
+import { Button, Container, Content, Hero, HeroBody, Section, Subtitle, Title } from 'bloomer';
+import { graphql } from 'gatsby';
+import React from 'react';
+import Helmet from 'react-helmet';
+import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
+import { MaxBreakpoints } from '../utils/theme-variables';
 
 const ServicesPage = ({ data }) => {
-  const { title } = data.site.siteMetadata;
-  const { markdownRemark: post } = data;
+    const { title } = data.site.siteMetadata;
+    const { markdownRemark: post } = data;
 
-  return (
-    <Layout>
-      <Section>
-        <Helmet title={`Services | ${title}`} />
+    return (
+        <Layout>
+            <Helmet title={`Services | ${title}`}/>
 
-        <Container style={{ maxWidth: 800 }}>
-          <PageHeader title="services" center />
+            <Hero
+                isColor="dark"
+                isSize="medium"
+                style={{
+                    marginTop: '1rem',
+                    marginBottom: '1.5rem',
+                    background: 'url("/img/home-gardening-young-rucola-top-view-6427.jpg") no-repeat fixed center auto'
+                }}
+            >
+                <HeroBody>
+                    <PageHeader title="services" center/>
+                </HeroBody>
+            </Hero>
 
-          <div css={{ marginBottom: `2rem` }}>
-            <Content dangerouslySetInnerHTML={{ __html: post.html }} />
-          </div>
+            <Section>
+                <Container style={{ maxWidth: MaxBreakpoints.DESKTOP }}>
 
-          <div css={{ textAlign: "center" }}>
-            <Button isColor="primary" href="/contact/">
+                    <div css={{ marginBottom: `2rem` }}>
+                        <Content dangerouslySetInnerHTML={{ __html: post.html }}/>
+                    </div>
+
+                    <div css={{ textAlign: 'center' }}>
+                        <Button isColor="primary" href="/contact/">
               <span
-                className="fa fa-calendar"
-                css={{ marginRight: `0.5rem` }}
+                  className="fa fa-calendar"
+                  css={{ marginRight: `0.5rem` }}
               />
-              Request an Appointment
-            </Button>
-          </div>
-        </Container>
-      </Section>
-    </Layout>
-  );
+                            Request an Appointment
+                        </Button>
+                    </div>
+                </Container>
+            </Section>
+        </Layout>
+    );
 };
 
 export const query = graphql`
