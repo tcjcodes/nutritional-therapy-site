@@ -2,21 +2,21 @@ import { Navbar, NavbarBrand, NavbarBurger, NavbarItem, NavbarMenu, Title } from
 import React from 'react';
 import { secondaryFont, serifFont } from '../../utils/fonts';
 import { colorBrownDark, colorGreen, colorGreenDark, MaxBreakpoints } from '../../utils/theme-variables';
-import DesktopBrand from './desktop-brand';
 import NavbarDropdownItem from './navbar-dropdown-item';
 import StyledNavbarItem from './styled-navbar-item';
-import TabletNavbarBrand from './tablet-navbar-brand';
-import BrandItem from './brand-item';
 import { Link } from 'gatsby';
 
 const linkProps = {
     style: {
-        color: colorBrownDark,
+        // ...secondaryFont,
+        color: colorGreenDark,
         borderBottom: `2px solid transparent`,
-        fontSize: '1.3rem',
+        fontSize: '1rem',
+        textTransform: 'uppercase',
+        letterSpacing: '1px'
     },
     activeStyle: {
-        color: colorBrownDark,
+        // color: colorBrownDark,
     }
 };
 
@@ -44,8 +44,8 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
             {/*<DesktopBrand title={title}/>*/}
             <Navbar
                 style={{
-                    ...serifFont,
-                    textTransform: 'lowercase',
+                    // ...serifFont,
+                    // textTransform: 'lowercase',
                     background: 'transparent',
                   display: 'flex',
                   justifyContent: 'space-between',
@@ -62,15 +62,15 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
 
                     <NavbarItem
                     >
-                        <Title isSize={2}>
+                        <Title style={{ fontSize: '1.5rem', }}>
                             <Link
                                 to="/"
                                 css={{
                                     ...secondaryFont,
-                                    color: colorGreen,
+                                    color: colorGreenDark,
                                     textTransform: 'none',
                                     '&:hover': {
-                                        color: colorGreenDark
+                                        color: colorGreen
                                     }
                                 }}
                             >

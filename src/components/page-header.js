@@ -1,16 +1,15 @@
 import React from 'react'
-import { secondaryFont } from '../utils/fonts'
+import { secondaryFont, serifFont } from '../utils/fonts';
 import { Title } from 'bloomer'
 
 const PageHeader = ({ title, center }) => (
-  <div css={{ textAlign: center ? 'center' : 'inherit' }}>
+  <div css={{ textAlign: center ? 'center' : 'inherit', }}>
     <Title
-      isSize={2}
-      style={{
-        ...secondaryFont,
-        textTransform: 'lowercase',
-        marginBottom: '0.75rem',
-      }}
+        isSize={3}
+        style={{
+            // fontWeight: 'bold',
+            letterSpacing: '2px',
+        }}
     >
       {title}
     </Title>

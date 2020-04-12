@@ -39,8 +39,8 @@ $blue: #376aad;
 $primary: $green;
 $text: $brown-darker;
 
-$link: $brown;
-$link-hover: $brown-darker;
+$link: $green-darker;//$brown;
+$link-hover: $green;//$brown-darker;
 
 @import "~bulma/bulma";
 @import "~font-awesome/css/font-awesome.min.css";
@@ -81,7 +81,6 @@ strong {
   padding: 2rem 1.5rem;
 }
 .heading {
-  font-family: $family-serif;
   font-size: $size-6;
   color: $brown;
   text-transform: lowercase;

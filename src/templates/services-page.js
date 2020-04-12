@@ -20,11 +20,13 @@ const ServicesPage = ({ data }) => {
                 style={{
                     marginTop: '1rem',
                     marginBottom: '1.5rem',
-                    background: 'url("/img/home-gardening-young-rucola-top-view-6427.jpg") no-repeat fixed center auto'
+                    background: `url("/img/home-gardening-young-rucola-top-view-6427.jpg") no-repeat fixed bottom`,
                 }}
             >
-                <HeroBody>
-                    <PageHeader title="services" center/>
+                <HeroBody style={{
+                    backgroundColor: `rgba(0, 0, 0, 0.5)`
+                }}>
+                    <PageHeader title="Services" center/>
                 </HeroBody>
             </Hero>
 
@@ -51,22 +53,22 @@ const ServicesPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query ServicesPage($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
-    }
-  }
-`;
+                    query ServicesPage($slug: String!) {
+                    site {
+                    siteMetadata {
+                    title
+                }
+                }
+                    markdownRemark(fields: {slug: {eq: $slug}}) {
+                    html
+                    fields {
+                    slug
+                }
+                    frontmatter {
+                    title
+                }
+                }
+                }
+                    `;
 
 export default ServicesPage;
