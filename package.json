@@ -7,6 +7,7 @@
     "bloomer": "^0.6.3",
     "bulma": "^0.8.0",
     "classnames": "^2.2.5",
+    "emotion": "^10.0.27",
     "font-awesome": "^4.7.0",
     "gatsby": "^2.19.28",
     "gatsby-image": "^2.2.42",
