@@ -6,6 +6,7 @@ import { graphql } from "gatsby";
 import ExternalLink from "../components/shared/external-link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
+import StyledIcon from '../components/shared/styled-icon'
 
 const ClientFormsPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -33,16 +34,17 @@ const ClientFormsPage = ({ data }) => {
                     forms and bring them to your next appointment:
                     <ol>
                       <li>
-                        <ExternalLink
-                          text="Initial Interview"
-                          href="https://drive.google.com/open?id=1UZxqTuA6ZT8I5zLKTyKS77s40_XxZZRw"
-                        />
+                        <a title="Download Initial Interview Form" href="/documents/forms/Initial+Interview.pdf" download>
+                          Initial Interview (PDF)
+                        </a>
                       </li>
                       <li>
-                        <ExternalLink
-                          text="Disclaimer"
-                          href="https://drive.google.com/open?id=1cFJ4e4ChrtWjMU_sUVQCrg0-6SY-QN3D"
-                        />
+                        <a
+                          title="Download Disclaimer Form"
+                          href="/documents/forms/Disclaimer.pdf"
+                        >
+                          Disclaimer (PDF)
+                        </a>
                       </li>
                     </ol>
                   </p>

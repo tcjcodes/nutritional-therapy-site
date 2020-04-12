@@ -7,6 +7,11 @@ import Layout from "../components/layout";
 const rgba = "0,0,0"; //`119, 139, 64`
 
 export default class IndexPage extends React.Component {
+  constructor () {
+    super();
+    this.handleScriptLoad = this.handleScriptLoad.bind(this);
+  }
+
   handleScriptLoad() {
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
@@ -44,7 +49,7 @@ export default class IndexPage extends React.Component {
           />
           <Script
             url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-            onLoad={this.handleScriptLoad.bind(this)}
+            onLoad={this.handleScriptLoad}
           />
         </div>
       </Layout>
