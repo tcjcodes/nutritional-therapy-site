@@ -24,7 +24,7 @@ const HomeHero = ({ background }) => (
           <Title isSize={3}>Holistic Nutrition &amp; Wellness</Title>
         </div>
         <Subtitle isSize={5} css={{ fontWeight: "bold" }}>
-          Practicing Nutritional Therapy &amp; Applied Psycho-Neurobiology
+          Practicing Functional Nutritional Therapy,<br/>Applied Psycho-Neurobiology,<br/>&amp; Family Constellation
         </Subtitle>
         <div
           css={{
