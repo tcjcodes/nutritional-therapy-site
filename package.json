@@ -8,8 +8,8 @@
     "@emotion/styled": "^10.0.27",
     "bloomer": "^0.6.3",
     "bulma": "^0.8.0",
-    "classnames": "^2.2.5",
     "emotion": "^10.0.27",
+    "emotion-theming": "^10.0.27",
     "font-awesome": "^4.7.0",
     "gatsby": "^2.19.28",
     "gatsby-image": "^2.2.42",
@@ -31,7 +31,8 @@
     "react-google-maps": "^9.4.2",
     "react-helmet": "^5.2.1",
     "react-load-script": "0.0.6",
-    "react-parallax": "^2.2.4"
+    "react-parallax": "^2.2.4",
+    "stylis-plugin-extra-scope": "^0.2.1"
   },
   "keywords": [
     "gatsby"
