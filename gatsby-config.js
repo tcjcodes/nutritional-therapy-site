@@ -12,7 +12,7 @@ module.exports = {
         }
       }
     },
-    "gatsby-plugin-glamor",
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
