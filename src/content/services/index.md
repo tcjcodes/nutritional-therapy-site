@@ -7,9 +7,7 @@ title: Services
 
 Together let's identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
 
-
-
-### Initial Consultation
+### Initial Consultation $125
 
 #### (Approximately 90 minutes, either in-person or virtually)
 
@@ -22,7 +20,9 @@ where your body may be out of balance. We use all of these puzzle pieces
 to determine which nutrients will best support your body moving to a more
 balanced state.
 
-### Follow Up Appointments
+
+
+### Follow Up Appointments  $95
 
 #### (Approximately 60 minutes)
 
@@ -34,20 +34,24 @@ create balance from within.
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
 
-* 3 months per 5 visits,  $475 ($95/session)
-* 6 months per 9 visits,  $765 ($85/session)
-* 12 months per 15 visits,  $1,125 ($75/session)
+* 3 months per 5 visits,  $450 ($90/session)
+* 6 months per 9 visits,  $720 ($80/session)
+* 12 months per 15 visits,  $1,050 ($70/session)
 
 **Packages** include unlimited text and email support. If there is an issue
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
+
+
 
 ### Individual Sessions
 
 After the initial package is complete, clients may pay for individual
 sessions at $100-125 or continue with an additional package.
 
-### Applied Psycho-Neurobiology (APN) Session
+### 
+
+### Applied Psycho-Neurobiology (APN) Session  $95
 
 Initial or individual session is $95 per 90 minute session
 
