@@ -2,7 +2,7 @@
 templateKey: about-page
 path: /about
 title: About Caroline
-avatar: /img/Profile Photo.jpg
+avatar: /img/my-profile-photo.jpg
 ---
 * Functional Nutritional Therapy Practitioner - FNTP
 * Restorative Wellness Practitioner - RWP
