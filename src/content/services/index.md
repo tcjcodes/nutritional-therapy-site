@@ -56,10 +56,12 @@ Packages of 3 sessions $255 ($85 per session)
 
 Packages of 5 sessions $375 ($75 per session)
 
-_Please note that Functional Nutrition or Applied Psycho-Neurobiology services are not covered by insurance. Payment is expected at time of service._
+_Please note that Functional Nutrition, Applied Psycho-Neurobiology, and Family Constellation services are not covered by insurance.  Payment is expected at time of service._
 
 - - -
 
 #### DISCLAIMER AND GUIDELINES
 
-A Functional Nutritional Therapy Practitioner (FNTP) is a paraprofessional certified by the Nutritional Therapy Association, Inc. trained to evaluate a client’s nutritional needs, support normal function, and identify nutritional deficiencies.  A FNTP makes recommendations of dietary changes, lifestyle considerations, and nutritional supplementation based on client information, assessments, muscle testing, and lingual-neuro testing.  A Functional Nutritional Therapy Practitioner and Applied Psycho-Neurobiology Practitioner is not trained to provide medical diagnosis or treatment of any medical or pathological condition, illness, injury, or disease.  No recommendation or comment made by a Functional Nutritional Therapy Practitioner should be construed as being medical advice or diagnosis.
+A Functional Nutritional Therapy Practitioner (FNTP) is a paraprofessional certified by the Nutritional Therapy Association, Inc. trained to evaluate a client’s nutritional needs, support normal function, and identify nutritional deficiencies.  A FNTP makes recommendations of dietary changes, lifestyle considerations, and nutritional supplementation based on client information, assessments, muscle testing, and lingual-neuro testing.  
+
+A Functional Nutritional Therapy Practitioner, Applied Psycho-Neurobiology Practitioner, and Family Constellation Facilitator are s not trained to provide medical diagnosis or treatment of any medical or pathological condition, illness, injury, or disease.  No recommendation or comment made by a Functional Nutritional Therapy Practitioner should be construed as being medical advice or diagnosis.
