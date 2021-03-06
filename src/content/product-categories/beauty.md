@@ -1,5 +1,5 @@
 ---
 templateKey: product-category
-name: Beauty
-description:
+name: Lab Testing
 ---
+
