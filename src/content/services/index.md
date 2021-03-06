@@ -20,7 +20,7 @@ where your body may be out of balance. We use all of these puzzle pieces
 to determine which nutrients will best support your body moving to a more
 balanced state.
 
-### Follow Up Nutritional Consultation  
+### Follow Up for Nutritional Consultation  
 
 45 minute appointment: $50 per session
 
@@ -30,6 +30,10 @@ These sessions are tailored for you. We will discuss your progress,
 revisit your goals and priorities, and use various functional evaluation
 assessments to refine your protocol. Your body is constantly trying to
 create balance from within. 
+
+**Lab Report of Finding and Protocol Consultation $100**
+
+
 
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
@@ -42,7 +46,11 @@ order to set you up for success on your healing journey.
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
 
+### 
 
+
+
+### 
 
 ### 
 
