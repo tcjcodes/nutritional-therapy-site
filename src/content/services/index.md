@@ -7,6 +7,8 @@ title: Services
 
 Together let's identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
 
+
+
 ### Initial Consultation
 
 #### (Approximately 90 minutes, either in-person or virtually)
@@ -40,8 +42,6 @@ order to set you up for success on your healing journey.
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
 
-
-
 ### Individual Sessions
 
 After the initial package is complete, clients may pay for individual
@@ -53,6 +53,8 @@ Initial or individual session is $95 per 90 minute session
 
 ### Applied Psycho-Neurobiology (APN) Packages
 
+Packages of 3 sessions $255 ($85 per session)
+
 Packages of 5 sessions $375 ($75 per session)
 
 _Please note that Functional Nutrition or Applied Psycho-Neurobiology services are not covered by insurance. Payment is expected at time of service._
@@ -61,4 +63,4 @@ _Please note that Functional Nutrition or Applied Psycho-Neurobiology services a
 
 #### DISCLAIMER AND GUIDELINES
 
-A Nutritional Therapy Practitioner (NTP) is a paraprofessional certified by the Nutritional Therapy Association, Inc. trained to evaluate a client’s nutritional needs, support normal function, and identify nutritional deficiencies.  A NTP makes recommendations of dietary changes, lifestyle considerations, and nutritional supplementation based on client information, assessments, muscle testing, and lingual-neuro testing.  A Nutritional Therapy Practitioner and Applied Psycho-Neurobiology Practitione is not trained to provide medical diagnosis or treatment of any medical or pathological condition, illness, injury, or disease.  No recommendation or comment made by a Nutritional Therapy Practitioner should be construed as being medical advice or diagnosis.
+A Functional Nutritional Therapy Practitioner (FNTP) is a paraprofessional certified by the Nutritional Therapy Association, Inc. trained to evaluate a client’s nutritional needs, support normal function, and identify nutritional deficiencies.  A FNTP makes recommendations of dietary changes, lifestyle considerations, and nutritional supplementation based on client information, assessments, muscle testing, and lingual-neuro testing.  A Functional Nutritional Therapy Practitioner and Applied Psycho-Neurobiology Practitioner is not trained to provide medical diagnosis or treatment of any medical or pathological condition, illness, injury, or disease.  No recommendation or comment made by a Functional Nutritional Therapy Practitioner should be construed as being medical advice or diagnosis.
