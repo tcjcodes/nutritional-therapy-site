@@ -1,7 +1,7 @@
 ---
 templateKey: lab
 title: GI Map DNA Stool Test
-image: /img/BerkeyWaterFilter.jpg
+image: /img/gi-map-box.jpg
 ---
 If you feel you digestion may be compromised this test looks at underlying
 pathogens that could be at the root of the problem. But even if you aren’t
