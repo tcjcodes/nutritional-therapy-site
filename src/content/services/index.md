@@ -7,7 +7,7 @@ title: Services
 
 Together let's identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
 
-### Initial Consultation $125
+### Initial Nutritional Consultation $125
 
 #### (Approximately 90 minutes, either in-person or virtually)
 
@@ -20,11 +20,11 @@ where your body may be out of balance. We use all of these puzzle pieces
 to determine which nutrients will best support your body moving to a more
 balanced state.
 
+### Follow Up Nutritional Consultation  
 
+45 minute appointment: $50 per session
 
-### Follow Up Appointments  $95
-
-#### (Approximately 60 minutes)
+90 minutes appointment: $95 per session
 
 These sessions are tailored for you. We will discuss your progress,
 revisit your goals and priorities, and use various functional evaluation
@@ -43,11 +43,6 @@ that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
 
 
-
-### Individual Sessions
-
-After the initial package is complete, clients may pay for individual
-sessions at $100-125 or continue with an additional package.
 
 ### 
 
