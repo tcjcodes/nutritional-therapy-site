@@ -1,6 +1,6 @@
 ---
 templateKey: lab
-title: GI Map DNA Stool Test
+title: GI-Map DNA One Day Stool Test
 image: /img/gi-map-box.jpg
 ---
 If you feel you digestion may be compromised this test looks at underlying
