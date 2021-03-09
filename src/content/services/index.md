@@ -20,7 +20,7 @@ where your body may be out of balance. We use all of these puzzle pieces
 to determine which nutrients will best support your body moving to a more
 balanced state.
 
-### Follow Up for Nutritional Consultation  
+### Follow Up for Nutritional Consultation
 
 45 minute appointment: $50 per session
 
@@ -32,8 +32,6 @@ assessments to refine your protocol. Your body is constantly trying to
 create balance from within. 
 
 **Lab Report of Finding and Protocol Consultation $100**
-
-
 
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
@@ -48,8 +46,6 @@ be asked to schedule a session.
 
 ### 
 
-
-
 ### 
 
 ### 
@@ -63,6 +59,14 @@ Initial or individual session is $95 per 90 minute session
 Packages of 3 sessions $255 ($85 per session)
 
 Packages of 5 sessions $375 ($75 per session)
+
+
+
+### Family Constellation $150
+
+Individual session is 90-120 minute session
+
+### 
 
 _Please note that Functional Nutrition, Applied Psycho-Neurobiology, and Family Constellation services are not covered by insurance.  Payment is expected at time of service._
 
