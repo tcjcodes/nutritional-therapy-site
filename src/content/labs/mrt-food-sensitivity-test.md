@@ -5,4 +5,4 @@ image: /img/mrt-photo.jpg
 ---
 MRT (Mediator Release Test) 
 
-$435  Test Kit and Report of Finding Consultation
+$535  Test Kit and Report of Finding Consultation
