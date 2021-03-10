@@ -1,6 +1,6 @@
 ---
 templateKey: lab
-title: GI-Map DNA One Day Stool Test
+title: GI-Map DNA One Day Stool Test Kit $350 + $100 Consultaion
 image: /img/gi-map-box.jpg
 ---
 _Fully quantitative PCR DNA analysis of the microbiome. Includes beneficial and pathogenic bacteria, yeast, parasites and viruses. Also assesses intestinal health markers for digestion, absorption, immunology, and inflammation._
