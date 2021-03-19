@@ -1,6 +1,6 @@
 ---
 templateKey: lab
-title: DUTCH Test
+title: DUTCH Test (Dried Urine Test Complete Hormones)
 image: /img/dutch-complete-test-images.jpg
 ---
 DUTCH Complete $365
