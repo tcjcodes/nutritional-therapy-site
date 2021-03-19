@@ -25,108 +25,16 @@ Food and food-chemical sensitivities have clinical characteristics that make it 
 
 Medical Conditions Where Sensitivities Can Play a Primary or Secondary Role
 
-Gastrointestinal
+**Gastrointestinal issues:** Irritable Bowel Syndrome, Functional Diarrhea, GERD, Crohn’s Disease, Ulcerative Colitis, Microscopic Colitis, Lymphocytic Colitis, Cyclic Vomiting Syndrome
 
-Irritable Bowel Syndrome
+**Endocrine: **Obesity, Adrenal Fatigue
 
+**Neurological: **Migraine, ADD/ADHD, Autism Spectrum Disorders, Epilepsy, Depression, Insomnia, Restless Leg Syndrome
 
+**Urological: **Interstitial Cystitis
 
-Functional Diarrhea
+**Gynecological: **Polycystic Ovary Syndrome
 
+**Musculoskeletal: **Fibromyalgia, Inflammatory Arthritis
 
-
-GERD
-
-
-
-Crohn’s Disease
-
-
-
-Ulcerative Colitis
-
-
-
-Microscopic Colitis
-
-
-
-Lymphocytic Colitis
-
-
-
-Cyclic Vomiting Syndrome
-
-Endocrine
-
-
-
-Obesity
-
-Neurological
-
-
-
-Migraine
-
-
-
-ADD/ADHD
-
-
-
-Autism Spectrum Disorders
-
-
-
-Epilepsy
-
-
-
-Depression
-
-
-
-Insomnia
-
-
-
-Restless Leg Syndrome
-
-Urological
-
-
-
-Interstitial Cystitis
-
-Gynecological
-
-
-
-Polycystic Ovary Syndrome
-
-Musculoskeletal
-
-
-
-Fibromyalgia
-
-
-
-Inflammatory Arthritis
-
-Dermatological
-
-
-
-Atopic Dermatitis
-
-
-
-Urticaria
-
-
-
-Psoriasis
-
-Chronic Fatigue Syndrome
+**Dermatological: **Atopic Dermatitis, Urticaria, Psoriasis, Chronic Fatigue Syndrome
