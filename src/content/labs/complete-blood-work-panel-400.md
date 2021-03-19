@@ -1,12 +1,8 @@
 ---
 templateKey: lab
 title: Complete Blood Work Panel $400
-image: /img/beaker-tubes-picture.jpg
+image: /img/blood-chemistry-icon.png
 ---
-
-
-
-
 C-Reactive Protein (CRP), High Sensitivity
 
 C-Reactive Protein (CRP), Quantitative
