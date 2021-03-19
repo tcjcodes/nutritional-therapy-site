@@ -14,3 +14,119 @@ Food and food-chemical sensitivities are a highly complex category of non-allerg
 
 
 Due to their inherent clinical and immunologic complexities, as well as a lack of general knowledge within conventional medicine of their role as a source of inflammation in IBS, migraine, fibromyalgia, arthritis, GERD, obesity, metabolic syndrome, ADD/ADHD, autism, etc., food and food-chemical sensitivities remain one of the most under addressed areas of conventional medicine.
+
+
+
+Clinical Complexities
+
+Food and food-chemical sensitivities have clinical characteristics that make it very challenging to identify trigger foods. For example, symptom manifestation may be delayed by many hours after ingestion; reactions may be dose dependent; because of a breakdown of oral tolerance mechanisms, there are often many reactive foods and food-chemicals; even so-called anti-inflammatory foods, such as salmon, parsley, turmeric, ginger, blueberry, and any “healthy” food can be reactive.
+
+
+
+Medical Conditions Where Sensitivities Can Play a Primary or Secondary Role
+
+Gastrointestinal
+
+Irritable Bowel Syndrome
+
+
+
+Functional Diarrhea
+
+
+
+GERD
+
+
+
+Crohn’s Disease
+
+
+
+Ulcerative Colitis
+
+
+
+Microscopic Colitis
+
+
+
+Lymphocytic Colitis
+
+
+
+Cyclic Vomiting Syndrome
+
+Endocrine
+
+
+
+Obesity
+
+Neurological
+
+
+
+Migraine
+
+
+
+ADD/ADHD
+
+
+
+Autism Spectrum Disorders
+
+
+
+Epilepsy
+
+
+
+Depression
+
+
+
+Insomnia
+
+
+
+Restless Leg Syndrome
+
+Urological
+
+
+
+Interstitial Cystitis
+
+Gynecological
+
+
+
+Polycystic Ovary Syndrome
+
+Musculoskeletal
+
+
+
+Fibromyalgia
+
+
+
+Inflammatory Arthritis
+
+Dermatological
+
+
+
+Atopic Dermatitis
+
+
+
+Urticaria
+
+
+
+Psoriasis
+
+Chronic Fatigue Syndrome
