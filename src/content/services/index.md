@@ -60,11 +60,9 @@ Packages of 3 sessions $255 ($85 per session)
 
 Packages of 5 sessions $375 ($75 per session)
 
-
-
 ### Family Constellation $150
 
-Individual session is 90-120 minute session
+Individual session is 90 minute session
 
 ### 
 
