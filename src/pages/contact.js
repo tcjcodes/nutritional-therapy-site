@@ -1,20 +1,18 @@
-import { Box, Column, Columns, Container, Heading, Section } from "bloomer";
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import ContactForm from "../components/contact/contact-form";
-import ExternalLink from "../components/shared/external-link";
-import Layout from "../components/layout";
-import OfficeMap from "../components/contact/office-map";
-import PageHeader from "../components/page-header";
+import { Column, Columns, Container, Heading, Section } from 'bloomer';
+import { graphql } from 'gatsby';
+import React from 'react';
+import Helmet from 'react-helmet';
+import ContactForm from '../components/contact/contact-form';
+import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
+import ExternalLink from '../components/shared/external-link';
 
 const mapCenter = { lat: 43.6169187, lng: -116.2039708 };
-const directionsLink =
-  "https://www.google.com/maps/dir//410+S+Orchard+St+2nd+Fl+Suite+124,+Boise,+ID+83705/@43.6007953,-116.2450868,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x54ae5629baddbd73:0xf292d0168122b790!2m2!1d-116.2428981!2d43.6007953!3e0";
+const directionsLink = "9050 W Overland Rd #135, Boise ID 83709";
 
 const address = {
-  streetLine: "410 S Orchard, 2nd Fl Suite 124",
-  cityStateZip: "Boise, ID 83705"
+  streetLine: "9050 W Overland Rd #135",
+  cityStateZip: "Boise, ID 83709"
 };
 
 const ContactPage = ({ data }) => {

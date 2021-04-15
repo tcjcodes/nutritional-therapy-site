@@ -1,6 +1,6 @@
 ---
 templateKey: product-category
-name: 'Cookbooks '
+name: 'Cookbooks'
 description: My favorite food products.
 ---
 

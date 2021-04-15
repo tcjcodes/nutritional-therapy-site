@@ -5,7 +5,7 @@ title: >-
   Gluten-Free Lifestyle - by Caitlin Weeks NC,‎ Chef Nabil Boumrar,‎ & Diane
   Sanfilippo BS NC
 image: /img/MediterraneanPaleoCooking.jpg
-category: Food
+category: Cookbooks
 link: 'https://smile.amazon.com/Mediterranean-Paleo-Cooking-Gluten-Free-Lifestyle/dp/1628600403/ref=sr_1_1?keywords=Mediterranean+Paleo+Cooking%3A+Over+150+Fresh+Coastal+Recipes+for+a+Relaxed%2C+Gluten-Free+Lifestyle&qid=1572124238&sr=8-1'
 ---
 Many people assume that eating better—whether to lose weight, alleviate health problems, or simply improve how they feel—means eating low-fat, boring, and tasteless food. Professional chef Nabil Boumrar and Certified Nutrition Consultant Caitlin Weeks blow that myth out of the water with their vibrant and healthy coastal cuisine.\
