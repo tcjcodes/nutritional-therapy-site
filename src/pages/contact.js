@@ -8,7 +8,7 @@ import PageHeader from '../components/page-header';
 import ExternalLink from '../components/shared/external-link';
 
 const mapCenter = { lat: 43.6169187, lng: -116.2039708 };
-const directionsLink = "9050 W Overland Rd #135, Boise ID 83709";
+const directionsLink = "https://goo.gl/maps/xBhPNMVmz96YwTs86";
 
 const address = {
   streetLine: "9050 W Overland Rd #135",
