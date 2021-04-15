@@ -54,7 +54,7 @@ export const query = graphql`
         title
       }
     }
-    file(relativePath: { eq: "cdlr0.jpg" }) {
+    file(relativePath: { eq: "profile-photo.jpg" }) {
       childImageSharp {
         sizes(maxWidth: 400) {
           ...GatsbyImageSharpSizes
