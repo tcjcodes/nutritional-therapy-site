@@ -46,13 +46,13 @@ export default function ProductTemplate({ data }) {
               <div>
                 <BreadcrumbLink
                     to={`/products`}
-                    text={`all ${pageTitle.toLowerCase()}`}
-                    arrowDirection="right"
+                    text={`${pageTitle.toLowerCase()}`}
+                    arrowDirection="left"
                 />
                 <BreadcrumbLink
                     to={`/product-categories/${post.fields.categoryKey}`}
                     text={`${category} ${pageTitle.toLowerCase()}`}
-                    arrowDirection="right"
+                    arrowDirection="left"
                 />
 
                 <Title

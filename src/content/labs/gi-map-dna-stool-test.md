@@ -7,7 +7,7 @@ _Fully quantitative PCR DNA analysis of the microbiome. Includes beneficial and 
 
 
 
-If you feel you digestion may be compromised this test looks at underlying
+If you feel your digestion may be compromised this test looks at underlying
 pathogens that could be at the root of the problem. But even if you aren’t
 having digestive complaints, this test can reveal answers to headaches,
 autoimmune issues, inflammation concerns, constipation, infertility, skin
@@ -18,10 +18,10 @@ and kill off any pathogens that are causing concern and balancing the micro
 biome.      Includes reading of results     To learn more about the GI-
 MAP 
 
-\***Collection Instructions: **
+**Collection Instructions:**
 
 https://www.diagnosticsolutionslab.com/sites/default/files/Stool-Collection-Instructions.pdf
 
-\***GI-Map Overview:**
+**GI-Map Overview:**
 
 https://www.youtube.com/watch?v=bdoAYLB2FHA&list=PLB95gcZ1BarJvCDLy-y_H5kW2kV-18Lc4&index=6

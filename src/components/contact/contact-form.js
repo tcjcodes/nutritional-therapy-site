@@ -14,7 +14,7 @@ import StyledIcon from "../shared/styled-icon";
 import NotificationContainer from "./notification-container";
 
 const formId = "contact";
-const email = "info@carolinentp.com";
+const email = "caroline@boisewgw.com";
 
 const extractData = fd => {
   const data = {};

@@ -3,48 +3,48 @@ templateKey: lab
 title: Complete Blood Work Panel with Consultation Report $250
 image: /img/blood-chemistry-icon.png
 ---
-C-Reactive Protein (CRP), High Sensitivity
+* C-Reactive Protein (CRP), High Sensitivity
 
-C-Reactive Protein (CRP), Quantitative
+* C-Reactive Protein (CRP), Quantitative
 
-Complete Blood Count (CBC) With Differential
+* Complete Blood Count (CBC) With Differential
 
-Comprehensive Metabolic Panel (CMP-14)
+* Comprehensive Metabolic Panel (CMP-14)
 
-Ferritin
+* Ferritin
 
-Gamma-Glutamyl Transferase (GGT)
+* Gamma-Glutamyl Transferase (GGT)
 
-Hemoglobin A1c (HbA1c)
+* Hemoglobin A1c (HbA1c)
 
-Homocyst(e)ine
+* Homocyst(e)ine
 
-Insulin
+* Insulin
 
-Iron and Total Iron-binding Capacity (TIBC)
+* Iron and Total Iron-binding Capacity (TIBC)
 
-Lactic Acid Dehydrogenase (LD / LDH)
+* Lactic Acid Dehydrogenase (LD / LDH)
 
-Lipid Panel + VLDL + Non-HDL Cholesterol + TC/HDL Ratio
+* Lipid Panel + VLDL + Non-HDL Cholesterol + TC/HDL Ratio
 
-Magnesium
+* Magnesium
 
-Phosphorus
+* Phosphorus
 
-Reverse T3
+* Reverse T3
 
-Thyroid Antibodies (Thyroglobulin Antibody + Thyroid Peroxidase (TPO) Antibody)
+* Thyroid Antibodies (Thyroglobulin Antibody + Thyroid Peroxidase (TPO) Antibody)
 
-Thyroid-stimulating Hormone (TSH)
+* Thyroid-stimulating Hormone (TSH)
 
-Thyroxine (T4)
+* Thyroxine (T4)
 
-Thyroxine (T4), Free, Direct
+* Thyroxine (T4), Free, Direct
 
-Triiodothyronine (T3)
+* Triiodothyronine (T3)
 
-Triiodothyronine (T3), Free
+* Triiodothyronine (T3), Free
 
-Uric Acid
+* Uric Acid
 
-Vitamin D, 25-Hydroxy
+* Vitamin D, 25-Hydroxy

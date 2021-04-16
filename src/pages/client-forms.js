@@ -3,10 +3,8 @@ import React from "react";
 import Helmet from "react-helmet";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
-import ExternalLink from "../components/shared/external-link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
-import StyledIcon from '../components/shared/styled-icon'
 
 const ClientFormsPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -34,13 +32,13 @@ const ClientFormsPage = ({ data }) => {
                     forms and bring them to your next appointment:
                     <ol>
                       <li>
-                        <a title="Download Initial Interview Form" href="/documents/forms/Initial+Interview.pdf" download>
+                        <a title="Initial Interview Form" href="/documents/forms/InitialInterview.pdf">
                           Initial Interview (PDF)
                         </a>
                       </li>
                       <li>
                         <a
-                          title="Download Disclaimer Form"
+                          title="Disclaimer Form"
                           href="/documents/forms/Disclaimer.pdf"
                         >
                           Disclaimer (PDF)

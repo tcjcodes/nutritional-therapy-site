@@ -9,7 +9,7 @@ import ProductCardColumn from "../components/products/product-card-column";
 import ProductCardRow from "../components/products/product-card-row";
 import ProductCategoryHeading from "../components/products/product-category-heading";
 
-const pageTitle = "All Favorites";
+const pageTitle = "Favorites";
 const sortProducts = edges => {
   let categorized = {};
   edges
