@@ -24,8 +24,8 @@ $size-small: 1rem;
 $body-weight: $weight-medium;
 
 $brown-lighter: #8c6b4f;
-$brown-darker: #65482e;
-$brown: $brown-darker;//#8d6036;
+$brown-darker: #4f3825;
+$brown: #624e32;
 $white: #f8f8f8;
 
 $green: #5d8c2c;
@@ -62,7 +62,8 @@ strong {
     color: $brown;
   }
   a {
-    font-weight: 700;
+    //font-weight: 700;
+    text-decoration: underline;
   }
 }
 .navbar-link {
