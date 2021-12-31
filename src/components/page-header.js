@@ -6,7 +6,7 @@ const PageHeader = ({ title, center }) => (
   <div css={{ textAlign: center ? 'center' : 'inherit' }}>
     <Title
       isSize={2}
-      style={{
+      css={{
         ...secondaryFont,
         textTransform: 'lowercase',
         marginBottom: '0.75rem',

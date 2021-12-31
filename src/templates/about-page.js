@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import PageHeader from '../components/page-header'
 
-export default ({ data }) => {
+const AboutPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
   const { markdownRemark: post } = data
   return (
@@ -65,3 +65,5 @@ export const query = graphql`
     }
   }
 `
+
+export default AboutPage;

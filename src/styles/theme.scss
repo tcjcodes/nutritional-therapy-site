@@ -1,6 +1,6 @@
 // Import Bulma's initial variables
 
-@use "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/initial-variables";
 
 $family-sans-serif: "Montserrat", "Helvetica", sans-serif;
 $family-serif: "vollkorn";
@@ -41,10 +41,9 @@ $text: $brown-darker;
 
 $link: $brown;
 $link-hover: $brown-darker;
-$fa-font-path: "../assets/fonts/fontawesome-pro-5.15.4-web/webfonts";
 
-@use "~bulma/bulma";
-@use "~font-awesome/scss/font-awesome";
+@import "~bulma/bulma";
+@import "fonts";
 
 em {
   font-style: italic;
