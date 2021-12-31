@@ -12,7 +12,7 @@ import theme from '../../utils/google-map-theme.json'
 const apiKey = `TODO`
 
 const StyledMap = withScriptjs(
-  withGoogleMap(props => (
+  withGoogleMap((props) => (
     <GoogleMap
       defaultZoom={props.zoom}
       defaultCenter={props.mapCenter}
@@ -46,7 +46,7 @@ class OfficeMap extends React.Component {
   }
 
   toggleOpen = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { isOpen: !prevState.isOpen }
     })
   }

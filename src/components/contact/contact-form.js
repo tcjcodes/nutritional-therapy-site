@@ -16,7 +16,7 @@ import NotificationContainer from './notification-container'
 const formId = 'contact'
 const email = 'caroline@boisewgw.com'
 
-const extractData = fd => {
+const extractData = (fd) => {
   const data = {}
   for (let key of fd.keys()) {
     data[key] = fd.get(key)
@@ -24,9 +24,9 @@ const extractData = fd => {
   return data
 }
 
-const encode = data => {
+const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&')
 }
 
@@ -64,7 +64,7 @@ class ContactForm extends React.Component {
         this.setState({ status: STATUS_SUCCESS })
         current.reset()
       })
-      .catch(error => {
+      .catch((error) => {
         this.setState({ status: STATUS_ERROR })
         console.error('form submit error', error)
       })

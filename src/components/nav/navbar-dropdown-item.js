@@ -15,7 +15,7 @@ const NavbarDropdownItem = ({ text, to, items, style, activeStyle }) => (
     </Link>
 
     <NavbarDropdown>
-      {items.map(item => (
+      {items.map((item) => (
         <NavbarItem key={item.id || item.to}>
           <Link to={`/${item.to}`} style={style} activeStyle={activeStyle}>
             {item.text}

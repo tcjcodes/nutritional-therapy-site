@@ -11,8 +11,8 @@ const pageTitle = 'Lab Testing'
 
 const mapEdgesToLabs = function mapMarkdownEdgesToLabItems(edges) {
   return edges
-    .map(edge => edge.node)
-    .map(node => {
+    .map((edge) => edge.node)
+    .map((node) => {
       const { id, frontmatter, fields } = node
       const { slug } = fields
       const { title, image } = frontmatter

@@ -41,9 +41,9 @@ const Layout = ({ children, location }) => {
   return (
     <StaticQuery
       query={pageQuery}
-      render={data => {
+      render={(data) => {
         const { title } = data.site.siteMetadata
-        const edges = data.allMarkdownRemark.edges.map(edge => edge.node)
+        const edges = data.allMarkdownRemark.edges.map((edge) => edge.node)
         return (
           <div
             style={{

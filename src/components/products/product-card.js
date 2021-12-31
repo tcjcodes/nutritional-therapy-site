@@ -16,7 +16,7 @@ const cardWrapperStyles = {
   width: '100%',
   color: colorBrown,
 }
-const cardImageStyles = thumbnail => ({
+const cardImageStyles = (thumbnail) => ({
   display: 'block',
   height: '240px',
   overflowY: 'hidden',

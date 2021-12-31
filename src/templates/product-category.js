@@ -14,8 +14,8 @@ const CategoriesTemplate = ({ data }) => {
   const { categoryKey } = data.markdownRemark.fields
   const { name, description } = data.markdownRemark.frontmatter
   const matchingProducts = data.products.edges
-    .map(edge => edge.node)
-    .filter(node => node.fields.categoryKey === categoryKey)
+    .map((edge) => edge.node)
+    .filter((node) => node.fields.categoryKey === categoryKey)
 
   const { title } = data.site.siteMetadata
   return (
@@ -35,7 +35,7 @@ const CategoriesTemplate = ({ data }) => {
               />
             </ProductCategoryHeading>
             <ProductCardRow>
-              {matchingProducts.map(node => (
+              {matchingProducts.map((node) => (
                 <ProductCardColumn
                   key={node.id}
                   slug={node.fields.slug}

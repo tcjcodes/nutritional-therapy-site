@@ -10,11 +10,11 @@ import ProductCardRow from '../components/products/product-card-row'
 import ProductCategoryHeading from '../components/products/product-category-heading'
 
 const pageTitle = 'Favorites'
-const sortProducts = edges => {
+const sortProducts = (edges) => {
   let categorized = {}
   edges
-    .map(edge => edge.node)
-    .forEach(node => {
+    .map((edge) => edge.node)
+    .forEach((node) => {
       const { id, frontmatter, fields, excerpt } = node
       const { categoryKey, slug } = fields
       if (!categorized[categoryKey]) {
@@ -46,7 +46,7 @@ const ProductsTemplate = ({ data }) => {
           <PageHeader center title={pageTitle} />
 
           <div>
-            {Object.keys(categories).map(key => (
+            {Object.keys(categories).map((key) => (
               <div key={key} css={{ marginBottom: '3rem' }}>
                 <ProductCategoryHeading>
                   <Link to={`/product-categories/${key}/`}>{key}</Link>

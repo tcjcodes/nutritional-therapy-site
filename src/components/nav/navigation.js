@@ -29,7 +29,7 @@ const clientsNavItems = [
 ]
 
 const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
-  const productNavItems = categoryNodes.map(node => {
+  const productNavItems = categoryNodes.map((node) => {
     return {
       id: node.id,
       text: node.frontmatter.name,
