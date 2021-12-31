@@ -2,7 +2,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-// import "../layouts/theme.scss";
+import "../layouts/theme.scss";
 import bgImg from '../img/noisy/noisy.png'
 import favicon from '../img/favicon.png'
 import Navigation from './nav/navigation'
