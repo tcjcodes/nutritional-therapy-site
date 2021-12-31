@@ -6,48 +6,48 @@ import { serifFont } from '../../utils/fonts'
 import { colorBrown } from '../../utils/theme-variables'
 
 const cardWrapperStyles = {
-  display: "block",
-  position: "relative",
-  width: "100%",
-  color: colorBrown
-};
+  display: 'block',
+  position: 'relative',
+  width: '100%',
+  color: colorBrown,
+}
 const cardImageStyles = thumbnail => ({
-  display: "block",
-  height: "300px",
-  overflowY: "hidden",
+  display: 'block',
+  height: '300px',
+  overflowY: 'hidden',
   background: `url(${thumbnail}) center no-repeat`,
-  backgroundSize: "cover"
-});
+  backgroundSize: 'cover',
+})
 const cardOverlayStyles = {
-  display: "flex",
-  alignItems: "flex-end",
-  justifyContent: "center",
-  flexDirection: "column",
-  padding: "0.75rem",
-  overflowY: "hidden",
-  position: "absolute",
+  display: 'flex',
+  alignItems: 'flex-end',
+  justifyContent: 'center',
+  flexDirection: 'column',
+  padding: '0.75rem',
+  overflowY: 'hidden',
+  position: 'absolute',
   bottom: 0,
-  minHeight: "3rem",
-  left: "0",
-  width: "100%",
-  hasTextAlign: "center",
+  minHeight: '3rem',
+  left: '0',
+  width: '100%',
+  hasTextAlign: 'center',
   opacity: 1,
-  background: "rgba(245,245,245,0.98)"
-};
+  background: 'rgba(245,245,245,0.98)',
+}
 const headingStyles = {
   ...serifFont,
-  textTransform: "none",
+  textTransform: 'none',
   marginBottom: 0,
-};
+}
 
 const LabCard = ({ slug, thumbnail, title }) => (
   <div>
     <Link to={slug} css={cardWrapperStyles}>
-      <Box style={{ padding: "0.5em" }}>
+      <Box style={{ padding: '0.5em' }}>
         <div css={cardImageStyles(thumbnail)} />
         <div css={cardOverlayStyles}>
-          <div css={{ width: "100%" }}>
-            <Title hasTextAlign="centered" style={{ margin: 0, }} isSize={5}>
+          <div css={{ width: '100%' }}>
+            <Title hasTextAlign="centered" style={{ margin: 0 }} isSize={5}>
               <p css={headingStyles}>{title}</p>
             </Title>
           </div>
@@ -55,12 +55,12 @@ const LabCard = ({ slug, thumbnail, title }) => (
       </Box>
     </Link>
   </div>
-);
+)
 
 LabCard.propTypes = {
   slug: PropTypes.string.isRequired,
   thumbnail: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-};
+}
 
-export default LabCard;
+export default LabCard

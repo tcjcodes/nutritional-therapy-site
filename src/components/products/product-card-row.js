@@ -1,13 +1,10 @@
 import { Columns } from 'bloomer'
-import React from 'react';
+import React from 'react'
 
 const ProductCardRow = ({ children }) => (
-  <Columns
-    isMultiline={true}
-    isCentered={true}
-  >
+  <Columns isMultiline={true} isCentered={true}>
     {children}
   </Columns>
-);
+)
 
-export default ProductCardRow;
+export default ProductCardRow

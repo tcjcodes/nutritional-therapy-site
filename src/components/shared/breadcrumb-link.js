@@ -1,17 +1,17 @@
-import React from "react";
-import { serifFont } from "../../utils/fonts";
-import { colorGreenDark } from "../../utils/theme-variables";
-import StyledIcon from "./styled-icon";
-import { Link } from "gatsby";
+import React from 'react'
+import { serifFont } from '../../utils/fonts'
+import { colorGreenDark } from '../../utils/theme-variables'
+import StyledIcon from './styled-icon'
+import { Link } from 'gatsby'
 
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
 const BreadcrumbLink = ({ to, text, arrowDirection = 'left' }) => (
   <Link
     style={{
       ...serifFont,
-      fontSize: "1.2rem",
-      color: colorGreenDark
+      fontSize: '1.2rem',
+      color: colorGreenDark,
     }}
     to={to}
   >
@@ -21,12 +21,12 @@ const BreadcrumbLink = ({ to, text, arrowDirection = 'left' }) => (
     />
     {text}
   </Link>
-);
+)
 
 BreadcrumbLink.propTypes = {
   to: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  arrowDirection: PropTypes.oneOf(["left", "right"])
-};
+  arrowDirection: PropTypes.oneOf(['left', 'right']),
+}
 
-export default BreadcrumbLink;
+export default BreadcrumbLink

@@ -8,17 +8,16 @@ const ProductCategoryHeading = ({ children }) => (
     hasTextAlign="centered"
     style={{
       ...serifFont,
-      lineHeight: "120%",
+      lineHeight: '120%',
       color: colorBrown,
-      margin: "1rem 0",
-      fontSize: "1.75rem"
+      margin: '1rem 0',
+      fontSize: '1.75rem',
     }}
   >
     {children}
   </Heading>
-);
+)
 
-export default ProductCategoryHeading;
+export default ProductCategoryHeading
 
-ProductCategoryHeading.propTypes = {
-};
+ProductCategoryHeading.propTypes = {}

@@ -1,12 +1,12 @@
-import { graphql, StaticQuery } from "gatsby";
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { graphql, StaticQuery } from 'gatsby'
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 // import "../layouts/theme.scss";
-import bgImg from "../img/noisy/noisy.png";
-import favicon from "../img/favicon.png";
-import Navigation from "./nav/navigation";
-import PageFooter from "../components/page-footer";
+import bgImg from '../img/noisy/noisy.png'
+import favicon from '../img/favicon.png'
+import Navigation from './nav/navigation'
+import PageFooter from '../components/page-footer'
 
 const pageQuery = graphql`
   query LayoutQuery {
@@ -35,20 +35,20 @@ const pageQuery = graphql`
       }
     }
   }
-`;
+`
 
 const Layout = ({ children, location }) => {
   return (
     <StaticQuery
       query={pageQuery}
       render={data => {
-        const { title } = data.site.siteMetadata;
-        const edges = data.allMarkdownRemark.edges.map(edge => edge.node);
+        const { title } = data.site.siteMetadata
+        const edges = data.allMarkdownRemark.edges.map(edge => edge.node)
         return (
           <div
             style={{
-              minHeight: "100vh",
-              background: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)), url(${bgImg}) top repeat`
+              minHeight: '100vh',
+              background: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)), url(${bgImg}) top repeat`,
             }}
           >
             <Helmet>
@@ -59,13 +59,13 @@ const Layout = ({ children, location }) => {
             <div>{children}</div>
             <PageFooter title={title} />
           </div>
-        );
+        )
       }}
     />
-  );
-};
+  )
+}
 Layout.propTypes = {
-  children: PropTypes.node
-};
+  children: PropTypes.node,
+}
 
-export default Layout;
+export default Layout

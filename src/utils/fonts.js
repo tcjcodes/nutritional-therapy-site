@@ -6,8 +6,8 @@ export const secondaryFont = {
   lineHeight: '90%',
 }
 
-export const fontWeightNormal = 400;
-export const fontWeightBold = 700;
+export const fontWeightNormal = 400
+export const fontWeightBold = 700
 
 export const serifFont = {
   fontFamily: 'vollkorn',

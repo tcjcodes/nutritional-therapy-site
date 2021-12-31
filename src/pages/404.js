@@ -9,6 +9,6 @@ const NotFoundPage = () => (
       <p>Page not found</p>
     </Section>
   </Layout>
-);
+)
 
-export default NotFoundPage;
+export default NotFoundPage

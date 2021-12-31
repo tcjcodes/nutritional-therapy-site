@@ -1,33 +1,33 @@
-import { Container, Section } from "bloomer";
-import { graphql } from "gatsby";
-import React from "react";
-import Helmet from "react-helmet";
-import BreadcrumbLink from "../components/shared/breadcrumb-link";
-import Layout from "../components/layout";
-import PageHeader from "../components/page-header";
-import ProductCardColumn from "../components/products/product-card-column";
-import ProductCardRow from "../components/products/product-card-row";
-import ProductCategoryHeading from "../components/products/product-category-heading";
+import { Container, Section } from 'bloomer'
+import { graphql } from 'gatsby'
+import React from 'react'
+import Helmet from 'react-helmet'
+import BreadcrumbLink from '../components/shared/breadcrumb-link'
+import Layout from '../components/layout'
+import PageHeader from '../components/page-header'
+import ProductCardColumn from '../components/products/product-card-column'
+import ProductCardRow from '../components/products/product-card-row'
+import ProductCategoryHeading from '../components/products/product-category-heading'
 
-const pageTitle = "Favorites";
+const pageTitle = 'Favorites'
 const CategoriesTemplate = ({ data }) => {
-  const { categoryKey } = data.markdownRemark.fields;
-  const { name, description } = data.markdownRemark.frontmatter;
+  const { categoryKey } = data.markdownRemark.fields
+  const { name, description } = data.markdownRemark.frontmatter
   const matchingProducts = data.products.edges
     .map(edge => edge.node)
-    .filter(node => node.fields.categoryKey === categoryKey);
+    .filter(node => node.fields.categoryKey === categoryKey)
 
-  const { title } = data.site.siteMetadata;
+  const { title } = data.site.siteMetadata
   return (
     <Layout>
       <Section className="section">
         <Helmet title={`${name} ${pageTitle} | ${title}`} />
 
-        <Container isFluid={true} style={{ padding: "0 1em" }}>
+        <Container isFluid={true} style={{ padding: '0 1em' }}>
           <PageHeader center title={`${name} ${pageTitle}`} />
-          <p css={{ textAlign: "center" }}>{description}</p>
+          <p css={{ textAlign: 'center' }}>{description}</p>
 
-          <div css={{ marginBottom: "3rem" }}>
+          <div css={{ marginBottom: '3rem' }}>
             <ProductCategoryHeading>
               <BreadcrumbLink
                 to="/products/"
@@ -49,8 +49,8 @@ const CategoriesTemplate = ({ data }) => {
         </Container>
       </Section>
     </Layout>
-  );
-};
+  )
+}
 
 export const pageQuery = graphql`
   query ProductCategoriesPageQuery($slug: String!) {
@@ -93,6 +93,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default CategoriesTemplate;
+export default CategoriesTemplate

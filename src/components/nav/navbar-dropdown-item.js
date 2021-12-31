@@ -24,7 +24,7 @@ const NavbarDropdownItem = ({ text, to, items, style, activeStyle }) => (
       ))}
     </NavbarDropdown>
   </NavbarItem>
-);
+)
 
 NavbarDropdownItem.propTypes = {
   text: PropTypes.string.isRequired,
@@ -35,9 +35,9 @@ NavbarDropdownItem.propTypes = {
     PropTypes.shape({
       id: PropTypes.string,
       text: PropTypes.string.isRequired,
-      to: PropTypes.string.isRequired
+      to: PropTypes.string.isRequired,
     })
-  )
-};
+  ),
+}
 
-export default NavbarDropdownItem;
+export default NavbarDropdownItem
