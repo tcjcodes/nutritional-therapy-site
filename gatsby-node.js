@@ -1,3 +1,4 @@
+// FIXME: remove path? https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/#using-fs-in-ssr
 const path = require('path')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -26,8 +27,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
 
   return graphql(`
     {

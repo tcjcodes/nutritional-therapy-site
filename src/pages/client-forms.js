@@ -8,7 +8,7 @@ import PageHeader from "../components/page-header";
 
 const ClientFormsPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
-  const imgSizes = data.file.childImageSharp.sizes;
+  const imgSizes = data.file.childImageSharp.fluid;
   return (
     <Layout>
       <Section>
@@ -18,7 +18,7 @@ const ClientFormsPage = ({ data }) => {
             <Column isSize={3} isOffset={1}>
               <Box>
                 <Img
-                  sizes={imgSizes}
+                  fluid={imgSizes}
                   alt="Sprouting plant. Photo by icon0.com from Pexels"
                 />
               </Box>
@@ -67,8 +67,8 @@ export const query = graphql`
     }
     file(relativePath: { eq: "dirt-gardening-green-1214394.jpg" }) {
       childImageSharp {
-        sizes(maxWidth: 600) {
-          ...GatsbyImageSharpSizes
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

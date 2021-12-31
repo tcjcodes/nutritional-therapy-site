@@ -23,10 +23,10 @@ export default ({ data }) => {
                     >
                         <PageHeader center title={post.frontmatter.title}/>
 
-                        {data.file?.childImageSharp?.sizes &&
+                        {data.file?.childImageSharp?.fluid &&
                             (<Box style={{ width: 400, marginBottom: '2rem' }}>
                                 <Img
-                                    sizes={data.file.childImageSharp.sizes}
+                                    fluid={data.file.childImageSharp.fluid}
                                     alt="Caroline"
                                     title="About Caroline"
                                 />
@@ -57,8 +57,8 @@ export const query = graphql`
     }
     file(relativePath: { eq: "cdlr0.jpg" }) {
       childImageSharp {
-        sizes(maxWidth: 400) {
-          ...GatsbyImageSharpSizes
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
