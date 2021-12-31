@@ -12,7 +12,6 @@ module.exports = {
         }
       }
     },
-    "gatsby-plugin-glamor",
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
