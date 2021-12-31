@@ -8,7 +8,7 @@
     "bulma": "^0.9.3",
     "classnames": "^2.3.1",
     "font-awesome": "^4.7.0",
-    "gatsby": "^3.0.0",
+    "gatsby": "^3.14.6",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-google-analytics": "^2.11.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
