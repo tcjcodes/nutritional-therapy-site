@@ -2,13 +2,14 @@
 Official website for a nutritional therapist, created with Gatsby and managed by Netlify CMS.
 
 ## Quickstart
-`gatsby develop`
+`nvm use lts/erbium`
+`npm run develop`
 
 This project is deployed on push.
 
 ### Production
-`gatsby build`
-`gatsby serve`
+`npm run build`
+`npm run serve`
 
 ## Content 
 
