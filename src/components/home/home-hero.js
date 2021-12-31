@@ -23,7 +23,7 @@ const HomeHero = ({ background }) => (
         >
           <Title isSize={3}>Holistic Nutrition &amp; Wellness</Title>
         </div>
-        <Subtitle isSize={5} css={{ fontWeight: 'bold' }}>
+        <Subtitle isSize={5}>
           Practicing Functional Nutritional Therapy,
           <br />
           Applied Psycho-Neurobiology,
