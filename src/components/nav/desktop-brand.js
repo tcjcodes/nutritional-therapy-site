@@ -3,6 +3,7 @@ import BrandItem from './brand-item'
 
 const DesktopBrand = ({ title }) => (
   <div
+      data-testid="desktop-brand"
     className="is-hidden-touch"
     css={{
       width: '100%',

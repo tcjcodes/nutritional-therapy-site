@@ -1,55 +1,55 @@
-import { Container, Section } from "bloomer";
-import Link from "gatsby-link";
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import PageHeader from "../components/page-header";
-import ProductCardColumn from "../components/products/product-card-column";
-import ProductCardRow from "../components/products/product-card-row";
-import ProductCategoryHeading from "../components/products/product-category-heading";
+import { Container, Section } from 'bloomer'
+import Link from 'gatsby-link'
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import PageHeader from '../components/page-header'
+import ProductCardColumn from '../components/products/product-card-column'
+import ProductCardRow from '../components/products/product-card-row'
+import ProductCategoryHeading from '../components/products/product-category-heading'
 
-const pageTitle = "Favorites";
-const sortProducts = edges => {
-  let categorized = {};
+const pageTitle = 'Favorites'
+const sortProducts = (edges) => {
+  let categorized = {}
   edges
-    .map(edge => edge.node)
-    .forEach(node => {
-      const { id, frontmatter, fields, excerpt } = node;
-      const { categoryKey, slug } = fields;
+    .map((edge) => edge.node)
+    .forEach((node) => {
+      const { id, frontmatter, fields, excerpt } = node
+      const { categoryKey, slug } = fields
       if (!categorized[categoryKey]) {
-        categorized[categoryKey] = [];
+        categorized[categoryKey] = []
       }
 
-      const { title, image } = frontmatter;
+      const { title, image } = frontmatter
       categorized[categoryKey].push({
         id,
         slug,
         excerpt,
         title,
-        image
-      });
-    });
-  return categorized;
-};
+        image,
+      })
+    })
+  return categorized
+}
 
 const ProductsTemplate = ({ data }) => {
-  const edges = data.allMarkdownRemark.edges;
-  const categories = sortProducts(edges);
-  const { title } = data.site.siteMetadata;
+  const edges = data.allMarkdownRemark.edges
+  const categories = sortProducts(edges)
+  const { title } = data.site.siteMetadata
   return (
     <Layout>
       <Section className="section">
         <Helmet title={`${pageTitle} | ${title}`} />
 
-        <Container style={{ padding: "0 1em" }}>
+        <Container style={{ padding: '0 1em' }}>
           <PageHeader center title={pageTitle} />
 
           <div>
-            {Object.keys(categories).map(key => (
-              <div key={key} css={{ marginBottom: "3rem" }}>
+            {Object.keys(categories).map((key) => (
+              <div key={key} css={{ marginBottom: '3rem' }}>
                 <ProductCategoryHeading>
-                  <Link to={`/product-categories/${key}/`}>{key}</Link>
+                  <Link data-testid={`fav-category-heading`} to={`/product-categories/${key}/`}>{key}</Link>
                 </ProductCategoryHeading>
                 <ProductCardRow>
                   {categories[key].map(
@@ -80,8 +80,8 @@ const ProductsTemplate = ({ data }) => {
         </Container>
       </Section>
     </Layout>
-  );
-};
+  )
+}
 
 export const pageQuery = graphql`
   query ProductPageQuery {
@@ -115,6 +115,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default ProductsTemplate;
+export default ProductsTemplate

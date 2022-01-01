@@ -1,7 +1,7 @@
-import { Column } from "bloomer";
-import React from "react";
-import ProductCard from "./product-card";
-import PropTypes from "prop-types";
+import { Column } from 'bloomer'
+import React from 'react'
+import ProductCard from './product-card'
+import PropTypes from 'prop-types'
 
 const ProductCardColumn = ({ slug, thumbnail, title, excerpt }) => (
   <Column isSize={{ desktop: 2, mobile: 12 }}>
@@ -12,12 +12,12 @@ const ProductCardColumn = ({ slug, thumbnail, title, excerpt }) => (
       excerpt={excerpt}
     />
   </Column>
-);
+)
 
 ProductCardColumn.propTypes = {
   slug: PropTypes.string.isRequired,
   thumbnail: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  excerpt: PropTypes.string
-};
-export default ProductCardColumn;
+  excerpt: PropTypes.string,
+}
+export default ProductCardColumn

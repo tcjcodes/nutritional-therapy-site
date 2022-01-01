@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 const BlogTemplate = ({ posts }) => (
   <div className="container">
     {posts
-      .filter(post => post.node.frontmatter.templateKey === 'blog-post')
+      .filter((post) => post.node.frontmatter.templateKey === 'blog-post')
       .map(({ node: post }) => {
         return (
           <section key={post.id} className="section">

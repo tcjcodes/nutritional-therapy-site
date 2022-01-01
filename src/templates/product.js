@@ -1,5 +1,15 @@
-import { Box, Button, Column, Columns, Container, Content, Image, Section, Title } from 'bloomer'
-import { graphql } from "gatsby"
+import {
+  Box,
+  Button,
+  Column,
+  Columns,
+  Container,
+  Content,
+  Image,
+  Section,
+  Title,
+} from 'bloomer'
+import { graphql } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 import BreadcrumbLink from '../components/shared/breadcrumb-link'
@@ -7,13 +17,13 @@ import Layout from '../components/layout'
 import StyledIcon from '../components/shared/styled-icon'
 import { secondaryFont } from '../utils/fonts'
 
-const pageTitle = 'Favorites';
+const pageTitle = 'Favorites'
 export default function ProductTemplate({ data }) {
-  const siteTitle = data.site.siteMetadata.title;
+  const siteTitle = data.site.siteMetadata.title
 
-  const { markdownRemark: post } = data;
-  const { image, link, title, category } = post.frontmatter;
-  let hyperlink = link.indexOf("http") >= 0 ? link : `http://${link}`;
+  const { markdownRemark: post } = data
+  const { image, link, title, category } = post.frontmatter
+  let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`
 
   return (
     <Layout>
@@ -22,22 +32,22 @@ export default function ProductTemplate({ data }) {
         <Container style={{ maxWidth: 800 }}>
           <Columns isVCentered isCentered>
             <Column
-                isSize={{ desktop: 6, mobile: 12 }}
-                style={{ marginBottom: "1em" }}
+              isSize={{ desktop: 6, mobile: 12 }}
+              style={{ marginBottom: '1em' }}
             >
               <Box
-                  style={{
-                    margin: "0 0.5rem 0.5rem 0"
-                  }}
+                style={{
+                  margin: '0 0.5rem 0.5rem 0',
+                }}
               >
                 <Image
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      border: "1px solid gainsboro"
-                    }}
-                    src={__PATH_PREFIX__ + image}
-                    alt={title}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    border: '1px solid gainsboro',
+                  }}
+                  src={__PATH_PREFIX__ + image}
+                  alt={title}
                 />
               </Box>
             </Column>
@@ -45,30 +55,30 @@ export default function ProductTemplate({ data }) {
             <Column isSize={{ desktop: 6, mobile: 12 }}>
               <div>
                 <BreadcrumbLink
-                    to={`/products`}
-                    text={`${pageTitle.toLowerCase()}`}
-                    arrowDirection="left"
+                  to={`/products`}
+                  text={`${pageTitle.toLowerCase()}`}
+                  arrowDirection="left"
                 />
                 <BreadcrumbLink
-                    to={`/product-categories/${post.fields.categoryKey}`}
-                    text={`${category} ${pageTitle.toLowerCase()}`}
-                    arrowDirection="left"
+                  to={`/product-categories/${post.fields.categoryKey}`}
+                  text={`${category} ${pageTitle.toLowerCase()}`}
+                  arrowDirection="left"
                 />
 
                 <Title
-                    style={{ ...secondaryFont, marginBottom: "0.75rem" }}
-                    isSize={2}
-                    hasTextColor="dark"
+                  style={{ ...secondaryFont, marginBottom: '0.75rem' }}
+                  isSize={2}
+                  hasTextColor="dark"
                 >
                   {title}
                 </Title>
               </div>
               <Button
-                  style={{ margin: "1em 0" }}
-                  isColor="primary"
-                  href={hyperlink}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                style={{ margin: '1em 0' }}
+                isColor="primary"
+                href={hyperlink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <StyledIcon name="shopping-bag" />
                 Buy Item
@@ -82,7 +92,7 @@ export default function ProductTemplate({ data }) {
         </Container>
       </Section>
     </Layout>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -106,4 +116,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
