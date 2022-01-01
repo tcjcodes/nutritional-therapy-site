@@ -23,4 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-import '@testing-library/cypress/add-commands'
+import '@testing-library/cypress/add-commands';
+
+Cypress.Commands.add(
+  'shouldIncludeHref',
+  { prevSubject: true },
+  (subject, value) => {
+    return cy.wrap(subject).should('have.attr', 'href').and('include', value);
+  },
+);

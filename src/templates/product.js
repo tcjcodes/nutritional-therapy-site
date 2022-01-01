@@ -66,6 +66,7 @@ export default function ProductTemplate({ data }) {
                 />
 
                 <Title
+                  data-testid="product-title"
                   style={{ ...secondaryFont, marginBottom: '0.75rem' }}
                   isSize={2}
                   hasTextColor="dark"

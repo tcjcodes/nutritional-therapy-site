@@ -129,32 +129,34 @@ describe('each page', () => {
 
   describe.only('favorites pages', () => {
     it('renders favorites page that navigates to items page', () => {
+      // test(favorites page)
       cy.visit('/products');
       verifyPageHeaderContains(/favorites/i);
 
       cy.findAllByTestId('fav-category-heading').should('have.length.gte', 1);
-
       cy.findAllByTestId('fav-card-link')
         .as('favCardLinks')
         .should('have.length.gte', 1);
 
       cy.get('@favCardLinks').first().click();
 
+      // test(item page)
       cy.url().should('match', /\/products\/\w+/);
+      cy.findByTestId('product-title');
+      cy.findByTestId('product-content').should('be.visible');
+
       cy.findAllByTestId('breadcrumb-link')
         .as('breadcrumbs')
         .should('have.length', 2);
 
+      const categoryRouteRegex = /\/product-categories\/\w+/;
       cy.get('@breadcrumbs').should(([allFavsLink, categoryLink]) => {
         expect(allFavsLink).to.have.attr('href').eq('/products');
         expect(allFavsLink).to.have.text('favorites');
 
-        expect(categoryLink)
-          .to.have.attr('href')
-          .matches(/\/product-categories\/\w+/);
-        expect(categoryLink).to.include.text('favorites');
+        expect(categoryLink).to.have.attr('href').matches(categoryRouteRegex);
+        expect(categoryLink).to.include.text(' favorites');
       });
-
       cy.get('@breadcrumbs').eq(1).as('categoryLink');
 
       cy.findByRole('button', { name: 'Buy Item' }).should((buyLink) => {
@@ -163,10 +165,10 @@ describe('each page', () => {
         expect(buyLink).to.have.attr('rel', 'noopener noreferrer');
       });
 
-      cy.findByTestId('product-content').should('be.visible');
-
       cy.get('@categoryLink').click();
-      cy.url().should('match', /\/product-categories\/\w+/);
+
+      // test(category page)
+      cy.url().should('match', categoryRouteRegex);
 
       verifyPageHeaderContains(' Favorites');
       cy.findByTestId('fav-category-description').should('be.visible');
