@@ -1,14 +1,14 @@
-import { Box, Container, Content, Section } from 'bloomer'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import React from 'react'
-import Helmet from 'react-helmet'
-import Layout from '../components/layout'
-import PageHeader from '../components/page-header'
+import { Box, Container, Content, Section } from 'bloomer';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import React from 'react';
+import Helmet from 'react-helmet';
+import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
 
 const AboutPage = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const { markdownRemark: post } = data
+  const siteTitle = data.site.siteMetadata.title;
+  const { markdownRemark: post } = data;
   return (
     <Layout>
       <Section>
@@ -32,13 +32,16 @@ const AboutPage = ({ data }) => {
                 />
               </Box>
             )}
-            <Content dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Content
+              data-testid="about-content"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
           </div>
         </Container>
       </Section>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query AboutPage($slug: String!) {
@@ -64,6 +67,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 export default AboutPage;

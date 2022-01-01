@@ -6,3 +6,5 @@ node_modules
 public/
 .DS_Store
 .idea/workspace.xml
+cypress/videos
+cypress/screenshots

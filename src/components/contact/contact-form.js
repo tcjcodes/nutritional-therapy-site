@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   Button,
   Control,
@@ -8,70 +8,70 @@ import {
   Input,
   Select,
   TextArea,
-} from 'bloomer'
-import ExternalLink from '../shared/external-link'
-import StyledIcon from '../shared/styled-icon'
-import NotificationContainer from './notification-container'
+} from 'bloomer';
+import ExternalLink from '../shared/external-link';
+import StyledIcon from '../shared/styled-icon';
+import NotificationContainer from './notification-container';
 
-const formId = 'contact'
-const email = 'caroline@boisewgw.com'
+const formId = 'contact';
+const email = 'caroline@boisewgw.com';
 
 const extractData = (fd) => {
-  const data = {}
+  const data = {};
   for (let key of fd.keys()) {
-    data[key] = fd.get(key)
+    data[key] = fd.get(key);
   }
-  return data
-}
+  return data;
+};
 
 const encode = (data) => {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
+    .join('&');
+};
 
-const STATUS_SUCCESS = 'success'
-const STATUS_ERROR = 'error'
+const STATUS_SUCCESS = 'success';
+const STATUS_ERROR = 'error';
 
-const SUBJECT_OTHER = 'Other'
+const SUBJECT_OTHER = 'Other';
 
 class ContactForm extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = { status: null, showOtherSubject: false }
-    this.formRef = React.createRef()
+    super(props);
+    this.state = { status: null, showOtherSubject: false };
+    this.formRef = React.createRef();
 
-    this.handleSubjectChange = this.handleSubjectChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
-    this.handleDeleteNotification = this.handleDeleteNotification.bind(this)
+    this.handleSubjectChange = this.handleSubjectChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDeleteNotification = this.handleDeleteNotification.bind(this);
   }
 
   handleSubjectChange(e) {
-    this.setState({ showOtherSubject: e.target.value === SUBJECT_OTHER })
+    this.setState({ showOtherSubject: e.target.value === SUBJECT_OTHER });
   }
 
   handleSubmit(event) {
-    event.preventDefault()
-    const fd = new FormData(event.target)
-    const data = extractData(fd)
-    const { current } = this.formRef
+    event.preventDefault();
+    const fd = new FormData(event.target);
+    const data = extractData(fd);
+    const { current } = this.formRef;
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': formId, ...data }),
     })
       .then(() => {
-        this.setState({ status: STATUS_SUCCESS })
-        current.reset()
+        this.setState({ status: STATUS_SUCCESS });
+        current.reset();
       })
       .catch((error) => {
-        this.setState({ status: STATUS_ERROR })
-        console.error('form submit error', error)
-      })
+        this.setState({ status: STATUS_ERROR });
+        console.error('form submit error', error);
+      });
   }
 
   handleDeleteNotification() {
-    this.setState({ status: null })
+    this.setState({ status: null });
   }
 
   render() {
@@ -95,7 +95,7 @@ class ContactForm extends React.Component {
             <StyledIcon name="exclamation-triangle" />
             <strong>Oh no!</strong> Something went wrong. Please try again later
             or send a direct e-mail instead at{' '}
-            <ExternalLink href={`mailto:${email}`} text={email} />.
+            <ExternalLink href={`mailto:${email}`}>{email}</ExternalLink>.
           </NotificationContainer>
         </div>
 
@@ -215,9 +215,9 @@ class ContactForm extends React.Component {
           </Field>
         </form>
       </div>
-    )
+    );
   }
 }
-ContactForm.propTypes = {}
+ContactForm.propTypes = {};
 
-export default ContactForm
+export default ContactForm;

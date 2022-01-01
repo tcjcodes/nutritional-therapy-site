@@ -1,9 +1,9 @@
-import React from 'react'
-import BrandItem from './brand-item'
+import React from 'react';
+import BrandItem from './brand-item';
 
 const DesktopBrand = ({ title }) => (
   <div
-      data-testid="desktop-brand"
+    data-testid="desktop-brand"
     className="is-hidden-touch"
     css={{
       width: '100%',
@@ -14,6 +14,6 @@ const DesktopBrand = ({ title }) => (
   >
     <BrandItem title={title} />
   </div>
-)
+);
 
-export default DesktopBrand
+export default DesktopBrand;
