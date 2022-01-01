@@ -127,7 +127,7 @@ describe('each page', () => {
     // it.todo('renders lab item page');
   });
 
-  describe.only('favorites pages', () => {
+  describe('favorites pages', () => {
     it('renders favorites page that navigates to items page', () => {
       // test(favorites page)
       cy.visit('/products');
@@ -191,8 +191,8 @@ describe('each page', () => {
       .should('have.attr', 'type')
       .and('eq', 'submit');
 
-    cy.get('address').contains('9050 W Overland Rd #135');
-    cy.get('address').contains('Boise, ID 83709');
+    cy.get('address').as('officeAddr').contains('9050 W Overland Rd #135');
+    cy.get('@officeAddr').contains('Boise, ID 83709');
     cy.findByRole('link', { name: 'Directions' })
       .should('be.visible')
       .and('have.attr', 'href')
