@@ -21,9 +21,9 @@ const HomeHero = ({ background }) => (
             marginBottom: '1.5rem',
           }}
         >
-          <Title isSize={3}>Holistic Nutrition &amp; Wellness</Title>
+          <Title data-testid="landing-title" isSize={3}>Holistic Nutrition &amp; Wellness</Title>
         </div>
-        <Subtitle isSize={5}>
+        <Subtitle data-testid="landing-subtitle" isSize={5}>
           Practicing Functional Nutritional Therapy,
           <br />
           Applied Psycho-Neurobiology,

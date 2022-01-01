@@ -11,6 +11,10 @@ This project is deployed on push.
 `npm run build`
 `npm run serve`
 
+### Test
+`npm run develop`
+`npm run cy:open`
+
 ## Content 
 
 Publish content via Netlify CMS

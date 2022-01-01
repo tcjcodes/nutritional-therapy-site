@@ -49,7 +49,7 @@ const ProductsTemplate = ({ data }) => {
             {Object.keys(categories).map((key) => (
               <div key={key} css={{ marginBottom: '3rem' }}>
                 <ProductCategoryHeading>
-                  <Link to={`/product-categories/${key}/`}>{key}</Link>
+                  <Link data-testid={`fav-category-heading`} to={`/product-categories/${key}/`}>{key}</Link>
                 </ProductCategoryHeading>
                 <ProductCardRow>
                   {categories[key].map(

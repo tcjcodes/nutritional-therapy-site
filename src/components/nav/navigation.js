@@ -53,6 +53,7 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
         />
 
         <NavbarMenu
+            data-testid="desktop-navbar"
           style={{ justifyContent: 'center' }}
           isActive={isOpen}
           onClick={onMenuClick}

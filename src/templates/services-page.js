@@ -18,7 +18,7 @@ const ServicesPage = ({ data }) => {
           <PageHeader title="services" center />
 
           <div css={{ marginBottom: `2rem` }}>
-            <Content dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Content data-testid="services-content" dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
 
           <div css={{ textAlign: 'center' }}>
