@@ -9,22 +9,22 @@ import ProductCardColumn from '../components/products/product-card-column';
 import ProductCardRow from '../components/products/product-card-row';
 import ProductCategoryHeading from '../components/products/product-category-heading';
 
-const pageTitle = 'Favorites';
 const CategoriesTemplate = ({ data }) => {
   const { categoryKey } = data.markdownRemark.fields;
   const { name, description } = data.markdownRemark.frontmatter;
   const matchingProducts = data.products.edges
     .map((edge) => edge.node)
     .filter((node) => node.fields.categoryKey === categoryKey);
+  const pageTitle = `Favorite ${name}`;
 
   const { title } = data.site.siteMetadata;
   return (
     <Layout>
       <Section className="section">
-        <Helmet title={`${name} ${pageTitle} | ${title}`} />
+        <Helmet title={`${pageTitle} | ${title}`} />
 
         <Container isFluid={true} style={{ padding: '0 1em' }}>
-          <PageHeader center title={`${name} ${pageTitle}`} />
+          <PageHeader center title={pageTitle} />
           <p
             data-testid="fav-category-description"
             css={{ textAlign: 'center' }}
@@ -34,10 +34,7 @@ const CategoriesTemplate = ({ data }) => {
 
           <div css={{ marginBottom: '3rem' }}>
             <ProductCategoryHeading>
-              <BreadcrumbLink
-                to="/products/"
-                text={`Back to all ${pageTitle}`}
-              />
+              <BreadcrumbLink to="/products/" text={`Back to all favorites`} />
             </ProductCategoryHeading>
             <ProductCardRow>
               {matchingProducts.map((node) => (
