@@ -27,10 +27,15 @@ describe('each page', () => {
           href: '/services',
         },
         {
-          text: /clients/i,
+          text: /favorites/i,
         },
         {
-          text: /favorites/i,
+          text: /new clients/i,
+          href: '/client-forms',
+        },
+        {
+          text: /labs/i,
+          href: '/labs',
         },
         {
           text: /contact/i,
@@ -50,8 +55,6 @@ describe('each page', () => {
     });
 
     cy.findByTestId('desktop-navbar').within(($navbar) => {
-      cy.findByTestId('nav-dropdown-menu--Clients');
-
       // TODO: Test dropdowns with hover
       //  https://docs.cypress.io/api/commands/hover#Workarounds
       //     .trigger('mouseover');
@@ -155,7 +158,6 @@ describe('each page', () => {
         expect(allFavsLink).to.have.text('favorites');
 
         expect(categoryLink).to.have.attr('href').matches(categoryRouteRegex);
-        expect(categoryLink).to.include.text(' favorites');
       });
       cy.get('@breadcrumbs').eq(1).as('categoryLink');
 
@@ -170,7 +172,7 @@ describe('each page', () => {
       // test(category page)
       cy.url().should('match', categoryRouteRegex);
 
-      verifyPageHeaderContains(' Favorites');
+      verifyPageHeaderContains('Favorite ');
       cy.findByTestId('fav-category-description').should('be.visible');
       cy.contains('Back to all')
         .should('have.attr', 'href')
@@ -190,13 +192,6 @@ describe('each page', () => {
     cy.findByRole('button', { name: /submit/ })
       .should('have.attr', 'type')
       .and('eq', 'submit');
-
-    cy.get('address').as('officeAddr').contains('9050 W Overland Rd #135');
-    cy.get('@officeAddr').contains('Boise, ID 83709');
-    cy.findByRole('link', { name: 'Directions' })
-      .should('be.visible')
-      .and('have.attr', 'href')
-      .and('eq', 'https://goo.gl/maps/xBhPNMVmz96YwTs86');
 
     // it.todo('submits form') mock POST req
   });
