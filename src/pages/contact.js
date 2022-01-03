@@ -59,7 +59,7 @@ const ContactPage = ({ data }) => {
                 <Heading>new clients</Heading>
                 <p>
                   I provide a free 20 minute consultation for new clients. Send
-                  a message with the form on the left to request an appointment.
+                  a message with the form to request an appointment.
                 </p>
               </div>
               {/*<div css={{ margin: '1rem 0' }}>

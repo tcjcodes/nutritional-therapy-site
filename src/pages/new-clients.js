@@ -8,7 +8,7 @@ import Layout from '../components/layout';
 import PageHeader from '../components/page-header';
 
 const pageTitle = 'New Clients';
-const ClientFormsPage = ({ data }) => {
+const NewClientsPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
   const imgSizes = data.file.childImageSharp.fluid;
   return (
@@ -70,10 +70,10 @@ const ClientFormsPage = ({ data }) => {
   );
 };
 
-ClientFormsPage.propTypes = {};
+NewClientsPage.propTypes = {};
 
 export const query = graphql`
-  query ClientFormsPageQuery {
+  query NewClientsPageQuery {
     site {
       siteMetadata {
         title
@@ -89,4 +89,4 @@ export const query = graphql`
   }
 `;
 
-export default ClientFormsPage;
+export default NewClientsPage;

@@ -31,7 +31,7 @@ describe('each page', () => {
         },
         {
           text: /new clients/i,
-          href: '/client-forms',
+          href: '/new-clients',
         },
         {
           text: /labs/i,
@@ -104,11 +104,11 @@ describe('each page', () => {
     cy.url().should('include', '/contact');
   });
 
-  describe('clients pages', () => {
+  describe('clients page', () => {
     it('renders forms page with documents', () => {
-      cy.visit('/client-forms');
+      cy.visit('/new-clients');
 
-      verifyPageHeaderContains(/forms/i);
+      verifyPageHeaderContains(/new clients/i);
 
       cy.findByRole('link', { name: /Initial Interview/ })
         .as('interviewLink')
@@ -118,16 +118,21 @@ describe('each page', () => {
       cy.findByRole('link', { name: /Disclaimer/ })
         .should('have.attr', 'href')
         .and('include', '/documents/forms/Disclaimer.pdf');
+
+      cy.findByRole('link', { name: /contact/ }).click();
+
+      cy.url().should('include', '/contact');
     });
 
-    it('renders labs page with several lab test items', () => {
-      cy.visit('/labs');
-
-      verifyPageHeaderContains(/lab testing/i);
-
-      cy.findAllByTestId('lab-card').should('have.length.gte', 1);
-    });
     // it.todo('renders lab item page');
+  });
+
+  it('renders labs page with several lab test items', () => {
+    cy.visit('/labs');
+
+    verifyPageHeaderContains(/lab testing/i);
+
+    cy.findAllByTestId('lab-card').should('have.length.gte', 1);
   });
 
   describe('favorites pages', () => {

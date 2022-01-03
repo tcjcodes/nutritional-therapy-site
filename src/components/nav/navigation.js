@@ -20,7 +20,7 @@ const linkProps = {
 const clientsNavItems = [
   {
     text: 'Forms',
-    to: 'client-forms',
+    to: 'new-clients',
   },
   {
     text: 'Lab Testing',
@@ -70,7 +70,7 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
           <StyledNavbarItem
             {...linkProps}
             text="New Clients"
-            to="client-forms"
+            to="new-clients"
           />
           <StyledNavbarItem {...linkProps} text="Labs" to="labs" />
           {/*<NavbarDropdownItem*/}
