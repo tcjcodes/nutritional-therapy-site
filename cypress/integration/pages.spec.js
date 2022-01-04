@@ -200,4 +200,11 @@ describe('each page', () => {
 
     // it.todo('submits form') mock POST req
   });
+
+  // Fails when run locally
+  it('renders 404 page for nonexistent routes', () => {
+    cy.visit('/invalid-route', { failOnStatusCode: false });
+
+    cy.contains('Page not found');
+  });
 });
