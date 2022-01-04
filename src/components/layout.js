@@ -1,12 +1,12 @@
-import { graphql, StaticQuery } from 'gatsby'
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import "../styles/theme.scss";
-import bgImg from '../img/noisy/noisy.png'
-import favicon from '../img/favicon.png'
-import Navigation from './nav/navigation'
-import PageFooter from '../components/page-footer'
+import { graphql, StaticQuery } from 'gatsby';
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import '../styles/theme.scss';
+import bgImg from '../img/noisy/noisy.png';
+import favicon from '../img/favicon.png';
+import Navigation from './nav/navigation';
+import PageFooter from '../components/page-footer';
 
 const pageQuery = graphql`
   query LayoutQuery {
@@ -34,16 +34,25 @@ const pageQuery = graphql`
         }
       }
     }
+    file(relativePath: { eq: "rwp_seal.png" }) {
+      childImageSharp {
+        fixed(width: 128) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
   }
-`
+`;
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
   return (
     <StaticQuery
       query={pageQuery}
       render={(data) => {
-        const { title } = data.site.siteMetadata
-        const edges = data.allMarkdownRemark.edges.map((edge) => edge.node)
+        const { title } = data.site.siteMetadata;
+        const edges = data.allMarkdownRemark.edges.map((edge) => edge.node);
+        const logoImg = data.file.childImageSharp.fixed;
+
         return (
           <div
             style={{
@@ -57,15 +66,15 @@ const Layout = ({ children, location }) => {
             </Helmet>
             <Navigation categoryNodes={edges} title={title} />
             <div>{children}</div>
-            <PageFooter title={title} />
+            <PageFooter title={title} logoImg={logoImg} />
           </div>
-        )
+        );
       }}
     />
-  )
-}
+  );
+};
 Layout.propTypes = {
   children: PropTypes.node,
-}
+};
 
-export default Layout
+export default Layout;

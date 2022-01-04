@@ -10,7 +10,7 @@ import PageHeader from '../components/page-header';
 const pageTitle = 'New Clients';
 const NewClientsPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
-  const imgSizes = data.file.childImageSharp.fluid;
+  const imgFluid = data.file.childImageSharp.fluid;
   return (
     <Layout>
       <Section>
@@ -20,7 +20,7 @@ const NewClientsPage = ({ data }) => {
             <Column isSize={3} isOffset={1}>
               <Box>
                 <Img
-                  fluid={imgSizes}
+                  fluid={imgFluid}
                   alt="Sprouting plant. Photo by icon0.com from Pexels"
                 />
               </Box>
