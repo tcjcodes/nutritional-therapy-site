@@ -70,7 +70,7 @@ const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
         <div css={{ width: '100%' }}>
           <Title style={{ margin: 0 }} isSize={6}>
             <Dotdotdot clamp={3}>
-              `<p css={headingStyles}>{title}</p>
+              <p css={headingStyles}>{title}</p>
             </Dotdotdot>
           </Title>
         </div>

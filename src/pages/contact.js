@@ -58,11 +58,11 @@ const ContactPage = ({ data }) => {
               <div>
                 <Heading>new clients</Heading>
                 <p>
-                  I provide a free 30 minute consultation for new clients. Send
-                  a message with the form on the left to request an appointment.
+                  I provide a free 20 minute consultation for new clients. Send
+                  a message with the form to request an appointment.
                 </p>
               </div>
-              <div css={{ margin: '1rem 0' }}>
+              {/*<div css={{ margin: '1rem 0' }}>
                 <Heading>address</Heading>
 
                 <address>
@@ -82,7 +82,7 @@ const ContactPage = ({ data }) => {
                     </ExternalLink>
                   </strong>
                 </address>
-              </div>
+              </div>*/}
             </Column>
           </Columns>
         </Container>

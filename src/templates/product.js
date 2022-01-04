@@ -61,7 +61,7 @@ export default function ProductTemplate({ data }) {
                 />
                 <BreadcrumbLink
                   to={`/product-categories/${post.fields.categoryKey}`}
-                  text={`${category} ${pageTitle.toLowerCase()}`}
+                  text={`${category}`}
                   arrowDirection="left"
                 />
 

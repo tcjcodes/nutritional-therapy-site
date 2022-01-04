@@ -1,12 +1,22 @@
-import React from 'react'
-import { Container, Footer } from 'bloomer'
+import { Container, Footer } from 'bloomer';
+import Img from 'gatsby-image';
+import PropTypes from 'prop-types';
+import React from 'react';
 
-const PageFooter = ({ data, title }) => (
-  <Footer style={{ background: 'transparent', padding: '5em 3em 3em 3em' }}>
+const PageFooter = ({ title, logoImg }) => (
+  <Footer style={{ background: 'transparent', padding: '4em 3em 3em 3em' }}>
     <Container hasTextAlign="centered">
+      <div css={{ marginBottom: '0.25rem' }}>
+        <Img fixed={logoImg} alt="Restorative Wellness Practitioner seal" />
+      </div>
       &copy; Copyright {title} 2020-{new Date().getFullYear()}.
     </Container>
   </Footer>
-)
+);
 
-export default PageFooter
+PageFooter.propTypes = {
+  title: PropTypes.string.isRequired,
+  logoImgFluid: PropTypes.any.isRequired,
+};
+
+export default PageFooter;

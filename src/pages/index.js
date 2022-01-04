@@ -1,15 +1,15 @@
-import Img from 'gatsby-image'
-import React from 'react'
-import Script from 'react-load-script'
-import { graphql } from 'gatsby'
-import HomeHero from '../components/home/home-hero'
-import Layout from '../components/layout'
-const rgba = '0,0,0' //`119, 139, 64`
+import Img from 'gatsby-image';
+import React from 'react';
+import Script from 'react-load-script';
+import { graphql } from 'gatsby';
+import HomeHero from '../components/home/home-hero';
+import Layout from '../components/layout';
+const rgba = '0,0,0'; //`119, 139, 64`
 
 export default class IndexPage extends React.Component {
   constructor() {
-    super()
-    this.handleScriptLoad = this.handleScriptLoad.bind(this)
+    super();
+    this.handleScriptLoad = this.handleScriptLoad.bind(this);
   }
 
   handleScriptLoad() {
@@ -17,17 +17,17 @@ export default class IndexPage extends React.Component {
       window.netlifyIdentity.on('init', (user) => {
         if (!user) {
           window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/'
-          })
+            document.location.href = '/admin/';
+          });
         }
-      })
+      });
     }
-    window.netlifyIdentity.init()
+    window.netlifyIdentity.init();
   }
 
   render() {
-    const { data } = this.props
-    const heroSizes = data.file.childImageSharp.fluid
+    const { data } = this.props;
+    const heroSizes = data.file.childImageSharp.fluid;
     return (
       <Layout>
         <div>
@@ -43,7 +43,7 @@ export default class IndexPage extends React.Component {
                   opacity: '0.4',
                 }}
                 fluid={heroSizes}
-                alt="Herbs, turmeric, chopping board"
+                alt="Herbs, turmeric, chopping board, wooden spoon on a table"
               />
             }
           />
@@ -53,13 +53,13 @@ export default class IndexPage extends React.Component {
           />
         </div>
       </Layout>
-    )
+    );
   }
 }
 
 export const query = graphql`
   query IndexQuery {
-    file(relativePath: { eq: "image0.jpg" }) {
+    file(relativePath: { eq: "spoon-herbs.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2400) {
           ...GatsbyImageSharpFluid
@@ -67,4 +67,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
