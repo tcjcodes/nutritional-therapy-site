@@ -16,7 +16,7 @@ const PageFooter = ({ title, logoImg }) => (
 
 PageFooter.propTypes = {
   title: PropTypes.string.isRequired,
-  logoImgFluid: PropTypes.any.isRequired,
+  logoImg: PropTypes.any.isRequired,
 };
 
 export default PageFooter;

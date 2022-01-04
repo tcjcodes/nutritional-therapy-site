@@ -188,17 +188,75 @@ describe('each page', () => {
     });
   });
 
-  it('renders contact page', () => {
-    cy.visit('/contact');
-    verifyPageHeaderContains(/contact/i);
+  describe('contact', () => {
+    const formRouteConfig = {
+      url: '/',
+      method: 'POST',
+    };
 
-    cy.findByText('send a message');
+    const firstName = 'Jane';
+    const lastName = 'Tester';
+    const email = 'test@boisewgw.com';
+    const otherSubject = 'Testing subject';
+    const message = 'test message';
 
-    cy.findByRole('button', { name: /submit/ })
-      .should('have.attr', 'type')
-      .and('eq', 'submit');
+    const fillInForm = () => {
+      cy.findByPlaceholderText(/First Name/).type(firstName);
+      cy.findByPlaceholderText(/Last Name/).type(lastName);
+      cy.findByPlaceholderText(/E-mail/).type(email);
+      cy.get('select').select('Other');
+      cy.findByPlaceholderText(/Subject/).type(otherSubject);
+      cy.findByPlaceholderText(/Message/).type(message);
+    };
 
-    // it.todo('submits form') mock POST req
+    it('renders contact page and submits form', () => {
+      cy.intercept(formRouteConfig, (req) => {
+        req.reply(204);
+      }).as('submitReq');
+
+      cy.visit('/contact');
+      verifyPageHeaderContains(/contact/i);
+
+      cy.findByText('send a message');
+
+      cy.findByRole('button', { name: /submit/ })
+        .as('submitBtn')
+        .should('have.attr', 'type')
+        .and('eq', 'submit');
+
+      fillInForm();
+
+      cy.get('@submitBtn').click();
+      cy.wait('@submitReq')
+        .its('request.body')
+        .should(
+          'eq',
+          new URLSearchParams({
+            'form-name': 'contact',
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            subject: 'otherSubject',
+            otherSubject: otherSubject,
+            message: message,
+          }).toString(),
+        );
+
+      cy.contains('Sent!');
+    });
+
+    it('shows error message on submit network error', () => {
+      cy.intercept(formRouteConfig, { forceNetworkError: true }).as(
+        'submitReq',
+      );
+
+      cy.visit('/contact');
+      fillInForm();
+      cy.findByRole('button', { name: /submit/ }).click();
+
+      cy.contains('Oh no!');
+      cy.findByRole('link', { name: 'caroline@boisewgw.com' });
+    });
   });
 
   // Fails when run locally
