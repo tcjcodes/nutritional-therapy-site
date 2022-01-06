@@ -6,6 +6,8 @@ describe('each page', () => {
   const verifyPageHeaderContains = (content) =>
     verifyPageHeaderVisible().contains(content);
 
+  const isDevMode = process.env.NODE_ENV === 'development';
+
   it('renders layout elements', () => {
     cy.visit('/');
 
@@ -194,11 +196,11 @@ describe('each page', () => {
       method: 'POST',
     };
 
-    const firstName = 'Jane';
-    const lastName = 'Tester';
+    const firstName = 'Cypress';
+    const lastName = 'Mock';
     const email = 'test@boisewgw.com';
-    const otherSubject = 'Testing subject';
-    const message = 'test message';
+    const otherSubject = 'TEST';
+    const message = 'This is from a test';
 
     const fillInForm = () => {
       cy.findByPlaceholderText(/First Name/).type(firstName);
@@ -226,23 +228,27 @@ describe('each page', () => {
 
       fillInForm();
 
-      cy.get('@submitBtn').click();
-      cy.wait('@submitReq')
-        .its('request.body')
-        .should(
-          'eq',
-          new URLSearchParams({
-            'form-name': 'contact',
-            firstName: firstName,
-            lastName: lastName,
-            email: email,
-            subject: 'otherSubject',
-            otherSubject: otherSubject,
-            message: message,
-          }).toString(),
-        );
+      if (isDevMode) {
+        cy.get('@submitBtn').click();
+        cy.wait('@submitReq')
+          .its('request.body')
+          .should(
+            'eq',
+            new URLSearchParams({
+              'form-name': 'contact',
+              firstName: firstName,
+              lastName: lastName,
+              email: email,
+              subject: 'otherSubject',
+              otherSubject: otherSubject,
+              message: message,
+            }).toString(),
+          );
 
-      cy.contains('Sent!');
+        cy.contains('Sent!');
+      } else {
+        cy.log('Skip form submission in production mode');
+      }
     });
 
     it('shows error message on submit network error', () => {
@@ -252,17 +258,24 @@ describe('each page', () => {
 
       cy.visit('/contact');
       fillInForm();
-      cy.findByRole('button', { name: /submit/ }).click();
 
-      cy.contains('Oh no!');
-      cy.findByRole('link', { name: 'caroline@boisewgw.com' });
+      if (isDevMode) {
+        cy.findByRole('button', { name: /submit/ }).click();
+
+        cy.contains('Oh no!');
+        cy.findByRole('link', { name: 'caroline@boisewgw.com' });
+      } else {
+        cy.log('Skip form submission in production mode');
+      }
     });
   });
 
-  // Fails when run locally
   it('renders 404 page for nonexistent routes', () => {
     cy.visit('/invalid-route', { failOnStatusCode: false });
 
+    if (isDevMode) {
+      cy.findByRole('button', { name: 'Preview custom 404 page' }).click();
+    }
     cy.contains('Page not found');
   });
 });
