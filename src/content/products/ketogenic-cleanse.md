@@ -6,8 +6,11 @@ title: >-
 image: /img/30DayKetogenicCleanseCookbook.jpg
 category: Cookbooks
 link: >-
-  https://smile.amazon.com/30-Day-Ketogenic-Cleanse-Metabolism-Whole-Food/dp/1628601167/ref=sr_1_1?keywords=The+30-Day+Ketogenic+Cleanse%3A+Reset+Your+Metabolism+with+160+Tasty+Whole-Food+Recipes+%26+Meal+Plans+by+Maria+Emmerich&qid=1572124391&sr=8-1
+ https://smile.amazon.com/gp/product/1628601167/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=boisewgw-20&creative=9325&linkCode=as2&creativeASIN=1628601167&linkId=a485ebf05463c07309c7ea0701ee83d9
 ---
+
+# Overview
+
 For those who are brand-new to keto and those who are getting back on track after falling off the wagon, the first 30 days on a ketogenic diet can be challenging. As the body adapts to burning fat (ketones) rather than sugar for fuel, cravings can arise, and some people find that they just don’t feel so great. Many fall victim to the temptation to give up before they can truly experience the benefits of being keto-adapted. _The 30-Day Ketogenic Cleanse_ isn’t like most juice or other cleanses where you starve throughout the entire process. Keto expert Maria Emmerich offers tasty whole-food recipes—all dairy-free and nut-free—that are filling and satisfying and keep cravings at bay. Plus, she offers helpful tips and tricks for making it through the adjustment period.\
 \
 _The 30-Day Ketogenic Cleanse_ is a guidebook for healing the body from the inside out. Most people attempting a keto diet do it completely wrong. Maria Emmerich, on the other hand, bases this cleanse on a true, well-formulated ketogenic diet, helping readers reset their metabolism, regain health, lose weight, and tap into increased energy levels. This book includes:\

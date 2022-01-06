@@ -29,8 +29,8 @@ export default function ProductTemplate({ data }) {
     <Layout>
       <Section className="section">
         <Helmet title={`${category} ${pageTitle} | ${siteTitle}`} />
-        <Container style={{ maxWidth: 800 }}>
-          <Columns isVCentered isCentered>
+        <Container style={{ maxWidth: 960 }}>
+          <Columns isCentered>
             <Column
               isSize={{ desktop: 6, mobile: 12 }}
               style={{ marginBottom: '1em' }}
@@ -74,9 +74,21 @@ export default function ProductTemplate({ data }) {
                   {title}
                 </Title>
               </div>
+              <Content
+                data-testid="affiliate-disclaimer"
+                css={{ margin: '1rem 0.5rem 0.5rem 0' }}
+              >
+                <small>
+                  <em>
+                    Disclaimer: As an Amazon Associate I get a small commission
+                    for purchases made through links on my website. This comes
+                    at no cost to you and helps support my business based on my
+                    personal recommendations. Thank you for your support.
+                  </em>
+                </small>
+              </Content>
               <Button
-                isLink
-                style={{ margin: '1em 0' }}
+                style={{ margin: '0' }}
                 isColor="primary"
                 href={hyperlink}
                 target="_blank"

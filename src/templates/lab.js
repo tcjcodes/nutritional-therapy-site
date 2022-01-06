@@ -7,25 +7,25 @@ import {
   Image,
   Section,
   Title,
-} from 'bloomer'
-import { graphql } from 'gatsby'
-import React from 'react'
-import Helmet from 'react-helmet'
-import BreadcrumbLink from '../components/shared/breadcrumb-link'
-import Layout from '../components/layout'
-import { secondaryFont } from '../utils/fonts'
+} from 'bloomer';
+import { graphql } from 'gatsby';
+import React from 'react';
+import Helmet from 'react-helmet';
+import BreadcrumbLink from '../components/shared/breadcrumb-link';
+import Layout from '../components/layout';
+import { secondaryFont } from '../utils/fonts';
 
 export default function LabTemplate({ data }) {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
 
-  const { markdownRemark: post } = data
-  const { image, title } = post.frontmatter
+  const { markdownRemark: post } = data;
+  const { image, title } = post.frontmatter;
 
   return (
     <Layout>
       <Section className="section">
         <Helmet title={`${title} Labs | ${siteTitle}`} />
-        <Container style={{ maxWidth: 800 }}>
+        <Container style={{ maxWidth: 960 }}>
           <Columns isVCentered isCentered>
             <Column
               isSize={{ desktop: 6, mobile: 12 }}
@@ -69,7 +69,7 @@ export default function LabTemplate({ data }) {
         </Container>
       </Section>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -91,4 +91,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

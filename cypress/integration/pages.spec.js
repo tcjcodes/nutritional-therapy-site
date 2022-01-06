@@ -151,7 +151,7 @@ describe('each page', () => {
       // test(item page)
       cy.url().should('match', /\/products\/\w+/);
       cy.findByTestId('product-title');
-      // cy.findByTestId('product-content').should('be.visible');
+      cy.findByTestId('affiliate-disclaimer').should('be.visible');
 
       cy.findAllByTestId('breadcrumb-link')
         .as('breadcrumbs')

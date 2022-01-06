@@ -2,12 +2,14 @@
 templateKey: product
 title: >-
   Mediterranean Paleo Cooking: Over 150 Fresh Coastal Recipes for a Relaxed,
-  Gluten-Free Lifestyle - by Caitlin Weeks NC,‎ Chef Nabil Boumrar,‎ & Diane
-  Sanfilippo BS NC
+  Gluten-Free Lifestyle
 image: /img/MediterraneanPaleoCooking.jpg
 category: Cookbooks
-link: 'https://smile.amazon.com/Mediterranean-Paleo-Cooking-Gluten-Free-Lifestyle/dp/1628600403/ref=sr_1_1?keywords=Mediterranean+Paleo+Cooking%3A+Over+150+Fresh+Coastal+Recipes+for+a+Relaxed%2C+Gluten-Free+Lifestyle&qid=1572124238&sr=8-1'
+link: 'https://smile.amazon.com/gp/product/1628600403/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=boisewgw-20&creative=9325&linkCode=as2&creativeASIN=1628600403&linkId=ee5975be41b686d2095ea88c683002c0'
 ---
+
+# Overview
+
 Many people assume that eating better—whether to lose weight, alleviate health problems, or simply improve how they feel—means eating low-fat, boring, and tasteless food. Professional chef Nabil Boumrar and Certified Nutrition Consultant Caitlin Weeks blow that myth out of the water with their vibrant and healthy coastal cuisine.\
 \
 _**Mediterranean Paleo Cooking**_ showcases a wide variety of creative recipes that are Paleo-friendly—no gluten, grains, inflammatory oils, dairy, or refined sweeteners. These flavorful dishes combine traditional food from southern Europe, North Africa, and the Middle East with the healthful principles of a Paleo diet. With over 150 recipes, two 30-day meal plans (one for general health and one for those following an autoimmune protocol), shopping lists, cooking tips, and more, **_Mediterranean Paleo Cooking_** helps readers become better cooks and more informed eaters. But more importantly, it turns healthy eating into delicious eating with enticing Mediterranean meals that every foodie will enjoy.
