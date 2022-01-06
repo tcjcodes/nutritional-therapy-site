@@ -144,41 +144,38 @@ class ContactForm extends React.Component {
           </Field>
 
           <Field>
-            <FieldBody>
-              <Field isGrouped>
-                <Control isExpanded>
-                  <Select
-                    defaultValue=""
-                    name="subject"
-                    required
-                    isSize="small"
-                    onChange={this.handleSubjectChange}
-                  >
-                    <option value="" disabled>
-                      Subject*
-                    </option>
-                    <option value="Questions">Questions</option>
-                    <option value="Request Free Consultation">
-                      Request Free Consultation
-                    </option>
-                    <option value={FIELD_NAME_OTHER_SUBJ}>Other</option>
-                  </Select>
-                </Control>
-              </Field>
-              {this.state.showOtherSubject && (
-                <Field>
-                  <Control isExpanded>
-                    <Input
-                      name={FIELD_NAME_OTHER_SUBJ}
-                      isSize="small"
-                      type="text"
-                      placeholder="Subject"
-                    />
-                  </Control>
-                </Field>
-              )}
-            </FieldBody>
+            <Control>
+              <Select
+                defaultValue=""
+                name="subject"
+                required
+                isSize="small"
+                onChange={this.handleSubjectChange}
+              >
+                <option value="" disabled>
+                  Subject*
+                </option>
+                <option value="Questions">Questions</option>
+                <option value="Request Free Consultation">
+                  Request Free Consultation
+                </option>
+                <option value={FIELD_NAME_OTHER_SUBJ}>Other</option>
+              </Select>
+            </Control>
           </Field>
+
+          {this.state.showOtherSubject && (
+            <Field>
+              <Control>
+                <Input
+                  name={FIELD_NAME_OTHER_SUBJ}
+                  isSize="small"
+                  type="text"
+                  placeholder="Subject"
+                />
+              </Control>
+            </Field>
+          )}
 
           <Field>
             <FieldLabel />
