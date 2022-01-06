@@ -33,7 +33,7 @@ collections:
       - {label: "Services Section", name: "body", widget: "markdown"}
 
   - name: "productCategories"
-    label: "Product Categories"
+    label: "Favorites Category"
     folder: "src/content/product-categories"
     create: true
     delete: true
@@ -45,7 +45,7 @@ collections:
       - {label: "Description", name: "description", widget: "string", required: false}
 
   - name: "products"
-    label: "Products"
+    label: "Favorite"
     folder: "src/content/products"
     create: true
     slug: "{{slug}}"
