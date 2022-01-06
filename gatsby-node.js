@@ -3,34 +3,34 @@ const path = require('path');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-    const { createNodeField } = actions;
-    if (node.internal.type === `MarkdownRemark`) {
-        const slug = createFilePath({ node, getNode, basePath: `pages` });
-        createNodeField({
-            node,
-            name: `slug`,
-            value: slug,
-        });
+  const { createNodeField } = actions;
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` });
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    });
 
-        const { category, templateKey, name } = node.frontmatter;
-        if (category || templateKey === 'product-category') {
-            const categoryKey = (category || name)
-                .trim()
-                .replace(/\s/g, '-')
-                .toLowerCase();
-            createNodeField({
-                node,
-                name: 'categoryKey',
-                value: categoryKey,
-            });
-        }
+    const { category, templateKey, name } = node.frontmatter;
+    if (category || templateKey === 'product-category') {
+      const categoryKey = (category || name)
+        .trim()
+        .replace(/\s/g, '-')
+        .toLowerCase();
+      createNodeField({
+        node,
+        name: 'categoryKey',
+        value: categoryKey,
+      });
     }
+  }
 };
 
 exports.createPages = ({ actions, graphql }) => {
-    const { createPage } = actions;
+  const { createPage } = actions;
 
-    return graphql(`
+  return graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___title] }
@@ -57,40 +57,23 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
-        if (result.errors) {
-            result.errors.forEach(e => console.error(e.toString()));
-            return Promise.reject(result.errors);
-        }
-        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-            createPage({
-                path: node.fields.slug,
-                component: path.resolve(
-                    `src/templates/${String(node.frontmatter.templateKey)}.js`
-                ),
-                context: {
-                    slug: node.fields.slug,
-                    categoryKey: node.fields.categoryKey,
-                    templateKey: node.frontmatter.templateKey,
-                }, // additional data can be passed via context
-            });
-        });
+  `).then((result) => {
+    if (result.errors) {
+      result.errors.forEach((e) => console.error(e.toString()));
+      return Promise.reject(result.errors);
+    }
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(
+          `src/templates/${String(node.frontmatter.templateKey)}.js`,
+        ),
+        context: {
+          slug: node.fields.slug,
+          categoryKey: node.fields.categoryKey,
+          templateKey: node.frontmatter.templateKey,
+        }, // additional data can be passed via context
+      });
     });
+  });
 };
-
-// exports.onCreateWebpackConfig = ({ actions }) => {
-//     actions.setWebpackConfig({
-//         node: {
-//             fs: 'empty',
-//             path: 'mock',
-//         },
-//         resolve: {
-//             alias: {
-//                 path: require.resolve('path-browserify')
-//             },
-//             fallback: {
-//                 fs: false,
-//             }
-//         }
-//     });
-// };

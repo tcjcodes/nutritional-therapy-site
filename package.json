@@ -41,8 +41,9 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "LOCAL_MODE=1 gatsby develop",
     "serve": "gatsby serve",
+    "build-and-serve": "npm run build && npm run serve",
     "clean": "gatsby clean",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -53,6 +54,7 @@
     "@testing-library/cypress": "^8.0.2",
     "babel-eslint": "^10.1.0",
     "cypress": "^9.2.0",
+    "dotenv": "^10.0.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",

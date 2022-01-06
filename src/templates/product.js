@@ -24,6 +24,7 @@ export default function ProductTemplate({ data }) {
   const { markdownRemark: post } = data;
   const { image, link, title, category } = post.frontmatter;
   let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`;
+  const isAmazonLink = hyperlink.indexOf('amazon.com') >= 0;
 
   return (
     <Layout>
@@ -78,14 +79,17 @@ export default function ProductTemplate({ data }) {
                 data-testid="affiliate-disclaimer"
                 css={{ margin: '1rem 0.5rem 0.5rem 0' }}
               >
-                <small>
-                  <em>
-                    Disclaimer: As an Amazon Associate I get a small commission
-                    for purchases made through links on my website. This comes
-                    at no cost to you and helps support my business based on my
-                    personal recommendations. Thank you for your support.
-                  </em>
-                </small>
+                {isAmazonLink && (
+                  <small>
+                    <em>
+                      Disclaimer: As an Amazon Associate I get a small
+                      commission for purchases made through referral links. This
+                      comes at no cost to you and helps support my business
+                      based on my personal recommendations. Thank you for your
+                      support.
+                    </em>
+                  </small>
+                )}
               </Content>
               <Button
                 style={{ margin: '0' }}

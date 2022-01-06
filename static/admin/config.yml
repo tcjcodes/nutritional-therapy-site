@@ -4,46 +4,22 @@ backend:
 
 media_folder: "static/img"
 public_folder: "/img"
+show_preview_links: true
+publish_mode: editorial_workflow
 
 collections:
-
   - name: "about"
     label: "About"
     folder: "src/content/about"
     create: false
     delete: false
     slug: "{{slug}}"
+    preview_path: "about"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
       - {label: "Path", name: "path", widget: "hidden", default: "/about"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-#      - {label: "Image", name: "avatar", widget: "image"}
-
-# WIP
-#  - name: "labGuides"
-#    label: "Lab How-To Guides"
-#    folder: "src/content/lab-guides"
-#    create: false
-#    delete: false
-#    slug: "{{slug}}"
-#    fields:
-#      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lab-guides-page"}
-#      - {label: "Path", name: "path", widget: "hidden", default: "/lab-guides"}
-#      - {label: "Title", name: "title", widget: "string", default: "How to do labs at home"}
-#      - {label: "Lab How-To Guides Section", name: "body", widget: "markdown"}
-#
-#  - name: "labResources"
-#    label: "About Labs"
-#    folder: "src/content/lab-resources"
-#    create: false
-#    delete: false
-#    slug: "{{slug}}"
-#    fields:
-#      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lab-resources-page"}
-#      - {label: "Path", name: "path", widget: "hidden", default: "/lab-resources"}
-#      - {label: "Title", name: "title", widget: "string", default: "How to do labs at home"}
-#      - {label: "Lab How-To's Section", name: "body", widget: "markdown"}
 
   - name: "services"
     label: "Services"
@@ -51,6 +27,7 @@ collections:
     create: false
     delete: false
     slug: "{{slug}}"
+    preview_path: "services"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
       - {label: "Path", name: "path", widget: "hidden", default: "/services"}
@@ -58,21 +35,23 @@ collections:
       - {label: "Services Section", name: "body", widget: "markdown"}
 
   - name: "productCategories"
-    label: "Product Categories"
+    label: "Favorites Category"
     folder: "src/content/product-categories"
     create: true
     delete: true
     slug: "{{slug}}"
+    preview_path: "products"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-category"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Description", name: "description", widget: "string", required: false}
 
   - name: "products"
-    label: "Products"
+    label: "Favorites"
     folder: "src/content/products"
     create: true
     slug: "{{slug}}"
+    preview_path: "products/{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product"}
       - {label: "Title", name: "title", widget: "string"}
@@ -91,6 +70,7 @@ collections:
     folder: "src/content/labs"
     create: true
     slug: "{{slug}}"
+    preview_path: "labs/{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lab"}
       - {label: "Title", name: "title", widget: "string"}
