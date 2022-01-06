@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Dashboard</title>
+  <title>Admin Dashboard | Boise WGW</title>
   <link rel="icon" type="image/png" href="favicon.png" sizes="16x16" />
 
   <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
@@ -11,6 +11,24 @@
 </head>
 <body>
 <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
+
+<!--<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>-->
+<!--<script>
+  /*
+  When a user logs in with the Netlify Identity widget, an access token directs to the site homepage.
+  In order to complete the login and get back to the CMS, redirect the user back to the /admin/ path.
+  Note: This example script requires modern JavaScript and does not work on IE11.
+   */
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>-->
 </body>
 </html>
 

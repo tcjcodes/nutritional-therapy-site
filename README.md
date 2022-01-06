@@ -19,5 +19,7 @@ GA4 will only work in this mode.
 
 ## Content 
 
+All Netlify CMS content is under `/static/admin`.
+
 Publish content via Netlify CMS
 Go to `/admin` on the deployed site.
