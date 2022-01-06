@@ -11,6 +11,8 @@ This project is deployed on push.
 `npm run build`
 `npm run serve`
 
+GA4 will only work in this mode.
+
 ### Test
 `npm run develop`
 `npm run cy:open`
