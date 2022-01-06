@@ -13,7 +13,7 @@ const AboutPage = ({ data }) => {
     <Layout>
       <Section>
         <Helmet title={`About | ${siteTitle}`} />
-        <Container style={{ maxWidth: 800 }}>
+        <Container style={{ maxWidth: 960 }}>
           <div
             css={{
               display: 'flex',

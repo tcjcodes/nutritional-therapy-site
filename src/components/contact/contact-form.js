@@ -24,16 +24,10 @@ const extractData = (fd) => {
   return data;
 };
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-};
-
 const STATUS_SUCCESS = 'success';
 const STATUS_ERROR = 'error';
 
-const SUBJECT_OTHER = 'Other';
+const FIELD_NAME_OTHER_SUBJ = 'otherSubject';
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -47,7 +41,9 @@ class ContactForm extends React.Component {
   }
 
   handleSubjectChange(e) {
-    this.setState({ showOtherSubject: e.target.value === SUBJECT_OTHER });
+    this.setState({
+      showOtherSubject: e.target.value === FIELD_NAME_OTHER_SUBJ,
+    });
   }
 
   handleSubmit(event) {
@@ -55,10 +51,11 @@ class ContactForm extends React.Component {
     const fd = new FormData(event.target);
     const data = extractData(fd);
     const { current } = this.formRef;
+    this.setState({ formData: data });
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': formId, ...data }),
+      body: new URLSearchParams({ 'form-name': formId, ...data }).toString(),
     })
       .then(() => {
         this.setState({ status: STATUS_SUCCESS });
@@ -84,8 +81,7 @@ class ContactForm extends React.Component {
             isColor="light"
           >
             <StyledIcon name="paper-plane" />
-            <strong>Sent!</strong> Thank you for contacting me, I will get back{' '}
-            to you shortly.
+            <strong>Sent!</strong> Thank you, I will get back to you shortly.
           </NotificationContainer>
           <NotificationContainer
             isShown={this.state.status === STATUS_ERROR}
@@ -94,7 +90,7 @@ class ContactForm extends React.Component {
           >
             <StyledIcon name="exclamation-triangle" />
             <strong>Oh no!</strong> Something went wrong. Please try again later
-            or send a direct e-mail instead at{' '}
+            or contact me directly at{' '}
             <ExternalLink href={`mailto:${email}`}>{email}</ExternalLink>.
           </NotificationContainer>
         </div>
@@ -115,7 +111,7 @@ class ContactForm extends React.Component {
               <Field isGrouped>
                 <Control isExpanded hasIcons="right">
                   <Input
-                    name="fname"
+                    name="firstName"
                     isSize="small"
                     required
                     placeholder="First Name*"
@@ -125,7 +121,7 @@ class ContactForm extends React.Component {
               <Field>
                 <Control hasIcons={['right']}>
                   <Input
-                    name="lname"
+                    name="lastName"
                     isSize="small"
                     required
                     placeholder="Last Name*"
@@ -148,41 +144,38 @@ class ContactForm extends React.Component {
           </Field>
 
           <Field>
-            <FieldBody>
-              <Field isGrouped>
-                <Control isExpanded>
-                  <Select
-                    defaultValue=""
-                    name="subject"
-                    required
-                    isSize="small"
-                    onChange={this.handleSubjectChange}
-                  >
-                    <option value="" disabled>
-                      Subject*
-                    </option>
-                    <option value="Questions">Questions</option>
-                    <option value="Request Free Consultation">
-                      Request Free Consultation
-                    </option>
-                    <option value={SUBJECT_OTHER}>Other</option>
-                  </Select>
-                </Control>
-              </Field>
-              {this.state.showOtherSubject && (
-                <Field>
-                  <Control isExpanded>
-                    <Input
-                      name="otherSubject"
-                      isSize="small"
-                      type="text"
-                      placeholder="Subject"
-                    />
-                  </Control>
-                </Field>
-              )}
-            </FieldBody>
+            <Control>
+              <Select
+                defaultValue=""
+                name="subject"
+                required
+                isSize="small"
+                onChange={this.handleSubjectChange}
+              >
+                <option value="" disabled>
+                  Subject*
+                </option>
+                <option value="Questions">Questions</option>
+                <option value="Request Free Consultation">
+                  Request Free Consultation
+                </option>
+                <option value={FIELD_NAME_OTHER_SUBJ}>Other</option>
+              </Select>
+            </Control>
           </Field>
+
+          {this.state.showOtherSubject && (
+            <Field>
+              <Control>
+                <Input
+                  name={FIELD_NAME_OTHER_SUBJ}
+                  isSize="small"
+                  type="text"
+                  placeholder="Subject"
+                />
+              </Control>
+            </Field>
+          )}
 
           <Field>
             <FieldLabel />
