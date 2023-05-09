@@ -70,6 +70,8 @@ describe('each page', () => {
   });
 
   it('renders landing page', () => {
+    cy.visit('/');
+
     cy.findByTestId('landing-title').should('be.visible');
     cy.findByTestId('landing-subtitle').should('be.visible');
     cy.findByRole('button', { name: /learn more/i })
@@ -263,13 +265,17 @@ describe('each page', () => {
     });
   });
 
-  it('renders 404 page for nonexistent routes', () => {
+  it.only('renders 404 page for nonexistent routes', () => {
     cy.visit('/invalid-route', { failOnStatusCode: false });
 
-    // FIXME doesn't work when deployed
-    // if (isLocalMode) {
-    //   cy.findByRole('button', { name: 'Preview custom 404 page' }).click();
-    // }
-    cy.contains('Page not found');
+    cy.url().then((url) => {
+      if (/localhost/.test(url)) {
+        cy.contains('Gatsby.js development 404 page');
+        cy.get('button').click();
+        return cy.contains('Page not found');
+      } else {
+        return cy.contains('Page not found');
+      }
+    });
   });
 });
