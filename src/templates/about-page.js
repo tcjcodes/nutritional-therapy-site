@@ -59,7 +59,7 @@ export const query = graphql`
         title
       }
     }
-    file(relativePath: { eq: "aboutme-v3.jpeg" }) {
+    file(relativePath: { eq: "cdlr3crop.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
