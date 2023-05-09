@@ -1,7 +1,7 @@
-import { Container, Footer } from 'bloomer';
-import Img from 'gatsby-image';
-import PropTypes from 'prop-types';
-import React from 'react';
+import { Container, Footer } from 'bloomer'
+import Img from 'gatsby-image'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 const PageFooter = ({ title, logoImg }) => (
   <Footer style={{ background: 'transparent', padding: '4em 3em 3em 3em' }}>
@@ -12,11 +12,11 @@ const PageFooter = ({ title, logoImg }) => (
       &copy; Copyright {title} 2020-{new Date().getFullYear()}.
     </Container>
   </Footer>
-);
+)
 
 PageFooter.propTypes = {
   title: PropTypes.string.isRequired,
   logoImg: PropTypes.any.isRequired,
-};
+}
 
-export default PageFooter;
+export default PageFooter

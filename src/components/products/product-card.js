@@ -1,28 +1,28 @@
-import { Box, Title } from 'bloomer';
-import Link from 'gatsby-link';
-import PropTypes from 'prop-types';
-import React from 'react';
-import Dotdotdot from 'react-dotdotdot/src/index';
-import { serifFont } from '../../utils/fonts';
+import { Box, Title } from 'bloomer'
+import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Dotdotdot from 'react-dotdotdot/src/index'
+import { serifFont } from '../../utils/fonts'
 import {
   colorBrown,
   colorBrownDark,
   colorGreenDark,
-} from '../../utils/theme-variables';
+} from '../../utils/theme-variables'
 
 const cardWrapperStyles = {
   display: 'block',
   position: 'relative',
   width: '100%',
   color: colorBrown,
-};
+}
 const cardImageStyles = (thumbnail) => ({
   display: 'block',
   height: '240px',
   overflowY: 'hidden',
   background: `url(${thumbnail}) center no-repeat`,
   backgroundSize: 'cover',
-});
+})
 const cardOverlayStyles = {
   display: 'flex',
   alignItems: 'flex-start',
@@ -43,24 +43,24 @@ const cardOverlayStyles = {
     opacity: 1,
     background: 'rgba(245,245,245,0.98)',
   },
-};
+}
 const headingStyles = {
   ...serifFont,
   color: colorGreenDark,
   marginBottom: 0,
-};
+}
 const titleBorderStyles = {
   margin: `1rem 0`,
   borderBottom: `1px solid rgb(79, 109, 26)`,
   width: `1.75rem`,
   padding: 0,
-};
+}
 const excerptStyles = {
   fontSize: `0.9rem`,
   textTransform: 'none',
   color: colorBrownDark,
   marginBottom: '0.75rem',
-};
+}
 
 const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
   <Link data-testid="fav-card-link" to={slug} css={cardWrapperStyles}>
@@ -85,13 +85,13 @@ const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
       </div>
     </Box>
   </Link>
-);
+)
 
 ProductCard.propTypes = {
   slug: PropTypes.string.isRequired,
   thumbnail: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   excerpt: PropTypes.string,
-};
+}
 
-export default ProductCard;
+export default ProductCard

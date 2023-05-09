@@ -1,16 +1,24 @@
-import { Box, Column, Columns, Container, Content, Image, Section, } from 'bloomer';
-import { graphql } from 'gatsby';
-import React from 'react';
-import Helmet from 'react-helmet';
-import Layout from '../components/layout';
-import PageHeader from '../components/page-header';
-import BreadcrumbLink from '../components/shared/breadcrumb-link';
+import {
+  Box,
+  Column,
+  Columns,
+  Container,
+  Content,
+  Image,
+  Section,
+} from 'bloomer'
+import { graphql } from 'gatsby'
+import React from 'react'
+import Helmet from 'react-helmet'
+import Layout from '../components/layout'
+import PageHeader from '../components/page-header'
+import BreadcrumbLink from '../components/shared/breadcrumb-link'
 
 export default function LabTemplate({ data }) {
-  const siteTitle = data.site.siteMetadata.title;
+  const siteTitle = data.site.siteMetadata.title
 
-  const { markdownRemark: post } = data;
-  const { image, title } = post.frontmatter;
+  const { markdownRemark: post } = data
+  const { image, title } = post.frontmatter
 
   return (
     <Layout>
@@ -44,7 +52,6 @@ export default function LabTemplate({ data }) {
                 <BreadcrumbLink to={`/labs`} text={`other lab tests`} />
 
                 <PageHeader center title={title} />
-
               </div>
             </Column>
           </Columns>
@@ -55,7 +62,7 @@ export default function LabTemplate({ data }) {
         </Container>
       </Section>
     </Layout>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -77,4 +84,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
