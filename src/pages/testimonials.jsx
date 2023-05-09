@@ -9,147 +9,166 @@ import PageHeader from '../components/page-header';
 
 const pageTitle = 'Testimonials';
 const TestimonialsPage = ({ data }) => {
-    const { crystalFile, katieFile, shellyFile, site } = data;
-    const siteTitle = site.siteMetadata.title;
+  const { crystalFile, katieFile, shellyFile, site } = data;
+  const siteTitle = site.siteMetadata.title;
 
-    const crystalFluid = crystalFile?.childImageSharp?.fluid;
-    const shellyFluid = shellyFile?.childImageSharp?.fluid;
-    const katieFluid = katieFile?.childImageSharp?.fluid;
+  const crystalFluid = crystalFile?.childImageSharp?.fluid;
+  const shellyFluid = shellyFile?.childImageSharp?.fluid;
+  const katieFluid = katieFile?.childImageSharp?.fluid;
 
-    const colSize = { tablet: 10, default: 5 };
-    return (
-        <Layout>
-            <Section>
-                <Helmet title={`${pageTitle} | ${siteTitle}`}/>
-                <Container>
-                    <PageHeader center title={pageTitle}/>
-                    <Columns isMultiline isVCentered={false}>
-                        <Column isOffset={1} isSize={colSize}>
-                            {katieFluid && (
-                                <Img
-                                    fluid={katieFluid}
-                                    alt="Boat on ocean overlooking sunset"
-                                    title="Photo by Mantas Hesthaven on Pexels"
-                                />
-                            )}
-                            <Box>
-                                <Content>
-                                    <h3>The most powerful counseling session I've ever experienced</h3>
+  const colSize = { mobile: 'full', tablet: 'half' };
+  return (
+    <Layout>
+      <Section>
+        <Helmet title={`${pageTitle} | ${siteTitle}`} />
+        <Container>
+          <PageHeader center title={pageTitle} />
+          <Columns isMultiline isVCentered={false}>
+            <Column isOffset={{ desktop: 1 }} isSize={colSize}>
+              {katieFluid && (
+                <Img
+                  fluid={katieFluid}
+                  alt="Boat on ocean overlooking sunset"
+                  title="Photo by Mantas Hesthaven on Pexels"
+                />
+              )}
+              <Box>
+                <Content>
+                  <h3>
+                    The most powerful counseling session I've ever experienced
+                  </h3>
 
-                                    <p>
-                                        I recently completed my first session with Caroline and
-                                        have felt different ever since. I have described the session to others as "the
-                                        most powerful counseling session I've ever experienced," and I've been going to
-                                        counseling over the course of many years for unresolved trauma.
-                                    </p>
-                                    <p>
-                                        She tailored the treatment to what I need as an individual. She listened to me
-                                        and
-                                        conceptualized
-                                        my feelings and beliefs better than I could myself. We completed a family
-                                        constellation for two specific timelines in my past the the energy has literally
-                                        shifted; I am not the same person energetically now that I was when I walked
-                                        into her office. I consider it a miracle.</p>
+                  <p>
+                    I recently completed my first session with Caroline and have
+                    felt different ever since. I have described the session to
+                    others as "the most powerful counseling session I've ever
+                    experienced," and I've been going to counseling over the
+                    course of many years for unresolved trauma.
+                  </p>
+                  <p>
+                    She tailored the treatment to what I need as an individual.
+                    She listened to me and conceptualized my feelings and
+                    beliefs better than I could myself. We completed a family
+                    constellation for two specific timelines in my past the the
+                    energy has literally shifted; I am not the same person
+                    energetically now that I was when I walked into her office.
+                    I consider it a miracle.
+                  </p>
 
-                                    <p>Caroline is a magic worker, and I
-                                        cherish her and her mind. I would highly recommend her to anyone seeking
-                                        authentic healing.
-                                    </p>
-                                    <p>&mdash; Katie B.</p>
-                                </Content>
-                            </Box>
+                  <p>
+                    Caroline is a magic worker, and I cherish her and her mind.
+                    I would highly recommend her to anyone seeking authentic
+                    healing.
+                  </p>
+                  <p>&mdash; Katie B.</p>
+                </Content>
+              </Box>
 
-                            {shellyFluid && (
-                                <Img
-                                    fluid={shellyFluid}
-                                    alt="Stone beach overlooking a sunset"
-                                    title="Photo by Quang Nguyen Vinh on Pexels"
-                                />
-                            )}
-                            <Box>
-                                <Content>
-                                    <h3>I released burdens that were never mine to carry</h3>
-                                    <p>I recently had 2 sessions with Caroline doing APN. We addressed many family
-                                        issues that had been affecting me my whole life.
-                                    </p>
-                                    <p>
-                                        After our sessions, I felt lighter! I felt like I'd released burdens that were
-                                        never mine to carry. I also had a deep feeling of compassion and forgiveness
-                                        towards my parents. I would recommend APN with Caroline for anyone wanting
-                                        to improve their lives.</p>
-                                    <p>&mdash;  Shelly J.</p>
-                                </Content>
-                            </Box>
+              {shellyFluid && (
+                <Img
+                  fluid={shellyFluid}
+                  alt="Stone beach overlooking a sunset"
+                  title="Photo by Quang Nguyen Vinh on Pexels"
+                />
+              )}
+              <Box>
+                <Content>
+                  <h3>I released burdens that were never mine to carry</h3>
+                  <p>
+                    I recently had 2 sessions with Caroline doing APN. We
+                    addressed many family issues that had been affecting me my
+                    whole life.
+                  </p>
+                  <p>
+                    After our sessions, I felt lighter! I felt like I'd released
+                    burdens that were never mine to carry. I also had a deep
+                    feeling of compassion and forgiveness towards my parents. I
+                    would recommend APN with Caroline for anyone wanting to
+                    improve their lives.
+                  </p>
+                  <p>&mdash; Shelly J.</p>
+                </Content>
+              </Box>
+            </Column>
 
-                        </Column>
-
-                        <Column isOffset={{ tablet: 1 }} isSize={colSize}>
-                            {crystalFluid && (
-                                <Img
-                                    fluid={crystalFluid}
-                                    alt="Pink petaled flowers"
-                                    title="Photo by Victor Freitas on Pexels"
-                                />
-                            )}
-                            <Box>
-                                <Content>
-                                    <h3>I have been able to heal physically, mentally and emotionally</h3>
-                                    <p>
-                                        "I have worked with Caroline for over a year now throughout my stage 4
-                                        metastatic breast cancer diagnosis and treatment. Caroline has really helped me remove many
-                                        generational and internal emotional and trauma blocks so that I have been able
-                                        to heal physically, mentally and emotionally.</p>
-                                    <p>
-                                        The work that Caroline has done
-                                        with me has been more healing for me than any other emotional or energetic
-                                        avenue I have taken in my journey thus far. I have been able to accept and
-                                        embrace my journey because of Caroline and I will forever be so grateful for the
-                                        compassion, understanding and time that she has given me. I HIGHLY recommend
-                                        Caroline to anyone who is ready for a breakthrough."
-                                    </p>
-                                    <p>&mdash; Crystal D.</p>
-                                </Content>
-                            </Box>
-                        </Column>
-                        <Column isSize={1}></Column>
-                    </Columns>
-                </Container>
-            </Section>
-        </Layout>
-    );
+            <Column isSize={colSize}>
+              {crystalFluid && (
+                <Img
+                  fluid={crystalFluid}
+                  alt="Pink petaled flowers"
+                  title="Photo by Victor Freitas on Pexels"
+                />
+              )}
+              <Box>
+                <Content>
+                  <h3>
+                    I have been able to heal physically, mentally and
+                    emotionally
+                  </h3>
+                  <p>
+                    "I have worked with Caroline for over a year now throughout
+                    my stage 4 metastatic breast cancer diagnosis and treatment.
+                    Caroline has really helped me remove many generational and
+                    internal emotional and trauma blocks so that I have been
+                    able to heal physically, mentally and emotionally.
+                  </p>
+                  <p>
+                    The work that Caroline has done with me has been more
+                    healing for me than any other emotional or energetic avenue
+                    I have taken in my journey thus far. I have been able to
+                    accept and embrace my journey because of Caroline and I will
+                    forever be so grateful for the compassion, understanding and
+                    time that she has given me. I HIGHLY recommend Caroline to
+                    anyone who is ready for a breakthrough."
+                  </p>
+                  <p>&mdash; Crystal D.</p>
+                </Content>
+              </Box>
+            </Column>
+          </Columns>
+        </Container>
+      </Section>
+    </Layout>
+  );
 };
 
 TestimonialsPage.propTypes = {};
 
 export const query = graphql`
-    query TestimonialsPageQuery {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        crystalFile: file(relativePath: { eq: "pexels-victor-freitas-600114.jpg" }) {
-            childImageSharp {
-                fluid(maxWidth: 600) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        katieFile: file(relativePath: { eq: "pexels-mantas-hesthaven-536812_widecrop.jpg" }) {
-            childImageSharp {
-                fluid(maxWidth: 600) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        shellyFile: file(relativePath: { eq: "pexels-quang-nguyen-vinh-3871703_widecrop.jpg" }) {
-            childImageSharp {
-                fluid(maxWidth: 600) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
+  query TestimonialsPageQuery {
+    site {
+      siteMetadata {
+        title
+      }
     }
+    crystalFile: file(
+      relativePath: { eq: "pexels-victor-freitas-600114.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    katieFile: file(
+      relativePath: { eq: "pexels-mantas-hesthaven-536812_widecrop.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    shellyFile: file(
+      relativePath: { eq: "pexels-quang-nguyen-vinh-3871703_widecrop.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
 `;
 
 export default TestimonialsPage;
