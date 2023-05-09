@@ -8,7 +8,7 @@ const PageHeader = ({ title, center }) => (
       isSize={2}
       css={{
         ...secondaryFont,
-        textTransform: 'lowercase',
+        // textTransform: 'lowercase',
         marginBottom: '0.75rem',
       }}
     >
