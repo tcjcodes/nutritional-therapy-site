@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 import PageHeader from '../components/page-header'
 import ProductCardRow from '../components/products/product-card-row'
 
-const pageTitle = 'Lab Testing'
+const pageTitle = 'Lab Tests'
 
 const mapEdgesToLabs = function mapMarkdownEdgesToLabItems(edges) {
   return edges
