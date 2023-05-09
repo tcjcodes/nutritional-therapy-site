@@ -16,14 +16,15 @@ const TestimonialsPage = ({ data }) => {
     const shellyFluid = shellyFile?.childImageSharp?.fluid;
     const katieFluid = katieFile?.childImageSharp?.fluid;
 
+    const colSize = { tablet: 10, default: 5 };
     return (
         <Layout>
             <Section>
                 <Helmet title={`${pageTitle} | ${siteTitle}`}/>
                 <Container>
                     <PageHeader center title={pageTitle}/>
-                    <Columns isVCentered={false}>
-                        <Column isOffset={1}>
+                    <Columns isMultiline isVCentered={false}>
+                        <Column isOffset={1} isSize={colSize}>
                             {katieFluid && (
                                 <Img
                                     fluid={katieFluid}
@@ -82,7 +83,7 @@ const TestimonialsPage = ({ data }) => {
 
                         </Column>
 
-                        <Column>
+                        <Column isOffset={{ tablet: 1 }} isSize={colSize}>
                             {crystalFluid && (
                                 <Img
                                     fluid={crystalFluid}
