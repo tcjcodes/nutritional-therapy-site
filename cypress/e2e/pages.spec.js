@@ -6,7 +6,7 @@ describe('each page', () => {
   const verifyPageHeaderContains = (content) =>
     verifyPageHeaderVisible().contains(content);
 
-  it('renders layout elements', () => {
+  it('renders shared layout elements', () => {
     cy.visit('/');
 
     cy.findByTestId('desktop-brand')
@@ -25,6 +25,10 @@ describe('each page', () => {
         {
           text: /services/i,
           href: '/services',
+        },
+        {
+          text: /testimonials/i,
+          href: '/testimonials',
         },
         {
           text: /favorites/i,
@@ -104,6 +108,12 @@ describe('each page', () => {
       .click();
 
     cy.url().should('include', '/contact');
+  });
+
+  it('renders testimonials page', () => {
+    cy.visit('/testimonials');
+
+    verifyPageHeaderVisible();
   });
 
   describe('clients page', () => {
