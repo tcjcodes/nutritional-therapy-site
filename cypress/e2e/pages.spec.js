@@ -132,7 +132,7 @@ describe('each page', () => {
   it('renders labs page with several lab test items', () => {
     cy.visit('/labs');
 
-    verifyPageHeaderContains(/lab testing/i);
+    verifyPageHeaderContains(/lab tests/i);
 
     cy.findAllByTestId('lab-card').should('have.length.gte', 1);
   });
