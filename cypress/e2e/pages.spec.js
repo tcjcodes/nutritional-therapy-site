@@ -164,7 +164,7 @@ describe('each page', () => {
   });
 
   describe('favorites pages', () => {
-    it('renders favorites page that navigates to items page', () => {
+    it('renders favorites page that navigates to item page', () => {
       // test(favorites page)
       cy.visit('/products');
       verifyPageHeaderContains(/favorites/i);
@@ -306,7 +306,7 @@ describe('each page', () => {
       .should('have.length', 0);
 
       const errorBanner = 'Oh no!';
-      cy.contains(errorBanner).as('errorBanner')
+      cy.contains(errorBanner).as('errorBanner');
 
       cy.get('@errorBanner').should('not.be.visible');
 
