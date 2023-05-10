@@ -5,7 +5,7 @@ import React from 'react';
 
 const PageFooter = ({ title, logoImg }) => (
   <Footer style={{ background: 'transparent', padding: '4em 3em 3em 3em' }}>
-    <Container hasTextAlign='centered'>
+    <Container textAlign='centered'>
       <div css={{
         marginBottom: '0.25rem',
         display: 'flex',
