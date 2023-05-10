@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Columns } from 'react-bulma-components';
 
 const ProductCardColumn = ({ slug, thumbnail, title, excerpt }) => (
-  <Columns.Column isSize={{ desktop: 2, mobile: 12 }}>
+  <Columns.Column desktop={{ size: 2 }} mobile={{ size: 12 }}>
     <ProductCard
       slug={slug}
       thumbnail={thumbnail}

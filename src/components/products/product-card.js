@@ -37,7 +37,7 @@ const cardOverlayStyles = {
   height: '100%',
   left: '0',
   width: '100%',
-  hasTextAlign: 'center',
+  textAlign: 'center',
   transition: 'all 0.25s ease',
   '&:hover': {
     opacity: 1,
