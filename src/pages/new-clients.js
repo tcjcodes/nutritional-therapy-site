@@ -29,7 +29,12 @@ const NewClientsPage = ({ data }) => {
               <div css={{ paddingLeft: '2em' }}>
                 <PageHeader title={pageTitle} />
                 <Content>
-                  <div css={{ marginBottom: '2em', marginRight: '1.5em' }}>
+                  <div
+                    css={{
+                      marginBottom: '2em',
+                      marginRight: '1.5em',
+                    }}
+                  >
                     <p>
                       I provide a{' '}
                       <Link to="/services">free 20 minute consultation</Link>{' '}

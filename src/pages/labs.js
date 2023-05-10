@@ -44,7 +44,11 @@ const LabsTemplate = ({ data }) => {
                 <Column
                   key={id}
                   hasTextAlign="center"
-                  isSize={{ desktop: 3, tablet: 6, mobile: 12 }}
+                  isSize={{
+                    desktop: 3,
+                    tablet: 6,
+                    mobile: 12,
+                  }}
                 >
                   <LabCard slug={slug} thumbnail={image} title={title} />
                 </Column>

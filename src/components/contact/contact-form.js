@@ -55,7 +55,10 @@ class ContactForm extends React.Component {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({ 'form-name': formId, ...data }).toString(),
+      body: new URLSearchParams({
+        'form-name': formId,
+        ...data,
+      }).toString(),
     })
       .then(() => {
         this.setState({ status: STATUS_SUCCESS })
