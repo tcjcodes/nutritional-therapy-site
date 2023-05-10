@@ -8,7 +8,6 @@ const PageHeader = ({ title, center }) => (
     css={{ textAlign: center ? 'center' : 'inherit' }}
   >
     <Heading
-      heading
       size={2}
       css={{
         ...secondaryFont,
