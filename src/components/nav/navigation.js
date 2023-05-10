@@ -1,11 +1,11 @@
-import { Navbar, NavbarMenu } from 'bloomer'
-import React from 'react'
-import { serifFont } from '../../utils/fonts'
-import { colorBrownDark } from '../../utils/theme-variables'
-import DesktopBrand from './desktop-brand'
-import NavbarDropdownItem from './navbar-dropdown-item'
-import StyledNavbarItem from './styled-navbar-item'
-import TabletNavbarBrand from './tablet-navbar-brand'
+import { Navbar, NavbarMenu } from 'bloomer';
+import React from 'react';
+import { serifFont } from '../../utils/fonts';
+import { colorBrownDark } from '../../utils/theme-variables';
+import DesktopBrand from './desktop-brand';
+import NavbarDropdownItem from './navbar-dropdown-item';
+import StyledNavbarItem from './styled-navbar-item';
+import TabletNavbarBrand from './tablet-navbar-brand';
 
 const linkProps = {
   style: {
@@ -15,7 +15,7 @@ const linkProps = {
   activeStyle: {
     color: colorBrownDark,
   },
-}
+};
 
 const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
   const productNavItems = categoryNodes.map((node) => {
@@ -23,8 +23,8 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
       id: node.id,
       text: node.frontmatter.name,
       to: `product-categories/${node.fields.categoryKey}`,
-    }
-  })
+    };
+  });
   return (
     <div>
       <DesktopBrand title={title} />
@@ -51,11 +51,7 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
 
           <StyledNavbarItem {...linkProps} text="Services" />
 
-          <StyledNavbarItem
-            {...linkProps}
-            text="Testimonials"
-            to="testimonials"
-          />
+          <StyledNavbarItem {...linkProps} text="Testimonials" to="testimonials" />
 
           <NavbarDropdownItem
             {...linkProps}
@@ -78,20 +74,20 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
         </NavbarMenu>
       </Navbar>
     </div>
-  )
-}
+  );
+};
 
 class NavigationContainer extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = { isOpen: false }
+    super(props);
+    this.state = { isOpen: false };
   }
 
   onMenuClick = () => {
     this.setState(({ isOpen: prevIsOpen }) => ({
       isOpen: !prevIsOpen,
-    }))
-  }
+    }));
+  };
 
   render() {
     return (
@@ -100,8 +96,8 @@ class NavigationContainer extends React.Component {
         onMenuClick={this.onMenuClick}
         {...this.props}
       />
-    )
+    );
   }
 }
 
-export default NavigationContainer
+export default NavigationContainer;

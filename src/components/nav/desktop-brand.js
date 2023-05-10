@@ -1,5 +1,5 @@
-import React from 'react'
-import BrandItem from './brand-item'
+import React from 'react';
+import BrandItem from './brand-item';
 
 const DesktopBrand = ({ title }) => (
   <div
@@ -14,6 +14,6 @@ const DesktopBrand = ({ title }) => (
   >
     <BrandItem title={title} />
   </div>
-)
+);
 
-export default DesktopBrand
+export default DesktopBrand;

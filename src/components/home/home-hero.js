@@ -21,9 +21,7 @@ const HomeHero = ({ background }) => (
             marginBottom: '1.5rem',
           }}
         >
-          <Title data-testid="landing-title" isSize={3}>
-            Holistic Nutrition &amp; Wellness
-          </Title>
+          <Title data-testid="landing-title" isSize={3}>Holistic Nutrition &amp; Wellness</Title>
         </div>
         <Subtitle data-testid="landing-subtitle" isSize={5}>
           Practicing Functional Nutritional Therapy,

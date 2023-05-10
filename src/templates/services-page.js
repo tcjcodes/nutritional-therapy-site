@@ -1,13 +1,13 @@
-import { Button, Container, Content, Section } from 'bloomer'
-import { graphql } from 'gatsby'
-import React from 'react'
-import Helmet from 'react-helmet'
-import Layout from '../components/layout'
-import PageHeader from '../components/page-header'
+import { Button, Container, Content, Section } from 'bloomer';
+import { graphql } from 'gatsby';
+import React from 'react';
+import Helmet from 'react-helmet';
+import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
 
 const ServicesPage = ({ data }) => {
-  const { title } = data.site.siteMetadata
-  const { markdownRemark: post } = data
+  const { title } = data.site.siteMetadata;
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -36,8 +36,8 @@ const ServicesPage = ({ data }) => {
         </Container>
       </Section>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query ServicesPage($slug: String!) {
@@ -56,6 +56,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default ServicesPage
+export default ServicesPage;

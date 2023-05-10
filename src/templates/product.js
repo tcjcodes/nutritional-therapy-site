@@ -8,23 +8,23 @@ import {
   Image,
   Section,
   Title,
-} from 'bloomer'
-import { graphql } from 'gatsby'
-import React from 'react'
-import Helmet from 'react-helmet'
-import BreadcrumbLink from '../components/shared/breadcrumb-link'
-import Layout from '../components/layout'
-import StyledIcon from '../components/shared/styled-icon'
-import { secondaryFont } from '../utils/fonts'
+} from 'bloomer';
+import { graphql } from 'gatsby';
+import React from 'react';
+import Helmet from 'react-helmet';
+import BreadcrumbLink from '../components/shared/breadcrumb-link';
+import Layout from '../components/layout';
+import StyledIcon from '../components/shared/styled-icon';
+import { secondaryFont } from '../utils/fonts';
 
-const pageTitle = 'Favorites'
+const pageTitle = 'Favorites';
 export default function ProductTemplate({ data }) {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
 
-  const { markdownRemark: post } = data
-  const { image, link, title, category } = post.frontmatter
-  let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`
-  const isAmazonLink = hyperlink.indexOf('amazon.com') >= 0
+  const { markdownRemark: post } = data;
+  const { image, link, title, category } = post.frontmatter;
+  let hyperlink = link.indexOf('http') >= 0 ? link : `http://${link}`;
+  const isAmazonLink = hyperlink.indexOf('amazon.com') >= 0;
 
   return (
     <Layout>
@@ -114,7 +114,7 @@ export default function ProductTemplate({ data }) {
         </Container>
       </Section>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -138,4 +138,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

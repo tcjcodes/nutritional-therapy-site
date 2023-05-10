@@ -1,16 +1,16 @@
-import { Column, Columns, Container, Section, Content, Box } from 'bloomer'
-import Link from 'gatsby-link'
-import React from 'react'
-import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import PageHeader from '../components/page-header'
+import { Column, Columns, Container, Section, Content, Box } from 'bloomer';
+import Link from 'gatsby-link';
+import React from 'react';
+import Helmet from 'react-helmet';
+import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
 
-const pageTitle = 'New Clients'
+const pageTitle = 'New Clients';
 const NewClientsPage = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const imgFluid = data.file.childImageSharp.fluid
+  const siteTitle = data.site.siteMetadata.title;
+  const imgFluid = data.file.childImageSharp.fluid;
   return (
     <Layout>
       <Section>
@@ -70,10 +70,10 @@ const NewClientsPage = ({ data }) => {
         </Container>
       </Section>
     </Layout>
-  )
-}
+  );
+};
 
-NewClientsPage.propTypes = {}
+NewClientsPage.propTypes = {};
 
 export const query = graphql`
   query NewClientsPageQuery {
@@ -90,6 +90,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default NewClientsPage
+export default NewClientsPage;
