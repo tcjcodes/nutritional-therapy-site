@@ -38,13 +38,13 @@ const TestimonialsPage = ({ data }) => {
                             <Box>
                                 <Testimonial>
                                     <Quote>
-                                        The most powerful counseling session I've ever experienced
+                                        The most powerful session I've ever experienced
                                     </Quote>
 
                                     <p>
                                         I recently completed my first session with Caroline and have
                                         felt different ever since. I have described the session to
-                                        others as "the most powerful counseling session I've ever
+                                        others as "the most powerful session I've ever
                                         experienced," and I've been going to counseling over the
                                         course of many years for unresolved trauma.
                                     </p>
@@ -86,7 +86,7 @@ const TestimonialsPage = ({ data }) => {
                                         After our sessions, I felt lighter! I felt like I'd released
                                         burdens that were never mine to carry. I also had a deep
                                         feeling of compassion and forgiveness towards my parents. I
-                                        would recommend APN with Caroline for anyone wanting to
+                                        would recommend [working] with Caroline for anyone wanting to
                                         improve their lives.
                                     </p>
                                     <p>&mdash; Shelly J.</p>
