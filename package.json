@@ -24,7 +24,6 @@
     "gatsby": "^4.4.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-emotion": "^7.4.0",
-    "gatsby-plugin-google-analytics": "^4.4.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-gtag": "^4.4.0",
     "gatsby-plugin-netlify": "^3.14.0",
