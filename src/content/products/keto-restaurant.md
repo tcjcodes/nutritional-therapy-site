@@ -3,7 +3,7 @@ templateKey: product
 title: 'Keto Restaurant Favorites Cookbook by: Maria Emmerich'
 image: /img/KetoRestaurantFavorite.jpg
 category: Cookbooks
-link: https://smile.amazon.com/gp/product/1628602589/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=boisewgw-20&creative=9325&linkCode=as2&creativeASIN=1628602589&linkId=2e0e09410a40d7f3574d76b3dd9a59e6
+link: https://www.amazon.com/gp/product/1628602589/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=boisewgw-20&creative=9325&linkCode=as2&creativeASIN=1628602589&linkId=2e0e09410a40d7f3574d76b3dd9a59e6
 ---
 
 # Overview
