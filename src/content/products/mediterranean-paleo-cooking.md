@@ -5,7 +5,7 @@ title: >-
   Gluten-Free Lifestyle
 image: /img/MediterraneanPaleoCooking.jpg
 category: Cookbooks
-link: 'https://smile.amazon.com/gp/product/1628600403/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=boisewgw-20&creative=9325&linkCode=as2&creativeASIN=1628600403&linkId=ee5975be41b686d2095ea88c683002c0'
+link: 'https://www.amazon.com/gp/product/1628600403/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=boisewgw-20&creative=9325&linkCode=as2&creativeASIN=1628600403&linkId=ee5975be41b686d2095ea88c683002c0'
 ---
 
 # Overview

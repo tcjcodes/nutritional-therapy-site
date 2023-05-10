@@ -16,6 +16,7 @@ import BreadcrumbLink from '../components/shared/breadcrumb-link';
 import Layout from '../components/layout';
 import StyledIcon from '../components/shared/styled-icon';
 import { secondaryFont } from '../utils/fonts';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 const pageTitle = 'Favorites';
 export default function ProductTemplate({ data }) {
@@ -28,7 +29,7 @@ export default function ProductTemplate({ data }) {
 
   return (
     <Layout>
-      <Section className="section">
+      <Section className='section'>
         <Helmet title={`${category} ${pageTitle} | ${siteTitle}`} />
         <Container style={{ maxWidth: 960 }}>
           <Columns isCentered>
@@ -58,28 +59,28 @@ export default function ProductTemplate({ data }) {
                 <BreadcrumbLink
                   to={`/products`}
                   text={`${pageTitle.toLowerCase()}`}
-                  arrowDirection="left"
+                  arrowDirection='left'
                 />
                 <BreadcrumbLink
                   to={`/product-categories/${post.fields.categoryKey}`}
                   text={`${category}`}
-                  arrowDirection="left"
+                  arrowDirection='left'
                 />
 
                 <Title
-                  data-testid="product-title"
+                  data-testid='product-title'
                   style={{
                     ...secondaryFont,
                     marginBottom: '0.75rem',
                   }}
                   isSize={2}
-                  hasTextColor="dark"
+                  hasTextColor='dark'
                 >
                   {title}
                 </Title>
               </div>
               <Content
-                data-testid="affiliate-disclaimer"
+                data-testid='affiliate-disclaimer'
                 css={{ margin: '1rem 0.5rem 0.5rem 0' }}
               >
                 {isAmazonLink && (
@@ -96,19 +97,20 @@ export default function ProductTemplate({ data }) {
               </Content>
               <Button
                 style={{ margin: '0' }}
-                isColor="primary"
+                isColor='primary'
                 href={hyperlink}
-                target="_blank"
-                rel="noopener noreferrer"
+                target='_blank'
+                rel='noopener noreferrer'
+                render={props => <OutboundLink {...props} />}
               >
-                <StyledIcon name="external-link" />
+                <StyledIcon name='external-link' />
                 Buy Item
               </Button>
             </Column>
           </Columns>
 
           <Content
-            data-testid="product-content"
+            data-testid='product-content'
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </Container>
@@ -118,24 +120,24 @@ export default function ProductTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-  query ProductByPath($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
+    query ProductByPath($slug: String!) {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            html
+            fields {
+                slug
+                categoryKey
+            }
+            frontmatter {
+                title
+                category
+                link
+                image
+            }
+        }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      fields {
-        slug
-        categoryKey
-      }
-      frontmatter {
-        title
-        category
-        link
-        image
-      }
-    }
-  }
 `;

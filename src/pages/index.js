@@ -1,4 +1,4 @@
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from 'react';
 import Script from 'react-load-script';
 import { graphql } from 'gatsby';
@@ -27,13 +27,14 @@ export default class IndexPage extends React.Component {
 
   render() {
     const { data } = this.props;
-    const heroSizes = data.file.childImageSharp.fluid;
+    const heroSizes = data.file.childImageSharp.gatsbyImageData;
     return (
       <Layout>
         <div>
           <HomeHero
             background={
-              <Img
+              <GatsbyImage
+                image={heroSizes}
                 style={{
                   position: 'absolute',
                   objectFit: 'cover',
@@ -42,9 +43,7 @@ export default class IndexPage extends React.Component {
                   height: '100%',
                   opacity: '0.4',
                 }}
-                fluid={heroSizes}
-                alt="Herbs, turmeric, chopping board, wooden spoon on a table"
-              />
+                alt="Herbs, turmeric, chopping board, wooden spoon on a table" />
             }
           />
           <Script
@@ -57,14 +56,10 @@ export default class IndexPage extends React.Component {
   }
 }
 
-export const query = graphql`
-  query IndexQuery {
-    file(relativePath: { eq: "spoon-herbs.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2400) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const query = graphql`query IndexQuery {
+  file(relativePath: {eq: "spoon-herbs.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
-`;
+}`;

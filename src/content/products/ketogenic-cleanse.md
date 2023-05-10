@@ -6,7 +6,7 @@ title: >-
 image: /img/30DayKetogenicCleanseCookbook.jpg
 category: Cookbooks
 link: >-
- https://smile.amazon.com/gp/product/1628601167/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=boisewgw-20&creative=9325&linkCode=as2&creativeASIN=1628601167&linkId=a485ebf05463c07309c7ea0701ee83d9
+ https://www.amazon.com/gp/product/1628601167/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=boisewgw-20&creative=9325&linkCode=as2&creativeASIN=1628601167&linkId=a485ebf05463c07309c7ea0701ee83d9
 ---
 
 # Overview

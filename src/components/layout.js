@@ -8,41 +8,34 @@ import favicon from '../img/favicon.png';
 import Navigation from './nav/navigation';
 import PageFooter from '../components/page-footer';
 
-const pageQuery = graphql`
-  query LayoutQuery {
-    site {
-      siteMetadata {
-        title
-      }
+const pageQuery = graphql`query LayoutQuery {
+  site {
+    siteMetadata {
+      title
     }
-    allMarkdownRemark(
-      filter: {
-        fields: { categoryKey: { ne: null } }
-        frontmatter: { templateKey: { eq: "product-category" } }
-      }
-      sort: { fields: [frontmatter___title], order: ASC }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            name
-          }
-          fields {
-            categoryKey
-          }
+  }
+  allMarkdownRemark(
+    filter: {fields: {categoryKey: {ne: null}}, frontmatter: {templateKey: {eq: "product-category"}}}
+    sort: {fields: [frontmatter___title], order: ASC}
+  ) {
+    edges {
+      node {
+        id
+        frontmatter {
+          name
         }
-      }
-    }
-    file(relativePath: { eq: "rwp_seal.png" }) {
-      childImageSharp {
-        fixed(width: 128) {
-          ...GatsbyImageSharpFixed
+        fields {
+          categoryKey
         }
       }
     }
   }
-`;
+  file(relativePath: {eq: "rwp_seal.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 128, layout: FIXED)
+    }
+  }
+}`;
 
 const Layout = ({ children }) => {
   return (
@@ -51,7 +44,7 @@ const Layout = ({ children }) => {
       render={(data) => {
         const { title } = data.site.siteMetadata;
         const edges = data.allMarkdownRemark.edges.map((edge) => edge.node);
-        const logoImg = data.file.childImageSharp.fixed;
+        const logoImg = data.file.childImageSharp.gatsbyImageData;
 
         return (
           <div

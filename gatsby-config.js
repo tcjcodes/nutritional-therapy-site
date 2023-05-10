@@ -48,6 +48,9 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: 'gatsby-plugin-image',
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -90,7 +93,7 @@ module.exports = {
         pluginConfig: {
           // Puts tracking script in the head instead of the body
           head: false,
-          // Respect Do Not Track (optional)
+          // Respect Do Not Track
           respectDNT: true,
           // Avoids sending pageview hits from custom paths
           exclude: [

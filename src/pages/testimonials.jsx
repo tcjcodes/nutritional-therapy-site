@@ -1,6 +1,6 @@
 import { Box, Column, Columns, Container, Content, Section } from 'bloomer';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
@@ -15,9 +15,9 @@ const TestimonialsPage = ({ data }) => {
     const { crystalFile, katieFile, shellyFile, site } = data;
     const siteTitle = site.siteMetadata.title;
 
-    const crystalFluid = crystalFile?.childImageSharp?.fluid;
-    const shellyFluid = shellyFile?.childImageSharp?.fluid;
-    const katieFluid = katieFile?.childImageSharp?.fluid;
+    const crystalFluid = crystalFile?.childImageSharp?.gatsbyImageData;
+    const shellyFluid = shellyFile?.childImageSharp?.gatsbyImageData;
+    const katieFluid = katieFile?.childImageSharp?.gatsbyImageData;
 
     const colSize = { mobile: 'full', tablet: 'half' };
     return (
@@ -29,11 +29,10 @@ const TestimonialsPage = ({ data }) => {
                     <Columns isMultiline isVCentered={false}>
                         <Column isOffset={{ desktop: 1 }} isSize={colSize}>
                             {katieFluid && (
-                                <Img
-                                    fluid={katieFluid}
+                                <GatsbyImage
+                                    image={katieFluid}
                                     alt="Boat on ocean overlooking sunset"
-                                    title="Photo by Mantas Hesthaven on Pexels"
-                                />
+                                    title="Photo by Mantas Hesthaven on Pexels" />
                             )}
                             <Box>
                                 <Testimonial>
@@ -68,11 +67,10 @@ const TestimonialsPage = ({ data }) => {
                             </Box>
 
                             {shellyFluid && (
-                                <Img
-                                    fluid={shellyFluid}
+                                <GatsbyImage
+                                    image={shellyFluid}
                                     alt="Stone beach overlooking a sunset"
-                                    title="Photo by Quang Nguyen Vinh on Pexels"
-                                />
+                                    title="Photo by Quang Nguyen Vinh on Pexels" />
                             )}
                             <Box>
                                 <Testimonial>
@@ -96,11 +94,10 @@ const TestimonialsPage = ({ data }) => {
 
                         <Column isSize={colSize}>
                             {crystalFluid && (
-                                <Img
-                                    fluid={crystalFluid}
+                                <GatsbyImage
+                                    image={crystalFluid}
                                     alt="Pink petaled flowers"
-                                    title="Photo by Victor Freitas on Pexels"
-                                />
+                                    title="Photo by Victor Freitas on Pexels" />
                             )}
                             <Box>
                                 <Testimonial>
@@ -137,41 +134,31 @@ const TestimonialsPage = ({ data }) => {
 
 TestimonialsPage.propTypes = {};
 
-export const query = graphql`
-    query TestimonialsPageQuery {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        crystalFile: file(
-            relativePath: { eq: "pexels-victor-freitas-600114.jpg" }
-        ) {
-            childImageSharp {
-                fluid(maxWidth: 600) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        katieFile: file(
-            relativePath: { eq: "pexels-mantas-hesthaven-536812_widecrop.jpg" }
-        ) {
-            childImageSharp {
-                fluid(maxWidth: 600) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        shellyFile: file(
-            relativePath: { eq: "pexels-quang-nguyen-vinh-3871703_widecrop.jpg" }
-        ) {
-            childImageSharp {
-                fluid(maxWidth: 600) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
+export const query = graphql`query TestimonialsPageQuery {
+  site {
+    siteMetadata {
+      title
     }
-`;
+  }
+  crystalFile: file(relativePath: {eq: "pexels-victor-freitas-600114.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 600, layout: CONSTRAINED)
+    }
+  }
+  katieFile: file(
+    relativePath: {eq: "pexels-mantas-hesthaven-536812_widecrop.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(width: 600, layout: CONSTRAINED)
+    }
+  }
+  shellyFile: file(
+    relativePath: {eq: "pexels-quang-nguyen-vinh-3871703_widecrop.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(width: 600, layout: CONSTRAINED)
+    }
+  }
+}`;
 
 export default TestimonialsPage;
