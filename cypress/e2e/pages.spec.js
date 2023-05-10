@@ -10,9 +10,9 @@ describe('each page', () => {
     cy.visit('/');
 
     cy.findByTestId('desktop-brand')
-    .contains('Willow Grace Wellness')
-    .should('have.attr', 'href')
-    .and('include', '/');
+      .contains('Willow Grace Wellness')
+      .should('have.attr', 'href')
+      .and('include', '/');
 
     cy.findByTestId('tablet-brand').should('not.be.visible');
 
@@ -51,9 +51,9 @@ describe('each page', () => {
 
         if (href) {
           cy.get('@navbarItem')
-          .should('be.visible')
-          .and('have.attr', 'href')
-          .and('include', href);
+            .should('be.visible')
+            .and('have.attr', 'href')
+            .and('include', href);
         }
       });
     });
@@ -79,8 +79,8 @@ describe('each page', () => {
     cy.findByTestId('landing-title').should('be.visible');
     cy.findByTestId('landing-subtitle').should('be.visible');
     cy.findByRole('button', { name: /learn more/i })
-    .should('be.visible')
-    .as('actionButton');
+      .should('be.visible')
+      .as('actionButton');
 
     cy.get('@actionButton').click();
     cy.url().should('include', '/services');
@@ -100,12 +100,12 @@ describe('each page', () => {
     verifyPageHeaderVisible();
 
     cy.findByTestId('services-content')
-    .contains(/Disclaimer/i)
-    .should('be.visible');
+      .contains(/Disclaimer/i)
+      .should('be.visible');
 
     cy.findByRole('button', { name: /request appointment/i })
-    .should('be.visible')
-    .click();
+      .should('be.visible')
+      .click();
 
     cy.url().should('include', '/contact');
   });
@@ -117,15 +117,14 @@ describe('each page', () => {
 
     const expectedCount = 3;
 
-    cy
-    .get('.columns picture img')
-    .should('have.lengthOf', expectedCount)
-    .and('be.visible')
-    .and('have.attr', 'alt');
+    cy.get('.columns picture img')
+      .should('have.lengthOf', expectedCount)
+      .and('be.visible')
+      .and('have.attr', 'alt');
 
     cy.findAllByTestId('testimonial')
-    .should('have.lengthOf', expectedCount)
-    .and('be.visible');
+      .should('have.lengthOf', expectedCount)
+      .and('be.visible');
   });
 
   describe('clients page', () => {
@@ -135,18 +134,19 @@ describe('each page', () => {
       verifyPageHeaderContains(/new clients/i);
 
       // Links
-      cy.findByRole('link', { name: /free 20 minute consultation/i }).should(
-        'have.attr', 'href').and('eq', '/services');
+      cy.findByRole('link', { name: /free 20 minute consultation/i })
+        .should('have.attr', 'href')
+        .and('eq', '/services');
       cy.findByRole('link', { name: /send a message/i }).as('contactLink');
 
       // Forms
       cy.findByRole('link', { name: /Initial Interview/ })
-      .as('interviewLink')
-      .should('have.attr', 'href')
-      .and('eq', '/documents/forms/InitialInterview.pdf');
+        .as('interviewLink')
+        .should('have.attr', 'href')
+        .and('eq', '/documents/forms/InitialInterview.pdf');
       cy.findByRole('link', { name: /Disclaimer/ })
-      .should('have.attr', 'href')
-      .and('eq', '/documents/forms/Disclaimer.pdf');
+        .should('have.attr', 'href')
+        .and('eq', '/documents/forms/Disclaimer.pdf');
 
       cy.get('@contactLink').click();
       cy.url().should('include', '/contact');
@@ -171,8 +171,8 @@ describe('each page', () => {
 
       cy.findAllByTestId('fav-category-heading').should('have.length.gte', 1);
       cy.findAllByTestId('fav-card-link')
-      .as('favCardLinks')
-      .should('have.length.gte', 1);
+        .as('favCardLinks')
+        .should('have.length.gte', 1);
 
       cy.get('@favCardLinks').first().click();
 
@@ -182,8 +182,8 @@ describe('each page', () => {
       cy.findByTestId('affiliate-disclaimer').should('be.visible');
 
       cy.findAllByTestId('breadcrumb-link')
-      .as('breadcrumbs')
-      .should('have.length', 2);
+        .as('breadcrumbs')
+        .should('have.length', 2);
 
       const categoryRouteRegex = /\/product-categories\/\w+/;
       cy.get('@breadcrumbs').should(([allFavsLink, categoryLink]) => {
@@ -208,11 +208,11 @@ describe('each page', () => {
       verifyPageHeaderContains('Favorite ');
       cy.findByTestId('fav-category-description').should('be.visible');
       cy.contains('Back to all')
-      .should('have.attr', 'href')
-      .and('eq', '/products/');
+        .should('have.attr', 'href')
+        .and('eq', '/products/');
       cy.findAllByTestId('fav-card-link')
-      .as('favCardLinks')
-      .should('have.length.gte', 1);
+        .as('favCardLinks')
+        .should('have.length.gte', 1);
     });
   });
 
@@ -229,17 +229,14 @@ describe('each page', () => {
     const message = 'This is from a test';
 
     const fillInForm = () => {
-      cy.findByPlaceholderText(/First Name/).type(
-        firstName);
-      cy.findByPlaceholderText(/Last Name/).type(
-        lastName);
+      cy.findByPlaceholderText(/First Name/).type(firstName);
+      cy.findByPlaceholderText(/Last Name/).type(lastName);
       cy.findByPlaceholderText(/E-mail/).type(email);
       cy.get('select').select('Other');
       cy.findByPlaceholderText(/Subject/)
-      .should('be.visible')
-      .as('subjectInput');
-      cy.get('@subjectInput')
-      .type(otherSubject);
+        .should('be.visible')
+        .as('subjectInput');
+      cy.get('@subjectInput').type(otherSubject);
       cy.findByPlaceholderText(/Message/).type(message);
     };
 
@@ -250,22 +247,17 @@ describe('each page', () => {
 
       cy.visit('/contact');
 
-      cy.get('form')
-      .should('be.visible');
+      cy.get('form').should('be.visible');
 
       verifyPageHeaderContains(/contact/i);
 
       cy.contains(/send a message/i);
 
-      cy.findByRole('button', { name: /submit/ })
-      .as('submitBtn');
+      cy.findByRole('button', { name: /submit/ }).as('submitBtn');
 
-      cy.get('@submitBtn')
-      .should('be.visible');
+      cy.get('@submitBtn').should('be.visible');
 
-      cy.get('@submitBtn')
-      .should('have.attr', 'type')
-      .and('eq', 'submit');
+      cy.get('@submitBtn').should('have.attr', 'type').and('eq', 'submit');
 
       fillInForm();
       cy.get('input:invalid').should('not.exist');
@@ -273,19 +265,19 @@ describe('each page', () => {
       if (Cypress.env('LOCAL_MODE')) {
         cy.get('@submitBtn').click();
         cy.wait('@submitReq')
-        .its('request.body')
-        .should(
-          'eq',
-          new URLSearchParams({
-            'form-name': 'contact',
-            firstName: firstName,
-            lastName: lastName,
-            email: email,
-            subject: 'otherSubject',
-            otherSubject: otherSubject,
-            message: message,
-          }).toString(),
-        );
+          .its('request.body')
+          .should(
+            'eq',
+            new URLSearchParams({
+              'form-name': 'contact',
+              firstName: firstName,
+              lastName: lastName,
+              email: email,
+              subject: 'otherSubject',
+              otherSubject: otherSubject,
+              message: message,
+            }).toString(),
+          );
 
         cy.contains('Sent!');
       } else {
@@ -297,21 +289,19 @@ describe('each page', () => {
       cy.visit('/contact');
 
       cy.get(':invalid')
-      // form + required inputs
-      .should('have.length', 6);
+        // form + required inputs
+        .should('have.length', 6);
 
       fillInForm();
 
-      cy.get(':invalid')
-      .should('have.length', 0);
+      cy.get(':invalid').should('have.length', 0);
 
       const errorBanner = 'Oh no!';
-      cy.contains(errorBanner).as('errorBanner')
+      cy.contains(errorBanner).as('errorBanner');
 
       cy.get('@errorBanner').should('not.be.visible');
 
-      cy.findByRole('button', { name: /submit/ })
-      .as('submitBtn');
+      cy.findByRole('button', { name: /submit/ }).as('submitBtn');
 
       cy.get('@submitBtn').should('not.be.disabled');
 
@@ -325,11 +315,11 @@ describe('each page', () => {
         cy.get('input:invalid').should('not.exist');
         cy.get('@errorBanner').should('be.visible');
 
-        cy.findByRole('link', { name: 'caroline@boisewgw.com' })
-        .should('be.visible');
+        cy.findByRole('link', { name: 'caroline@boisewgw.com' }).should(
+          'be.visible',
+        );
 
         cy.get('@submitBtn').should('be.disabled');
-
       } else {
         cy.log('Not LOCAL_MODE, skipping submit');
       }

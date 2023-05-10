@@ -204,7 +204,11 @@ class ContactForm extends React.Component {
             <FieldBody>
               <Field>
                 <Control>
-                  <Button type="submit" isColor="primary" disabled={this.state.status === STATUS_ERROR}>
+                  <Button
+                    type="submit"
+                    isColor="primary"
+                    disabled={this.state.status === STATUS_ERROR}
+                  >
                     <StyledIcon name="envelope" />
                     submit
                   </Button>
