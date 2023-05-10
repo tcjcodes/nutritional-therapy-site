@@ -25,15 +25,15 @@ const TestimonialsPage = ({ data }) => {
     const shellyFluid = shellyFile?.childImageSharp?.gatsbyImageData;
     const katieFluid = katieFile?.childImageSharp?.gatsbyImageData;
 
-    const colSize = { mobile: 'full', tablet: 'half' };
-    return (
+    const colSizes = { mobile: { size: 12 }, tablet: { size: 'half' }, desktop: { size: 5 }};
+  return (
         <Layout>
             <Section>
                 <Helmet title={`${pageTitle} | ${siteTitle}`}/>
                 <Container>
                     <PageHeader center title={pageTitle}/>
                     <Columns isMultiline isVCentered={false}>
-                        <Columns.Column isOffset={{ desktop: 1 }} isSize={colSize}>
+                        <Columns.Column {...colSizes} desktop={{ ...colSizes.desktop, offset: 1 }}>
                             {katieFluid && (
                                 <GatsbyImage
                                     image={katieFluid}
@@ -98,7 +98,7 @@ const TestimonialsPage = ({ data }) => {
                             </Box>
                         </Columns.Column>
 
-                        <Columns.Column isSize={colSize}>
+                        <Columns.Column {...colSizes}>
                             {crystalFluid && (
                                 <GatsbyImage
                                     image={crystalFluid}
