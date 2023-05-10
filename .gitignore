@@ -9,3 +9,4 @@ public/
 cypress/videos
 cypress/screenshots
 .run/
+*.iml

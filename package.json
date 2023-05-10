@@ -1,8 +1,19 @@
 {
   "name": "caroline-ntp-website",
-  "description": "Official website for Boise Willow Grace Wellness",
+  "description": "Official website for Willow Grace Wellness",
   "version": "2.0.0",
   "author": "Trina Castillo",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "build-and-serve": "npm run build && npm run serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "CYPRESS_LOCAL_MODE=1 cypress open",
+    "cy:run": "CYPRESS_LOCAL_MODE=1 cypress run"
+  },
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -39,17 +50,6 @@
     "gatsby"
   ],
   "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "LOCAL_MODE=1 gatsby develop",
-    "serve": "gatsby serve",
-    "build-and-serve": "npm run build && npm run serve",
-    "clean": "gatsby clean",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run"
-  },
   "devDependencies": {
     "@testing-library/cypress": "^8.0.2",
     "babel-eslint": "^10.1.0",

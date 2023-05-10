@@ -104,7 +104,8 @@ class ContactForm extends React.Component {
           onSubmit={this.handleSubmit}
           method="post"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
           ref={this.formRef}
         >
           <input type="hidden" name="form-name" value="contact" />
@@ -197,11 +198,13 @@ class ContactForm extends React.Component {
             </FieldBody>
           </Field>
 
+          <div data-netlify-recaptcha="true"></div>
+
           <Field>
             <FieldBody>
               <Field>
                 <Control>
-                  <Button type="submit" isColor="primary">
+                  <Button type="submit" isColor="primary" disabled={this.state.status === STATUS_ERROR}>
                     <StyledIcon name="envelope" />
                     submit
                   </Button>
