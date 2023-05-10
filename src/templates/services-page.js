@@ -30,7 +30,7 @@ const ServicesPage = ({ data }) => {
                 className="fa fa-calendar"
                 css={{ marginRight: `0.5rem` }}
               />
-              Request an Appointment
+              Request appointment
             </Button>
           </div>
         </Container>
