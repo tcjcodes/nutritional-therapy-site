@@ -15,7 +15,7 @@ const ServicesPage = ({ data }) => {
         <Helmet title={`Services | ${title}`} />
 
         <Container style={{ maxWidth: 960 }}>
-          <PageHeader title="services" center />
+          <PageHeader title="Services" center />
 
           <div css={{ marginBottom: `2rem` }}>
             <Content
@@ -30,7 +30,7 @@ const ServicesPage = ({ data }) => {
                 className="fa fa-calendar"
                 css={{ marginRight: `0.5rem` }}
               />
-              Request an Appointment
+              Request appointment
             </Button>
           </div>
         </Container>

@@ -1,15 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
   GoogleMap,
   InfoWindow,
   Marker,
   withGoogleMap,
   withScriptjs,
-} from 'react-google-maps'
-import theme from '../../utils/google-map-theme.json'
+} from 'react-google-maps';
+import theme from '../../utils/google-map-theme.json';
 
-const apiKey = `TODO`
+const apiKey = `TODO`;
 
 const StyledMap = withScriptjs(
   withGoogleMap((props) => (
@@ -28,8 +28,8 @@ const StyledMap = withScriptjs(
         </div>
       </Marker>
     </GoogleMap>
-  ))
-)
+  )),
+);
 
 StyledMap.PropTypes = {
   children: PropTypes.object.isRequired,
@@ -37,19 +37,19 @@ StyledMap.PropTypes = {
   mapCenter: PropTypes.object.isRequired,
   isOpen: PropTypes.bool.isRequired,
   onToggleOpen: PropTypes.func,
-}
+};
 
 class OfficeMap extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = { isOpen: true }
+    super(props);
+    this.state = { isOpen: true };
   }
 
   toggleOpen = () => {
     this.setState((prevState) => {
-      return { isOpen: !prevState.isOpen }
-    })
-  }
+      return { isOpen: !prevState.isOpen };
+    });
+  };
 
   render() {
     return (
@@ -66,7 +66,7 @@ class OfficeMap extends React.Component {
       >
         {this.props.children}
       </StyledMap>
-    )
+    );
   }
 }
 
@@ -75,6 +75,6 @@ OfficeMap.PropTypes = {
   mapCenter: PropTypes.object.isRequired,
   zoom: PropTypes.object.isRequired,
   containerStyles: PropTypes.object,
-}
+};
 
-export default OfficeMap
+export default OfficeMap;

@@ -1,35 +1,35 @@
-import { Container, Section, Column } from 'bloomer'
-import { graphql } from 'gatsby'
-import React from 'react'
-import Helmet from 'react-helmet'
-import LabCard from '../components/labs/lab-card'
-import Layout from '../components/layout'
-import PageHeader from '../components/page-header'
-import ProductCardRow from '../components/products/product-card-row'
+import { Container, Section, Column } from 'bloomer';
+import { graphql } from 'gatsby';
+import React from 'react';
+import Helmet from 'react-helmet';
+import LabCard from '../components/labs/lab-card';
+import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
+import ProductCardRow from '../components/products/product-card-row';
 
-const pageTitle = 'Lab Testing'
+const pageTitle = 'Lab Tests';
 
 const mapEdgesToLabs = function mapMarkdownEdgesToLabItems(edges) {
   return edges
     .map((edge) => edge.node)
     .map((node) => {
-      const { id, frontmatter, fields } = node
-      const { slug } = fields
-      const { title, image } = frontmatter
+      const { id, frontmatter, fields } = node;
+      const { slug } = fields;
+      const { title, image } = frontmatter;
       return {
         id,
         frontmatter,
         slug,
         title,
         image,
-      }
-    })
-}
+      };
+    });
+};
 
 const LabsTemplate = ({ data }) => {
-  const { title } = data.site.siteMetadata
-  const { edges } = data.allMarkdownRemark
-  const labs = mapEdgesToLabs(edges)
+  const { title } = data.site.siteMetadata;
+  const { edges } = data.allMarkdownRemark;
+  const labs = mapEdgesToLabs(edges);
   return (
     <Layout>
       <Section className="section">
@@ -44,7 +44,11 @@ const LabsTemplate = ({ data }) => {
                 <Column
                   key={id}
                   hasTextAlign="center"
-                  isSize={{ desktop: 3, tablet: 6, mobile: 12 }}
+                  isSize={{
+                    desktop: 3,
+                    tablet: 6,
+                    mobile: 12,
+                  }}
                 >
                   <LabCard slug={slug} thumbnail={image} title={title} />
                 </Column>
@@ -54,8 +58,8 @@ const LabsTemplate = ({ data }) => {
         </Container>
       </Section>
     </Layout>
-  )
-}
+  );
+};
 
 export const pageQuery = graphql`
   query LabsPageQuery {
@@ -86,6 +90,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default LabsTemplate
+export default LabsTemplate;

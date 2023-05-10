@@ -29,14 +29,22 @@ const NewClientsPage = ({ data }) => {
               <div css={{ paddingLeft: '2em' }}>
                 <PageHeader title={pageTitle} />
                 <Content>
-                  <div css={{ marginBottom: '2em', marginRight: '1.5em' }}>
+                  <div
+                    css={{
+                      marginBottom: '2em',
+                      marginRight: '1.5em',
+                    }}
+                  >
                     <p>
-                      I provide a free 20 minute consultation for new clients.
+                      I provide a{' '}
+                      <Link to="/services">free 20 minute consultation</Link>{' '}
+                      for new clients.
                     </p>
                     <p>
-                      Send a message on the <Link to="/contact">contact</Link>{' '}
-                      page to request an appointment.
+                      <Link to="/contact">Send a message</Link> to request an
+                      appointment.
                     </p>
+                    <br />
                     <p>
                       For current clients, please fill out the following forms
                       and bring them to your next appointment:

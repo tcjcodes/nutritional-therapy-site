@@ -1,6 +1,6 @@
-import { Section } from 'bloomer'
-import React from 'react'
-import Layout from '../components/layout'
+import { Section } from 'bloomer';
+import React from 'react';
+import Layout from '../components/layout';
 
 const NotFoundPage = () => (
   <Layout>
@@ -9,6 +9,6 @@ const NotFoundPage = () => (
       <p>Page not found</p>
     </Section>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

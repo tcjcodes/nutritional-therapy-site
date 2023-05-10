@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Delete, Notification } from 'bloomer'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Delete, Notification } from 'bloomer';
 
 class NotificationContainer extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
@@ -18,13 +18,13 @@ class NotificationContainer extends React.Component {
           {this.props.children}
         </Notification>
       </div>
-    )
+    );
   }
 }
 
 NotificationContainer.propTypes = {
   isShown: PropTypes.bool,
   onDelete: PropTypes.func,
-}
+};
 
-export default NotificationContainer
+export default NotificationContainer;

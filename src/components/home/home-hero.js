@@ -1,6 +1,5 @@
-import { Button, Container, Hero, HeroBody, Title, Subtitle } from 'bloomer'
-import React from 'react'
-import { secondaryFont } from '../../utils/fonts'
+import { Button, Container, Hero, HeroBody, Title, Subtitle } from 'bloomer';
+import React from 'react';
 
 const HomeHero = ({ background }) => (
   <Hero
@@ -21,7 +20,9 @@ const HomeHero = ({ background }) => (
             marginBottom: '1.5rem',
           }}
         >
-          <Title data-testid="landing-title" isSize={3}>Holistic Nutrition &amp; Wellness</Title>
+          <Title data-testid="landing-title" isSize={3}>
+            Holistic Nutrition &amp; Wellness
+          </Title>
         </div>
         <Subtitle data-testid="landing-subtitle" isSize={5}>
           Practicing Functional Nutritional Therapy,
@@ -42,6 +43,6 @@ const HomeHero = ({ background }) => (
       </Container>
     </HeroBody>
   </Hero>
-)
+);
 
-export default HomeHero
+export default HomeHero;

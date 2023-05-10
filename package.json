@@ -6,8 +6,8 @@
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "bloomer": "^0.6.3",
-    "bulma": "^0.9.3",
+    "bloomer": "^0.6.5",
+    "bulma": "^0.9.4",
     "classnames": "^2.3.1",
     "font-awesome": "^4.7.0",
     "gatsby": "^4.4.0",
@@ -45,7 +45,7 @@
     "serve": "gatsby serve",
     "build-and-serve": "npm run build && npm run serve",
     "clean": "gatsby clean",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open",
     "cy:run": "cypress run"

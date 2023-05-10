@@ -17,17 +17,6 @@ const linkProps = {
   },
 };
 
-const clientsNavItems = [
-  {
-    text: 'Forms',
-    to: 'new-clients',
-  },
-  {
-    text: 'Lab Testing',
-    to: 'labs',
-  },
-];
-
 const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
   const productNavItems = categoryNodes.map((node) => {
     return {
@@ -59,7 +48,14 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
           onClick={onMenuClick}
         >
           <StyledNavbarItem {...linkProps} text="About" />
+
           <StyledNavbarItem {...linkProps} text="Services" />
+
+          <StyledNavbarItem
+            {...linkProps}
+            text="Testimonials"
+            to="testimonials"
+          />
 
           <NavbarDropdownItem
             {...linkProps}

@@ -31,7 +31,7 @@ So if you are experiencing:
 * Recurring Infections
 
 ​
-**Let's set up a _free 20 minute phone consult_ so we can discuss your health concerns and goals, I would love to help!**
+**Let's set up a [_free 20 minute phone consult_](/services) so we can discuss your health concerns and goals, I would love to help!**
 
 I am passionate to helping you strengthen and find the healthier version of yourself.  Bringing back the vitality and support your body's needs.
 

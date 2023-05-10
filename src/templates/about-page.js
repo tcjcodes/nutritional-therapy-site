@@ -8,7 +8,7 @@ import PageHeader from '../components/page-header';
 
 const AboutPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
-  const { markdownRemark: post } = data;
+  const { markdownRemark: post, aboutFile } = data;
   return (
     <Layout>
       <Section>
@@ -23,10 +23,10 @@ const AboutPage = ({ data }) => {
           >
             <PageHeader center title={post.frontmatter.title} />
 
-            {data.file?.childImageSharp?.fluid && (
+            {aboutFile?.childImageSharp?.fluid && (
               <Box style={{ width: 400, marginBottom: '2rem' }}>
                 <Img
-                  fluid={data.file.childImageSharp.fluid}
+                  fluid={aboutFile.childImageSharp.fluid}
                   alt="Caroline"
                   title="About Caroline"
                 />
@@ -59,7 +59,7 @@ export const query = graphql`
         title
       }
     }
-    file(relativePath: { eq: "cdlr3crop.JPG" }) {
+    aboutFile: file(relativePath: { eq: "cdlr3crop.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
