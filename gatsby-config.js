@@ -48,6 +48,9 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: 'gatsby-plugin-image'
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -101,6 +104,6 @@ module.exports = {
           ],
         },
       },
-    },
+    }
   ],
 };
