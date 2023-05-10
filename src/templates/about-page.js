@@ -24,7 +24,7 @@ const AboutPage = ({ data }) => {
             <PageHeader center title={post.frontmatter.title} />
 
             {aboutFile?.childImageSharp?.fluid && (
-              <Box style={{ width: 400, marginBottom: '2rem' }}>
+              <Box style={{ maxWidth: 450, width: '100%', marginBottom: '2rem' }}>
                 <Img
                   fluid={aboutFile.childImageSharp.fluid}
                   alt="Caroline"
