@@ -45,8 +45,16 @@ module.exports = {
         name: 'images',
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `blurred`,
+        },
+      },
+    },
+    { resolve: `gatsby-transformer-sharp` },
     {
       resolve: 'gatsby-plugin-image',
     },
