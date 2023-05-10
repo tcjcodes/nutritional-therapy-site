@@ -163,7 +163,7 @@ describe('each page', () => {
     cy.findAllByTestId('lab-card').should('have.length.gte', 1);
   });
 
-  describe('favorites pages', () => {
+  describe.only('favorites pages', () => {
     it('renders favorites page that navigates to item page', () => {
       // test(favorites page)
       cy.visit('/products');
@@ -194,7 +194,7 @@ describe('each page', () => {
       });
       cy.get('@breadcrumbs').eq(1).as('categoryLink');
 
-      cy.findByRole('button', { name: 'Buy Item' }).should((buyLink) => {
+      cy.findByRole('link', { name: 'Buy Item' }).should((buyLink) => {
         expect(buyLink).to.have.attr('href');
         expect(buyLink).to.have.attr('target', '_blank');
         expect(buyLink).to.have.attr('rel', 'noopener noreferrer');
