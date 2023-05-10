@@ -1,9 +1,12 @@
-import React from 'react'
-import { secondaryFont } from '../utils/fonts'
-import { Title } from 'bloomer'
+import React from 'react';
+import { secondaryFont } from '../utils/fonts';
+import { Title } from 'bloomer';
 
 const PageHeader = ({ title, center }) => (
-  <div data-testid="page-header" css={{ textAlign: center ? 'center' : 'inherit' }}>
+  <div
+    data-testid="page-header"
+    css={{ textAlign: center ? 'center' : 'inherit' }}
+  >
     <Title
       isSize={2}
       css={{
@@ -14,6 +17,6 @@ const PageHeader = ({ title, center }) => (
       {title}
     </Title>
   </div>
-)
+);
 
-export default PageHeader
+export default PageHeader;

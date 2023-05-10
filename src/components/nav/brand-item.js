@@ -1,8 +1,8 @@
-import { Title } from 'bloomer'
-import { Link } from 'gatsby'
-import React from 'react'
-import { secondaryFont } from '../../utils/fonts'
-import { colorGreen, colorGreenDark } from '../../utils/theme-variables'
+import { Title } from 'bloomer';
+import { Link } from 'gatsby';
+import React from 'react';
+import { secondaryFont } from '../../utils/fonts';
+import { colorGreen, colorGreenDark } from '../../utils/theme-variables';
 
 const BrandItem = ({ title, size = 1 }) => (
   <Title isSize={size} hasTextAlign="centered">
@@ -20,8 +20,8 @@ const BrandItem = ({ title, size = 1 }) => (
       {title}
     </Link>
   </Title>
-)
+);
 
-BrandItem.propTypes = {}
+BrandItem.propTypes = {};
 
-export default BrandItem
+export default BrandItem;

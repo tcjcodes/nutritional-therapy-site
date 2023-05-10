@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
 
 const BlogTemplate = ({ posts }) => (
   <div className="container">
@@ -35,13 +35,13 @@ const BlogTemplate = ({ posts }) => (
               </p>
             </div>
           </section>
-        )
+        );
       })}
   </div>
-)
+);
 
 BlogTemplate.PropTypes = {
   posts: PropTypes.object.isRequired,
-}
+};
 
-export default BlogTemplate
+export default BlogTemplate;

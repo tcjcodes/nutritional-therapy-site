@@ -1,4 +1,12 @@
-import { Box, Column, Columns, Container, Content, Image, Section, } from 'bloomer';
+import {
+  Box,
+  Column,
+  Columns,
+  Container,
+  Content,
+  Image,
+  Section,
+} from 'bloomer';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -44,7 +52,6 @@ export default function LabTemplate({ data }) {
                 <BreadcrumbLink to={`/labs`} text={`other lab tests`} />
 
                 <PageHeader center title={title} />
-
               </div>
             </Column>
           </Columns>

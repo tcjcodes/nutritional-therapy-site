@@ -1,7 +1,7 @@
-import { NavbarItem } from 'bloomer'
-import Link from 'gatsby-link'
-import PropTypes from 'prop-types'
-import React from 'react'
+import { NavbarItem } from 'bloomer';
+import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 const StyledNavbarItem = ({ to, text, style, activeStyle }) => (
   <NavbarItem>
@@ -13,13 +13,13 @@ const StyledNavbarItem = ({ to, text, style, activeStyle }) => (
       {text}
     </Link>
   </NavbarItem>
-)
+);
 
 StyledNavbarItem.propTypes = {
   text: PropTypes.string.isRequired,
   to: PropTypes.string,
   style: PropTypes.object,
   activeStyle: PropTypes.object,
-}
+};
 
-export default StyledNavbarItem
+export default StyledNavbarItem;

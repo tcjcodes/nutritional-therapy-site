@@ -51,7 +51,11 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
 
           <StyledNavbarItem {...linkProps} text="Services" />
 
-          <StyledNavbarItem {...linkProps} text="Testimonials" to="testimonials" />
+          <StyledNavbarItem
+            {...linkProps}
+            text="Testimonials"
+            to="testimonials"
+          />
 
           <NavbarDropdownItem
             {...linkProps}
