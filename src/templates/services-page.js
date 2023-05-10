@@ -25,7 +25,7 @@ const ServicesPage = ({ data }) => {
           </div>
 
           <div css={{ textAlign: 'center' }}>
-            <Button isColor='primary' href='/contact/'>
+            <Button color='primary' href='/contact/'>
               <span
                 className='fa fa-calendar'
                 css={{ marginRight: `0.5rem` }}

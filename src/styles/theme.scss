@@ -42,15 +42,19 @@ $text: $brown-darker;
 $link: $brown;
 $link-hover: $brown-darker;
 
+//$custom-colors: ("primary": ($green, $green-lighter));
+
 @import "~bulma/bulma";
 @import "fonts";
 
 em {
   font-style: italic;
 }
+
 strong {
   color: inherit;
 }
+
 .content {
   h1,
   h2,
@@ -61,47 +65,58 @@ strong {
     font-family: $family-serif;
     color: $brown;
   }
+
   a {
     //font-weight: 700;
     text-decoration: underline;
   }
 }
+
 .navbar-link {
   &:not(.is-arrowless) {
     padding-right: 1.75em;
+
     &::after {
       right: 0.75em;
     }
   }
 }
+
 .navbar-item {
   font-size: $size-5;
 }
+
 .title,
 .subtitle {
   color: $brown-darker;
   font-weight: normal;
 }
+
 .section {
   padding: 2rem 1.5rem;
 }
+
 .heading {
   font-family: $family-serif;
   font-size: $size-6;
   color: $brown;
   text-transform: lowercase;
 }
+
 .button {
   font-family: $family-serif;
 }
+
 .notification {
   &.is-light {
     border: 1px solid $brown-lighter;
   }
 }
+
 address {
   font-style: normal;
 }
+
 .link {
   text-transform: lowercase;
 }
