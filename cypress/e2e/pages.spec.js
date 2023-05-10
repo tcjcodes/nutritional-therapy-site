@@ -114,6 +114,18 @@ describe('each page', () => {
     cy.visit('/testimonials');
 
     verifyPageHeaderVisible();
+
+    const expectedCount = 3;
+
+    cy
+        .get('.columns picture img')
+        .should('have.lengthOf', expectedCount)
+        .and('be.visible')
+        .and('have.attr', 'alt');
+
+    cy.findAllByTestId('testimonial')
+        .should('have.lengthOf', expectedCount)
+        .and('be.visible');
   });
 
   describe('clients page', () => {
@@ -275,7 +287,7 @@ describe('each page', () => {
     });
   });
 
-  it.only('renders 404 page for nonexistent routes', () => {
+  it('renders 404 page for nonexistent routes', () => {
     cy.visit('/invalid-route', { failOnStatusCode: false });
 
     cy.url().then((url) => {
