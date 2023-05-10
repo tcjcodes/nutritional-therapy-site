@@ -51,7 +51,7 @@ const ContactPage = ({ data }) => {
               </Box>
             </Column>*/}
             <Column isSize={7} isOffset={1} style={{ paddingRight: '2rem' }}>
-              <Heading>send a message</Heading>
+              <Heading>Send a message</Heading>
               <ContactForm />
             </Column>
             <Column isSize={3}>
