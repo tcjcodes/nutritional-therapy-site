@@ -25,13 +25,19 @@ const AboutPage = ({ data }) => {
 
             {aboutFile?.childImageSharp?.gatsbyImageData && (
               <Box
-                style={{ maxWidth: 450, width: '100%', marginBottom: '2rem' }}>
+                css={{
+                  maxWidth: '450px',
+                  width: '100%',
+                  marginBottom: '2rem',
+                }}>
                 <GatsbyImage
-                  image={aboutFile.childImageSharp.gatsbyImageData}
                   alt='Caroline'
-                  title='About Caroline' />
+                  title='About Caroline'
+                  image={aboutFile.childImageSharp.gatsbyImageData}
+                />
               </Box>
             )}
+
             <Content
               data-testid='about-content'
               dangerouslySetInnerHTML={{ __html: post.html }}
