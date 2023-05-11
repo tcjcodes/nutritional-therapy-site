@@ -3,8 +3,8 @@ import React from 'react';
 
 const HomeHero = ({ background }) => (
   <Hero
-    isSize='large'
-    isColor='dark'
+    size='large'
+    color='dark'
     style={{
       marginTop: '1.25em',
       position: 'relative',
@@ -14,13 +14,13 @@ const HomeHero = ({ background }) => (
   >
     {background}
     <Hero.Body>
-      <Container hasTextAlign='centered'>
+      <Container textAlign='centered'>
         <div
           css={{
             marginBottom: '1.5rem',
           }}
         >
-          <Heading heading data-testid='landing-title' size={3}>
+          <Heading data-testid='landing-title' size={3}>
             Holistic Nutrition &amp; Wellness
           </Heading>
         </div>
@@ -36,7 +36,7 @@ const HomeHero = ({ background }) => (
             marginTop: '2.5rem',
           }}
         >
-          <Button href='/services/' isColor='dark'>
+          <Button href='/services/' color='dark'>
             Learn More
           </Button>
         </div>
