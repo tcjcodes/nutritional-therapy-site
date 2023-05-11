@@ -4,14 +4,12 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const StyledNavbarItem = ({ to, text, style, activeStyle }) => (
-  <Navbar.Item>
-    <Link
-      style={style}
-      activeStyle={activeStyle}
-      to={`/${to || text.toLowerCase()}`}
-    >
-      {text}
-    </Link>
+  <Navbar.Item
+    href={`/${to || text.toLowerCase()}`}
+    style={style}
+    activeStyle={activeStyle}
+    renderAs={({ href, ...otherProps }) => <Link {...otherProps} to={href} />}>
+    {text}
   </Navbar.Item>
 );
 
