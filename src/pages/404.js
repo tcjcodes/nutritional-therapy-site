@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 
 const NotFoundPage = () => (
   <Layout>
-    <Section hasTextAlign='centered'>
+    <Section textAlign='centered'>
       <h1 className='subtitle'>NOT FOUND</h1>
       <p>Page not found</p>
     </Section>
