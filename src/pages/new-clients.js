@@ -22,14 +22,14 @@ const NewClientsPage = ({ data }) => {
       <Section>
         <Helmet title={`${pageTitle} | ${siteTitle}`} />
         <Container>
-          <Columns isVCentered={true}>
-            <Columns.Column isSize={3} isOffset={1}>
+          <Columns vCentered>
+            <Columns.Column size={4} offset={1}>
               <Box>
                 <GatsbyImage image={imgFluid} alt='Sprout'
                              title='Photo by icon0.com from Pexels' />
               </Box>
             </Columns.Column>
-            <Columns.Column>
+            <Columns.Column desktop={{ size: 7 }}>
               <div css={{ paddingLeft: '2em' }}>
                 <PageHeader title={pageTitle} />
                 <Content>

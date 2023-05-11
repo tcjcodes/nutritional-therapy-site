@@ -12,7 +12,7 @@ class NotificationContainer extends React.Component {
       <div css={{ marginBottom: '1rem' }}>
         <Notification
           isHidden={!this.props.isShown}
-          isColor={this.props.isColor}
+          color={this.props.isColor}
         >
           <Button remove onClick={this.props.onDelete} />
           {this.props.children}

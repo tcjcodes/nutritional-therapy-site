@@ -32,7 +32,7 @@ const TestimonialsPage = ({ data }) => {
                 <Helmet title={`${pageTitle} | ${siteTitle}`}/>
                 <Container>
                     <PageHeader center title={pageTitle}/>
-                    <Columns isMultiline isVCentered={false}>
+                    <Columns isMultiline vCentered={false}>
                         <Columns.Column {...colSizes} desktop={{ ...colSizes.desktop, offset: 1 }}>
                             {katieFluid && (
                                 <GatsbyImage
