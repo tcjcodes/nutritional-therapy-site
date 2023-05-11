@@ -24,18 +24,19 @@ export default function LabTemplate({ data }) {
       <Section className='section'>
         <Helmet title={`${title} Labs | ${siteTitle}`} />
         <Container style={{ maxWidth: 960 }}>
-          <Columns isVCentered isCentered>
+          <Columns vCentered isCentered>
             <Columns.Column
-              isSize={{ desktop: 6, mobile: 12 }}
-              style={{ marginBottom: '1em' }}
+              desktop={{ size: 6 }}
+              mobile={{ size: 12 }}
+              css={{ marginBottom: '1em' }}
             >
               <Box
-                style={{
+                css={{
                   margin: '0 0.5rem 0.5rem 0',
                 }}
               >
                 <Image
-                  style={{
+                  css={{
                     width: '100%',
                     height: '100%',
                     border: '1px solid gainsboro',
@@ -46,7 +47,7 @@ export default function LabTemplate({ data }) {
               </Box>
             </Columns.Column>
 
-            <Columns.Column isSize={{ desktop: 6, mobile: 12 }}>
+            <Columns.Column size={{ desktop: 6, mobile: 12 }}>
               <div>
                 <BreadcrumbLink to={`/labs`} text={`other lab tests`} />
 

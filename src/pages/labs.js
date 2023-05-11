@@ -1,4 +1,4 @@
-import { Columns, Section } from 'react-bulma-components';
+import { Columns, Container, Section } from 'react-bulma-components';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -43,12 +43,10 @@ const LabsTemplate = ({ data }) => {
               {labs.map(({ id, slug, image, title }) => (
                 <Columns.Column
                   key={id}
-                  hasTextAlign='center'
-                  isSize={{
-                    desktop: 3,
-                    tablet: 6,
-                    mobile: 12,
-                  }}
+                  textAlign='center'
+                  desktop={{ size: 3 }}
+                  tablet={{ size: 6 }}
+                  mobile={{ size: 12 }}
                 >
                   <LabCard slug={slug} thumbnail={image} title={title} />
                 </Columns.Column>
