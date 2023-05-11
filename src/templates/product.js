@@ -33,7 +33,7 @@ export default function ProductTemplate({ data }) {
         <Container style={{ maxWidth: 960 }}>
           <Columns isCentered>
             <Columns.Column
-              isSize={{ desktop: 6, mobile: 12 }}
+              size={{ desktop: 6, mobile: 12 }}
               style={{ marginBottom: '1em' }}
             >
               <Box
@@ -53,7 +53,7 @@ export default function ProductTemplate({ data }) {
               </Box>
             </Columns.Column>
 
-            <Columns.Column isSize={{ desktop: 6, mobile: 12 }}>
+            <Columns.Column size={{ desktop: 6, mobile: 12 }}>
               <div>
                 <BreadcrumbLink
                   to={`/products`}
@@ -72,7 +72,7 @@ export default function ProductTemplate({ data }) {
                     ...secondaryFont,
                     marginBottom: '0.75rem',
                   }}
-                  isSize={2}
+                  size={2}
                   hasTextColor='dark'
                 >
                   {title}
@@ -94,9 +94,10 @@ export default function ProductTemplate({ data }) {
                   </small>
                 )}
               </Content>
+
               <Button
-                style={{ margin: '0' }}
-                isColor='primary'
+                css={{ margin: '0' }}
+                color='primary'
                 href={hyperlink}
                 target='_blank'
                 rel='noopener noreferrer'
