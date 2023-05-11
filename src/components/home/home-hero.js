@@ -1,5 +1,6 @@
 import { Button, Container, Heading, Hero } from 'react-bulma-components';
 import React from 'react';
+import Link from 'gatsby-link';
 
 const HomeHero = ({ background }) => (
   <Hero
@@ -36,7 +37,9 @@ const HomeHero = ({ background }) => (
             marginTop: '2.5rem',
           }}
         >
-          <Button href='/services/' color='dark'>
+          <Button renderAs={({ href, ...otherProps }) => <Link {...otherProps}
+                                                               to={href} />}
+                  href='/services/' color='dark'>
             Learn More
           </Button>
         </div>
