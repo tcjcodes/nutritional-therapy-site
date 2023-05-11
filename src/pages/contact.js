@@ -24,9 +24,9 @@ const ContactPage = ({ data }) => {
         <Helmet title={`Contact | ${siteTitle}`} />
         <Container>
           <PageHeader center title='Contact' />
-          <Columns isMultiline={true}>
+          <Columns multiline>
             {/*TODO: Re-add when API key hidden
-            <Columns.Column isHidden="mobile" isSize={10} isOffset={1}>
+            <Columns.Column isHidden="mobile" size={10} offset={1}>
               <Box style={{ marginBottom: "2em", minHeight: "350px" }}>
                 <OfficeMap
                   zoom={15}
@@ -50,14 +50,14 @@ const ContactPage = ({ data }) => {
                 </OfficeMap>
               </Box>
             </Columns.Column>*/}
-            <Columns.Column isSize={7} isOffset={1}
-                            style={{ paddingRight: '2rem' }}>
-              <Heading>Send a message</Heading>
+            <Columns.Column size={7} offset={1}
+                            css={{ paddingRight: '2rem' }}>
+              <Heading heading>Send a message</Heading>
               <ContactForm />
             </Columns.Column>
-            <Columns.Column isSize={3}>
+            <Columns.Column size={3}>
               <div>
-                <Heading>new clients</Heading>
+                <Heading heading>new clients</Heading>
                 <p>
                   I provide a free 20 minute consultation for new clients. Send
                   a message with the form to request an appointment.

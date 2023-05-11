@@ -7,11 +7,10 @@ import NotificationContainer from './notification-container';
 const {
   Control,
   Field,
-  FieldBody,
-  FieldLabel,
   Input,
+  Label,
   Select,
-  TextArea,
+  Textarea,
 } = Form;
 
 const formId = 'contact';
@@ -82,7 +81,7 @@ class ContactForm extends React.Component {
           <NotificationContainer
             isShown={this.state.status === STATUS_SUCCESS}
             onDelete={this.handleDeleteNotification}
-            isColor='light'
+            color='light'
           >
             <StyledIcon name='paper-plane' />
             <strong>Sent!</strong> Thank you, I will get back to you shortly.
@@ -90,7 +89,7 @@ class ContactForm extends React.Component {
           <NotificationContainer
             isShown={this.state.status === STATUS_ERROR}
             onDelete={this.handleDeleteNotification}
-            isColor='light'
+            color='dark'
           >
             <StyledIcon name='exclamation-triangle' />
             <strong>Oh no!</strong> Something went wrong. Please try again later
@@ -112,12 +111,13 @@ class ContactForm extends React.Component {
           <input type='hidden' name='form-name' value='contact' />
 
           <Field>
-            <FieldBody>
+            <Field.Body>
               <Field isGrouped>
-                <Control isExpanded hasIcons='right'>
+                <Control isExpanded>
+                  {/*<Icon align='right' />*/}
                   <Input
                     name='firstName'
-                    isSize='small'
+                    size='small'
                     required
                     placeholder='First Name*'
                   />
@@ -127,20 +127,20 @@ class ContactForm extends React.Component {
                 <Control hasIcons={['right']}>
                   <Input
                     name='lastName'
-                    isSize='small'
+                    size='small'
                     required
                     placeholder='Last Name*'
                   />
                 </Control>
               </Field>
-            </FieldBody>
+            </Field.Body>
           </Field>
 
           <Field>
             <Control>
               <Input
                 name='email'
-                isSize='small'
+                size='small'
                 type='email'
                 required
                 placeholder='E-mail Address*'
@@ -154,7 +154,7 @@ class ContactForm extends React.Component {
                 defaultValue=''
                 name='subject'
                 required
-                isSize='small'
+                size='small'
                 onChange={this.handleSubjectChange}
               >
                 <option value='' disabled>
@@ -174,7 +174,7 @@ class ContactForm extends React.Component {
               <Control>
                 <Input
                   name={FIELD_NAME_OTHER_SUBJ}
-                  isSize='small'
+                  size='small'
                   type='text'
                   placeholder='Subject'
                 />
@@ -183,36 +183,36 @@ class ContactForm extends React.Component {
           )}
 
           <Field>
-            <FieldLabel />
-            <FieldBody>
+            <Label />
+            <Field.Body>
               <Field>
                 <Control>
-                  <TextArea
+                  <Textarea
                     name='message'
-                    isSize='small'
+                    size='small'
                     placeholder='Message*'
                     required
                     rows='5'
                   />
                 </Control>
               </Field>
-            </FieldBody>
+            </Field.Body>
           </Field>
 
           <div data-netlify-recaptcha='true'></div>
 
           <Field>
-            <FieldBody>
+            <Field.Body>
               <Field>
                 <Control>
-                  <Button type='submit' isColor='primary'
+                  <Button type='submit' color='primary'
                           disabled={this.state.status === STATUS_ERROR}>
                     <StyledIcon name='envelope' />
                     submit
                   </Button>
                 </Control>
               </Field>
-            </FieldBody>
+            </Field.Body>
           </Field>
         </form>
       </div>
