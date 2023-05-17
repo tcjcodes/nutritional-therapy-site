@@ -3,6 +3,17 @@
   "description": "Official website for Willow Grace Wellness",
   "version": "2.1.0",
   "author": "Trina Castillo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcjcodes/nutritional-therapy-site"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "bugs": {
+    "url": "https://github.com/tcjcodes/nutritional-therapy-site/issues"
+  },
+  "homepage": "https://github.com/tcjcodes/nutritional-therapy-site#readme",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -45,9 +56,6 @@
     "react-load-script": "0.0.6",
     "react-parallax": "^2.2.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "main": "n/a",
   "devDependencies": {
     "@testing-library/cypress": "^8.0.2",
