@@ -3,12 +3,13 @@ import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const StyledNavbarItem = ({ to, text, style, activeStyle }) => (
+const StyledNavbarItem = ({ to, text, ...otherProps }) => (
   <Navbar.Item
     href={`/${to || text.toLowerCase()}`}
-    style={style}
-    activeStyle={activeStyle}
-    renderAs={({ href, ...otherProps }) => <Link {...otherProps} to={href} />}>
+    renderAs={({ href, ...otherRenderProps }) => (
+      <Link {...otherRenderProps} to={href} />
+    )}
+    {...otherProps}>
     {text}
   </Navbar.Item>
 );

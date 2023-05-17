@@ -8,12 +8,19 @@ import StyledNavbarItem from './styled-navbar-item';
 import TabletNavbarBrand from './tablet-navbar-brand';
 
 const linkProps = {
-  style: {
-    color: colorBrownDark,
-    borderBottom: `2px solid transparent`,
-  },
-  activeStyle: {
-    color: colorBrownDark,
+  css: {
+    '&&': {
+      color: colorBrownDark,
+      borderBottom: `0px`,
+      '&:hover': {
+        backgroundColor: 'transparent',
+        color: colorBrownDark,
+      },
+      '&:active': {
+        backgroundColor: 'transparent',
+        color: colorBrownDark,
+      },
+    },
   },
 };
 
@@ -69,11 +76,7 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
             to='new-clients'
           />
           <StyledNavbarItem {...linkProps} text='Labs' to='labs' />
-          {/*<NavbarDropdownItem*/}
-          {/*  {...linkProps}*/}
-          {/*  text="Clients"*/}
-          {/*  items={clientsNavItems}*/}
-          {/*/>*/}
+
           <StyledNavbarItem {...linkProps} text='Contact' />
         </Navbar.Menu>
       </Navbar>

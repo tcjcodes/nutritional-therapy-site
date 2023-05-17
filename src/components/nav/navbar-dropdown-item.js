@@ -6,29 +6,31 @@ import React from 'react';
 const NavbarDropdownItem = ({ text, to, items, style, activeStyle }) => (
   <Navbar.Item
     data-testid={`nav-dropdown-menu--${text}`}
-    hasDropdown
-    isHoverable
+    arrowless
+    hoverable
   >
-    <Link
+    <Navbar.Link
       className='navbar-link'
-      to={`/${to || items[0].to}`}
-      style={style}
+      href={`/${to || items[0].to}`}
+      css={style}
       activeStyle={activeStyle}
-    >
+      renderAs={({ href, ...otherProps }) => <Link {...otherProps}
+                                                   to={href} />}>
       {text}
-    </Link>
+    </Navbar.Link>
 
     <Navbar.Dropdown>
       {items.map((item) => (
-        <Navbar.Item key={item.id || item.to}>
-          <Link
-            data-testid={`nav-dropdown-link--${item.id}`}
-            to={`/${item.to}`}
-            style={style}
-            activeStyle={activeStyle}
-          >
-            {item.text}
-          </Link>
+        <Navbar.Item key={item.id || item.to}
+                     arrowless
+                     data-testid={`nav-dropdown-link--${item.id}`}
+                     href={`/${item.to}`}
+                     css={style}
+                     activeStyle={activeStyle}
+                     renderAs={({ href, ...otherProps }) =>
+                       <Link {...otherProps}
+                             to={href} />}>
+          {item.text}
         </Navbar.Item>
       ))}
     </Navbar.Dropdown>
