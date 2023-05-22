@@ -7,34 +7,35 @@ import bgImg from '../img/noisy/noisy.png';
 import favicon from '../img/favicon.png';
 import Navigation from './nav/navigation';
 import PageFooter from '../components/page-footer';
+import { SEO } from './shared/SEO';
 
 const pageQuery = graphql`query LayoutQuery {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-  allMarkdownRemark(
-    filter: {fields: {categoryKey: {ne: null}}, frontmatter: {templateKey: {eq: "product-category"}}}
-    sort: {fields: [frontmatter___title], order: ASC}
-  ) {
-    edges {
-      node {
-        id
-        frontmatter {
-          name
+    site {
+        siteMetadata {
+            title
         }
-        fields {
-          categoryKey
+    }
+    allMarkdownRemark(
+        filter: {fields: {categoryKey: {ne: null}}, frontmatter: {templateKey: {eq: "product-category"}}}
+        sort: {fields: [frontmatter___title], order: ASC}
+    ) {
+        edges {
+            node {
+                id
+                frontmatter {
+                    name
+                }
+                fields {
+                    categoryKey
+                }
+            }
         }
-      }
     }
-  }
-  file(relativePath: {eq: "rwp_seal.png"}) {
-    childImageSharp {
-      gatsbyImageData(width: 128, layout: FIXED)
+    file(relativePath: {eq: "rwp_seal.png"}) {
+        childImageSharp {
+            gatsbyImageData(width: 128, layout: FIXED)
+        }
     }
-  }
 }`;
 
 const Layout = ({ children }) => {
@@ -54,8 +55,8 @@ const Layout = ({ children }) => {
             }}
           >
             <Helmet>
-              <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-              <title>{title}</title>
+              <link rel='icon' type='image/png' href={favicon} sizes='16x16' />
+              <SEO />
             </Helmet>
             <Navigation categoryNodes={edges} title={title} />
             <div>{children}</div>

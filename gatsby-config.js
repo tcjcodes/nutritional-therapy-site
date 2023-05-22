@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Willow Grace Wellness`,
+    description: 'At Willow Grace Wellness, we offer services around holistic nutrition and wellness from Boise, ID. My specialties include FNTP, RWP, APN, and Family Constellation',
+    siteUrl: 'https://www.boisewillowgracewellness.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
