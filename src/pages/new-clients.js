@@ -93,7 +93,7 @@ export const query = graphql`query NewClientsPageQuery {
     }
     file(relativePath: {eq: "dirt-gardening-green-1214394.jpg"}) {
         childImageSharp {
-            gatsbyImageData(width: 600, layout: CONSTRAINED)
+            gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
     }
 }`;

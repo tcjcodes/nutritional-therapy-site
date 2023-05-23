@@ -1,9 +1,10 @@
-import { Button, Container, Content, Section } from 'react-bulma-components';
+import { Container, Content, Section } from 'react-bulma-components';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import PageHeader from '../components/page-header';
+import ButtonLink from '../components/shared/button-link';
 
 const ServicesPage = ({ data }) => {
   const { title } = data.site.siteMetadata;
@@ -25,13 +26,9 @@ const ServicesPage = ({ data }) => {
           </div>
 
           <div css={{ textAlign: 'center' }}>
-            <Button color='primary' href='/contact/'>
-              <span
-                className='fa fa-calendar'
-                css={{ marginRight: `0.5rem` }}
-              />
+            <ButtonLink color='primary' href='/contact/' faIcon='calendar'>
               Request appointment
-            </Button>
+            </ButtonLink>
           </div>
         </Container>
       </Section>

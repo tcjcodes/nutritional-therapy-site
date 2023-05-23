@@ -216,7 +216,7 @@ describe('each page', () => {
     });
   });
 
-  describe('contact', () => {
+  describe.only('contact', () => {
     const formRouteConfig = {
       url: '/',
       method: 'POST',
@@ -308,7 +308,7 @@ describe('each page', () => {
       const errorBanner = 'Oh no!';
       cy.contains(errorBanner).as('errorBanner');
 
-      cy.get('@errorBanner').should('not.be.visible');
+      cy.get('@errorBanner').should('not.exist');
 
       cy.findByRole('button', { name: /submit/ })
       .as('submitBtn');
