@@ -24,6 +24,8 @@ All Netlify CMS content is under `/static/admin`.
 Publish content via Netlify CMS
 Go to `/admin` on the deployed site.
 
+Logins are managed via [Netlify Identity](https://app.netlify.com/sites/boisewgw/configuration/identity) and gated via GitHub Personal Access Tokens.
+
 ## Integrations
 - [Gatsby](https://www.gatsbyjs.com/gatsby-4/)
 - [Cypress Cloud](https://cloud.cypress.io)
