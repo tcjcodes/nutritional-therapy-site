@@ -1,12 +1,11 @@
 import {
   Box,
-  Column,
   Columns,
   Container,
   Content,
   Image,
   Section,
-} from 'bloomer';
+} from 'react-bulma-components';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -22,11 +21,11 @@ export default function LabTemplate({ data }) {
 
   return (
     <Layout>
-      <Section className="section">
+      <Section className='section'>
         <Helmet title={`${title} Labs | ${siteTitle}`} />
         <Container style={{ maxWidth: 960 }}>
           <Columns isVCentered isCentered>
-            <Column
+            <Columns.Column
               isSize={{ desktop: 6, mobile: 12 }}
               style={{ marginBottom: '1em' }}
             >
@@ -45,15 +44,15 @@ export default function LabTemplate({ data }) {
                   alt={title}
                 />
               </Box>
-            </Column>
+            </Columns.Column>
 
-            <Column isSize={{ desktop: 6, mobile: 12 }}>
+            <Columns.Column isSize={{ desktop: 6, mobile: 12 }}>
               <div>
                 <BreadcrumbLink to={`/labs`} text={`other lab tests`} />
 
                 <PageHeader center title={title} />
               </div>
-            </Column>
+            </Columns.Column>
           </Columns>
 
           <div>
@@ -66,22 +65,22 @@ export default function LabTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-  query LabPage($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
+    query LabPage($slug: String!) {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            html
+            fields {
+                slug
+            }
+            frontmatter {
+                title
+                link
+                image
+            }
+        }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        link
-        image
-      }
-    }
-  }
 `;

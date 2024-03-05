@@ -1,6 +1,10 @@
 import React from 'react';
-import {
-  Button,
+import { Button, Form } from 'react-bulma-components';
+import ExternalLink from '../shared/external-link';
+import StyledIcon from '../shared/styled-icon';
+import NotificationContainer from './notification-container';
+
+const {
   Control,
   Field,
   FieldBody,
@@ -8,10 +12,7 @@ import {
   Input,
   Select,
   TextArea,
-} from 'bloomer';
-import ExternalLink from '../shared/external-link';
-import StyledIcon from '../shared/styled-icon';
-import NotificationContainer from './notification-container';
+} = Form;
 
 const formId = 'contact';
 const email = 'caroline@boisewgw.com';
@@ -60,14 +61,14 @@ class ContactForm extends React.Component {
         ...data,
       }).toString(),
     })
-      .then(() => {
-        this.setState({ status: STATUS_SUCCESS });
-        current.reset();
-      })
-      .catch((error) => {
-        this.setState({ status: STATUS_ERROR });
-        console.error('form submit error', error);
-      });
+    .then(() => {
+      this.setState({ status: STATUS_SUCCESS });
+      current.reset();
+    })
+    .catch((error) => {
+      this.setState({ status: STATUS_ERROR });
+      console.error('form submit error', error);
+    });
   }
 
   handleDeleteNotification() {
@@ -81,17 +82,17 @@ class ContactForm extends React.Component {
           <NotificationContainer
             isShown={this.state.status === STATUS_SUCCESS}
             onDelete={this.handleDeleteNotification}
-            isColor="light"
+            isColor='light'
           >
-            <StyledIcon name="paper-plane" />
+            <StyledIcon name='paper-plane' />
             <strong>Sent!</strong> Thank you, I will get back to you shortly.
           </NotificationContainer>
           <NotificationContainer
             isShown={this.state.status === STATUS_ERROR}
             onDelete={this.handleDeleteNotification}
-            isColor="light"
+            isColor='light'
           >
-            <StyledIcon name="exclamation-triangle" />
+            <StyledIcon name='exclamation-triangle' />
             <strong>Oh no!</strong> Something went wrong. Please try again later
             or contact me directly at{' '}
             <ExternalLink href={`mailto:${email}`}>{email}</ExternalLink>.
@@ -102,33 +103,33 @@ class ContactForm extends React.Component {
           id={formId}
           name={formId}
           onSubmit={this.handleSubmit}
-          method="post"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
+          method='post'
+          data-netlify='true'
+          netlify-honeypot='bot-field'
+          data-netlify-recaptcha='true'
           ref={this.formRef}
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type='hidden' name='form-name' value='contact' />
 
           <Field>
             <FieldBody>
               <Field isGrouped>
-                <Control isExpanded hasIcons="right">
+                <Control isExpanded hasIcons='right'>
                   <Input
-                    name="firstName"
-                    isSize="small"
+                    name='firstName'
+                    isSize='small'
                     required
-                    placeholder="First Name*"
+                    placeholder='First Name*'
                   />
                 </Control>
               </Field>
               <Field>
                 <Control hasIcons={['right']}>
                   <Input
-                    name="lastName"
-                    isSize="small"
+                    name='lastName'
+                    isSize='small'
                     required
-                    placeholder="Last Name*"
+                    placeholder='Last Name*'
                   />
                 </Control>
               </Field>
@@ -138,11 +139,11 @@ class ContactForm extends React.Component {
           <Field>
             <Control>
               <Input
-                name="email"
-                isSize="small"
-                type="email"
+                name='email'
+                isSize='small'
+                type='email'
                 required
-                placeholder="E-mail Address*"
+                placeholder='E-mail Address*'
               />
             </Control>
           </Field>
@@ -150,17 +151,17 @@ class ContactForm extends React.Component {
           <Field>
             <Control>
               <Select
-                defaultValue=""
-                name="subject"
+                defaultValue=''
+                name='subject'
                 required
-                isSize="small"
+                isSize='small'
                 onChange={this.handleSubjectChange}
               >
-                <option value="" disabled>
+                <option value='' disabled>
                   Subject*
                 </option>
-                <option value="Questions">Questions</option>
-                <option value="Request Free Consultation">
+                <option value='Questions'>Questions</option>
+                <option value='Request Free Consultation'>
                   Request Free Consultation
                 </option>
                 <option value={FIELD_NAME_OTHER_SUBJ}>Other</option>
@@ -173,9 +174,9 @@ class ContactForm extends React.Component {
               <Control>
                 <Input
                   name={FIELD_NAME_OTHER_SUBJ}
-                  isSize="small"
-                  type="text"
-                  placeholder="Subject"
+                  isSize='small'
+                  type='text'
+                  placeholder='Subject'
                 />
               </Control>
             </Field>
@@ -187,25 +188,26 @@ class ContactForm extends React.Component {
               <Field>
                 <Control>
                   <TextArea
-                    name="message"
-                    isSize="small"
-                    placeholder="Message*"
+                    name='message'
+                    isSize='small'
+                    placeholder='Message*'
                     required
-                    rows="5"
+                    rows='5'
                   />
                 </Control>
               </Field>
             </FieldBody>
           </Field>
 
-          <div data-netlify-recaptcha="true"></div>
+          <div data-netlify-recaptcha='true'></div>
 
           <Field>
             <FieldBody>
               <Field>
                 <Control>
-                  <Button type="submit" isColor="primary" disabled={this.state.status === STATUS_ERROR}>
-                    <StyledIcon name="envelope" />
+                  <Button type='submit' isColor='primary'
+                          disabled={this.state.status === STATUS_ERROR}>
+                    <StyledIcon name='envelope' />
                     submit
                   </Button>
                 </Control>
@@ -217,6 +219,7 @@ class ContactForm extends React.Component {
     );
   }
 }
+
 ContactForm.propTypes = {};
 
 export default ContactForm;

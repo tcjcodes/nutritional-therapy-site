@@ -1,21 +1,22 @@
 import React from 'react';
 import { secondaryFont } from '../utils/fonts';
-import { Title } from 'bloomer';
+import { Heading } from 'react-bulma-components';
 
 const PageHeader = ({ title, center }) => (
   <div
-    data-testid="page-header"
+    data-testid='page-header'
     css={{ textAlign: center ? 'center' : 'inherit' }}
   >
-    <Title
-      isSize={2}
+    <Heading
+      heading
+      size={2}
       css={{
         ...secondaryFont,
         marginBottom: '0.75rem',
       }}
     >
       {title}
-    </Title>
+    </Heading>
   </div>
 );
 

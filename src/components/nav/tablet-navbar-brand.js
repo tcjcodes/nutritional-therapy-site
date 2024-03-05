@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavbarBrand, NavbarBurger, NavbarItem } from 'bloomer';
+import { Navbar } from 'react-bulma-components';
 import BrandItem from './brand-item';
 
 const TabletNavbarBrand = ({ title, isOpen, onMenuClick }) => (
-  <NavbarBrand data-testid="tablet-brand" isHidden="desktop">
-    <NavbarBurger
+  <Navbar.Brand data-testid='tablet-brand' isHidden='desktop'>
+    <Navbar.Burger
       style={{ marginRight: 'auto', marginLeft: 'inherit' }}
       isActive={isOpen}
       onClick={onMenuClick}
     />
 
-    <NavbarItem
+    <Navbar.Item
       style={{ marginRight: 'auto', maxWidth: '90%', lineHeight: '80%' }}
     >
       <BrandItem size={2} title={title} />
-    </NavbarItem>
-  </NavbarBrand>
+    </Navbar.Item>
+  </Navbar.Brand>
 );
 
 TabletNavbarBrand.propTypes = {

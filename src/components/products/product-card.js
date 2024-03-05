@@ -1,4 +1,4 @@
-import { Box, Title } from 'bloomer';
+import { Box, Heading } from 'react-bulma-components';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -63,16 +63,16 @@ const excerptStyles = {
 };
 
 const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
-  <Link data-testid="fav-card-link" to={slug} css={cardWrapperStyles}>
+  <Link data-testid='fav-card-link' to={slug} css={cardWrapperStyles}>
     <Box style={{ padding: '0.5em' }}>
       <div css={cardImageStyles(thumbnail)} />
-      <div data-testid="fav-card-overlay" css={cardOverlayStyles}>
+      <div data-testid='fav-card-overlay' css={cardOverlayStyles}>
         <div css={{ width: '100%' }}>
-          <Title style={{ margin: 0 }} isSize={6}>
+          <Heading heading css={{ margin: 0 }} size={6}>
             <Dotdotdot clamp={3}>
               <p css={headingStyles}>{title}</p>
             </Dotdotdot>
-          </Title>
+          </Heading>
         </div>
 
         <div css={titleBorderStyles} />

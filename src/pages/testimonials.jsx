@@ -1,6 +1,12 @@
-import { Box, Column, Columns, Container, Content, Section } from 'bloomer';
+import {
+  Box,
+  Columns,
+  Container,
+  Content,
+  Section,
+} from 'react-bulma-components';
 import { graphql } from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
@@ -27,7 +33,7 @@ const TestimonialsPage = ({ data }) => {
                 <Container>
                     <PageHeader center title={pageTitle}/>
                     <Columns isMultiline isVCentered={false}>
-                        <Column isOffset={{ desktop: 1 }} isSize={colSize}>
+                        <Columns.Column isOffset={{ desktop: 1 }} isSize={colSize}>
                             {katieFluid && (
                                 <GatsbyImage
                                     image={katieFluid}
@@ -90,9 +96,9 @@ const TestimonialsPage = ({ data }) => {
                                     <p>&mdash; Shelly J.</p>
                                 </Testimonial>
                             </Box>
-                        </Column>
+                        </Columns.Column>
 
-                        <Column isSize={colSize}>
+                        <Columns.Column isSize={colSize}>
                             {crystalFluid && (
                                 <GatsbyImage
                                     image={crystalFluid}
@@ -124,7 +130,7 @@ const TestimonialsPage = ({ data }) => {
                                     <p>&mdash; Crystal D.</p>
                                 </Testimonial>
                             </Box>
-                        </Column>
+                        </Columns.Column>
                     </Columns>
                 </Container>
             </Section>

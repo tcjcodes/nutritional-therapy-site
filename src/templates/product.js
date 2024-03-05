@@ -1,14 +1,13 @@
 import {
   Box,
   Button,
-  Column,
   Columns,
   Container,
   Content,
+  Heading,
   Image,
   Section,
-  Title,
-} from 'bloomer';
+} from 'react-bulma-components';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -33,7 +32,7 @@ export default function ProductTemplate({ data }) {
         <Helmet title={`${category} ${pageTitle} | ${siteTitle}`} />
         <Container style={{ maxWidth: 960 }}>
           <Columns isCentered>
-            <Column
+            <Columns.Column
               isSize={{ desktop: 6, mobile: 12 }}
               style={{ marginBottom: '1em' }}
             >
@@ -52,9 +51,9 @@ export default function ProductTemplate({ data }) {
                   alt={title}
                 />
               </Box>
-            </Column>
+            </Columns.Column>
 
-            <Column isSize={{ desktop: 6, mobile: 12 }}>
+            <Columns.Column isSize={{ desktop: 6, mobile: 12 }}>
               <div>
                 <BreadcrumbLink
                   to={`/products`}
@@ -67,7 +66,7 @@ export default function ProductTemplate({ data }) {
                   arrowDirection='left'
                 />
 
-                <Title
+                <Heading
                   data-testid='product-title'
                   style={{
                     ...secondaryFont,
@@ -77,7 +76,7 @@ export default function ProductTemplate({ data }) {
                   hasTextColor='dark'
                 >
                   {title}
-                </Title>
+                </Heading>
               </div>
               <Content
                 data-testid='affiliate-disclaimer'
@@ -101,12 +100,12 @@ export default function ProductTemplate({ data }) {
                 href={hyperlink}
                 target='_blank'
                 rel='noopener noreferrer'
-                render={props => <OutboundLink {...props} />}
+                renderAs={props => <OutboundLink {...props} />}
               >
                 <StyledIcon name='external-link' />
                 Buy Item
               </Button>
-            </Column>
+            </Columns.Column>
           </Columns>
 
           <Content

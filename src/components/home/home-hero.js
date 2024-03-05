@@ -1,10 +1,10 @@
-import { Button, Container, Hero, HeroBody, Title, Subtitle } from 'bloomer';
+import { Button, Container, Heading, Hero } from 'react-bulma-components';
 import React from 'react';
 
 const HomeHero = ({ background }) => (
   <Hero
-    isSize="large"
-    isColor="dark"
+    isSize='large'
+    isColor='dark'
     style={{
       marginTop: '1.25em',
       position: 'relative',
@@ -13,35 +13,35 @@ const HomeHero = ({ background }) => (
     }}
   >
     {background}
-    <HeroBody>
-      <Container hasTextAlign="centered">
+    <Hero.Body>
+      <Container hasTextAlign='centered'>
         <div
           css={{
             marginBottom: '1.5rem',
           }}
         >
-          <Title data-testid="landing-title" isSize={3}>
+          <Heading heading data-testid='landing-title' size={3}>
             Holistic Nutrition &amp; Wellness
-          </Title>
+          </Heading>
         </div>
-        <Subtitle data-testid="landing-subtitle" isSize={5}>
+        <Heading subtitle data-testid='landing-subtitle' size={5}>
           Practicing Functional Nutritional Therapy,
           <br />
           Applied Psycho-Neurobiology,
           <br />
           &amp; Family Constellation
-        </Subtitle>
+        </Heading>
         <div
           css={{
             marginTop: '2.5rem',
           }}
         >
-          <Button href="/services/" isColor="dark">
+          <Button href='/services/' isColor='dark'>
             Learn More
           </Button>
         </div>
       </Container>
-    </HeroBody>
+    </Hero.Body>
   </Hero>
 );
 

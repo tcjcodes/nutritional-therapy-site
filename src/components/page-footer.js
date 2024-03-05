@@ -1,4 +1,4 @@
-import { Container, Footer } from 'bloomer';
+import { Container, Footer } from 'react-bulma-components';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';

@@ -1,16 +1,16 @@
-import { NavbarDropdown, NavbarItem } from 'bloomer';
+import { Navbar } from 'react-bulma-components';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const NavbarDropdownItem = ({ text, to, items, style, activeStyle }) => (
-  <NavbarItem
+  <Navbar.Item
     data-testid={`nav-dropdown-menu--${text}`}
     hasDropdown
     isHoverable
   >
     <Link
-      className="navbar-link"
+      className='navbar-link'
       to={`/${to || items[0].to}`}
       style={style}
       activeStyle={activeStyle}
@@ -18,9 +18,9 @@ const NavbarDropdownItem = ({ text, to, items, style, activeStyle }) => (
       {text}
     </Link>
 
-    <NavbarDropdown>
+    <Navbar.Dropdown>
       {items.map((item) => (
-        <NavbarItem key={item.id || item.to}>
+        <Navbar.Item key={item.id || item.to}>
           <Link
             data-testid={`nav-dropdown-link--${item.id}`}
             to={`/${item.to}`}
@@ -29,10 +29,10 @@ const NavbarDropdownItem = ({ text, to, items, style, activeStyle }) => (
           >
             {item.text}
           </Link>
-        </NavbarItem>
+        </Navbar.Item>
       ))}
-    </NavbarDropdown>
-  </NavbarItem>
+    </Navbar.Dropdown>
+  </Navbar.Item>
 );
 
 NavbarDropdownItem.propTypes = {

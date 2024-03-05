@@ -1,10 +1,10 @@
-import { NavbarItem } from 'bloomer';
+import { Navbar } from 'react-bulma-components';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const StyledNavbarItem = ({ to, text, style, activeStyle }) => (
-  <NavbarItem>
+  <Navbar.Item>
     <Link
       style={style}
       activeStyle={activeStyle}
@@ -12,7 +12,7 @@ const StyledNavbarItem = ({ to, text, style, activeStyle }) => (
     >
       {text}
     </Link>
-  </NavbarItem>
+  </Navbar.Item>
 );
 
 StyledNavbarItem.propTypes = {

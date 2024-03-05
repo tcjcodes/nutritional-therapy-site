@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Delete, Notification } from 'bloomer';
+import { Button, Notification } from 'react-bulma-components';
 
 class NotificationContainer extends React.Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class NotificationContainer extends React.Component {
           isHidden={!this.props.isShown}
           isColor={this.props.isColor}
         >
-          <Delete onClick={this.props.onDelete} />
+          <Button remove onClick={this.props.onDelete} />
           {this.props.children}
         </Notification>
       </div>

@@ -1,11 +1,11 @@
-import { Heading } from 'bloomer';
+import { Heading } from 'react-bulma-components';
 import React from 'react';
 import { serifFont } from '../../utils/fonts';
 import { colorBrown } from '../../utils/theme-variables';
 
 const ProductCategoryHeading = ({ children }) => (
   <Heading
-    hasTextAlign="centered"
+    hasTextAlign='centered'
     style={{
       ...serifFont,
       lineHeight: '120%',

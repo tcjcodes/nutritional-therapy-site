@@ -1,4 +1,10 @@
-import { Box, Column, Columns, Container, Content, Section } from 'bloomer';
+import {
+  Box,
+  Columns,
+  Container,
+  Content,
+  Section,
+} from 'react-bulma-components';
 import Link from 'gatsby-link';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -17,13 +23,13 @@ const NewClientsPage = ({ data }) => {
         <Helmet title={`${pageTitle} | ${siteTitle}`} />
         <Container>
           <Columns isVCentered={true}>
-            <Column isSize={3} isOffset={1}>
+            <Columns.Column isSize={3} isOffset={1}>
               <Box>
                 <GatsbyImage image={imgFluid} alt='Sprout'
                              title='Photo by icon0.com from Pexels' />
               </Box>
-            </Column>
-            <Column>
+            </Columns.Column>
+            <Columns.Column>
               <div css={{ paddingLeft: '2em' }}>
                 <PageHeader title={pageTitle} />
                 <Content>
@@ -69,7 +75,7 @@ const NewClientsPage = ({ data }) => {
                   </div>
                 </Content>
               </div>
-            </Column>
+            </Columns.Column>
           </Columns>
         </Container>
       </Section>
