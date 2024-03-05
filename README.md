@@ -14,8 +14,10 @@ This project is deployed on push.
 GA4 will only work in this mode.
 
 ### Test
-`npm run develop`
-`npm run cy:open`
+1. Start the server: `npm run develop`
+1. Start Cypress test runner for individual runs: `npm run cy:open`
+
+Integration and e2e tests are built with [cypress](https://docs.cypress.io/) under the cypress/ folder. 
 
 ## Content 
 
