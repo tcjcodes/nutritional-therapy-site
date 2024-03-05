@@ -163,7 +163,7 @@ describe('each page', () => {
     cy.findAllByTestId('lab-card').should('have.length.gte', 1);
   });
 
-  describe.only('favorites pages', () => {
+  describe('favorites pages', () => {
     it('renders favorites page that navigates to item page', () => {
       // test(favorites page)
       cy.visit('/products');
@@ -207,7 +207,7 @@ describe('each page', () => {
 
       verifyPageHeaderContains('Favorite ');
       cy.findByTestId('fav-category-description').should('be.visible');
-      cy.contains('Back to all')
+      cy.contains('other favorites')
       .should('have.attr', 'href')
       .and('eq', '/products/');
       cy.findAllByTestId('fav-card-link')
