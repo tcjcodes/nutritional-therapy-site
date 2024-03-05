@@ -22,9 +22,9 @@ balanced state.
 
 ### Follow Up for Nutritional Consultation
 
-45 minute appointment: $50 per session
+45 minute appointment: $55 per session
 
-90 minutes appointment: $95 per session
+90 minutes appointment: $105 per session
 
 These sessions are tailored for you. We will discuss your progress,
 revisit your goals and priorities, and use various functional evaluation
@@ -44,12 +44,6 @@ order to set you up for success on your healing journey.
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
 
-### 
-
-### 
-
-### 
-
 ### Applied Psycho-Neurobiology (APN) Session  $95
 
 Initial or individual session is $95 per 90 minute session
@@ -64,9 +58,7 @@ Packages of 5 sessions $375 ($75 per session)
 
 Individual session is 90 minute session
 
-### 
-
-_Please note that Functional Nutrition, Applied Psycho-Neurobiology, and Family Constellation services are not covered by insurance.  Payment is expected at time of service._
+*Please note that Functional Nutrition, Applied Psycho-Neurobiology, and Family Constellation services are not covered by insurance.  Payment is expected at time of service.*
 
 - - -
 
