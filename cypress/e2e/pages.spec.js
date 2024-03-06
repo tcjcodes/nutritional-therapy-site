@@ -216,7 +216,7 @@ describe('each page', () => {
     });
   });
 
-  describe.only('contact', () => {
+  describe('contact', () => {
     const formRouteConfig = {
       url: '/',
       method: 'POST',
