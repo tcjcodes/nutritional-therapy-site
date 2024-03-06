@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { Button, Notification } from 'react-bulma-components';
 
 const NotificationContainer = ({ isShown, color, onDelete, children }) => (
-  (isShown && <div css={{ marginBottom: '1rem' }}>
+  (<div css={{ marginBottom: '1rem' }}>
     <Notification
+      display={isShown ? 'block' : 'hidden'}
       color={color}
       light={color === 'light'}
     >

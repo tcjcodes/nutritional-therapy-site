@@ -308,7 +308,7 @@ describe('each page', () => {
       const errorBanner = 'Oh no!';
       cy.contains(errorBanner).as('errorBanner');
 
-      cy.get('@errorBanner').should('not.exist');
+      cy.get('@errorBanner').should('not.be.visible');
 
       cy.findByRole('button', { name: /submit/ })
       .as('submitBtn');
