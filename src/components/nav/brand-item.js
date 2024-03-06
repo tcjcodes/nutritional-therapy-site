@@ -1,13 +1,13 @@
-import { Title } from 'bloomer';
+import { Heading } from 'react-bulma-components';
 import { Link } from 'gatsby';
 import React from 'react';
 import { secondaryFont } from '../../utils/fonts';
 import { colorGreen, colorGreenDark } from '../../utils/theme-variables';
 
 const BrandItem = ({ title, size = 1 }) => (
-  <Title isSize={size} hasTextAlign="centered">
+  <Heading size={size} textAlign='centered'>
     <Link
-      to="/"
+      to='/'
       css={{
         ...secondaryFont,
         color: colorGreen,
@@ -19,7 +19,7 @@ const BrandItem = ({ title, size = 1 }) => (
     >
       {title}
     </Link>
-  </Title>
+  </Heading>
 );
 
 BrandItem.propTypes = {};

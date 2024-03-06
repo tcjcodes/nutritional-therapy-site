@@ -1,6 +1,6 @@
-import { Box, Container, Content, Section } from 'bloomer';
+import { Box, Container, Content, Section } from 'react-bulma-components';
 import { graphql } from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
@@ -24,15 +24,22 @@ const AboutPage = ({ data }) => {
             <PageHeader center title={post.frontmatter.title} />
 
             {aboutFile?.childImageSharp?.gatsbyImageData && (
-              <Box style={{ maxWidth: 450, width: '100%', marginBottom: '2rem' }}>
+              <Box
+                css={{
+                  maxWidth: '450px',
+                  width: '100%',
+                  marginBottom: '2rem',
+                }}>
                 <GatsbyImage
+                  alt='Caroline'
+                  title='About Caroline'
                   image={aboutFile.childImageSharp.gatsbyImageData}
-                  alt="Caroline"
-                  title="About Caroline" />
+                />
               </Box>
             )}
+
             <Content
-              data-testid="about-content"
+              data-testid='about-content'
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
           </div>
@@ -43,25 +50,25 @@ const AboutPage = ({ data }) => {
 };
 
 export const query = graphql`query AboutPage($slug: String!) {
-  site {
-    siteMetadata {
-      title
+    site {
+        siteMetadata {
+            title
+        }
     }
-  }
-  markdownRemark(fields: {slug: {eq: $slug}}) {
-    html
-    fields {
-      slug
+    markdownRemark(fields: {slug: {eq: $slug}}) {
+        html
+        fields {
+            slug
+        }
+        frontmatter {
+            title
+        }
     }
-    frontmatter {
-      title
+    aboutFile: file(relativePath: {eq: "cdlr3crop.JPG"}) {
+        childImageSharp {
+            gatsbyImageData(width: 400, layout: CONSTRAINED)
+        }
     }
-  }
-  aboutFile: file(relativePath: {eq: "cdlr3crop.JPG"}) {
-    childImageSharp {
-      gatsbyImageData(width: 400, layout: CONSTRAINED)
-    }
-  }
 }`;
 
 export default AboutPage;

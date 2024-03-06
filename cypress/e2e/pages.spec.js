@@ -155,12 +155,40 @@ describe('each page', () => {
     // it.todo('renders lab item page');
   });
 
-  it('renders labs page with several lab test items', () => {
-    cy.visit('/labs');
+  describe('labs pages', () => {
+    it('renders labs page that leads to individual lab page', () => {
+      // test(labs page)
+      cy.visit('/labs');
 
-    verifyPageHeaderContains(/lab tests/i);
+      const labsPageHeaderRegex = /lab tests/i;
+      verifyPageHeaderContains(labsPageHeaderRegex);
 
-    cy.findAllByTestId('lab-card').should('have.length.gte', 1);
+      cy.findAllByTestId('lab-card').as('labCards');
+      cy.get('@labCards').should('have.length.gte', 1);
+
+      cy.get('@labCards').first().click();
+
+      // test(lab page)
+      cy.url().should('match', /\/labs\/\w+/);
+      verifyPageHeaderVisible();
+
+      cy.findAllByTestId('breadcrumb-link')
+      .as('breadcrumbs')
+      .should('have.length', 1);
+
+      cy.get('@breadcrumbs').should(([allLabsLink]) => {
+        expect(allLabsLink).to.have.attr('href').eq('/labs');
+        expect(allLabsLink).to.have.text('other lab tests');
+      });
+
+      cy.get('@breadcrumbs').eq(0).as('labsLink');
+
+      cy.get('@labsLink').click();
+
+      // test(labs page reroute)
+      cy.url().should('match', /\/labs/);
+      verifyPageHeaderContains(labsPageHeaderRegex);
+    });
   });
 
   describe('favorites pages', () => {
@@ -178,7 +206,7 @@ describe('each page', () => {
 
       // test(item page)
       cy.url().should('match', /\/products\/\w+/);
-      cy.findByTestId('product-title');
+      cy.findByTestId('product-title').should('be.visible');
       cy.findByTestId('affiliate-disclaimer').should('be.visible');
 
       cy.findAllByTestId('breadcrumb-link')

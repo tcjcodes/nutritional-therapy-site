@@ -1,4 +1,4 @@
-import { Box, Title } from 'bloomer';
+import { Box, Heading } from 'react-bulma-components';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -30,7 +30,7 @@ const cardOverlayStyles = {
   minHeight: '3rem',
   left: '0',
   width: '100%',
-  hasTextAlign: 'center',
+  textAlign: 'center',
   opacity: 1,
   background: 'rgba(245,245,245,0.98)',
 };
@@ -46,9 +46,9 @@ const LabCard = ({ slug, thumbnail, title }) => (
       <div css={cardImageStyles(thumbnail)} />
       <div css={cardOverlayStyles}>
         <div css={{ width: '100%' }}>
-          <Title hasTextAlign="centered" style={{ margin: 0 }} isSize={5}>
+          <Heading textAlign='centered' css={{ margin: 0 }} size={5}>
             <p css={headingStyles}>{title}</p>
-          </Title>
+          </Heading>
         </div>
       </div>
     </Box>

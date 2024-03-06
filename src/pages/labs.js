@@ -1,4 +1,4 @@
-import { Container, Section, Column } from 'bloomer';
+import { Columns, Container, Section } from 'react-bulma-components';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -11,19 +11,19 @@ const pageTitle = 'Lab Tests';
 
 const mapEdgesToLabs = function mapMarkdownEdgesToLabItems(edges) {
   return edges
-    .map((edge) => edge.node)
-    .map((node) => {
-      const { id, frontmatter, fields } = node;
-      const { slug } = fields;
-      const { title, image } = frontmatter;
-      return {
-        id,
-        frontmatter,
-        slug,
-        title,
-        image,
-      };
-    });
+  .map((edge) => edge.node)
+  .map((node) => {
+    const { id, frontmatter, fields } = node;
+    const { slug } = fields;
+    const { title, image } = frontmatter;
+    return {
+      id,
+      frontmatter,
+      slug,
+      title,
+      image,
+    };
+  });
 };
 
 const LabsTemplate = ({ data }) => {
@@ -32,7 +32,7 @@ const LabsTemplate = ({ data }) => {
   const labs = mapEdgesToLabs(edges);
   return (
     <Layout>
-      <Section className="section">
+      <Section className='section'>
         <Helmet title={`${pageTitle} | ${title}`} />
 
         <Container style={{ padding: '0 1em' }}>
@@ -41,17 +41,15 @@ const LabsTemplate = ({ data }) => {
           <div css={{ marginBottom: '3rem' }}>
             <ProductCardRow>
               {labs.map(({ id, slug, image, title }) => (
-                <Column
+                <Columns.Column
                   key={id}
-                  hasTextAlign="center"
-                  isSize={{
-                    desktop: 3,
-                    tablet: 6,
-                    mobile: 12,
-                  }}
+                  textAlign='center'
+                  desktop={{ size: 3 }}
+                  tablet={{ size: 6 }}
+                  mobile={{ size: 12 }}
                 >
                   <LabCard slug={slug} thumbnail={image} title={title} />
-                </Column>
+                </Columns.Column>
               ))}
             </ProductCardRow>
           </div>
@@ -62,34 +60,34 @@ const LabsTemplate = ({ data }) => {
 };
 
 export const pageQuery = graphql`
-  query LabsPageQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "lab" } } }
-      sort: {
-        fields: [frontmatter___category, frontmatter___title]
-        order: ASC
-      }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            templateKey
-            title
-            image
-          }
-          fields {
-            slug
-          }
+    query LabsPageQuery {
+        site {
+            siteMetadata {
+                title
+            }
         }
-      }
+        allMarkdownRemark(
+            filter: { frontmatter: { templateKey: { eq: "lab" } } }
+            sort: {
+                fields: [frontmatter___category, frontmatter___title]
+                order: ASC
+            }
+        ) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        templateKey
+                        title
+                        image
+                    }
+                    fields {
+                        slug
+                    }
+                }
+            }
+        }
     }
-  }
 `;
 
 export default LabsTemplate;

@@ -1,4 +1,4 @@
-import { Column, Columns, Container, Heading, Section } from 'bloomer';
+import { Columns, Container, Heading, Section } from 'react-bulma-components';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -23,10 +23,10 @@ const ContactPage = ({ data }) => {
       <Section>
         <Helmet title={`Contact | ${siteTitle}`} />
         <Container>
-          <PageHeader center title="Contact" />
-          <Columns isMultiline={true}>
+          <PageHeader center title='Contact' />
+          <Columns multiline>
             {/*TODO: Re-add when API key hidden
-            <Column isHidden="mobile" isSize={10} isOffset={1}>
+            <Columns.Column isHidden="mobile" size={10} offset={1}>
               <Box style={{ marginBottom: "2em", minHeight: "350px" }}>
                 <OfficeMap
                   zoom={15}
@@ -49,14 +49,15 @@ const ContactPage = ({ data }) => {
                   />
                 </OfficeMap>
               </Box>
-            </Column>*/}
-            <Column isSize={7} isOffset={1} style={{ paddingRight: '2rem' }}>
-              <Heading>Send a message</Heading>
+            </Columns.Column>*/}
+            <Columns.Column size={7} offset={1}
+                            css={{ paddingRight: '2rem' }}>
+              <Heading heading>Send a message</Heading>
               <ContactForm />
-            </Column>
-            <Column isSize={3}>
+            </Columns.Column>
+            <Columns.Column size={3}>
               <div>
-                <Heading>new clients</Heading>
+                <Heading heading>new clients</Heading>
                 <p>
                   I provide a free 20 minute consultation for new clients. Send
                   a message with the form to request an appointment.
@@ -83,7 +84,7 @@ const ContactPage = ({ data }) => {
                   </strong>
                 </address>
               </div>*/}
-            </Column>
+            </Columns.Column>
           </Columns>
         </Container>
       </Section>
@@ -92,13 +93,13 @@ const ContactPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query ContactPage {
-    site {
-      siteMetadata {
-        title
-      }
+    query ContactPage {
+        site {
+            siteMetadata {
+                title
+            }
+        }
     }
-  }
 `;
 
 export default ContactPage;

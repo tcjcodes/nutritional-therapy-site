@@ -29,8 +29,9 @@ Go to `/admin` on the deployed site.
 Logins are managed via [Netlify Identity](https://app.netlify.com/sites/boisewgw/configuration/identity) and gated via GitHub Personal Access Tokens.
 
 ## Integrations
-- [Gatsby](https://www.gatsbyjs.com/gatsby-4/)
-- [Cypress Cloud](https://cloud.cypress.io)
-- [Google Analytics](https://analytics.google.com/analytics/web/)
-- [Netlify](https://app.netlify.com/)
-  - [Admin Dashboard](https://www.boisewillowgracewellness.com/admin/) with Netlify CMS
+- Static Site Framework: [Gatsby](https://www.gatsbyjs.com/gatsby-4/)
+- CI: [Netlify](https://app.netlify.com/)
+- Testing: [Cypress Cloud](https://cloud.cypress.io)
+- Analytics: [Google Universal Analytics](https://developers.google.com/analytics/devguides/collection/gtagjs)
+- CMS: [Admin Dashboard](https://www.boisewillowgracewellness.com/admin/) with Netlify CMS
+- Styles: [emotion/styled](https://emotion.sh/docs/styled)

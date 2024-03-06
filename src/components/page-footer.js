@@ -1,11 +1,11 @@
-import { Container, Footer } from 'bloomer';
+import { Container, Footer } from 'react-bulma-components';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const PageFooter = ({ title, logoImg }) => (
   <Footer style={{ background: 'transparent', padding: '4em 3em 3em 3em' }}>
-    <Container hasTextAlign='centered'>
+    <Container textAlign='centered'>
       <div css={{
         marginBottom: '0.25rem',
         display: 'flex',

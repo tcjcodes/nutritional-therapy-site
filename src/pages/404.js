@@ -1,11 +1,11 @@
-import { Section } from 'bloomer';
+import { Section } from 'react-bulma-components';
 import React from 'react';
 import Layout from '../components/layout';
 
 const NotFoundPage = () => (
   <Layout>
-    <Section hasTextAlign="centered">
-      <h1 className="subtitle">NOT FOUND</h1>
+    <Section textAlign='centered'>
+      <h1 className='subtitle'>NOT FOUND</h1>
       <p>Page not found</p>
     </Section>
   </Layout>

@@ -1,12 +1,11 @@
 import {
   Box,
-  Column,
   Columns,
   Container,
   Content,
   Image,
   Section,
-} from 'bloomer';
+} from 'react-bulma-components';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -22,21 +21,22 @@ export default function LabTemplate({ data }) {
 
   return (
     <Layout>
-      <Section className="section">
+      <Section className='section'>
         <Helmet title={`${title} Labs | ${siteTitle}`} />
         <Container style={{ maxWidth: 960 }}>
-          <Columns isVCentered isCentered>
-            <Column
-              isSize={{ desktop: 6, mobile: 12 }}
-              style={{ marginBottom: '1em' }}
+          <Columns vCentered isCentered>
+            <Columns.Column
+              desktop={{ size: 6 }}
+              mobile={{ size: 12 }}
+              css={{ marginBottom: '1em' }}
             >
               <Box
-                style={{
+                css={{
                   margin: '0 0.5rem 0.5rem 0',
                 }}
               >
                 <Image
-                  style={{
+                  css={{
                     width: '100%',
                     height: '100%',
                     border: '1px solid gainsboro',
@@ -45,15 +45,15 @@ export default function LabTemplate({ data }) {
                   alt={title}
                 />
               </Box>
-            </Column>
+            </Columns.Column>
 
-            <Column isSize={{ desktop: 6, mobile: 12 }}>
+            <Columns.Column size={{ desktop: 6, mobile: 12 }}>
               <div>
                 <BreadcrumbLink to={`/labs`} text={`other lab tests`} />
 
                 <PageHeader center title={title} />
               </div>
-            </Column>
+            </Columns.Column>
           </Columns>
 
           <div>
@@ -66,22 +66,22 @@ export default function LabTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-  query LabPage($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
+    query LabPage($slug: String!) {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            html
+            fields {
+                slug
+            }
+            frontmatter {
+                title
+                link
+                image
+            }
+        }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        link
-        image
-      }
-    }
-  }
 `;

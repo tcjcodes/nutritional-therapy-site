@@ -1,4 +1,4 @@
-import { Container, Section } from 'bloomer';
+import { Container, Section } from 'react-bulma-components';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';

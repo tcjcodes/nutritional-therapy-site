@@ -1,18 +1,17 @@
-import { NavbarItem } from 'bloomer';
+import { Navbar } from 'react-bulma-components';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const StyledNavbarItem = ({ to, text, style, activeStyle }) => (
-  <NavbarItem>
-    <Link
-      style={style}
-      activeStyle={activeStyle}
-      to={`/${to || text.toLowerCase()}`}
-    >
-      {text}
-    </Link>
-  </NavbarItem>
+const StyledNavbarItem = ({ to, text, ...otherProps }) => (
+  <Navbar.Item
+    href={`/${to || text.toLowerCase()}`}
+    renderAs={({ href, ...otherRenderProps }) => (
+      <Link {...otherRenderProps} to={href} />
+    )}
+    {...otherProps}>
+    {text}
+  </Navbar.Item>
 );
 
 StyledNavbarItem.propTypes = {

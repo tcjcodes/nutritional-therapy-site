@@ -1,4 +1,4 @@
-import { Navbar, NavbarMenu } from 'bloomer';
+import { Navbar } from 'react-bulma-components';
 import React from 'react';
 import { serifFont } from '../../utils/fonts';
 import { colorBrownDark } from '../../utils/theme-variables';
@@ -8,12 +8,19 @@ import StyledNavbarItem from './styled-navbar-item';
 import TabletNavbarBrand from './tablet-navbar-brand';
 
 const linkProps = {
-  style: {
-    color: colorBrownDark,
-    borderBottom: `2px solid transparent`,
-  },
-  activeStyle: {
-    color: colorBrownDark,
+  css: {
+    '&&': {
+      color: colorBrownDark,
+      borderBottom: `0px`,
+      '&:hover': {
+        backgroundColor: 'transparent',
+        color: colorBrownDark,
+      },
+      '&:active': {
+        backgroundColor: 'transparent',
+        color: colorBrownDark,
+      },
+    },
   },
 };
 
@@ -41,41 +48,37 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
           title={title}
         />
 
-        <NavbarMenu
-          data-testid="desktop-navbar"
+        <Navbar.Menu
+          data-testid='desktop-navbar'
           style={{ justifyContent: 'center' }}
           isActive={isOpen}
           onClick={onMenuClick}
         >
-          <StyledNavbarItem {...linkProps} text="About" />
+          <StyledNavbarItem {...linkProps} text='About' />
 
-          <StyledNavbarItem {...linkProps} text="Services" />
+          <StyledNavbarItem {...linkProps} text='Services' />
 
           <StyledNavbarItem
             {...linkProps}
-            text="Testimonials"
-            to="testimonials"
+            text='Testimonials'
+            to='testimonials'
           />
 
           <NavbarDropdownItem
             {...linkProps}
-            text="Favorites"
-            to="products"
+            text='Favorites'
+            to='products'
             items={productNavItems}
           />
           <StyledNavbarItem
             {...linkProps}
-            text="New Clients"
-            to="new-clients"
+            text='New Clients'
+            to='new-clients'
           />
-          <StyledNavbarItem {...linkProps} text="Labs" to="labs" />
-          {/*<NavbarDropdownItem*/}
-          {/*  {...linkProps}*/}
-          {/*  text="Clients"*/}
-          {/*  items={clientsNavItems}*/}
-          {/*/>*/}
-          <StyledNavbarItem {...linkProps} text="Contact" />
-        </NavbarMenu>
+          <StyledNavbarItem {...linkProps} text='Labs' to='labs' />
+
+          <StyledNavbarItem {...linkProps} text='Contact' />
+        </Navbar.Menu>
       </Navbar>
     </div>
   );

@@ -1,17 +1,17 @@
-import { Column } from 'bloomer';
 import React from 'react';
 import ProductCard from './product-card';
 import PropTypes from 'prop-types';
+import { Columns } from 'react-bulma-components';
 
 const ProductCardColumn = ({ slug, thumbnail, title, excerpt }) => (
-  <Column isSize={{ desktop: 2, mobile: 12 }}>
+  <Columns.Column desktop={{ size: 2 }} mobile={{ size: 12 }}>
     <ProductCard
       slug={slug}
       thumbnail={thumbnail}
       title={title}
       excerpt={excerpt}
     />
-  </Column>
+  </Columns.Column>
 );
 
 ProductCardColumn.propTypes = {

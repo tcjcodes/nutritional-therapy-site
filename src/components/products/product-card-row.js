@@ -1,8 +1,8 @@
-import { Columns } from 'bloomer';
+import { Columns } from 'react-bulma-components';
 import React from 'react';
 
 const ProductCardRow = ({ children }) => (
-  <Columns isMultiline={true} isCentered={true}>
+  <Columns multiline centered>
     {children}
   </Columns>
 );

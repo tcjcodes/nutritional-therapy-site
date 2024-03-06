@@ -1,8 +1,19 @@
 {
   "name": "caroline-ntp-website",
   "description": "Official website for Willow Grace Wellness",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "author": "Trina Castillo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcjcodes/nutritional-therapy-site"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "bugs": {
+    "url": "https://github.com/tcjcodes/nutritional-therapy-site/issues"
+  },
+  "homepage": "https://github.com/tcjcodes/nutritional-therapy-site#readme",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -17,7 +28,6 @@
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "bloomer": "^0.6.5",
     "bulma": "^0.9.4",
     "classnames": "^2.3.1",
     "font-awesome": "^4.7.0",
@@ -38,6 +48,7 @@
     "node-sass": "^4.14.1",
     "postcss": "^8.4.31",
     "react": "^16.14.0",
+    "react-bulma-components": "^4.1.0",
     "react-dom": "^16.14.0",
     "react-dotdotdot": "^1.1.0",
     "react-google-maps": "^9.4.2",
@@ -45,9 +56,6 @@
     "react-load-script": "0.0.6",
     "react-parallax": "^2.2.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "main": "n/a",
   "devDependencies": {
     "@testing-library/cypress": "^8.0.2",
