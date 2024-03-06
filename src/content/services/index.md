@@ -22,9 +22,8 @@ balanced state.
 
 ### Follow Up for Nutritional Consultation
 
-45 minute appointment: $55 per session
-
-90 minutes appointment: $105 per session
+* 45 minute appointment: $55 per session
+* 90 minutes appointment: $105 per session
 
 These sessions are tailored for you. We will discuss your progress,
 revisit your goals and priorities, and use various functional evaluation
@@ -36,9 +35,9 @@ create balance from within.
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
 
-* 3 months per 5 visits,  $450 ($90/session)
-* 6 months per 9 visits,  $720 ($80/session)
-* 12 months per 15 visits,  $1,050 ($70/session)
+* 3 months per 5 visits, $450 ($90/session)
+* 6 months per 9 visits, $720 ($80/session)
+* 12 months per 15 visits, $1,050 ($70/session)
 
 **Packages** include unlimited text and email support. If there is an issue
 that cannot be adequately resolved via electronic communication, you will
