@@ -9,34 +9,39 @@ import Navigation from './nav/navigation';
 import PageFooter from '../components/page-footer';
 import { SEO } from './shared/SEO';
 
-const pageQuery = graphql`query LayoutQuery {
+const pageQuery = graphql`
+  query LayoutQuery {
     site {
-        siteMetadata {
-            title
-        }
+      siteMetadata {
+        title
+      }
     }
     allMarkdownRemark(
-        filter: {fields: {categoryKey: {ne: null}}, frontmatter: {templateKey: {eq: "product-category"}}}
-        sort: {fields: [frontmatter___title], order: ASC}
+      filter: {
+        fields: { categoryKey: { ne: null } }
+        frontmatter: { templateKey: { eq: "product-category" } }
+      }
+      sort: { fields: [frontmatter___title], order: ASC }
     ) {
-        edges {
-            node {
-                id
-                frontmatter {
-                    name
-                }
-                fields {
-                    categoryKey
-                }
-            }
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+          }
+          fields {
+            categoryKey
+          }
         }
+      }
     }
-    file(relativePath: {eq: "rwp_seal.png"}) {
-        childImageSharp {
-            gatsbyImageData(width: 128, layout: FIXED)
-        }
+    file(relativePath: { eq: "rwp_seal.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 128, layout: FIXED)
+      }
     }
-}`;
+  }
+`;
 
 const Layout = ({ children }) => {
   return (
@@ -55,7 +60,7 @@ const Layout = ({ children }) => {
             }}
           >
             <Helmet>
-              <link rel='icon' type='image/png' href={favicon} sizes='16x16' />
+              <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
               <SEO />
             </Helmet>
             <Navigation categoryNodes={edges} title={title} />

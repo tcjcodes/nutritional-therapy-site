@@ -49,35 +49,35 @@ const Navigation = ({ onMenuClick, isOpen, categoryNodes, title }) => {
         />
 
         <Navbar.Menu
-          data-testid='desktop-navbar'
+          data-testid="desktop-navbar"
           style={{ justifyContent: 'center' }}
           isActive={isOpen}
           onClick={onMenuClick}
         >
-          <StyledNavbarItem {...linkProps} text='About' />
+          <StyledNavbarItem {...linkProps} text="About" />
 
-          <StyledNavbarItem {...linkProps} text='Services' />
+          <StyledNavbarItem {...linkProps} text="Services" />
 
           <StyledNavbarItem
             {...linkProps}
-            text='Testimonials'
-            to='testimonials'
+            text="Testimonials"
+            to="testimonials"
           />
 
           <NavbarDropdownItem
             {...linkProps}
-            text='Favorites'
-            to='products'
+            text="Favorites"
+            to="products"
             items={productNavItems}
           />
           <StyledNavbarItem
             {...linkProps}
-            text='New Clients'
-            to='new-clients'
+            text="New Clients"
+            to="new-clients"
           />
-          <StyledNavbarItem {...linkProps} text='Labs' to='labs' />
+          <StyledNavbarItem {...linkProps} text="Labs" to="labs" />
 
-          <StyledNavbarItem {...linkProps} text='Contact' />
+          <StyledNavbarItem {...linkProps} text="Contact" />
         </Navbar.Menu>
       </Navbar>
     </div>

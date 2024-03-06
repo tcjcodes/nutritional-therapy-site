@@ -63,10 +63,10 @@ const excerptStyles = {
 };
 
 const ProductCard = ({ slug, thumbnail, title, excerpt }) => (
-  <Link data-testid='fav-card-link' to={slug} css={cardWrapperStyles}>
+  <Link data-testid="fav-card-link" to={slug} css={cardWrapperStyles}>
     <Box style={{ padding: '0.5em' }}>
       <div css={cardImageStyles(thumbnail)} />
-      <div data-testid='fav-card-overlay' css={cardOverlayStyles}>
+      <div data-testid="fav-card-overlay" css={cardOverlayStyles}>
         <div css={{ width: '100%' }}>
           <Heading heading css={{ margin: 0 }} size={6}>
             <Dotdotdot clamp={3}>

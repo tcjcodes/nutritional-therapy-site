@@ -9,7 +9,8 @@ const StyledNavbarItem = ({ to, text, ...otherProps }) => (
     renderAs={({ href, ...otherRenderProps }) => (
       <Link {...otherRenderProps} to={href} />
     )}
-    {...otherProps}>
+    {...otherProps}
+  >
     {text}
   </Navbar.Item>
 );

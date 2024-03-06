@@ -46,7 +46,7 @@ const LabCard = ({ slug, thumbnail, title }) => (
       <div css={cardImageStyles(thumbnail)} />
       <div css={cardOverlayStyles}>
         <div css={{ width: '100%' }}>
-          <Heading textAlign='centered' css={{ margin: 0 }} size={5}>
+          <Heading textAlign="centered" css={{ margin: 0 }} size={5}>
             <p css={headingStyles}>{title}</p>
           </Heading>
         </div>

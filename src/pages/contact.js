@@ -23,7 +23,7 @@ const ContactPage = ({ data }) => {
       <Section>
         <Helmet title={`Contact | ${siteTitle}`} />
         <Container>
-          <PageHeader center title='Contact' />
+          <PageHeader center title="Contact" />
           <Columns multiline>
             {/*TODO: Re-add when API key hidden
             <Columns.Column isHidden="mobile" size={10} offset={1}>
@@ -50,8 +50,7 @@ const ContactPage = ({ data }) => {
                 </OfficeMap>
               </Box>
             </Columns.Column>*/}
-            <Columns.Column size={7} offset={1}
-                            css={{ paddingRight: '2rem' }}>
+            <Columns.Column size={7} offset={1} css={{ paddingRight: '2rem' }}>
               <Heading heading>Send a message</Heading>
               <ContactForm />
             </Columns.Column>
@@ -93,13 +92,13 @@ const ContactPage = ({ data }) => {
 };
 
 export const query = graphql`
-    query ContactPage {
-        site {
-            siteMetadata {
-                title
-            }
-        }
+  query ContactPage {
+    site {
+      siteMetadata {
+        title
+      }
     }
+  }
 `;
 
 export default ContactPage;

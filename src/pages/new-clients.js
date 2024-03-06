@@ -25,8 +25,11 @@ const NewClientsPage = ({ data }) => {
           <Columns vCentered>
             <Columns.Column size={4} offset={1}>
               <Box>
-                <GatsbyImage image={imgFluid} alt='Sprout'
-                             title='Photo by icon0.com from Pexels' />
+                <GatsbyImage
+                  image={imgFluid}
+                  alt="Sprout"
+                  title="Photo by icon0.com from Pexels"
+                />
               </Box>
             </Columns.Column>
             <Columns.Column desktop={{ size: 7 }}>
@@ -41,12 +44,11 @@ const NewClientsPage = ({ data }) => {
                   >
                     <p>
                       I provide a{' '}
-                      <Link to='/services'>free 20 minute
-                        consultation</Link>{' '}
+                      <Link to="/services">free 20 minute consultation</Link>{' '}
                       for new clients.
                     </p>
                     <p>
-                      <Link to='/contact'>Send a message</Link> to request an
+                      <Link to="/contact">Send a message</Link> to request an
                       appointment.
                     </p>
                     <br />
@@ -56,16 +58,16 @@ const NewClientsPage = ({ data }) => {
                       <ol>
                         <li>
                           <a
-                            title='Initial Interview Form'
-                            href='/documents/forms/InitialInterview.pdf'
+                            title="Initial Interview Form"
+                            href="/documents/forms/InitialInterview.pdf"
                           >
                             Initial Interview (PDF)
                           </a>
                         </li>
                         <li>
                           <a
-                            title='Disclaimer Form'
-                            href='/documents/forms/Disclaimer.pdf'
+                            title="Disclaimer Form"
+                            href="/documents/forms/Disclaimer.pdf"
                           >
                             Disclaimer (PDF)
                           </a>
@@ -85,17 +87,19 @@ const NewClientsPage = ({ data }) => {
 
 NewClientsPage.propTypes = {};
 
-export const query = graphql`query NewClientsPageQuery {
+export const query = graphql`
+  query NewClientsPageQuery {
     site {
-        siteMetadata {
-            title
-        }
+      siteMetadata {
+        title
+      }
     }
-    file(relativePath: {eq: "dirt-gardening-green-1214394.jpg"}) {
-        childImageSharp {
-            gatsbyImageData(width: 500, layout: CONSTRAINED)
-        }
+    file(relativePath: { eq: "dirt-gardening-green-1214394.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 500, layout: CONSTRAINED)
+      }
     }
-}`;
+  }
+`;
 
 export default NewClientsPage;

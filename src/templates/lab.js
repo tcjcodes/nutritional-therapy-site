@@ -21,7 +21,7 @@ export default function LabTemplate({ data }) {
 
   return (
     <Layout>
-      <Section className='section'>
+      <Section className="section">
         <Helmet title={`${title} Labs | ${siteTitle}`} />
         <Container style={{ maxWidth: 960 }}>
           <Columns vCentered isCentered>
@@ -66,22 +66,22 @@ export default function LabTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-    query LabPage($slug: String!) {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            html
-            fields {
-                slug
-            }
-            frontmatter {
-                title
-                link
-                image
-            }
-        }
+  query LabPage($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
     }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        link
+        image
+      }
+    }
+  }
 `;

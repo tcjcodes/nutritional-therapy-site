@@ -5,7 +5,7 @@ import { colorBrown } from '../../utils/theme-variables';
 
 const ProductCategoryHeading = ({ children }) => (
   <Heading
-    textAlign='centered'
+    textAlign="centered"
     style={{
       ...serifFont,
       lineHeight: '120%',

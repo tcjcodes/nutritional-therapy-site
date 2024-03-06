@@ -11,19 +11,19 @@ const pageTitle = 'Lab Tests';
 
 const mapEdgesToLabs = function mapMarkdownEdgesToLabItems(edges) {
   return edges
-  .map((edge) => edge.node)
-  .map((node) => {
-    const { id, frontmatter, fields } = node;
-    const { slug } = fields;
-    const { title, image } = frontmatter;
-    return {
-      id,
-      frontmatter,
-      slug,
-      title,
-      image,
-    };
-  });
+    .map((edge) => edge.node)
+    .map((node) => {
+      const { id, frontmatter, fields } = node;
+      const { slug } = fields;
+      const { title, image } = frontmatter;
+      return {
+        id,
+        frontmatter,
+        slug,
+        title,
+        image,
+      };
+    });
 };
 
 const LabsTemplate = ({ data }) => {
@@ -32,7 +32,7 @@ const LabsTemplate = ({ data }) => {
   const labs = mapEdgesToLabs(edges);
   return (
     <Layout>
-      <Section className='section'>
+      <Section className="section">
         <Helmet title={`${pageTitle} | ${title}`} />
 
         <Container style={{ padding: '0 1em' }}>
@@ -43,7 +43,7 @@ const LabsTemplate = ({ data }) => {
               {labs.map(({ id, slug, image, title }) => (
                 <Columns.Column
                   key={id}
-                  textAlign='center'
+                  textAlign="center"
                   desktop={{ size: 3 }}
                   tablet={{ size: 6 }}
                   mobile={{ size: 12 }}
@@ -60,34 +60,34 @@ const LabsTemplate = ({ data }) => {
 };
 
 export const pageQuery = graphql`
-    query LabsPageQuery {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        allMarkdownRemark(
-            filter: { frontmatter: { templateKey: { eq: "lab" } } }
-            sort: {
-                fields: [frontmatter___category, frontmatter___title]
-                order: ASC
-            }
-        ) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        templateKey
-                        title
-                        image
-                    }
-                    fields {
-                        slug
-                    }
-                }
-            }
-        }
+  query LabsPageQuery {
+    site {
+      siteMetadata {
+        title
+      }
     }
+    allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "lab" } } }
+      sort: {
+        fields: [frontmatter___category, frontmatter___title]
+        order: ASC
+      }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            templateKey
+            title
+            image
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default LabsTemplate;

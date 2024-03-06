@@ -29,17 +29,18 @@ const AboutPage = ({ data }) => {
                   maxWidth: '450px',
                   width: '100%',
                   marginBottom: '2rem',
-                }}>
+                }}
+              >
                 <GatsbyImage
-                  alt='Caroline'
-                  title='About Caroline'
+                  alt="Caroline"
+                  title="About Caroline"
                   image={aboutFile.childImageSharp.gatsbyImageData}
                 />
               </Box>
             )}
 
             <Content
-              data-testid='about-content'
+              data-testid="about-content"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
           </div>
@@ -49,26 +50,28 @@ const AboutPage = ({ data }) => {
   );
 };
 
-export const query = graphql`query AboutPage($slug: String!) {
+export const query = graphql`
+  query AboutPage($slug: String!) {
     site {
-        siteMetadata {
-            title
-        }
+      siteMetadata {
+        title
+      }
     }
-    markdownRemark(fields: {slug: {eq: $slug}}) {
-        html
-        fields {
-            slug
-        }
-        frontmatter {
-            title
-        }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
     }
-    aboutFile: file(relativePath: {eq: "cdlr3crop.JPG"}) {
-        childImageSharp {
-            gatsbyImageData(width: 400, layout: CONSTRAINED)
-        }
+    aboutFile: file(relativePath: { eq: "cdlr3crop.JPG" }) {
+      childImageSharp {
+        gatsbyImageData(width: 400, layout: CONSTRAINED)
+      }
     }
-}`;
+  }
+`;
 
 export default AboutPage;

@@ -1,4 +1,4 @@
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Script from 'react-load-script';
 import { graphql } from 'gatsby';
@@ -43,7 +43,8 @@ export default class IndexPage extends React.Component {
                   height: '100%',
                   opacity: '0.4',
                 }}
-                alt="Herbs, turmeric, chopping board, wooden spoon on a table" />
+                alt="Herbs, turmeric, chopping board, wooden spoon on a table"
+              />
             }
           />
           <Script
@@ -56,10 +57,12 @@ export default class IndexPage extends React.Component {
   }
 }
 
-export const query = graphql`query IndexQuery {
-  file(relativePath: {eq: "spoon-herbs.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
+export const query = graphql`
+  query IndexQuery {
+    file(relativePath: { eq: "spoon-herbs.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
   }
-}`;
+`;

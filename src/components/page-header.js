@@ -4,7 +4,7 @@ import { Heading } from 'react-bulma-components';
 
 const PageHeader = ({ title, center }) => (
   <div
-    data-testid='page-header'
+    data-testid="page-header"
     css={{ textAlign: center ? 'center' : 'inherit' }}
   >
     <Heading

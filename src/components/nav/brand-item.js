@@ -5,9 +5,9 @@ import { secondaryFont } from '../../utils/fonts';
 import { colorGreen, colorGreenDark } from '../../utils/theme-variables';
 
 const BrandItem = ({ title, size = 1 }) => (
-  <Heading size={size} textAlign='centered'>
+  <Heading size={size} textAlign="centered">
     <Link
-      to='/'
+      to="/"
       css={{
         ...secondaryFont,
         color: colorGreen,

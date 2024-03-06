@@ -16,17 +16,17 @@ const ServicesPage = ({ data }) => {
         <Helmet title={`Services | ${title}`} />
 
         <Container style={{ maxWidth: 960 }}>
-          <PageHeader title='Services' center />
+          <PageHeader title="Services" center />
 
           <div css={{ marginBottom: `2rem` }}>
             <Content
-              data-testid='services-content'
+              data-testid="services-content"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
           </div>
 
           <div css={{ textAlign: 'center' }}>
-            <ButtonLink color='primary' href='/contact/' faIcon='calendar'>
+            <ButtonLink color="primary" href="/contact/" faIcon="calendar">
               Request appointment
             </ButtonLink>
           </div>
@@ -37,22 +37,22 @@ const ServicesPage = ({ data }) => {
 };
 
 export const query = graphql`
-    query ServicesPage($slug: String!) {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            html
-            fields {
-                slug
-            }
-            frontmatter {
-                title
-            }
-        }
+  query ServicesPage($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
     }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
+    }
+  }
 `;
 
 export default ServicesPage;

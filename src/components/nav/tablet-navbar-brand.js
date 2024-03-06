@@ -4,9 +4,10 @@ import { Navbar } from 'react-bulma-components';
 import BrandItem from './brand-item';
 
 const TabletNavbarBrand = ({ title, isOpen, onMenuClick }) => (
-  <Navbar.Brand data-testid='tablet-brand'
-                desktop={{ invisible: true, display: 'hidden' }}>
-
+  <Navbar.Brand
+    data-testid="tablet-brand"
+    desktop={{ invisible: true, display: 'hidden' }}
+  >
     <Navbar.Burger
       style={{ marginRight: 'auto', marginLeft: 'inherit' }}
       isActive={isOpen}
