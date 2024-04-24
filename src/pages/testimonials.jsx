@@ -37,7 +37,7 @@ const TestimonialsPage = ({ data }) => {
                 <GatsbyImage
                   image={katieFluid}
                   alt="Boat on ocean overlooking sunset"
-                  title="Photo by Mantas Hesthaven on Pexels"
+                  title="Photo by Mantas Hesthaven on Pexels.com"
                 />
               )}
               <Box>
@@ -74,7 +74,7 @@ const TestimonialsPage = ({ data }) => {
                 <GatsbyImage
                   image={shellyFluid}
                   alt="Stone beach overlooking a sunset"
-                  title="Photo by Quang Nguyen Vinh on Pexels"
+                  title="Photo by Quang Nguyen Vinh on Pexels.com"
                 />
               )}
               <Box>
@@ -104,7 +104,7 @@ const TestimonialsPage = ({ data }) => {
                 <GatsbyImage
                   image={crystalFluid}
                   alt="Pink petaled flowers"
-                  title="Photo by Victor Freitas on Pexels"
+                  title="Photo by Victor Freitas on Pexels.com"
                 />
               )}
               <Box>
@@ -139,7 +139,7 @@ const TestimonialsPage = ({ data }) => {
                 <GatsbyImage
                   image={wFluid}
                   alt="Birds flying across a stone-lined beach with a lifehouse"
-                  title="Photo by Mohammad Husaini on Pexels"
+                  title="Photo by Mohammad Husaini on Pexels.com"
                 />
               )}
               <Box>
