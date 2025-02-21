@@ -31,6 +31,6 @@ Logins are managed via [Netlify Identity](https://app.netlify.com/sites/boisewgw
 ## Integrations
 - [Gatsby](https://www.gatsbyjs.com/gatsby-4/)
 - [Cypress Cloud](https://cloud.cypress.io)
-- [Google Analytics](https://analytics.google.com/analytics/web/)
+- [Analytics via gtag](https://developers.google.com/tag-platform/gtagjs)
 - [Netlify](https://app.netlify.com/)
   - [Admin Dashboard](https://www.boisewillowgracewellness.com/admin/) with Netlify CMS
