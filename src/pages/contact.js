@@ -2,9 +2,9 @@ import { Column, Columns, Container, Heading, Section } from 'bloomer';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-import ContactForm from '../components/contact/contact-form';
 import Layout from '../components/layout';
 import PageHeader from '../components/page-header';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 // import ExternalLink from '../components/shared/external-link';
 
 // const mapCenter = { lat: 43.6169187, lng: -116.2039708 };
@@ -52,7 +52,11 @@ const ContactPage = ({ data }) => {
             </Column>*/}
             <Column isSize={7} isOffset={1} style={{ paddingRight: '2rem' }}>
               <Heading>Send a message</Heading>
-              <ContactForm />
+              Please contact me at{' '}
+              <OutboundLink href="mailto:caroline@boisewgw.com">
+                caroline@boisewgw.com
+              </OutboundLink>
+              {/*<ContactForm />*/}
             </Column>
             <Column isSize={3}>
               <div>

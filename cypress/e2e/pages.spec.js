@@ -243,7 +243,16 @@ describe('each page', () => {
       cy.findByPlaceholderText(/Message/).type(message);
     };
 
-    it('renders contact page and submits form (local only)', () => {
+    it('renders contact page', () => {
+      cy.visit('/contact');
+
+      verifyPageHeaderContains(/contact/i);
+
+      cy.contains(/send a message/i);
+      cy.contains(/caroline@boisewgw.com/i);
+    });
+
+    it.skip('renders form and submits form (local only)', () => {
       cy.intercept(formRouteConfig, (req) => {
         req.reply(204);
       }).as('submitReq');
@@ -251,8 +260,6 @@ describe('each page', () => {
       cy.visit('/contact');
 
       cy.get('form').should('be.visible');
-
-      verifyPageHeaderContains(/contact/i);
 
       cy.contains(/send a message/i);
 
@@ -266,6 +273,7 @@ describe('each page', () => {
       cy.get('input:invalid').should('not.exist');
 
       if (Cypress.env('LOCAL_MODE')) {
+        cy.log('Detecting LOCAL_MODE, submitting to mock form');
         cy.get('@submitBtn').click();
         cy.wait('@submitReq')
           .its('request.body')
@@ -288,7 +296,7 @@ describe('each page', () => {
       }
     });
 
-    it('has form error handling after submit (local only)', () => {
+    it.skip('handles error on form submit (local only)', () => {
       cy.visit('/contact');
 
       cy.get(':invalid')
@@ -309,6 +317,8 @@ describe('each page', () => {
       cy.get('@submitBtn').should('not.be.disabled');
 
       if (Cypress.env('LOCAL_MODE')) {
+        cy.log('Detecting LOCAL_MODE, submitting to mock form');
+        
         cy.intercept(formRouteConfig, { forceNetworkError: true }).as(
           'submitReq',
         );
