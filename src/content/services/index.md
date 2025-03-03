@@ -41,7 +41,7 @@ order to set you up for success on your healing journey.
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
 
-**Lab Report of Finding and Protocol Consultation $150**
+**Lab Report of Finding and Protocol Consultation $150 per testing (G﻿I-Map Stool Test, Saliva or Urine Hormone Testing, or Comprehensive Blood Panel Test Result)** 
 
 ### Applied Psycho-Neurobiology (APN) Session  $95
 
