@@ -5,7 +5,7 @@ title: Services
 ---
 ### Free 20 minute Consultation for Functional Nutrition
 
-Together let's identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
+Together we will identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
 
 ### Initial Nutritional Consultation $125
 
