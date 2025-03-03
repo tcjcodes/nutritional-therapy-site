@@ -22,7 +22,7 @@ balanced state.
 
 ### Follow Up for Nutritional Consultation
 
-* 45 minute appointment: $55 per session
+* 45 minute appointment: $60 per session
 * 90 minutes appointment: $105 per session
 
 These sessions are tailored for you. We will discuss your progress,
@@ -30,7 +30,7 @@ revisit your goals and priorities, and use various functional evaluation
 assessments to refine your protocol. Your body is constantly trying to
 create balance from within. 
 
-**Lab Report of Finding and Protocol Consultation $100**
+**Lab Report of Finding and Protocol Consultation $150**
 
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
