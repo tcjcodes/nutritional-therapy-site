@@ -30,8 +30,6 @@ revisit your goals and priorities, and use various functional evaluation
 assessments to refine your protocol. Your body is constantly trying to
 create balance from within. 
 
-**Lab Report of Finding and Protocol Consultation $150**
-
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
 
@@ -42,6 +40,8 @@ order to set you up for success on your healing journey.
 **Packages** include unlimited text and email support. If there is an issue
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
+
+**Lab Report of Finding and Protocol Consultation $150**
 
 ### Applied Psycho-Neurobiology (APN) Session  $95
 
