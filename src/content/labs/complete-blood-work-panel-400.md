@@ -1,6 +1,6 @@
 ---
 templateKey: lab
-title: Complete Blood Work Panel with Consultation Report $250
+title: Complete Blood Work Panel with Consultation Report $350
 image: /img/blood-chemistry-icon.png
 ---
 * C-Reactive Protein (CRP), High Sensitivity
