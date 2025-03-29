@@ -41,7 +41,7 @@ order to set you up for success on your healing journey.
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
 
-### **Lab Report of Finding and Protocol Consultation Additional: $150 per testing** 
+### **Lab Report of Finding and Protocol Consultation Additional: $150 per testing**
 
 **G﻿I-Map Stool Test, SIBO Breath Test, Saliva or Urine Hormone Testing, or Comprehensive Blood Panel Test Result** 
 
@@ -65,7 +65,9 @@ Individual session is 90 minute session
 
 F﻿amily Constellation is a transformative modality that helps you break free from negative, repetitive hidden patterns, behaviors, and limiting emotions rooted in your family system.  By uncovering the deeper dynamics behind what's holding you back, you gain a fresh perspective, releasing the unconscious influences, you can live a more fulfilling and liberated life. 
 
-*Please note that Functional Nutrition, Applied Psycho-Neurobiology, and Family Constellation services are not covered by insurance.  Payment is expected at time of service.*
+*Please note that Functional Nutrition, Applied Psycho-Neurobiology, and Family Constellation services are not covered by insurance.*  
+
+*Payment is expected at time of service.  Cash, Debit/Credit Card, Venmo, Cashapp accepted.*
 
 - - -
 
