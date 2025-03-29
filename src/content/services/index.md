@@ -5,7 +5,7 @@ title: Services
 ---
 ### Free 20 minute Consultation for Functional Nutrition
 
-Together let's identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
+Together we will identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
 
 ### Initial Nutritional Consultation $125
 
@@ -22,15 +22,13 @@ balanced state.
 
 ### Follow Up for Nutritional Consultation
 
-* 45 minute appointment: $55 per session
+* 45 minute appointment: $60 per session
 * 90 minutes appointment: $105 per session
 
 These sessions are tailored for you. We will discuss your progress,
 revisit your goals and priorities, and use various functional evaluation
 assessments to refine your protocol. Your body is constantly trying to
 create balance from within. 
-
-**Lab Report of Finding and Protocol Consultation $100**
 
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
@@ -43,7 +41,17 @@ order to set you up for success on your healing journey.
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
 
-### Applied Psycho-Neurobiology (APN) Session  $95
+**Lab Report of Finding and Protocol Consultation $150 per testing (G﻿I-Map Stool Test, SIBO Breath Test, Saliva or Urine Hormone Testing, or Comprehensive Blood Panel Test Result)** 
+
+### Applied Psycho-Neurobiology (APN): Healing Through Mind-Body Connection
+
+APN is a holistic healing method that addresses unresolved emotional conflicts and trauma stored in the body.  Developed by Dr Dietrich Klinghardt, this technique combines biofeedback-guided, emotional guidance, color therapy, eye movement, and gentle energetic techniques to release emotional blockages.
+
+D﻿uring the APN session, the practitioner uses muscle testing to uncover hidden emotional pattern linked to physical symptoms.  Through guided dialague with subconcious mind, APN helps identify and resolves emotional trigger, leading to lasting improvement in well-being.
+
+A﻿PN is gentle, non-invasive, and can help reduce health issues, emotional distress, and other long-lasting issues.  Clients often experience a sense of relief and balance, with noticeable positive changes in the weeks of the session.
+
+### Applied Psycho-Neurobiology per Session
 
 Initial or individual session is $95 per 90 minute session
 
