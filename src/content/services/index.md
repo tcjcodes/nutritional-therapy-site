@@ -43,10 +43,6 @@ be asked to schedule a session.
 
 **Lab Report of Finding and Protocol Consultation $150 per testing (G﻿I-Map Stool Test, SIBO Breath Test, Saliva or Urine Hormone Testing, or Comprehensive Blood Panel Test Result)** 
 
-
-
-
-
 ### Applied Psycho-Neurobiology (APN): Healing Through Mind-Body Connection
 
 APN is a holistic healing method that addresses unresolved emotional conflicts and trauma stored in the body.  Developed by Dr Dietrich Klinghardt, this technique combines biofeedback-guided, emotional guidance, color therapy, eye movement, and gentle energetic techniques to release emotional blockages.
