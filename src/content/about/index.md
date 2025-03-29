@@ -10,9 +10,9 @@ avatar: /img/my-pic-profile.jpg
 * Family Constellation
           
 
-As a functional nutritionist, I look for deeper underlying imbalances and deficiencies to restore health and function. I use a complete, holistic evaluation that may include testing, detailed nutritional assessment, dietary and health history overview to gather in-depth understanding of your biochemistry and current health status. Based on the gathered information, I create a customized nutritional program and recommend a supplemental protocol when needed. I help clients who are struggling with digestive problems, autoimmune disorders, chronic pain, fatigue, hormonal imbalances, skin problems, high blood pressure and other conditions.
+As a functional nutritionist, I focus on identifying and addressing the root causes of health imbalances and deficiencies to restore optimal health and function.  My approach is comprehensive and holistic, utilizing a combination of detailed testing, nutritional assessment, and a thorough review of your dietary and health history.  This allows me to gain a deep understanding of your unique biochemisty and current health status.  From this information, I create a customized nutritional plan tailored to your specific needs and recommend supplement support where necessary.
 
-So if you are experiencing:
+I specialize in helping individuals dealing with a variety of conditions, including:
 
 * Allergies
 * Anxiety
@@ -23,7 +23,7 @@ So if you are experiencing:
 * Depression
 * Detoxification issues
 * Fatigue
-* Gas and bloating
+* Gas, bloating and other digestive issues
 * Gallbladder removed
 * Hypo/Hyperglycemia
 * Imbalanced Hormones
@@ -31,22 +31,24 @@ So if you are experiencing:
 * Recurring Infections
 
 ​
-**Let's set up a [_free 20 minute phone consult_](/services) so we can discuss your health concerns and goals, I would love to help!**
+**If you're experiencing any of these symptoms, let's schedule *[free 20 minute phone consult](/services)* to discuss your health concerns and goals.  I am here to help you take the next step towarch achieving a healthier, more balanced life.**
 
-I am passionate to helping you strengthen and find the healthier version of yourself.  Bringing back the vitality and support your body's needs.
+I am passionate about helping you rediscover your vitality and support your body's natural healing processes.  My approach is rooted in a deep appreciation for whole, nutrient-dense foods - organic, non-GMO, locally sourced, grass-fed and free-range products that nourish both body and soul.  I value quality fats such as coconut oil, butter, ghee, duck fat, tallow, cold-pressed olive oil, flax oil, and avocado oil, and I believe in the importance of supporting local farms and farm-to-table practices.
 
-I value wholefoods, nutrient-dense, organic, non-gmo, free-range, locally raised meats, etc...    I enjoy eating good quality fats, such as coconut oil, butter, ghee, duck fat, tallow, lard, cold-pressed olive oil, flax oil, avocado oil..  I value and appreciate supporting local and  farm to table fresh foods/meat. 
+As a certified Functional Nutritional Therapy Practitioner (FNTP), I connect the physical and emotional aspect of health, offering holistic support for you journey to optimal wellness. I'm committed to helping you find balance, whether you're seeking to overcome chronic illness or simply improve your well-being?
 
-As a certified Functional Nutritional Therapy Practitioner, I seek to make connections between the physical body and emotional state, by supporting both.  I am passionate to assist you in your journey to a path to your optimal health..
 
-**Where are you on the spectrum between Balance and Disease?**
 
-As a Function Nutritionist, I focus on addressing the underlying cause of the dysfunction through balancing the foundational systems of the body.  Many times conventional medicine only treats the symptom, not the underlying cause.  As a FNTP, I am able to use a variety of effective diagnostic tools to locate where the deficiency or imbalance is in the body and then provide nutritional support to help body’s innate ability to heal.  
+**Where does your wellness journey currently stand between vitality and disease?**
 
-The root cause of many symptoms are digestive issues.  With this in mind, my practice focuses on balancing digestive system issues by identifying and removing stressors, then providing your body with the proper nutrition to heal.  
+As a Function Nutritionist, I specialized in addressing the underlying causes of dysfunction by restoring balance to the body's foundation systems.  While conventional medicine often focuses on treating symptoms, I use a variety of diagnostic tools to pinpoint deficiencies or imbalances, then offer targeted nutritional support to help your body restore naturally.
+
+O﻿ne of the root causes of many health concern is digestive dysfunction.  That's why my practice centers around identifying and removing digestive stressors, while providing the necessary nutrients to promote vitality and restoration.
+
+symptoms are digestive issues.  With this in mind, my practice focuses on balancing digestive system issues by identifying and removing stressors, then providing your body with the proper nutrition to heal.  
 
 Foods that are highly processed, which make up the Standard American Diet, do not provide the nutrition to keep our bodies healthy.  This has led to many of the chronic illnesses that are prevalent in our world today - Autoimmune, Diabetes, Coronary Heart Disease and Cancer, to name a few.  I believe that a nutrient dense, properly prepared, ancestral based whole-food diet, is the foundation for supporting optimal health.
 
 There is no one perfect diet for everyone, so we work with you to find the ideal whole food diet that will enhance your bodies ability to heal.  We also use professional grade supplements to target the nutrients that your body is looking for to help it achieve balance. ​
 
-_​"All Disease begins in the Gut."_ -Hippocrates
+*​"All Disease begins in the Gut."* -Hippocrates
