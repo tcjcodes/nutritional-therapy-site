@@ -41,7 +41,11 @@ order to set you up for success on your healing journey.
 that cannot be adequately resolved via electronic communication, you will
 be asked to schedule a session.
 
-**Lab Report of Finding and Protocol Consultation $150 per testing (G﻿I-Map Stool Test, SIBO Breath Test, Saliva or Urine Hormone Testing, or Comprehensive Blood Panel Test Result)** 
+### **Lab Report of Finding and Protocol Consultation Additional: $150 per testing** 
+
+**G﻿I-Map Stool Test, SIBO Breath Test, Saliva or Urine Hormone Testing, or Comprehensive Blood Panel Test Result** 
+
+~﻿
 
 ### Applied Psycho-Neurobiology (APN): Healing Through Mind-Body Connection
 
@@ -54,8 +58,6 @@ A﻿PN is gentle, non-invasive, and can help reduce health issues, emotional dis
 ### Applied Psycho-Neurobiology per Session
 
 Initial or individual session is $95 per 90 minute session
-
-
 
 ### Family Constellation $150
 
