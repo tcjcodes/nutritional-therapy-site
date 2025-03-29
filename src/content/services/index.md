@@ -43,7 +43,15 @@ be asked to schedule a session.
 
 **Lab Report of Finding and Protocol Consultation $150 per testing (G﻿I-Map Stool Test, SIBO Breath Test, Saliva or Urine Hormone Testing, or Comprehensive Blood Panel Test Result)** 
 
-### Applied Psycho-Neurobiology (APN) Session  $95
+### Applied Psycho-Neurobiology (APN): Healing Through Mind-Body Connection
+
+APN is a holistic healing method that addresses unresolved emotional conflicts and trauma stored in the body.  Developed by Dr Dietrich Klinghardt, this technique combines biofeedback-guided, emotional guidance, color therapy, eye movement, and gentle energetic techniques to release emotional blockages.
+
+D﻿uring the APN session, the practitioner uses muscle testing to uncover hidden emotional pattern linked to physical symptoms.  Through guided dialague with subconcious mind, APN helps identify and resolves emotional trigger, leading to lasting improvement in well-being.
+
+A﻿PN is gentle, non-invasive, and can help reduce health issues, emotional distress, and other long-lasting issues.  Clients often experience a sense of relief and balance, with noticeable positive changes in the weeks of the session.
+
+### Applied Psycho-Neurobiology per Session
 
 Initial or individual session is $95 per 90 minute session
 
