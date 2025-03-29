@@ -47,7 +47,7 @@ be asked to schedule a session.
 
 APN is a holistic healing method that addresses unresolved emotional conflicts and trauma stored in the body.  Developed by Dr Dietrich Klinghardt, this technique combines biofeedback-guided, emotional guidance, color therapy, eye movement, and gentle energetic techniques to release emotional blockages.
 
-D﻿uring the APN session, the practitioner uses muscle testing to uncover hidden emotional pattern linked to physical symptoms.  Through guided dialague with subconcious mind, APN helps identify and resolves emotional trigger, leading to lasting improvement in well-being.
+During the APN session, the practitioner uses muscle testing to uncover hidden emotional pattern linked to physical symptoms.  Through guided dialogue with subconscious mind, APN helps identify and resolves emotional trigger, leading to lasting improvement in well-being.
 
 A﻿PN is gentle, non-invasive, and can help reduce health issues, emotional distress, and other long-lasting issues.  Clients often experience a sense of relief and balance, with noticeable positive changes in the weeks of the session.
 
@@ -64,6 +64,10 @@ Packages of 5 sessions $375 ($75 per session)
 ### Family Constellation $150
 
 Individual session is 90 minute session
+
+F﻿amily Constellation is a transformative modality that helps you break free from negative, repetitive hidden patterns, behaviors, and limiting emotions rooted in your family system.  By uncovering the deeper dynamics behind what's holding you back, you gain a fresh perspective, releasing the unconscious influences, you can live a more fulfilling and liberated life. 
+
+
 
 *Please note that Functional Nutrition, Applied Psycho-Neurobiology, and Family Constellation services are not covered by insurance.  Payment is expected at time of service.*
 
