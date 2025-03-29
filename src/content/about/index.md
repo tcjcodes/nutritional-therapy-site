@@ -37,7 +37,7 @@ I am passionate about helping you rediscover your vitality and support your body
 
 As a certified Functional Nutritional Therapy Practitioner (FNTP), I connect the physical and emotional aspect of health, offering holistic support for you journey to optimal wellness. I'm committed to helping you find balance, whether you're seeking to overcome chronic illness or simply improve your well-being?
 
-**Where does your wellness journey currently stand between vitality and disease?**
+**T﻿oday, where does your wellness journey stand - between vitality and disease?**
 
 As a Function Nutritionist, I specialized in addressing the underlying causes of dysfunction by restoring balance to the body's foundation systems.  While conventional medicine often focuses on treating symptoms, I use a variety of diagnostic tools to pinpoint deficiencies or imbalances, then offer targeted nutritional support to help your body restore naturally.
 
