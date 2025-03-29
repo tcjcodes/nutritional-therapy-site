@@ -39,11 +39,13 @@ As a certified Functional Nutritional Therapy Practitioner (FNTP), I connect the
 
 
 
-**Where are you on the spectrum between Balance and Disease?**
+**Where does your wellness journey currently stand between vitality and disease?**
 
-As a Function Nutritionist, I focus on addressing the underlying cause of the dysfunction through balancing the foundational systems of the body.  Many times conventional medicine only treats the symptom, not the underlying cause.  As a FNTP, I am able to use a variety of effective diagnostic tools to locate where the deficiency or imbalance is in the body and then provide nutritional support to help body’s innate ability to heal.  
+As a Function Nutritionist, I specialized in addressing the underlying causes of dysfunction by restoring balance to the body's foundation systems.  While conventional medicine often focuses on treating symptoms, I use a variety of diagnostic tools to pinpoint deficiencies or imbalances, then offer targeted nutritional support to help your body restore naturally.
 
-The root cause of many symptoms are digestive issues.  With this in mind, my practice focuses on balancing digestive system issues by identifying and removing stressors, then providing your body with the proper nutrition to heal.  
+O﻿ne of the root causes of many health concern is digestive dysfunction.  That's why my practice centers around identifying and removing digestive stressors, while providing the necessary nutrients to promote vitality and restoration.
+
+symptoms are digestive issues.  With this in mind, my practice focuses on balancing digestive system issues by identifying and removing stressors, then providing your body with the proper nutrition to heal.  
 
 Foods that are highly processed, which make up the Standard American Diet, do not provide the nutrition to keep our bodies healthy.  This has led to many of the chronic illnesses that are prevalent in our world today - Autoimmune, Diabetes, Coronary Heart Disease and Cancer, to name a few.  I believe that a nutrient dense, properly prepared, ancestral based whole-food diet, is the foundation for supporting optimal health.
 
