@@ -10,7 +10,9 @@ avatar: /img/my-pic-profile.jpg
 * Family Constellation
           
 
-As a functional nutritionist, I look for deeper underlying imbalances and deficiencies to restore health and function. I use a complete, holistic evaluation that may include testing, detailed nutritional assessment, dietary and health history overview to gather in-depth understanding of your biochemistry and current health status. Based on the gathered information, I create a customized nutritional program and recommend a supplemental protocol when needed. I help clients who are struggling with digestive problems, autoimmune disorders, chronic pain, fatigue, hormonal imbalances, skin problems, high blood pressure and other conditions.
+As a functional nutritionist, I focus on identifying and addressing the root causes of health imbalances and deficiencies to restore optimal health and function.  My approach is comprehensive and holistic, utilizing a combination of detailed testing, nutritional assessment, and a thorough review of your dietary and health history
+
+ffor deeper underlying imbalances and deficiencies to restore health and function. I use a complete, holistic evaluation that may include testing, detailed nutritional assessment, dietary and health history overview to gather in-depth understanding of your biochemistry and current health status. Based on the gathered information, I create a customized nutritional program and recommend a supplemental protocol when needed. I help clients who are struggling with digestive problems, autoimmune disorders, chronic pain, fatigue, hormonal imbalances, skin problems, high blood pressure and other conditions.ocu
 
 So if you are experiencing:
 
@@ -31,7 +33,7 @@ So if you are experiencing:
 * Recurring Infections
 
 ​
-**Let's set up a [_free 20 minute phone consult_](/services) so we can discuss your health concerns and goals, I would love to help!**
+**Let's set up a *[free 20 minute phone consult](/services)* so we can discuss your health concerns and goals, I would love to help!**
 
 I am passionate to helping you strengthen and find the healthier version of yourself.  Bringing back the vitality and support your body's needs.
 
@@ -49,4 +51,4 @@ Foods that are highly processed, which make up the Standard American Diet, do no
 
 There is no one perfect diet for everyone, so we work with you to find the ideal whole food diet that will enhance your bodies ability to heal.  We also use professional grade supplements to target the nutrients that your body is looking for to help it achieve balance. ​
 
-_​"All Disease begins in the Gut."_ -Hippocrates
+*​"All Disease begins in the Gut."* -Hippocrates
