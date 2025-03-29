@@ -45,6 +45,6 @@ One of the root causes of many health concern is digestive dysfunction.  That's 
 
 The Standard American Diet, rich in processed foods, lack the nutrients our bodies need to thrive.  This dietary pattern has contributed to the rise of chronic illness such as autoimmune disorders, diabetes, heart disease, and cancer.  I believe that a nutrient-dense, properly prepared, and ancestral-based whole-food diet is essential to supporting long-term heath.
 
-There is no one perfect diet for everyone, so we work with you to find the ideal whole food diet that will enhance your bodies ability to heal.  We also use professional grade supplements to target the nutrients that your body is looking for to help it achieve balance. ​
+There is no one-size-fits-all approach to nutrition.  Together, we will work to identify the best supports your body's unique healing process.  In addition, I use professional-grade and food base supplements to provide specific nutrtients your body needs to restore balance and function.
 
 *​"All Disease begins in the Gut."* -Hippocrates
