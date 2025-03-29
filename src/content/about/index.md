@@ -37,18 +37,14 @@ I am passionate about helping you rediscover your vitality and support your body
 
 As a certified Functional Nutritional Therapy Practitioner (FNTP), I connect the physical and emotional aspect of health, offering holistic support for you journey to optimal wellness. I'm committed to helping you find balance, whether you're seeking to overcome chronic illness or simply improve your well-being?
 
-
-
-**Where does your wellness journey currently stand between vitality and disease?**
+**T﻿oday, where does your wellness journey stand - between vitality and disease?**
 
 As a Function Nutritionist, I specialized in addressing the underlying causes of dysfunction by restoring balance to the body's foundation systems.  While conventional medicine often focuses on treating symptoms, I use a variety of diagnostic tools to pinpoint deficiencies or imbalances, then offer targeted nutritional support to help your body restore naturally.
 
-O﻿ne of the root causes of many health concern is digestive dysfunction.  That's why my practice centers around identifying and removing digestive stressors, while providing the necessary nutrients to promote vitality and restoration.
+One of the root causes of many health concern is digestive dysfunction.  That's why my practice centers around identifying and removing digestive stressors, while providing the necessary nutrients to promote vitality and restoration.
 
-symptoms are digestive issues.  With this in mind, my practice focuses on balancing digestive system issues by identifying and removing stressors, then providing your body with the proper nutrition to heal.  
+The Standard American Diet, rich in processed foods, lack the nutrients our bodies need to thrive.  This dietary pattern has contributed to the rise of chronic illness such as autoimmune disorders, diabetes, heart disease, and cancer.  I believe that a nutrient-dense, properly prepared, and ancestral-based whole-food diet is essential to supporting long-term heath.
 
-Foods that are highly processed, which make up the Standard American Diet, do not provide the nutrition to keep our bodies healthy.  This has led to many of the chronic illnesses that are prevalent in our world today - Autoimmune, Diabetes, Coronary Heart Disease and Cancer, to name a few.  I believe that a nutrient dense, properly prepared, ancestral based whole-food diet, is the foundation for supporting optimal health.
-
-There is no one perfect diet for everyone, so we work with you to find the ideal whole food diet that will enhance your bodies ability to heal.  We also use professional grade supplements to target the nutrients that your body is looking for to help it achieve balance. ​
+There is no one-size-fits-all approach to nutrition.  Together, we will work to identify the best supports your body's unique healing process.  In addition, I use professional-grade and food base supplements to provide specific nutrtients your body needs to restore balance and function.
 
 *​"All Disease begins in the Gut."* -Hippocrates
