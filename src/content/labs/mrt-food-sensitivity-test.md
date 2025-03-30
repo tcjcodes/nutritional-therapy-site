@@ -1,15 +1,11 @@
 ---
 templateKey: lab
-title: MRT - 176 Food & Food Chemical Sensitivity Test with Report of Finding
-  and Protocol $550
+title: 176 Food & Food Chemical Sensitivity Test and Report of Finding + Protocol $550
 image: /img/mrt-photo.jpg
 ---
-
-## MRT (Mediator Release Test) - 170 Food and Chemical 
+## MRT (Mediator Release Test) - 176 Food and Chemical
 
 Food sensitivities are more complex than just antibody production. There are many other inflammatory chemicals the immune system can produce that promote sensitivities.  The MRT uses a much different, and more accurate, technique to identify type 3 and type 4 food sensitivities. The test also includes 30 food chemicals and additives to make sure you stay clear of those that impact your health the most. 
-
-
 
 Sensitivities are complex non-allergic, non-celiac inflammatory reactions that can involve both innate and adaptive immune pathways. Various triggering mechanisms trigger reactions in white cells leading to the release of proinflammatory and proalgesic mediators, such as cytokines, leukotrienes, and prostaglandins. Mediator release and cellular reactivity ultimately results in subclinical and clinical inflammatory effects manifesting in a variety of clinical conditions and symptoms.
 
