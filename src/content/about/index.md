@@ -39,7 +39,7 @@ As a certified Functional Nutritional Therapy Practitioner (FNTP), I connect the
 
 **T﻿oday, where does your wellness journey stand - between vitality and disease?**
 
-As a Function Nutritionist, I specialized in addressing the underlying causes of dysfunction by restoring balance to the body's foundation systems.  While conventional medicine often focuses on treating symptoms, I use a variety of diagnostic tools to pinpoint deficiencies or imbalances, then offer targeted nutritional support to help your body restore naturally.
+As a Function Nutritionist, I specialized in addressing the underlying causes of dysfunction by restoring balance to the body's foundation systems.  While conventional medicine often focuses on treating symptoms, I use a variety of diagnostic tools and advanced specialized testing to pinpoint deficiencies or imbalances, then offer targeted nutritional support to help your body's innate ability to heal.
 
 One of the root causes of many health concern is digestive dysfunction.  That's why my practice centers around identifying and removing digestive stressors, while providing the necessary nutrients to promote vitality and restoration.
 
