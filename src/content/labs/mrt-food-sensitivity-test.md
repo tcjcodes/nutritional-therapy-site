@@ -1,6 +1,7 @@
 ---
 templateKey: lab
-title: 176 Food & Food Chemical Sensitivity Test and Consult + Report of Finding $550
+title: 176 Food & Food Chemical Sensitivity Test and Consultation + Report of
+  Finding $550
 image: /img/mrt-photo.jpg
 ---
 ## MRT (Mediator Release Test) - 176 Food and Chemical
