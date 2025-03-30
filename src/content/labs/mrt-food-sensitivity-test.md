@@ -1,6 +1,7 @@
 ---
 templateKey: lab
-title: 'MRT - 170 Food & Food Chemical Sensitivity Test, plus Consultation Report $435'
+title: MRT - 176 Food & Food Chemical Sensitivity Test with Report of Finding
+  and Protocol $550
 image: /img/mrt-photo.jpg
 ---
 
