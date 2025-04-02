@@ -49,7 +49,11 @@ be asked to schedule a session.
 
 ~﻿
 
-### Applied Psycho-Neurobiology (APN): Healing Through Mind-Body Connection
+## Healing Through Mind-Body Connection
+
+### Applied Psycho-Neurobiology (APN) 
+
+Individual session is $95 per 90 minute session
 
 APN is a holistic healing method that addresses unresolved emotional conflicts and trauma stored in the body.  Developed by Dr Dietrich Klinghardt, this technique combines biofeedback-guided, emotional guidance, color therapy, eye movement, and gentle energetic techniques to release emotional blockages. Read more about this unique method [here](/img/apnbydrklinghardthandout.pdf).
 
@@ -57,13 +61,11 @@ During the APN session, the practitioner uses muscle testing to uncover hidden e
 
 A﻿PN is gentle, non-invasive, and can help reduce health issues, emotional distress, and other long-lasting issues.  Clients often experience a sense of relief and balance, with noticeable positive changes in the weeks of the session.
 
-### Applied Psycho-Neurobiology per Session
 
-Initial or individual session is $95 per 90 minute session
 
-### Family Constellation $150
+### Family Constellation
 
-Individual session is 90 minute session
+Individual session is $150 for 90 minute session
 
 F﻿amily Constellation is a transformative modality that helps you break free from negative, repetitive hidden patterns, behaviors, and limiting emotions rooted in your family system.  By uncovering the deeper dynamics behind what's holding you back, you gain a fresh perspective, releasing the unconscious influences, you can live a more fulfilling and liberated life. 
 
