@@ -49,9 +49,9 @@ be asked to schedule a session.
 
 ~﻿
 
-## Healing Through Mind-Body Connection
+## Mind-Body-Soul Connection Modalities:
 
-### Applied Psycho-Neurobiology (APN) 
+### Applied Psycho-Neurobiology (APN)
 
 Individual session is $95 for 90 minute session
 
@@ -60,8 +60,6 @@ APN is a holistic healing method that addresses unresolved emotional conflicts a
 During the APN session, the practitioner uses muscle testing to uncover hidden emotional pattern linked to physical symptoms.  Through guided dialogue with subconscious mind, APN helps identify and resolves emotional trigger, leading to lasting improvement in well-being.
 
 A﻿PN is gentle, non-invasive, and can help reduce health issues, emotional distress, and other long-lasting issues.  Clients often experience a sense of relief and balance, with noticeable positive changes in the weeks of the session.
-
-
 
 ### Family Constellation
 
