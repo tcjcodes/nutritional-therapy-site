@@ -51,7 +51,7 @@ be asked to schedule a session.
 
 ### Applied Psycho-Neurobiology (APN): Healing Through Mind-Body Connection
 
-APN is a holistic healing method that addresses unresolved emotional conflicts and trauma stored in the body.  Developed by Dr Dietrich Klinghardt, this technique combines biofeedback-guided, emotional guidance, color therapy, eye movement, and gentle energetic techniques to release emotional blockages.
+APN is a holistic healing method that addresses unresolved emotional conflicts and trauma stored in the body.  [Developed by Dr Dietrich Klinghardt](static/img/apnbydrklinghardthandout.pdf), this technique combines biofeedback-guided, emotional guidance, color therapy, eye movement, and gentle energetic techniques to release emotional blockages.
 
 During the APN session, the practitioner uses muscle testing to uncover hidden emotional pattern linked to physical symptoms.  Through guided dialogue with subconscious mind, APN helps identify and resolves emotional trigger, leading to lasting improvement in well-being.
 
