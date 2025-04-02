@@ -9,7 +9,7 @@ Together we will identify and assess your current health baseline and discuss yo
 
 ### Initial Nutritional Consultation $125
 
-#### (Approximately 90 minutes, either in-person or virtually)
+#### Approximately 90 minutes, either in-person or virtually
 
 In our initial session, we assess your current health baseline and discuss your health and wellness concerns, goals, and priorities. This consultation includes a comprehensive health assessment, dietary review, and online nutritional assessment questionnaire.
 
