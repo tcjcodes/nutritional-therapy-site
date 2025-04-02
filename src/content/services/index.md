@@ -53,7 +53,7 @@ be asked to schedule a session.
 
 ### Applied Psycho-Neurobiology (APN) 
 
-Individual session is $95 per 90 minute session
+Individual session is $95 for 90 minute session
 
 APN is a holistic healing method that addresses unresolved emotional conflicts and trauma stored in the body.  Developed by Dr Dietrich Klinghardt, this technique combines biofeedback-guided, emotional guidance, color therapy, eye movement, and gentle energetic techniques to release emotional blockages. Read more about this unique method [here](/img/apnbydrklinghardthandout.pdf).
 
