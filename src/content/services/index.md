@@ -37,9 +37,7 @@ order to set you up for success on your healing journey.
 * 6 months per 9 visits, $720 ($80/session)
 * 12 months per 15 visits, $1,050 ($70/session)
 
-**Packages** include unlimited text and email support. If there is an issue
-that cannot be adequately resolved via electronic communication, you will
-be asked to schedule a session.
+
 
 ~﻿
 
