@@ -7,10 +7,10 @@ avatar: /img/my-pic-profile.jpg
 * Functional Nutritional Therapy Practitioner - FNTP
 * Restorative Wellness Practitioner - RWP
 * Applied Psycho-Neurobiology - APN
-* Family Constellation
+* Family Constellation Facilitator
           
 
-As a functional nutritionist, I focus on identifying and addressing the root causes of health imbalances and deficiencies to restore optimal health and function.  My approach is comprehensive and holistic, utilizing a combination of detailed testing, nutritional assessment, and a thorough review of your dietary and health history.  This allows me to gain a deep understanding of your unique biochemisty and current health status.  From this information, I create a customized nutritional plan tailored to your specific needs and recommend supplement support where necessary.
+As a functional nutritionist, I focus on identifying and addressing the root causes of health imbalances and deficiencies to restore optimal health and function.  My approach is comprehensive and holistic, utilizing a combination of detailed testing, nutritional assessment, and a thorough review of your dietary and health history.  This allows me to gain a deep understanding of your unique biochemistry and current health status.  From this information, I create a customized nutritional plan tailored to your specific needs and recommend supplement support where necessary.
 
 I specialize in helping individuals dealing with a variety of conditions, including:
 
