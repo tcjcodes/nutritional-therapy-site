@@ -5,30 +5,28 @@ title: Services
 ---
 ### Free 20 minute Consultation for Functional Nutrition
 
-Together we will identify and assess your current health baseline and discuss your health concern and goals.  This consultation will help identify the deficiency and imbalances with the goal of gently guiding individuals back on the path to health.
+D﻿uring this session, we will evaluate your current health status, discuss your primary concern, and establish your wellness goals.  This consultation serves as an opportunity to identify potential deficiency and imbalances with the aim of guiding you toward a path of improved health and well-being.
 
 ### Initial Nutritional Consultation $125
 
-#### Approximately 90 minutes, either in-person or virtually
+Initial Consultation is about 90 minutes, either in-person or virtually
 
-In our initial session, we assess your current health baseline and discuss your health and wellness concerns, goals, and priorities. This consultation includes a comprehensive health assessment, dietary review, and online nutritional assessment questionnaire.
+In our initial session, we assess your current health baseline and discuss your health and wellness concerns, goals, and priorities. This consultation includes a comprehensive health assessment, dietary review, and a nutritional assessment questionnaire.
 
-You will be introduced to the functional evaluation, and we use the
-information from the initial consultation and a variety of techniques
-(reflex points, palpations, muscle testing, and lingual-neuro tests) to discover
-where your body may be out of balance. We use all of these puzzle pieces
-to determine which nutrients will best support your body moving to a more
-balanced state.
+D﻿uring you initial visit, you will be introduced to functional evaluation process.  We will use information from your consultation, along with a range of techniques—such as reflex points, palpations, muscle testing, and lingual-neuro assessments—to identify potential imbalances within your body.  
+
+T﻿o gain deeper insights into your health, we may recommend specialized testing based on your individual needs.  These may include stool testing, SIBO and/or SIFO breath testing, saliva/urine hormone testing, or a comprehensive blood panel.  
+
+B﻿y combining these diagnostic tools and techniques, we can piece together a clear picture of your unique health profile and determine which nutrients will best support your journey toward balance and wellness.
 
 ### Follow Up for Nutritional Consultation
 
 * 45 minute appointment: $60 per session
 * 90 minutes appointment: $105 per session
 
-These sessions are tailored for you. We will discuss your progress,
-revisit your goals and priorities, and use various functional evaluation
-assessments to refine your protocol. Your body is constantly trying to
-create balance from within. 
+These sessions are personalized to meet your bio-individual needs.  We will discuss your progress, reassess your goals and priorities, and utilize various functional evaluation techniques to fine-tune your protocol.  Your body an innate ability to seek balance, and our approach supports this natural process.
+
+
 
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
@@ -36,8 +34,6 @@ order to set you up for success on your healing journey.
 * 3 months per 5 visits, $450 ($90/session)
 * 6 months per 9 visits, $720 ($80/session)
 * 12 months per 15 visits, $1,050 ($70/session)
-
-
 
 ~﻿
 
@@ -67,7 +63,7 @@ F﻿amily Constellation is a transformative modality that helps you break free f
 
 *Please note that Functional Nutrition, Applied Psycho-Neurobiology, and Family Constellation services are not covered by insurance.*  
 
-*Payment is expected at time of service.  Cash, Debit/Credit Card, Venmo, Cashapp accepted.*
+*Payment is expected at time of service.  Cash, Debit/Credit Card, Venmo, or Cashapp accepted.*
 
 - - -
 
