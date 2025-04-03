@@ -63,7 +63,7 @@ F﻿amily Constellation is a transformative modality that helps you break free f
 
 *Please note that Functional Nutrition, Applied Psycho-Neurobiology, and Family Constellation services are not covered by insurance.*  
 
-*Payment is expected at time of service.  Cash, Debit/Credit Card, Venmo, Cashapp accepted.*
+*Payment is expected at time of service.  Cash, Debit/Credit Card, Venmo, or Cashapp accepted.*
 
 - - -
 
