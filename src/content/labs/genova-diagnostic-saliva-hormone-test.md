@@ -1,6 +1,6 @@
 ---
 templateKey: lab
-title: Genova Diagnostic Saliva Hormone Test
+title: Genova Diagnostic Saliva Hormone Test only $475
 image: /img/genova-diagostics-logo-images.png
 ---
 **Rhythm Plus with CAR (Cortisol Awakening Response) for cycling women**
