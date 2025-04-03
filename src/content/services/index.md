@@ -35,7 +35,7 @@ order to set you up for success on your healing journey.
 
 ~﻿
 
-### **Lab Report of Finding and Protocol Consultation Additional: $150 per testing**
+### **S﻿pecialized Lab Testing, Report of Finding, and Protocol Consultation Additional: $150 per testing**
 
 **G﻿I-Map Stool Test, SIBO Breath Test, Saliva or Urine Hormone Testing, or Comprehensive Blood Panel Test Result** 
 
@@ -55,7 +55,7 @@ A﻿PN is gentle, non-invasive, and can help reduce health issues, emotional dis
 
 ### Family Constellation
 
-Individual session is $150 for 90 minute session
+Individual session is $150 for 90 minute session (in person or virtual)
 
 F﻿amily Constellation is a transformative modality that helps you break free from negative, repetitive hidden patterns, behaviors, and limiting emotions rooted in your family system.  By uncovering the deeper dynamics behind what's holding you back, you gain a fresh perspective, releasing the unconscious influences, you can live a more fulfilling and liberated life. 
 
@@ -67,6 +67,6 @@ F﻿amily Constellation is a transformative modality that helps you break free f
 
 #### DISCLAIMER AND GUIDELINES
 
-A Functional Nutritional Therapy Practitioner (FNTP) is a paraprofessional certified by the Nutritional Therapy Association, Inc. trained to evaluate a client’s nutritional needs, support normal function, and identify nutritional deficiencies.  A FNTP makes recommendations of dietary changes, lifestyle considerations, and nutritional supplementation based on client information, assessments, muscle testing, and lingual-neuro testing.  
+A Functional Nutritional Therapy Practitioner (FNTP) is a paraprofessional certified by the Nutritional Therapy Association, Inc. and Restorative Wellness Solutions trained to evaluate a client’s nutritional needs, support normal function, and identify nutritional deficiencies.  A FNTP and RWP makes recommendations of dietary changes, lifestyle considerations, and nutritional supplementation based on client information, assessments, muscle testing, lingual-neuro testing, and specialized testing.
 
-A Functional Nutritional Therapy Practitioner, Applied Psycho-Neurobiology Practitioner, and Family Constellation Facilitator are not trained to provide medical diagnosis or treatment of any medical or pathological condition, illness, injury, or disease.  No recommendation or comment made by a Functional Nutritional Therapy Practitioner should be construed as being medical advice or diagnosis.
+A Functional Nutritional Therapy Practitioner, Restorative Wellness Practitioner, Applied Psycho-Neurobiology Practitioner, and Family Constellation Facilitator are not trained to provide medical diagnosis or treatment of any medical or pathological condition, illness, injury, or disease.  No recommendation or comment made by a FNTP, RWP, APN and Family Constellation Facilitator should be construed as being medical advice or diagnosis.
