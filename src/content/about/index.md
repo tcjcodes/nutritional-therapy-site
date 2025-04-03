@@ -33,7 +33,7 @@ I specialize in helping individuals dealing with a variety of conditions, includ
 ​
 **If you're experiencing any of these symptoms, let's schedule *[free 20 minute phone consult](/services)* to discuss your health concerns and goals.  I am here to help you take the next step towarch achieving a healthier, more balanced life.**
 
-I am passionate about helping you rediscover your vitality and support your body's natural healing processes.  My approach is rooted in a deep appreciation for whole, nutrient-dense foods - organic, non-GMO, locally sourced, grass-fed and free-range products that nourish both body and soul.  I value quality fats such as coconut oil, butter, ghee, duck fat, tallow, cold-pressed olive oil, flax oil, and avocado oil, and I believe in the importance of supporting local farms and farm-to-table practices.
+I am passionate about helping you rediscover your vitality and support your body's natural healing processes.  My approach is rooted in a deep appreciation for whole, nutrient-dense foods—organic, non-GMO, locally sourced, grass-fed and free-range products that nourish both body and soul.  I value quality fats such as coconut oil, butter, ghee, duck fat, tallow, cold-pressed olive oil, flax oil, and avocado oil, and I believe in the importance of supporting local farms and farm-to-table practices.
 
 As a certified Functional Nutritional Therapy Practitioner (FNTP), I connect the physical and emotional aspect of health, offering holistic support for you journey to optimal wellness. I'm committed to helping you find balance, whether you're seeking to overcome chronic illness or simply improve your well-being?
 
