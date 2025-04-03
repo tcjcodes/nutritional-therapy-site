@@ -35,7 +35,7 @@ order to set you up for success on your healing journey.
 
 ~﻿
 
-### **Lab Report of Finding and Protocol Consultation Additional: $150 per testing**
+### **S﻿pecialized Lab Testing, Report of Finding, and Protocol Consultation Additional: $150 per testing**
 
 **G﻿I-Map Stool Test, SIBO Breath Test, Saliva or Urine Hormone Testing, or Comprehensive Blood Panel Test Result** 
 
