@@ -55,7 +55,7 @@ A﻿PN is gentle, non-invasive, and can help reduce health issues, emotional dis
 
 ### Family Constellation
 
-Individual session is $150 for 90 minute session
+Individual session is $150 for 90 minute session (in person or virtual)
 
 F﻿amily Constellation is a transformative modality that helps you break free from negative, repetitive hidden patterns, behaviors, and limiting emotions rooted in your family system.  By uncovering the deeper dynamics behind what's holding you back, you gain a fresh perspective, releasing the unconscious influences, you can live a more fulfilling and liberated life. 
 
