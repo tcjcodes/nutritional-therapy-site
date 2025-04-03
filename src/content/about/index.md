@@ -41,7 +41,7 @@ As a certified Functional Nutritional Therapy Practitioner (FNTP), I connect the
 
 As a Function Nutritionist, I specialized in addressing the underlying causes of dysfunction by restoring balance to the body's foundation systems.  While conventional medicine often focuses on treating symptoms, I use a variety of diagnostic tools and advanced specialized testing to pinpoint deficiencies or imbalances, then offer targeted nutritional support to help your body's innate ability to heal.
 
-One of the root causes of many health concern is digestive dysfunction.  That's why my practice centers around identifying and removing digestive stressors, while providing the necessary nutrients to promote vitality and restoration.
+One of the root causes of many health concern is digestive dysfunction.  That's why my practice centers around identifying and removing digestive stressors and other root issues, while providing the necessary nutrients to promote vitality and restoration.
 
 The Standard American Diet, rich in processed foods, lack the nutrients our bodies need to thrive.  This dietary pattern has contributed to the rise of chronic illness such as autoimmune disorders, diabetes, heart disease, and cancer.  I believe that a nutrient-dense, properly prepared, and ancestral-based whole-food diet is essential to supporting long-term heath.
 
