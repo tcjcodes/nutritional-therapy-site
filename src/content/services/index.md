@@ -24,9 +24,7 @@ B﻿y combining these diagnostic tools and techniques, we can piece together a c
 * 45 minute appointment: $60 per session
 * 90 minutes appointment: $105 per session
 
-These sessions are personalized to meet your bio-individual needs.  We will discuss your progress, reassess your goals and priorities, and utilize various functional evaluation techniques to fine-tune your protocol.  Your body an innate ability to seek balance, and our approach supports this natural process.
-
-
+These sessions are personalized to meet your bio-individual needs.  We will discuss your progress, reassess your goals and priorities, and utilize various functional evaluation techniques to fine-tune your protocol.  Your body has an innate ability to seek balance, and our approach supports this natural process.
 
 We ask that new clients commit to a minimum of a three-month package in
 order to set you up for success on your healing journey.
