@@ -26,12 +26,7 @@ B﻿y combining these diagnostic tools and techniques, we can piece together a c
 
 These sessions are personalized to meet your bio-individual needs.  We will discuss your progress, reassess your goals and priorities, and utilize various functional evaluation techniques to fine-tune your protocol.  Your body has an innate ability to seek balance, and our approach supports this natural process.
 
-We ask that new clients commit to a minimum of a three-month package in
-order to set you up for success on your healing journey.
 
-* 3 months per 5 visits, $450 ($90/session)
-* 6 months per 9 visits, $720 ($80/session)
-* 12 months per 15 visits, $1,050 ($70/session)
 
 ~﻿
 
