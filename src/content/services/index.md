@@ -26,8 +26,6 @@ B﻿y combining these diagnostic tools and techniques, we can piece together a c
 
 These sessions are personalized to meet your bio-individual needs.  We will discuss your progress, reassess your goals and priorities, and utilize various functional evaluation techniques to fine-tune your protocol.  Your body has an innate ability to seek balance, and our approach supports this natural process.
 
-
-
 ~﻿
 
 ### **S﻿pecialized Lab Testing, Report of Finding, and Protocol Consultation Additional: $150 per testing**
@@ -40,7 +38,9 @@ These sessions are personalized to meet your bio-individual needs.  We will disc
 
 ### Applied Psycho-Neurobiology (APN)
 
-Individual session is $95 for 90 minute session
+Individual session in-person  is $150 for 90 minute session
+
+APN session virtual $200 for 90 minutes
 
 APN is a holistic healing method that addresses unresolved emotional conflicts and trauma stored in the body.  Developed by Dr Dietrich Klinghardt, this technique combines biofeedback-guided, emotional guidance, color therapy, eye movement, and gentle energetic techniques to release emotional blockages. Read more about this unique method [here](/img/apnbydrklinghardthandout.pdf).
 
@@ -50,7 +50,7 @@ A﻿PN is gentle, non-invasive, and can help reduce health issues, emotional dis
 
 ### Family Constellation
 
-Individual session is $150 for 90 minute session (in person or virtual)
+Individual session is $200 for 90 minute session (in person or virtual)
 
 F﻿amily Constellation is a transformative modality that helps you break free from negative, repetitive hidden patterns, behaviors, and limiting emotions rooted in your family system.  By uncovering the deeper dynamics behind what's holding you back, you gain a fresh perspective, releasing the unconscious influences, you can live a more fulfilling and liberated life. 
 
