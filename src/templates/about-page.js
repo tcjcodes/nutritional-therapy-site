@@ -1,6 +1,6 @@
 import { Box, Container, Content, Section } from 'bloomer';
 import { graphql } from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
@@ -24,11 +24,14 @@ const AboutPage = ({ data }) => {
             <PageHeader center title={post.frontmatter.title} />
 
             {aboutFile?.childImageSharp?.gatsbyImageData && (
-              <Box style={{ maxWidth: 450, width: '100%', marginBottom: '2rem' }}>
+              <Box
+                style={{ maxWidth: 370, width: '100%', marginBottom: '2rem' }}
+              >
                 <GatsbyImage
                   image={aboutFile.childImageSharp.gatsbyImageData}
                   alt="Caroline"
-                  title="About Caroline" />
+                  title="About Caroline"
+                />
               </Box>
             )}
             <Content
@@ -42,26 +45,28 @@ const AboutPage = ({ data }) => {
   );
 };
 
-export const query = graphql`query AboutPage($slug: String!) {
-  site {
-    siteMetadata {
-      title
+export const query = graphql`
+  query AboutPage($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
+    }
+    aboutFile: file(relativePath: { eq: "cdlr4.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 370, layout: CONSTRAINED)
+      }
     }
   }
-  markdownRemark(fields: {slug: {eq: $slug}}) {
-    html
-    fields {
-      slug
-    }
-    frontmatter {
-      title
-    }
-  }
-  aboutFile: file(relativePath: {eq: "cdlr3crop.JPG"}) {
-    childImageSharp {
-      gatsbyImageData(width: 400, layout: CONSTRAINED)
-    }
-  }
-}`;
+`;
 
 export default AboutPage;
