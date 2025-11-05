@@ -3,21 +3,22 @@
 [build]
 command = "npm run build"
 publish = "public"
-  [build.environment]
-  # cache Cypress binary in local "node_modules" folder
-  # so Netlify caches it
-  CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
-  # set TERM variable for terminal output
-  TERM = "xterm"
+[build.environment]
+# cache Cypress binary in local "node_modules" folder
+# so Netlify caches it
+CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
+# set TERM variable for terminal output
+TERM = "xterm"
+NODE_VERSION = "lts/fermium"
 
 [[plugins]]
 # runs Cypress tests against the deployed URL
 package = "netlify-plugin-cypress"
-  [plugins.inputs]
-  record = true
+[plugins.inputs]
+record = true
 
 [[redirects]]
-  from = "https://carolinentp.netlify.com"
-  to = "https://www.boisewillowgracewellness.com"
-  status = 301
-  force = true
+from = "https://carolinentp.netlify.com"
+to = "https://www.boisewillowgracewellness.com"
+status = 301
+force = true
